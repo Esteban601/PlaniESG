@@ -1,0 +1,41 @@
+{% extends 'layouts/interior.html' %}
+{% load static %}
+{% block otherstyles %}
+
+{% endblock %}
+
+{% block wrapper %}
+    <div class="content-wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p>Para la gestión de los residuos se contratan terceros externos para cada hotel, estos son
+                        proveedores de
+                        servicios certificados por municipio, los cuales se encargan de pesar la cantidad de residuos
+                        generados
+                        y entregar un reporte a cada uno de los hoteles.</p>
+                </div>
+            </div>
+
+            <div class="row d-flex align-items-center flex-wrap">
+                <div class="col-12">
+                    <img class="img-fluid" src="{% static 'images/residuos_peligrosos.png' %}" width="3000"
+                         height="3400">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 mb-4 offset-md-3">
+                    <div id="chart1" style="height: 350px;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block otherscripts %}
+    <script src="{% static 'javascripts/amcharts/amcharts.js' %}"></script>
+    <script src="{% static 'javascripts/amcharts/serial.js' %}"></script>
+    <script src="{% static 'javascripts/amcharts/pie.js' %}"></script>
+    <script src="{% static 'javascripts/amcharts/contenido/residuos.js' %}{{ css_js_version }}"></script>
+{% endblock %}

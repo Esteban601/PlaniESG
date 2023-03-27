@@ -1,0 +1,227 @@
+{% extends 'layouts/interior.html' %}
+{% load static %}
+{% block otherstyles %}
+{#    <link rel="stylesheet" href="{% static 'stylesheets/css/owl.carousel.min.css' %}">#}
+{#    <link rel="stylesheet" href="{% static 'stylesheets/css/owl.theme.default.css' %}">#}
+    <style>
+        .text-grande {
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            display: flex;
+            font-size: 24px;
+        }
+        .owl-carousel .owl-dots .owl-dot{
+            background: black;
+            {#height: 0px;#}
+        }
+    </style>
+{% endblock %}
+
+{% block wrapper %}
+    <div class="content-wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p>En Pinfra cumplimos a cabalidad con las regulaciones y normativas en materia laboral, al tiempo
+                        que brindamos prestaciones y beneficios por encima de lo establecido por la ley.</p>
+                    <p>Al cierre del 2021, nuestra organización está formada por un equipo de 3,038 colaboradores
+                        integrado como se muestra a continuación:</p>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div id="chart1" style="width: 100%;height: 600px;"></div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div id="chart2" style="width: 100%;height: 600px;"></div>
+                </div>
+                <div class="col-12">
+                    <p>Históricamente, nuestras relaciones con los sindicatos de los cuales forman parte nuestros
+                        colaboradores
+                        han sido de mutuo respeto y bajo una comunicación bidireccional constante, en pleno respeto a la
+                        libertad de asociación, libertad sindical y el derecho a la negociación colectiva.</p>
+
+                    <p>Al cierre del 2021, aproximadamente el 59% de nuestros colaboradores estaban afiliados a los
+                        siguientes
+                        sindicatos: </p>
+
+
+                    <section class="s-block pb-0">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 invers">
+                                    <div class="owl-carousel owl-theme h-100">
+
+                                        <div class="item d-flex flex-column h-100 align-items-center justify-content-center p-5"
+                                             style="background-image: url({% static 'images/slider_quienessomos_mision.png' %});
+                                                     background-size: cover;">
+                                            <div class="row">
+                                                <div class="col-6 text-grande">
+                                                    <div class="item"><p class="text-justify"> Sindicato de Trabajadores de la Industria del
+                                                        Cemento, Cal, Asbesto,
+                                                        Yeso, Envases y sus Productos Similares y Conexos de la
+                                                        República Mexicana</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <img src="{% static 'images/Icono_1.png' %}" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="item d-flex flex-column h-100 align-items-center justify-content-center p-5"
+                                             style="background-image: url({% static 'images/slider_quienessomos_mision.png' %});
+                                                     background-size: cover;">
+                                            <div class="row">
+                                                <div class="col-6 text-grande">
+                                                    <div class="item">
+                                                        <p class="text-justify">Sindicato Mexicano de Trabajadores de la Construcción con Maquinaria, Similares y Conexos
+                                                        de la República Mexicana, Confederación de Trabajadores Campesinos</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <img src="{% static 'images/Icono_2.png' %}" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="item d-flex flex-column h-100 align-items-center justify-content-center p-5"
+                                             style="background-image: url({% static 'images/slider_quienessomos_mision.png' %});
+                                                     background-size: cover;">
+                                            <div class="row">
+                                                <div class="col-6 text-grande">
+                                                    <div class="item">
+                                                        <p class="text-justify">Sindicato Nacional de Trabajadores de la Actividad Comercial y sus Derivados, Agentes de
+                                                        Comercio, Vendedores Viajeros, Propagandistas e Impulsores de Ventas de la República
+                                                        Mexicana</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <img src="{% static 'images/Icono_3.png' %}" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="item d-flex flex-column h-100 align-items-center justify-content-center p-5"
+                                             style="background-image: url({% static 'images/slider_quienessomos_mision.png' %});
+                                                     background-size: cover;">
+                                            <div class="row">
+                                                <div class="col-6 text-grande">
+                                                    <div class="item">
+                                                        <p class="text-justify">Sindicato Progresista de Trabajadores de la Industria Portuaria Mexicana</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <img src="{% static 'images/Icono_4.png' %}" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item d-flex flex-column h-100 align-items-center justify-content-center p-5"
+                                             style="background-image: url({% static 'images/slider_quienessomos_mision.png' %});
+                                                     background-size: cover;">
+                                            <div class="row">
+                                                <div class="col-6 text-grande">
+                                                    <div class="item">
+                                                        <p class="text-justify">Sindicato de Trabajadores y Empleados de Almacenes y Comercio de la República Mexicana</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <img src="{% static 'images/Icono_5.png' %}" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item d-flex flex-column h-100 align-items-center justify-content-center p-5"
+                                             style="background-image: url({% static 'images/slider_quienessomos_mision.png' %});
+                                                     background-size: cover;">
+                                            <div class="row">
+                                                <div class="col-6 text-grande">
+                                                    <div class="item">
+                                                      <p class="text-justify">  Sindicato de Trabajadores del Montaje, Construcción de Estructuras, Maquinaria, La
+                                                        Transformación del Metal y Energía de la República Mexicana</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <img src="{% static 'images/Icono_6.png' %}" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item d-flex flex-column h-100 align-items-center justify-content-center p-5"
+                                             style="background-image: url({% static 'images/slider_quienessomos_mision.png' %});
+                                                     background-size: cover;">
+                                            <div class="row">
+                                                <div class="col-6 text-grande">
+                                                    <div class="item">
+                                                        <p class="text-justify">Sindicato de Trabajadores y Empleados de Centros Educativos, Recreativos y Prestadoras de
+                                                        Servicios en el Estado de México</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <img src="{% static 'images/Icono_7.png' %}" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item d-flex flex-column h-100 align-items-center justify-content-center p-5"
+                                             style="background-image: url({% static 'images/slider_quienessomos_mision.png' %});
+                                                     background-size: cover;">
+                                            <div class="row">
+                                                <div class="col-6 text-grande">
+                                                    <div class="item">
+                                                        <p class="text-justify">Sindicato de Trabajadores de la Construcción, Excavación, Operación, Similares, y Conexos
+                                                        de la República Mexicana</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <img src="{% static 'images/Icono_8.png' %}" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    {#                    <div class="text-center">#}
+                    {#                        <img class="img-fluid" src="{% static 'images/Leyes1.png' %}" width="1000" height="1000">#}
+                    {#                    </div>#}
+                    <br><br>
+                  <p class="text-justify">A los esfuerzos por integrar la sustentabilidad dentro de nuestra
+                        estrategia,
+                        operaciones y procesos,
+                        se le suman las acciones y programas sociales continuos que hemos emprendido en favor de las
+                        comunidades
+                        donde se ubican nuestros proyectos, los cuales han coadyuvado a la generación de empleos y a
+                        impulsar
+                        las actividades económicas locales.</p>
+
+                    <div class="text-center">
+                        <img class="img-fluid" src="{% static 'images/empleo_temporal.png' %}" width="1000"
+                             height="1000"
+                             alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block otherscripts %}
+    <script src="{% static 'javascripts/amcharts/amcharts.js' %}"></script>
+    <script src="{% static 'javascripts/amcharts/serial.js' %}"></script>
+    <script src="{% static 'javascripts/amcharts/pie.js' %}"></script>
+    <script src="{% static 'javascripts/amcharts/contenido/responsabilidad-social.js' %}"></script>
+    <script src="{% static 'javascripts/owl.carousel.min.js' %}"></script>
+    <script>
+        $(function () {
+
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 30,
+                nav: false,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                autoplayHoverPause: true,
+                items: 1,
+            });
+        })
+    </script>
+{% endblock %}

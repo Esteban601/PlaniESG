@@ -1,0 +1,160 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-02-14 00:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: frontend/templates/es/frontend/index.html:350
+#: frontend/templates/partials/slider_index.html:33
+#: frontend/templates/partials/slider_index.html:60
+#: frontend/templates/partials/slider_index.html:87
+msgid "Quiero conocer más"
+msgstr ""
+
+#: frontend/templates/layouts/base.html:222
+msgid "Gracias por subscribirse"
+msgstr ""
+
+#: frontend/templates/layouts/base.html:229
+msgid "Por favor escriba un correo electronico valido"
+msgstr ""
+
+#: frontend/templates/partials/banner_index.html:8
+msgid "slide1_html"
+msgstr ""
+
+#: frontend/templates/partials/banner_index.html:10
+msgid "Portafolio_t"
+msgstr ""
+
+#: frontend/templates/partials/footer.html:46
+msgid "Correo electrónico"
+msgstr ""
+
+#: frontend/templates/partials/footer.html:57
+msgid "Pinfra - Diseñado y generado por"
+msgstr ""
+
+#: frontend/templates/partials/menu.html:25 frontend/views.py:21
+msgid "Inicio"
+msgstr ""
+
+#: frontend/templates/partials/menu.html:30
+msgid "Medio Ambiente"
+msgstr ""
+
+#: frontend/templates/partials/menu.html:35 frontend/views.py:62
+msgid "Gestión Ambiental"
+msgstr ""
+
+#: frontend/templates/partials/menu.html:40 frontend/views.py:51
+#: frontend/views.py:72
+msgid "Vinculación con los ODS"
+msgstr ""
+
+#: frontend/templates/partials/menu.html:62 frontend/views.py:114
+msgid "Responsabilidad Social"
+msgstr ""
+
+#: frontend/templates/partials/menu.html:67 frontend/views.py:138
+msgid "Gobernanza"
+msgstr ""
+
+#: frontend/templates/partials/menu.html:77 frontend/views.py:155
+#: frontend/views.py:157
+msgid "Contacto"
+msgstr ""
+
+#: frontend/templates/partials/slider_index.html:30
+msgid ""
+"Hemos realizado grandes avances en la integración e institucionalización de "
+"un enfoque de sustentabilidad dentro de nuestra cultura, procesos y "
+"operaciones."
+msgstr ""
+
+#: frontend/templates/partials/slider_index.html:57
+msgid ""
+"A los esfuerzos por integrar la sustentabilidad dentro de nuestra "
+"estrategia, se suman las acciones y programas sociales que hemos emprendido "
+"en favor de las comunidades donde se ubican nuestros proyectos."
+msgstr ""
+
+#: frontend/templates/partials/slider_index.html:84
+msgid ""
+"Hemos realizado cambios y reforzamientos en nuestros sistemas de gobernanza, "
+"procurando siempre seguir alineados a nuestra metodología sustentable. "
+msgstr ""
+
+#: frontend/templates/registration/login.html:8
+msgid "Cifras Principales"
+msgstr ""
+
+#: frontend/templates/registration/login.html:18
+msgid "login5"
+msgstr ""
+
+#: frontend/templates/registration/login.html:26
+msgid "login1"
+msgstr ""
+
+#: frontend/templates/registration/login.html:26
+msgid "login2"
+msgstr ""
+
+#: frontend/templates/registration/login.html:34
+msgid "login3"
+msgstr ""
+
+#: frontend/templates/registration/login.html:38
+msgid "login4"
+msgstr ""
+
+#: frontend/templates/registration/login.html:42
+msgid "Acceder"
+msgstr ""
+
+#: frontend/views.py:31
+msgid "Materialidad"
+msgstr ""
+
+#: frontend/views.py:41
+msgid "Estrategia ASG"
+msgstr ""
+
+#: frontend/views.py:82
+msgid "Gestión de Recursos"
+msgstr ""
+
+#: frontend/views.py:92
+msgid "Residuos"
+msgstr ""
+
+#: frontend/views.py:102
+msgid "Contenido Descargable (Reporte)"
+msgstr ""
+
+#: frontend/views.py:127
+msgid "Cadena de Suministros"
+msgstr ""
+
+#: gmurano/settings.py:156
+msgid "English"
+msgstr ""
+
+#: gmurano/settings.py:157
+msgid "Spanish"
+msgstr ""

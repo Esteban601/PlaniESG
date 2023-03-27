@@ -1,0 +1,31 @@
+{% extends 'layouts/interior.html' %}
+{% load static %}
+{% block otherstyles %}
+
+{% endblock %}
+
+{% block wrapper %}
+    <div class="content-wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-justify">Para el desarrollo de una estrategia fundamentada y alineada a
+                        las necesidades y requerimientos de nuestros grupos de interés se llevó a cabo un estudio de
+                        materialidad en 2020, el cual es la base de nuestra estrategia ASG para identificar y gestionar
+                        los riesgos y oportunidades más relevantes para la organización.</p>
+
+                    <p class="text-justify">Con el fin de plasmar los temas de mayor relevancia tanto al interior como
+                        al exterior de la organización en nuestra matriz de materialidad se llevó
+                        a cabo la siguiente metodología:</p>
+                    <img class="img-fluid" src="{% static 'images/Metodologia.png' %}" alt="">
+
+                    <img class="img-fluid" src="{% static 'images/Matriz_ASG.png' %}" alt="">
+                    <img class="img-fluid" src="{% static 'images/Matriz_ASG1.png' %}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block otherscripts %}
+{% endblock %}

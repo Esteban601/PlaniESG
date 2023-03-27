@@ -1,0 +1,324 @@
+{% load static %}
+{% load i18n %}
+
+<!DOCTYPE html>
+<html lang="es" class="js" style="overflow-x: hidden">
+
+<head>
+    <title>Pinfra</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="icon" type="image/png" href="{% static 'images/favicon-pinfra.png' %}"/>
+    <style>
+        .preloader,
+        .preloader2,
+        .form-process {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        .preloader {
+            position: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            z-index: 999999;
+            background-color: #ffffff;
+            background-position: center center;
+            background-repeat: no-repeat;
+            text-align: center !important;
+        }
+
+        .preloader img {
+            width: 200px;
+        }
+
+        .revo-slider-emphasis-text {
+            font-size: 64px;
+            font-weight: 700;
+            letter-spacing: -1px;
+            font-family: var(--font-family-elementia);
+            padding: 15px 20px;
+            border-top: 2px solid #FFF;
+            border-bottom: 2px solid #FFF;
+        }
+
+        .revo-slider-desc-text {
+            font-size: 20px;
+            font-family: var(--font-family-elementia);
+            width: 650px;
+            text-align: center;
+            line-height: 1.5;
+        }
+
+        .revo-slider-caps-text {
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 3px;
+            font-family: var(--font-family-elementia);
+        }
+
+        .tp-video-play-button {
+            display: none !important;
+        }
+
+        .tp-caption {
+            white-space: nowrap;
+        }
+
+        .search-container {
+            position: absolute;
+            right: 30px;
+            top: 10px;
+            box-shadow: 2em 0 0 black;
+            width: 100%;
+        }
+
+        .search-box {
+            right: 7%;
+        / / right: 0;
+            height: 40px;
+            position: absolute;
+            top: 0;
+            padding-left: 2em;
+        / / -webkit-transform: translateX(20 %);
+        / / transform: translateX(20 %);
+            opacity: 0;
+        / / transition: all 0.4 s 0.3 s;
+            background-color: #222;
+            color: white;
+        }
+
+        .search-box .search-input {
+            border: 0;
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            caret-color: white;
+            color: white;
+        }
+
+        .search-box input::placeholder { /* Chrome, Firefox, Opera, Safari 1*/
+            color: white !important;
+            background-color: transparent;
+        }
+
+        .search-box .search-input:-ms-input-placeholder { /* Internet Explorer */
+            color: white;
+            background-color: transparent;
+        }
+
+        .search-box .search-input::-ms-input-placeholder { /* Microsoft Edge */
+            color: white;
+        }
+
+        .search-toggle {
+            width: 40px;
+            height: 40px;
+            padding: 0;
+            position: absolute;
+            right: -13px;
+            top: 40px;
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+
+        .search-container.show .search-box {
+            width: calc(50% - 5em);
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+            opacity: 1;
+        }
+
+        .search-container {
+            display: none;
+        }
+
+        .search-container.show {
+            display: inline-block;
+        }
+
+        #buscar .search-toggle i.fa-times {
+            display: none !important;
+        }
+
+        #buscar .search-toggle i.fa-search {
+            display: block;
+        }
+
+        #buscar .search-toggle.active i.fa-times {
+            display: block !important;
+        }
+
+        #buscar .search-toggle.active i.fa-search {
+            display: none !important;
+        }
+
+
+    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src=https://www.googletagmanager.com/gtag/js?id=G-9D4H2RX3TB></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-9D4H2RX3TB');
+    </script>
+</head>
+
+<body id="body" class="stretched" style="overflow-x: hidden">
+<div class="preloader text-center">
+    {#    <img src="{% static 'images/utils/preloader.gif' %}" alt="alternative text">#}
+</div>
+<div id="wrapper" class="clearfix">
+    {% block header %}
+        {% include 'partials/header.html' %}
+    {% endblock %}
+
+    {% block banner %}
+    {% endblock %}
+
+    {% block wrapper %}
+    {% endblock %}
+</div>
+
+{% include 'partials/footer.html' %}
+
+<div id="gotoTop" role="presentation" class="icon-angle-up"></div>
+
+{% include 'partials/scripts.html' %}
+{% include 'partials/styles.html' %}
+<script>var locale = '{{ request.LANGUAGE_CODE }}'</script>
+
+{% block otherstyles %}
+
+{% endblock %}
+
+<script>
+    $(function () {
+        $("#subscription").click(function () {
+            if ($("#subscription_form").valid()) {
+                $('.preloader').show()
+                $.ajax({
+                    type: 'POST',
+                    url: "{% url 'send-subscription' %}",
+                    dataType: 'json',
+                    data: $("#subscription_form").serialize(),
+                    complete: function (a, b) {
+                        console.log("error", a, b)
+                        $('.preloader').delay(1500).fadeOut(500);
+
+                    },
+                    success: function (response) {
+                        alert('{% trans "Gracias por subscribirse" %}' + $("#email_subscription").val());
+                        $("#email_subscription").val('');
+                        $('.preloader').fadeOut(500);
+
+                    }
+                });
+            } else {
+                alert('{% trans "Por favor escriba un correo electronico valido"%}');
+            }
+        })
+    });
+
+    $(".scroll-to-target").on('click', function (event) {
+        event.preventDefault();
+        var target = $(this).attr('href');
+        // animate
+        $('html, body, header').animate({
+            scrollTop: $(target).offset().top - ($(window).width() > 768 ? 80 : 15)
+        }, 1000);
+    });
+
+    if ($('#newsletter-form-footer').length) {
+        var newsletter_form_footer = $('#newsletter-form-footer');
+        newsletter_form_footer.validate({
+            highlight: function (element) {
+                $(element)
+                    .addClass('is-invalid')
+                    .removeClass('is-valid')
+                    .parent()
+                    .removeClass('has-success')
+                    .addClass('has-danger');
+            },
+            success: function (label, element) {
+                $(element)
+                    .removeClass('is-invalid')
+                    .addClass('is-valid')
+                    .parent()
+                    .removeClass('has-danger')
+                    .addClass('has-success')
+                    .find('label.error')
+                    .remove();
+            },
+            errorPlacement: function (error, element) {
+                if (element.attr('type') == 'radio' || element.attr('type') == 'checkbox') {
+                    error.appendTo(element.parent().parent());
+                } else {
+                    error.insertAfter(element);
+                }
+            }
+        });
+
+        var text_success_suscrb = (locale === 'es') ? 'Correo enviado satisfactoriamente.' : 'Mail sent successfully.';
+        var text_danger_suscrb = (locale === 'es') ? 'Hubo un error al enviar su correo.' : 'There was an error sending your email.';
+
+        function button_loading(button, icon, finish) {
+            if (!finish) {
+                $(button).prepend(icon);
+                $(button).addClass('loading');
+            } else {
+                $(button + ' i').remove();
+                $(button).removeClass('loading');
+            }
+        }
+
+        function alert_animations(container, type, text) {
+            var htmlAlert = '<div class="alert alert-' + type + ' mt-2">' + text + '</div>';
+            $(container).prepend(htmlAlert);
+            $(container + " .alert").first().hide().fadeIn(800).delay(2000).fadeOut(800, function () {
+                $(this).remove();
+            });
+        }
+
+        newsletter_form_footer.submit(function (e) {
+            e.preventDefault();
+            if (newsletter_form_footer.valid()) {
+                button_loading('#newsletter-submit-footer', '<i class="fa fa-spinner fa-spin mr-2"></i>');
+                $.ajax({
+                    type: 'POST',
+                    url: '{% url 'send-subscription' %}',
+                    data: newsletter_form_footer.serialize(),
+                    success: function (response) {
+                        if (response.success === 'true') {
+                            $('input').val('');
+                            $('input').removeClass('is-valid valid');
+                            setTimeout(function () {
+                                $('#newsletter-submit-footer').addClass('loading');
+                            }, 50);
+                            alert_animations('.alert-message-footer', 'success', text_success_suscrb);
+                        } else {
+                            alert_animations('.alert-message-footer', 'danger', text_danger_suscrb);
+                        }
+                        button_loading('#newsletter-submit-footer', '<i class="fa fa-spinner fa-spin mr-2"></i>', true);
+                    }
+                });
+            }
+        });
+    }
+</script>
+
+{% block otherscripts %}
+{% endblock %}
+</body>
+</html>

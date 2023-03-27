@@ -1,0 +1,113 @@
+{% load i18n %}
+{% load static %}
+
+<section id="slider" class="slider-element slider-parallax revslider-wrap clearfix">
+    <div id="rev_slider_579_1_wrapper" class="rev_slider_wrapper " style="padding:0px;">
+        <div id="rev_slider_579_1" class="rev_slider " style="display:none;" data-version="5.1.4">
+            <ul>
+                <li class="dark" data-transition="fade" data-slotamount="1" data-masterspeed="1500" data-delay="9000"
+                    data-thumb="{% static 'images/headers/header-home01.jpg' %}" data-fstransition="fade"
+                    data-fsmasterspeed="1000" data-fsslotamount="7" data-saveperformance="off" data-title="dos">
+                    <img src="{% static 'images/headers/header-home01.jpg' %}" role="img"
+                         aria-label="first slider presented" alt="video_woman_cover3"
+                         data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
+
+                    <div class="tp-caption ltl tp-resizeme revo-slider-emphasis-text nopadding noborder"
+                         data-x="37"
+                         data-y="[260,300,340,130]"
+                         data-transform_in="x:5;y:0;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:5;skewY:0;opacity:0;s:800;transformPerspective:200;transformOrigin:50% 0%;"
+                         data-speed="800"
+                         data-fontsize="['35','30','30','15']"
+                         data-lineheight="['50','45','45','45']"
+                         data-start="1400"
+                         data-splitout="none"
+                         data-elementdelay="0.1"
+                         data-endelementdelay="0.1"
+                         data-endspeed="1000"
+                         data-width="['1000','900','560','380']"
+                         data-height="none"
+                         data-endeasing="Power4.easeIn" style="z-index: 11; white-space:revert;">
+                        {% trans 'Hemos realizado grandes avances en la integración e institucionalización de un enfoque de sustentabilidad dentro de nuestra cultura, procesos y operaciones.' %}<br/>
+
+                        <a href="{% url 'gestion-ambiental' %}"
+                           class="button button-border button-rounded button-large noleftmargin topmargin-sm mb-5 border-white text-white">{% trans 'Quiero conocer más' %}</a>
+                    </div>
+                </li>
+                <li class="dark" data-transition="fade" data-slotamount="1" data-masterspeed="1500" data-delay="9000"
+                    data-thumb="{% static 'images/headers/header-home02.jpg' %}" data-fstransition="fade"
+                    data-fsmasterspeed="1000" data-fsslotamount="7" data-saveperformance="off" data-title="dos">
+                    <img src="{% static 'images/headers/header-home02.jpg' %}" alt="video_woman_cover3"
+                         data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
+
+                    <div class="tp-caption ltl tp-resizeme revo-slider-emphasis-text nopadding noborder"
+                         data-x="37"
+                         data-y="[260,300,340,210]"
+                         data-transform_in="x:5;y:0;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:5;skewY:0;opacity:0;s:800;transformPerspective:200;transformOrigin:50% 0%;"
+                         data-speed="800"
+                         data-fontsize="['35','30','30','15']"
+                         data-lineheight="['50','45','45','45']"
+                         data-start="1400"
+                         data-splitout="none"
+                         data-elementdelay="0.1"
+                         data-endelementdelay="0.1"
+                         data-endspeed="1000"
+                         data-width="['1000','900','560','380']"
+                         data-height="none"
+                         data-endeasing="Power4.easeIn" style="z-index: 11; font-size: 30px;white-space:revert;">
+                        {% trans 'A los esfuerzos por integrar la sustentabilidad dentro de nuestra estrategia, se suman las acciones y programas sociales que hemos emprendido en favor de las comunidades donde se ubican nuestros proyectos.' %}
+                        <br/>
+                        <a href="{% url 'responsabilidad-social' %}"
+                           class="button button-border button-rounded button-large noleftmargin topmargin-sm mb-5 border-white text-white">{% trans 'Quiero conocer más' %}</a>
+                    </div>
+                </li>
+                <li class="dark" data-transition="fade" data-slotamount="1" data-masterspeed="1500" data-delay="9000"
+                    data-thumb="{% static 'images/headers/header-home03.jpg' %}" data-fstransition="fade"
+                    data-fsmasterspeed="1000" data-fsslotamount="7" data-saveperformance="off" data-title="dos">
+                    <img src="{% static 'images/headers/header-home03.jpg' %}" alt="video_woman_cover3"
+                         data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
+
+                    <div class="tp-caption ltl tp-resizeme revo-slider-emphasis-text nopadding noborder"
+                         data-x="37"
+                         data-y="[260,300,340,210]"
+                         data-transform_in="x:5;y:0;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:5;skewY:0;opacity:0;s:800;transformPerspective:200;transformOrigin:50% 0%;"
+                         data-speed="800"
+                         data-fontsize="['35','30','30','15']"
+                         data-lineheight="['50','45','45','45']"
+                         data-start="1400"
+                         data-splitout="none"
+                         data-elementdelay="0.1"
+                         data-endelementdelay="0.1"
+                         data-endspeed="1000"
+                         data-width="['1000','900','560','380']"
+                         data-height="none"
+                         data-endeasing="Power4.easeIn" style="z-index: 11; font-size: 30px;white-space:revert;">
+                        {% trans 'Hemos realizado cambios y reforzamientos en nuestros sistemas de gobernanza, procurando siempre seguir alineados a nuestra metodología sustentable. ' %}
+                        <br/>
+                        <a href="{% url 'gobernanza' %}"
+                           class="button button-border button-rounded button-large noleftmargin topmargin-sm mb-5 border-white text-white">{% trans 'Quiero conocer más' %}</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+{#<div class="display-banner-home">#}
+{#    <svg id="Grupo_17" data-name="Grupo 17" xmlns="http://www.w3.org/2000/svg" width="44.045" height="298.798"#}
+{#         viewBox="0 0 44.045 298.798">#}
+{#        <g id="Grupo_16" data-name="Grupo 16">#}
+{#            <a aria-label="this opens in a new tab" target="_blank"#}
+{#               xlink:href="https://www.linkedin.com/company/elementia/">#}
+{#                <path id="Trazado_18" data-name="Trazado 18"#}
+{#                      d="M1690.1,319.456h1.015q6.829,0,13.639,5.264,5.053,5.075,6.174,9.135a13.055,13.055,0,0,1,1.015,3.859q.255,2.169.254,2.823v2.052a23.87,23.87,0,0,1-2.051,7.845,22.569,22.569,0,0,1-10.4,10.4,23.926,23.926,0,0,1-9.008,2.072h-.254a21.829,21.829,0,0,1-14.779-5.921q-4.209-4.377-5.267-7.718a21.126,21.126,0,0,1-1.542-6.555v-2.707q0-6.639,5.517-13.49Q1681.638,319.456,1690.1,319.456Zm-8.226,13.871v.782a2.189,2.189,0,0,0,2.432,1.924,2.375,2.375,0,0,0,2.326-1.924v-.127q0-1.987-2.453-2.326A2.509,2.509,0,0,0,1681.872,333.327Zm.254,4.63v11.968c.028.17.112.254.253.254h3.594a.224.224,0,0,0,.254-.254V338.212l-.254-.507h-3.594Q1682.126,337.746,1682.126,337.957Zm10.8,1.036h-.274V337.7h-4.1v12.221c.028.17.112.254.253.254h3.594a.224.224,0,0,0,.254-.254V343.37q.316-2.706,2.2-2.706,2.179,0,2.179,2.706v6.555c.028.17.112.254.254.254h3.869v-8.1a5.283,5.283,0,0,0-2.072-4,8.2,8.2,0,0,0-1.924-.634h-1.289A4.423,4.423,0,0,0,1692.93,338.993Z"#}
+{#                      transform="translate(-1668.466 -268.442)" fill="#e8e8e8"></path>#}
+{#            </a>#}
+{##}
+{#            <a aria-label="this opens in a new tab" target="_blank"#}
+{#               xlink:href="https://www.facebook.com/ElementiaOficial">#}
+{#                <path id="Trazado_19" data-name="Trazado 19"#}
+{#                      d="M1689.673,365.475h1.312q8.033,0,15.225,6.829,5.051,6.133,5.561,11.1a25.913,25.913,0,0,1,.381,2.981v1.8q0,4.355-2.961,10.086a22.566,22.566,0,0,1-12.284,9.811,27.289,27.289,0,0,1-6.323,1.036h-.507q-8.353,0-15.5-6.723a22.6,22.6,0,0,1-6.069-15.626v-.254a.974.974,0,0,1,.126-.507c0-.1-.042-.148-.126-.148a24.33,24.33,0,0,1,3.362-10.192q4.016-6.534,12.39-9.3A20.285,20.285,0,0,1,1689.673,365.475Zm-2.96,13.934.129,4c0,.127-.129.261-.382.4h-2.2v4.5h2.2c.128,0,.253.134.382.4v11.1l.062.783h4.589v-12.01c.027-.183.112-.275.254-.275h3.742q.253,0,.655-4.25v-.253h-4.4a.225.225,0,0,1-.254-.254v-3.108q0-1.987,2.325-2.2h2.581v-3.87q0-.381-2.707-.381h-.655q-4.462,0-5.816,3.341A13.98,13.98,0,0,0,1686.713,379.409Z"#}
+{#                      transform="translate(-1668.508 -263.362)" fill="#e8e8e8"></path>#}
+{#            </a>#}
+{#        </g>#}
+{#    </svg>#}
+{#</div>#}

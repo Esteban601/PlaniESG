@@ -1,0 +1,802 @@
+{% extends 'layouts/base.html' %}
+{% load static i18n %}
+{% block otherstyles %}
+    <link rel="stylesheet" href="{% static 'stylesheets/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'javascripts/fullcalendar/lib/main.css' %}">
+    <style>
+        .fc td, .fc th {
+            border-style: none !important;
+        }
+
+        .fc-theme-standard .fc-scrollgrid {
+            border: none;
+        }
+
+        .repo-left {
+            background-color: #f2f2f2;
+            padding: 100px;
+            border-top: 4px solid #025D97;
+            height: 350px;
+        }
+
+        .calendar-right {
+            background-color: #f2f2f2;
+            border-top: 4px solid #66BAEA;
+            border-left: 2px solid #fff;
+            height: 350px;
+        }
+
+        table {
+            margin-bottom: unset;
+            overflow: hidden !important;
+        }
+
+        .fc-daygrid-day-events {
+            min-height: initial !important;
+        }
+
+        #calendar > .fc-header-toolbar {
+            margin-bottom: 0.5em;
+        }
+
+        #calendar {
+            width: 70%;
+            margin: 0 auto;
+            font-size: 10px;
+        }
+
+        .fc-daygrid-day-top {
+            justify-content: center;
+        }
+
+        #calendar .fc-scroller.fc-scroller-liquid-absolute {
+            overflow: hidden !important;
+        }
+
+        #calendar a.fc-daygrid-day-number {
+            z-index: 0 !important;
+        }
+
+        @media (min-width: 320px) and (max-width: 480px) {
+            #calendar {
+                width: 100%;
+            }
+
+            #calendar .fc-col-header {
+                width: 100% !important;
+            }
+
+            .calendar-right {
+                margin-top: 15px;
+            }
+        }
+    </style>
+{% endblock %}
+
+{% block wrapper %}
+    {% include 'partials/slider_index.html' %}
+    {#    <section class="content-wrap pt-4 mb-0">#}
+    {#        <div class="clearfix">#}
+    {#            <h1 class="text-center tc-blue mt-5 mb-5">Nuestras Marcas </h1>#}
+    {#            <div class="col-12">#}
+    {#                <div id="oc-clients"#}
+    {#                     class="nobgcolor notopmargin owl-carousel owl-carousel-full image-carousel carousel-widget"#}
+    {#                     data-margin="" data-loop="true" data-nav="false" data-autoplay="2000" data-items="8"#}
+    {#                     data-pagi="false" data-items-xs="1"#}
+    {#                     data-items-sm="2" data-items-md="3" data-items-lg="5" data-items-xl="5">#}
+    {#                    <div class="oc-item">#}
+    {#                        <a href="https://jw-marriott.marriott.com" aria-label="this opens in a new tab"#}
+    {#                           target="_blank">#}
+    {#                            <img src="{% static 'images/empresas/11c.png' %}"#}
+    {#                                 alt="Clients"></a>#}
+    {#                    </div>#}
+    {#                    <div class="oc-item">#}
+    {#                        <a href="https://www.marriott.com/default.mi"#}
+    {#                           aria-label="this opens in a new tab" target="_blank">#}
+    {#                            <img src="{% static 'images/empresas/11b.png' %}"#}
+    {#                                 alt="Clients"></a>#}
+    {#                    </div>#}
+    {#                    <div class="oc-item">#}
+    {#                        <a href="http://www.hcg.com.mx" aria-label="this opens in a new tab" target="_blank">#}
+    {#                            <img src="{% static 'images/empresas/2b.png' %}"#}
+    {#                                 alt="Clients"></a>#}
+    {#                    </div>#}
+    {#                    <div class="oc-item">#}
+    {#                        <a href="https://www.staybridge.com/hotels/us/es/reservation"#}
+    {#                           aria-label="this opens in a new tab"#}
+    {#                           target="_blank">#}
+    {#                            <img src="{% static 'images/empresas/14.png' %}"#}
+    {#                                 alt="Clients"></a>#}
+    {#                    </div>#}
+    {#                    <div class="oc-item">#}
+    {#                        <a href="https://www.wyndhamhotels.com/es-xl" aria-label="this opens in a new tab"#}
+    {#                           target="_blank">#}
+    {#                            <img src="{% static 'images/empresas/13.png' %}"#}
+    {#                                 alt="Clients"></a>#}
+    {#                    </div>#}
+    {#                    <div class="oc-item">#}
+    {#                        <a href="https://www.ihg.com/holidayinnexpress/hotels/us/es/reservation"#}
+    {#                           aria-label="this opens in a new tab"#}
+    {#                           target="_blank">#}
+    {#                            <img src="{% static 'images/empresas/12.png' %}"#}
+    {#                                 alt="Clients"></a>#}
+    {#                    </div>#}
+    {#                    <div class="oc-item">#}
+    {#                        <a href="https://www.ihg.com/holidayinnexpress/hotels/us/es/reservation"#}
+    {#                           aria-label="this opens in a new tab"#}
+    {#                           target="_blank">#}
+    {#                            <img src="{% static 'images/empresas/10.png' %}"#}
+    {#                                 alt="Clients"></a>#}
+    {#                    </div>#}
+    {#                    <div class="oc-item">#}
+    {#                        <a href="https://www.ihg.com/holidayinnexpress/hotels/us/es/reservation"#}
+    {#                           aria-label="this opens in a new tab"#}
+    {#                           target="_blank">#}
+    {#                            <img src="{% static 'images/empresas/009.png' %}"#}
+    {#                                 alt="Clients"></a>#}
+    {#                    </div>#}
+    {#                    <div class="oc-item">#}
+    {#                        <a href="https://www.hilton.com/en/hampton/" aria-label="this opens in a new tab"#}
+    {#                           target="_blank">#}
+    {#                            <img src="{% static 'images/empresas/007.png' %}"#}
+    {#                                 alt="Clients"></a>#}
+    {#                    </div>#}
+    {#                    <div class="oc-item">#}
+    {#                        <a href="https://fairfield.marriott.com" aria-label="this opens in a new tab"#}
+    {#                           target="_blank">#}
+    {#                            <img src="{% static 'images/empresas/006.png' %}"#}
+    {#                                 alt="Clients"></a><br>#}
+    {#                    </div>#}
+    {#                    <div class="oc-item">#}
+    {#                        <a href="https://www.ihg.com/crowneplaza/hotels/us/es/reservation"#}
+    {#                           aria-label="this opens in a new tab"#}
+    {#                           target="_blank">#}
+    {#                            <img src="{% static 'images/empresas/004.png' %}"#}
+    {#                                 alt="Clients"></a><br>#}
+    {#                    </div>#}
+    {#                    <div class="oc-item">#}
+    {#                        <a href="https://courtyard.marriott.com" aria-label="this opens in a new tab"#}
+    {#                           target="_blank">#}
+    {#                            <img src="{% static 'images/empresas/003.png' %}"#}
+    {#                                 alt="Clients"></a><br>#}
+    {#                    </div>#}
+    {#                    <div class="oc-item">#}
+    {#                        <a href="https://ac-hotels.marriott.com" aria-label="this opens in a new tab"#}
+    {#                           target="_blank">#}
+    {#                            <img src="{% static 'images/empresas/001.png' %}"#}
+    {#                                 alt="Clients"></a><br>#}
+    {#                    </div>#}
+    {#                </div>#}
+    {#            </div>#}
+    {#        </div>#}
+    {#    </section>#}
+    {#    <section id="content" class="">#}
+    {#        <div class="clearfix">#}
+    {#            <div class="container mt-5 pt-1 mb-0 pb-0">#}
+    {#                <div class="auto-container">#}
+    {#                    <h1 class="text-center tc-blue mt-5 mb-5">Avanzando hacia la Sustentabilidad</h1>#}
+    {##}
+    {#                    <div class="row clearfix d-flex align-items-center flex-wrap">#}
+    {#                        <div class="col-md-6 wow fadeInUp mb-5 mb-md-0" data-wow-duration="2s">#}
+    {#                            <div class="image display-block-image hidden-xs text-right">#}
+    {#                                <img class="wow fadeInLeft" data-wow-duration="2s"#}
+    {#                                     src="{% static 'images/Modelo_ASG.png' %}" alt="alternative text">#}
+    {#                            </div>#}
+    {#                        </div>#}
+    {#                        <div class="col-md-6 d-flex" style="align-items: center">#}
+    {#                            <div class="why-choose-text">#}
+    {#                                <h2 class="font-weight-bold">Modelo ASG</h2>#}
+    {#                                <div class="text texto1">#}
+    {#                                    <p class="text-justify">En Fibra Inn estamos comprometidos con la sostenibilidad y#}
+    {#                                        entendemos la responsabilidad que tiene la organización en materia ambiental,#}
+    {#                                        social y de gobernanza para cumplir con las expectativas de los grupos de#}
+    {#                                        interés#}
+    {#                                        y generar un impacto positivo en el medio ambiente y en las comunidades en las#}
+    {#                                        que operamos.</p>#}
+    {#                                </div>#}
+    {#                            </div>#}
+    {#                        </div>#}
+    {#                    </div>#}
+    {#                </div>#}
+    {#            </div>#}
+    {##}
+    {#            <div class="container mb-0 pb-0">#}
+    {#                <div class="auto-container">#}
+    {#                    <div class="row clearfix d-flex align-items-center flex-wrap">#}
+    {#                        <div class="col-md-6">#}
+    {#                            <div class="why-choose-text">#}
+    {#                                <div class="title">#}
+    {#                                    <h2 class="font-weight-bold">Medio Ambiente</h2>#}
+    {#                                </div>#}
+    {#                                <div class="text mb-4 mb-md-0">#}
+    {#                                    <p class="text-justify">El cuidado del medio ambiente es un tema de alta#}
+    {#                                        relevancia dentro de Fibra Inn. Buscamos generar consciencia y una gestión#}
+    {#                                        adecuada para cubrir las expectativas de nuestros grupos de interés tanto#}
+    {#                                        al interior como al exterior de la organización.</p>#}
+    {#                                </div>#}
+    {#                            </div>#}
+    {#                        </div>#}
+    {#                        <div class="col-md-6 mb-4">#}
+    {#                            <div class="image display-block-image hidden-xs">#}
+    {#                                <img class="wow fadeInRight" data-wow-duration="2s"#}
+    {#                                     src="{% static 'images/Medio_ambiente.png' %}" alt="alternative text">#}
+    {#                            </div>#}
+    {#                        </div>#}
+    {#                    </div>#}
+    {#                </div>#}
+    {#            </div>#}
+    {#        </div>#}
+    {#    </section>#}
+    {#    <section id="content">#}
+    {#        <div class="clearfix">#}
+    {#            <div class="container mb-0 pb-0">#}
+    {#                <div class="auto-container">#}
+    {#                    <div class="row clearfix d-flex align-items-center flex-wrap">#}
+    {#                        <div class="col-md-6 wow fadeInUp mb-5 mb-md-0" data-wow-duration="2s">#}
+    {#                            <div class="image display-block-image hidden-xs text-right">#}
+    {#                                <img class="wow fadeInLeft" data-wow-duration="2s"#}
+    {#                                     src="{% static 'images/Responsabilidad_social.png' %}"#}
+    {#                                     alt="alternative text">#}
+    {#                            </div>#}
+    {#                        </div>#}
+    {#                        <div class="col-md-6 d-flex" style="align-items: center">#}
+    {#                            <div class="why-choose-text">#}
+    {#                                <h2 class="font-weight-bold">Responsabilidad Social</h2>#}
+    {#                                <div class="text texto1">#}
+    {#                                    <p class="text-justify">En Fibra Inn somos conscientes del impacto que#}
+    {#                                        podemos generar en nuestros colaboradores, huéspedes, proveedores y#}
+    {#                                        comunidades en las que se encuentran nuestros hoteles, por lo que se#}
+    {#                                        han implementado diversas medidas e iniciativas que nos permitan crear#}
+    {#                                        vínculos fuertes y duraderos, entender sus necesidades y trabajar en#}
+    {#                                        conjunto para la generación de valor y un mayor impacto positivo.</p>#}
+    {#                                </div>#}
+    {#                            </div>#}
+    {#                        </div>#}
+    {#                    </div>#}
+    {#                </div>#}
+    {#            </div>#}
+    {##}
+    {#            <div class="container mb-5 pb-5">#}
+    {#                <div class="auto-container">#}
+    {#                    <div class="row clearfix d-flex align-items-center flex-wrap">#}
+    {#                        <div class="col-md-6">#}
+    {#                            <div class="why-choose-text">#}
+    {#                                <div class="title">#}
+    {#                                    <h2 class="font-weight-bold">Cadena de Suministros</h2>#}
+    {#                                </div>#}
+    {#                                <div class="text mb-4 mb-md-0">#}
+    {#                                    <p class="text-justify">En Fibra Inn contamos con una política de#}
+    {#                                        abastecimiento#}
+    {#                                        central,#}
+    {#                                        ya que creemos firmemente en nuestro compromiso y#}
+    {#                                        responsabilidad en materia ASG en todas nuestras actividades, incluyendo#}
+    {#                                        la cadena de suministro.</p>#}
+    {#                                </div>#}
+    {#                            </div>#}
+    {#                        </div>#}
+    {#                        <div class="col-md-6 mb-4">#}
+    {#                            <div class="image display-block-image hidden-xs">#}
+    {#                                <img class="wow fadeInRight" data-wow-duration="2s"#}
+    {#                                     src="{% static 'images/Cadena_suministros.png' %}" alt="alternative text">#}
+    {#                            </div>#}
+    {#                        </div>#}
+    {#                    </div>#}
+    {#                </div>#}
+    {#            </div>#}
+    {#            <div id="consumo" class="content-wrap pt-5 pb-3 finn-counto">#}
+    {#                <div class="container">#}
+    {#                    <div class="section-title mb-3 text-center">#}
+    {#                        <h1 class="title-effect tc-blue">Cifras Relevantes de la Gestión de Recursos#}
+    {#                            <br>(Consumo)#}
+    {#                        </h1>#}
+    {#                    </div>#}
+    {#                    <div class="row honeycomb-wrapper justify-content-center">#}
+    {#                        <div class="col-md-6 col-lg-4 tile">#}
+    {#                            <div class="honeycomb">#}
+    {#                                <svg class="honeycomb-path honeycomb-1" xmlns="http://www.w3.org/2000/svg"#}
+    {#                                     width="150" viewBox="0 0 160 160">#}
+    {#                                    <circle cx="80" cy="80" r="66" stroke-width="2" fill="none"></circle>#}
+    {#                                </svg>#}
+    {#                                <div class="content">#}
+    {#                                    <h2 class="count" data-speed="1500" data-to="158360" data-in-viewport="yes"#}
+    {#                                        data-decimals="0">0</h2><span class="title-effect "></span>#}
+    {#                                </div>#}
+    {#                            </div>#}
+    {#                            <a href="#"><h5><b>ENERGIA (GJ)</b></h5></a>#}
+    {#                        </div>#}
+    {#                        <div class="col-md-6 col-lg-4 tile">#}
+    {#                            <div class="honeycomb">#}
+    {#                                <svg class="honeycomb-path honeycomb-1" xmlns="http://www.w3.org/2000/svg"#}
+    {#                                     width="150" viewBox="0 0 160 160">#}
+    {#                                    <circle cx="80" cy="80" r="66" stroke-width="2" fill="none"></circle>#}
+    {#                                </svg>#}
+    {#                                <div class="content">#}
+    {#                                    <h2 class="count" data-speed="1500" data-to="411528" data-in-viewport="yes"#}
+    {#                                        data-decimals="0">0</h2><span class="title-effect "></span>#}
+    {#                                </div>#}
+    {#                            </div>#}
+    {#                            <a href="#"><h5><b>AGUA (m<sup>3</sup>)</b></h5><br></a>#}
+    {#                        </div>#}
+    {#                        <div class="col-md-6 col-lg-4 tile">#}
+    {#                            <div class="honeycomb">#}
+    {#                                <svg class="honeycomb-path honeycomb-1" xmlns="http://www.w3.org/2000/svg"#}
+    {#                                     width="150" viewBox="0 0 160 160">#}
+    {#                                    <circle cx="80" cy="80" r="66" stroke-width="2" fill="none"></circle>#}
+    {#                                </svg>#}
+    {#                                <div class="content">#}
+    {#                                    <h2 class="count" data-speed="1500" data-to="15931" data-in-viewport="yes"#}
+    {#                                        data-decimals="0">0</h2><span class="title-effect "></span>#}
+    {#                                </div>#}
+    {#                            </div>#}
+    {#                            <a href="#"><h5><b>GEI (TonCO<sub>2</sub>)</b><br></h5></a>#}
+    {#                        </div>#}
+    {#                    </div>#}
+    {#                </div>#}
+    {#            </div>#}
+
+    <section id="content" class="">
+        <div class="clearfix">
+            <div class="container mt-5 pt-1 mb-0 pb-0">
+                <div class="auto-container">
+                    <div class="row clearfix d-flex align-items-center flex-wrap">
+                        <div class="col-md-7 d-flex" style="align-items: center">
+                            <div class="why-choose-text">
+                                <div class="text texto1">
+                                    <p class="text-justify">El plan maestro para conseguir un futuro sostenible para
+                                        todos. Se interrelacionan entre sí e incorporan los desafíos globales a los que
+                                        nos enfrentamos día a día, como la pobreza, la desigualdad, el clima, la
+                                        degradación ambiental, la prosperidad, la paz y la justicia.</p>
+                                    <a href="{% url 'vinculacion-ods' %}"
+                                       class="button button-border button-rounded button-large noleftmargin topmargin-sm mb-5">{% trans 'Quiero conocer más' %}</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5 wow fadeInUp mb-5 mb-md-0" data-wow-duration="2s">
+                            <div class="image display-block-image hidden-xs text-right">
+                                <img class="wow fadeInRight" data-wow-duration="2s"
+                                     src="{% static 'images/ODS-agenda-2030.png' %}" alt="alternative text">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <h1 class="text-center tc-blue mt-5 mb-5">Principales Avances en Gestión Ambiental</h1>
+    <div class="container">
+    <ul class="nav nav-tabs d-flex flex-wrap justify-content-between plan-accion" id="cadena" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active w-100" id="tab1-tab" data-toggle="tab" data-target="#tab1"
+                    type="button" role="tab" aria-controls="home" aria-selected="true">Arranque del Plan de Energía
+                Limpia
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link w-100" id="tab2-tab" data-toggle="tab" data-target="#tab2" type="button"
+                    role="tab" aria-controls="profile" aria-selected="false">Reforestación en el tramo La Gloria-San
+                Fernando de la
+                autopista Monterrey-Nuevo Laredo
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link w-100" id="tab3-tab" data-toggle="tab" data-target="#tab3" type="button"
+                    role="tab" aria-controls="contact" aria-selected="false">Conservación del medio ambiente en
+                Cuyutlán,
+                Colima para la preservación y cuidado de la tortuga
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link w-100" id="tab4-tab" data-toggle="tab" data-target="#tab4" type="button"
+                    role="tab" aria-controls="contact" aria-selected="false">Programa de Bonos de Carbono
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link w-100" id="tab5-tab" data-toggle="tab" data-target="#tab5" type="button"
+                    role="tab" aria-controls="contact" aria-selected="false">Dulce Camino
+            </button>
+        </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
+            <div class="text-center">
+                <img class="img-fluid" src="{% static 'images/energia_limpia.png' %}" width="600" height="700" alt="">
+            </div>
+        </div>
+        <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
+            <div class="text-center">
+                <img class="img-fluid" src="{% static 'images/reforestacion.png' %}" width="600" height="700" alt="">
+            </div>
+        </div>
+
+        <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">
+            <div class="text-center">
+                <img class="img-fluid" src="{% static 'images/conservacion.png' %}" width="600" height="700" alt="">
+            </div>
+        </div>
+        <div class="tab-pane fade" id="tab4" role="tabpanel" aria-labelledby="tab4-tab">
+            <div class="text-center">
+                <img class="img-fluid" src="{% static 'images/bosque.png' %}" width="600" height="700" alt="">
+            </div>
+        </div>
+        <div class="tab-pane fade" id="tab5" role="tabpanel" aria-labelledby="tab5-tab">
+            <div class="text-center">
+                <img class="img-fluid" src="{% static 'images/comunidades.png' %}" width="600" height="700" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="pt-5 pb-5 mb-4">
+        <div class="container">
+            <div class="section-title mb-3 text-center">
+                <h1 class="title-effect tc-blue"></h1>
+            </div>
+            <div class="row justify-content-center align-items-center row-eq-height">
+                <div class=" col-md-6 repo-left">
+                    <h3 class="text-center text-dark mb-2 text-uppercase font-weight-bold">Descargar reporte
+                        anual</h3>
+                    <div class="d-flex flex-column pt-1">
+                        <a target="_blank"
+                           href="http://cdn.investorcloud.net/pinfra/InformacionFinanciera/InformesAnuales/2021-Anual.pdf"
+                           class="text-center">
+                            <i class="fa fa-file-text fa-3x mb-3"></i>
+                            <p class="mb-0">Informe ASG 2021</p>
+                        </a>
+                    </div>
+                </div>
+                <div class=" col-md-6 calendar-right">
+                    <h3 class="text-center mb-3 text-dark text-uppercase font-weight-bold">Calendario</h3>
+                    <div id='calendar'></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {#    </div>#}
+    {#    </section>#}
+
+{% endblock %}
+{% block otherscripts %}
+    <script src="{% static 'javascripts/wow.min.js' %}"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <link rel="stylesheet" type="text/css" href="{% static 'stylesheets/css/index_comp.min.css' %}?v=1.0.1"/>
+
+    <script src="{% static 'javascripts/js/rs-plugin/jquery.themepunch.tools.min.js' %}"></script>
+    <script src="{% static 'javascripts/js/rs-plugin/jquery.themepunch.tools.min.js' %}"></script>
+    <script src="{% static 'javascripts/js/rs-plugin/jquery.themepunch.revolution.min.js' %}"></script>
+    <script src="{% static 'javascripts/js/rs-plugin/extensions/revolution.extension.video.min.js' %}"></script>
+    <script src="{% static 'javascripts/js/rs-plugin/extensions/revolution.extension.slideanims.min.js' %}"></script>
+    <script src="{% static 'javascripts/js/rs-plugin/extensions/revolution.extension.actions.min.js' %}"></script>
+    <script src="{% static 'javascripts/js/rs-plugin/extensions/revolution.extension.layeranimation.min.js' %}"></script>
+    <script src="{% static 'javascripts/js/rs-plugin/extensions/revolution.extension.kenburn.min.js' %}"></script>
+    <script src="{% static 'javascripts/js/rs-plugin/extensions/revolution.extension.navigation.min.js' %}"></script>
+    <script src="{% static 'javascripts/js/rs-plugin/extensions/revolution.extension.migration.min.js' %}"></script>
+    <script src="{% static 'javascripts/js/rs-plugin/extensions/revolution.extension.parallax.min.js' %}"></script>
+
+    <script src='{% static 'javascripts/fullcalendar/lib/main.js' %}'></script>
+    <script src='{% static 'javascripts/fullcalendar/lib/locales-all.js' %}'></script>
+
+    <script src="{% static 'javascripts/jquery.waypoints.min.js' %}"></script>
+    <script src="{% static 'javascripts/countTo.js' %}"></script>
+    <script>
+        $(window).on('load', function () {
+            $('.finn-counto').each(function () {
+                finn_waypoint('#' + $(this).attr('id'));
+                finn_counto('#' + $(this).attr('id'));
+            });
+        });
+
+        function finn_waypoint(elemento) {
+            var waypoint = new Waypoint({
+                element: $(elemento),
+                handler: function (direction) {
+                    $(elemento + ' .count').trigger('on-appear');
+                },
+                offset: '75%',
+                triggerOnce: true
+            })
+        }
+
+        function finn_counto(elemento) {
+            if ($().countTo) {
+                $(elemento + ' .count').on('on-appear', function () {
+                    $(elemento + ' .honeycomb-path.honeycomb-1').addClass('honeycomb-animated');
+
+                    $(this).each(function () {
+                        var to = parseFloat($(this).data('to')),
+                            speed = parseInt($(this).data('speed')),
+                            decimals = parseInt($(this).data('decimals'));
+
+                        $(this).countTo({
+                            to: to,
+                            speen: speed,
+                            decimals: decimals,
+                            formatter: function (value, options) {
+                                return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+                            },
+                            onComplete: function (value) {
+                                if (value === 1.9)
+                                    return this.innerHTML += '%';
+                            }
+
+                        });
+                    });
+                }); //counter
+            }
+        }
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var calendarEl = document.getElementById('calendar');
+            if (calendarEl != null) {
+                var calendar = new FullCalendar.Calendar(calendarEl, {
+                    eventDidMount: function (info) {
+                        info.el.setAttribute("data-toggle", 'tooltip');
+                        info.el.setAttribute("data-placement", 'top');
+                        info.el.setAttribute("data-title", info.event.extendedProps.description);
+                    },
+                    locale: 'es',
+                    height: 270,
+                    eventMouseEnter: function (mouseEnterInfo) {
+                        $(mouseEnterInfo.el).tooltip('show')
+                    }, eventMouseLeave: function (mouseEnterInfo) {
+                        $(mouseEnterInfo.el).tooltip('hide')
+                    },
+
+                    handleWindowResize: true,
+                    events: [
+                        {
+                            {#title: 'Reporte 3T21',#}
+                            description: 'Reporte 3T21',
+                            start: '2021-10-28',
+                            display: 'background',
+                            backgroundColor: '#EB8705'
+                        }, {
+                            {#title: 'Conferencia Telefónica 3T21 ',#}
+                            description: 'Conferencia Telefónica 3T21 ',
+                            start: '2021-10-29',
+                            display: 'background',
+                            backgroundColor: '#3DAE2B'
+                        }
+
+                    ]
+                });
+                calendar.render();
+            }
+        });
+    </script>
+
+    <script>
+        var tpj = jQuery;
+
+        var revapi202;
+        tpj(document).ready(function () {
+
+            $(".ot-testimonial-s2").owlCarousel({
+                autoplay: true,
+                autoplayTimeout: 5000,
+                autoplayHoverPause: true,
+                loop: true,
+                responsiveClass: true,
+                dotsClass: 'owl-dots ot-custom-dots',
+                dots: false,
+                nav: true,
+                navText: ['<i role="presentation" class="icon-angle-left"></i>', '<i role="presentation" class="icon-angle-right"></i>'],
+                responsive: {
+                    0: {
+                        items: 1,
+                        margin: 30,
+                        autoplay: true,
+                    },
+                    768: {
+                        items: 1,
+                        margin: 30,
+                    },
+                    1024: {
+                        items: 1,
+                        margin: 30,
+                    }
+                }
+            });
+
+
+            if (tpj("#rev_slider_579_1").revolution == undefined) {
+                revslider_showDoubleJqueryError("#rev_slider_579_1");
+            } else {
+                revapi202 = tpj("#rev_slider_579_1").show().revolution({
+                    sliderType: "standard",
+                    jsFileLocation: "/static/javscripts/js/rs-plugin/js/",
+                    sliderLayout: "fullscreen",
+                    dottedOverlay: "none",
+                    delay: 16000,
+                    responsiveLevels: [1140, 992, 768, 480],
+                    visibilityLevels: [1140, 992, 768, 480],
+                    gridwidth: [1140, 992, 768, 480],
+                    gridheight: [700, 768, 960, 720],
+                    hideThumbs: 200,
+
+                    thumbWidth: 100,
+                    thumbHeight: 50,
+                    thumbAmount: 5,
+                    fallbacks: {
+                        simplifyAll: "off",
+                        disableFocusListener: false,
+                    },
+                    {#parallax: {#}
+                    {#    type: "mouse",#}
+                    {#    origo: "slidercenter",#}
+                    {#    speed: 300,#}
+                    {#    levels: [2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 49, 50, 51, 55],#}
+                    {# },#}
+                    navigation: {
+                        keyboardNavigation: "off",
+                        keyboard_direction: "horizontal",
+                        mouseScrollNavigation: "off",
+                        onHoverStop: "off",
+                        touch: {
+                            touchenabled: "on",
+                            swipe_threshold: 75,
+                            swipe_min_touches: 1,
+                            swipe_direction: "horizontal",
+                            drag_block_vertical: false
+                        },
+                        arrows: {
+                            style: "persephone",//HEPHAISTOS,HERMES,HESPERIDEN,METIS,PERSEPHONE
+                            enable: true,
+                            {#    hide_onmobile: false,#}
+                            {#    hide_onleave: false,#}
+                            {#    tmp: '<div class="tp-arr-allwrapper">	<div class="tp-arr-imgholder"></div>	<div class="tp-arr-titleholder">{{title}}</div>	</div>',#}
+                            {#    left: {#}
+                            {#        h_align: "left",#}
+                            {#        v_align: "center",#}
+                            {#        h_offset: 10,#}
+                            {#        v_offset: 0#}
+                            {#    },#}
+                            {#    right: {#}
+                            {#        h_align: "right",#}
+                            {#        v_align: "center",#}
+                            {#        h_offset: 10,#}
+                            {#        v_offset: 0#}
+                            {#    }#}
+                        }
+                    },
+                    touchenabled: "on",
+                    onHoverStop: "on",
+
+                    swipe_velocity: 0.7,
+                    swipe_min_touches: 1,
+                    swipe_max_touches: 1,
+                    drag_block_vertical: false,
+
+                    keyboardNavigation: "off",
+
+                    shadow: 0,
+                    fullWidth: "off",
+                    fullScreen: "on",
+
+                    spinner: "spinner4",
+
+                    stopLoop: "off",
+                    stopAfterLoops: -1,
+                    stopAtSlide: -1,
+
+                    shuffle: "off",
+
+                    autoHeight: "off",
+                    forceFullWidth: "off",
+
+                    hideThumbsOnMobile: "off",
+                    hideNavDelayOnMobile: 1500,
+                    hideBulletsOnMobile: "off",
+                    hideArrowsOnMobile: "off",
+                    hideThumbsUnderResolution: 0,
+
+                    hideSliderAtLimit: 0,
+                    hideCaptionAtLimit: 0,
+                    hideAllCaptionAtLilmit: 0,
+                    startWithSlide: 0,
+                });
+                revapi202.bind("revolution.slide.onloaded", function (e) {
+                    setTimeout(function () {
+                        SEMICOLON.slider.sliderParallaxDimensions();
+                    }, 200);
+                });
+
+                revapi202.bind("revolution.slide.onchange", function (e, data) {
+                    SEMICOLON.slider.revolutionSliderMenu();
+                });
+            }
+
+            $(".g_btnRight").click(function () {
+                if ($("#vertuo").hasClass("extended")) {
+                    $("#original").animate({
+                        width: '50%'
+                    }, "slow");
+                    $("#vertuo").animate({
+                        width: "50%"
+                    }, "slow");
+                    $("#vertuo").removeClass("extended");
+                } else {
+                    $("#original").animate({
+                        width: '95%'
+                    }, "slow");
+                    $("#vertuo").animate({
+                        width: "5%"
+                    }, "slow");
+                    $("#original").addClass("extended");
+                    $("#vertuo").removeClass("extended");
+                }
+            });
+            $(".g_btnLeft").click(function () {
+                if ($("#original").hasClass("extended")) {
+                    $("#original").animate({
+                        width: '50%'
+                    }, "slow");
+                    $("#vertuo").animate({
+                        width: "50%"
+                    }, "slow");
+                    $("#original").removeClass("extended");
+                } else {
+                    $("#vertuo").animate({
+                        width: '95%'
+                    }, "slow");
+                    $("#original").animate({
+                        width: "5%"
+                    }, "slow");
+                    $("#original").removeClass("extended");
+                    $("#vertuo").addClass("extended");
+                }
+            });
+
+
+        });
+        {#setTimeout(function () {#}
+        {#    SEMICOLON.carouselContainer["oc-clients"].trigger('refresh.owl.carousel')#}
+        {# }, 200, {});#}
+
+        /*ready*/
+    </script>
+
+
+    <script>
+        function isScrolledIntoView(el) {
+            if (el != null) {
+                var elemTop = el.getBoundingClientRect().top;
+                var elemBottom = el.getBoundingClientRect().bottom;
+
+                var isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
+                return isVisible;
+            }
+        }
+
+        $(window).scroll(function () {
+            if (isScrolledIntoView(document.getElementById('wprt-counter-index'))) {
+                $('#wprt-counter-index').find('.number').each(function () {
+                    var to = parseFloat($(this).data('to')),
+                        speed = parseInt($(this).data('speed')),
+                        decimals = parseInt($(this).data('decimals'));
+
+                    $(this).countTo({
+                        to: to,
+                        speen: speed,
+                        decimals: decimals,
+                        formatter: function (value, options) {
+                            return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+                            ;
+                        },
+                        onComplete: function (value) {
+                            if (value === 1.9)
+                                return this.innerHTML += '%';
+                        }
+
+                    });
+                });
+
+                // Unbind scroll event
+                $(window).off('scroll');
+            }
+        });
+    </script>
+{% endblock %}

@@ -1,0 +1,110 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'fontello';
+    src: url('../fonts/fontello.eot?89606486');
+    src: url('../fonts/fontello.eot?89606486#iefix') format('embedded-opentype'),
+    url('../fonts/fontello.woff2?89606486') format('woff2'),
+    url('../fonts/fontello.woff?89606486') format('woff'),
+    url('../fonts/fontello.ttf?89606486') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+
+/* line 23, D:/begrand/app/assets/stylesheets/css/fontello.css.scss */
+[class^="demo-"]:before, [class*=" icontelos-"]:before {
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    /* opacity: .8; */
+    /* For safety - reset parent styles, that can break glyph codes*/
+    font-variant: normal;
+    text-transform: none;
+    /* fix buttons height, for twitter bootstrap */
+    line-height: 1em;
+    /* Animation center compensation - margins should be symmetric */
+    /* remove if not needed */
+    margin-left: .2em;
+    /* you can be more comfortable with increased icons size */
+    /* font-size: 120%; */
+    /* Font smoothing. That was taken from TWBS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* Uncomment for 3D effect */
+    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+/* line 58, D:/begrand/app/assets/stylesheets/css/fontello.css.scss */
+.icontelos-anticipos:before {
+    content: '\e800';
+}
+
+/* '' */
+/* line 59, D:/begrand/app/assets/stylesheets/css/fontello.css.scss */
+.icontelos-construccion:before {
+    content: '\e801';
+}
+
+/* '' */
+/* line 60, D:/begrand/app/assets/stylesheets/css/fontello.css.scss */
+.icontelos-desarrollos:before {
+    content: '\e802';
+}
+
+/* '' */
+/* line 61, D:/begrand/app/assets/stylesheets/css/fontello.css.scss */
+.icontelos-ingresos:before {
+    content: '\e803';
+}
+
+/* '' */
+/* line 62, D:/begrand/app/assets/stylesheets/css/fontello.css.scss */
+.icontelos-precio:before {
+    content: '\e804';
+}
+
+/* '' */
+/* line 63, D:/begrand/app/assets/stylesheets/css/fontello.css.scss */
+.icontelos-ventas:before {
+    content: '\e805';
+}
+
+/* '' */
+/* line 64, D:/begrand/app/assets/stylesheets/css/fontello.css.scss */
+.icontelos-unidades:before {
+    content: '\e806';
+}
+
+/* '' */
+/* line 65, D:/begrand/app/assets/stylesheets/css/fontello.css.scss */
+.icontelos-totales:before {
+    content: '\e807';
+}
+
+/* '' */
+/* line 66, D:/begrand/app/assets/stylesheets/css/fontello.css.scss */
+.icontelos-neta:before {
+    content: '\e808';
+}
+
+/* '' */
+/* line 67, D:/begrand/app/assets/stylesheets/css/fontello.css.scss */
+.icontelos-utilidad:before {
+    content: '\e809';
+}
+
+/* '' */
+/* line 68, D:/begrand/app/assets/stylesheets/css/fontello.css.scss */
+.icontelos-terrenos:before {
+    content: '\e80a';
+}
+
+/* '' */

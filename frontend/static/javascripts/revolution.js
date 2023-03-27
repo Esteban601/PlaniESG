@@ -1,0 +1,10 @@
+//= require js/rs-plugin/jquery.themepunch.tools.min
+//= require js/rs-plugin/jquery.themepunch.revolution.min
+//= require js/rs-plugin/extensions/revolution.extension.video.min
+//= require js/rs-plugin/extensions/revolution.extension.slideanims.min
+//= require js/rs-plugin/extensions/revolution.extension.actions.min
+//= require js/rs-plugin/extensions/revolution.extension.layeranimation.min
+//= require js/rs-plugin/extensions/revolution.extension.kenburn.min
+//= require js/rs-plugin/extensions/revolution.extension.navigation.min
+//= require js/rs-plugin/extensions/revolution.extension.migration.min
+//= require js/rs-plugin/extensions/revolution.extension.parallax.min
