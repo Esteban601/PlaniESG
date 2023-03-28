@@ -1,0 +1,378 @@
+{% extends 'layouts/interior.html' %}
+{% load static %}
+{% block otherstyles %}
+
+{% endblock %}
+
+{% block wrapper %}
+    <div class="content-wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-justify">Cada hotel cuenta con un responsable en el área de mantenimiento para
+                        documentar la
+                        información sobre
+                        consumo de electricidad, gas y agua llevando a cabo revisiones mensuales para analizar las
+                        oportunidades
+                        de mejora, ahorro y eficiencia en los cuartos de los hoteles. Cabe mencionar que algunas
+                        de las marcas con las que trabajamos, como Hilton, InterContinental Hotels Group (IHG) y
+                        Marriott,
+                        cuentan con plataformas específicas para la gestión y monitoreo de temas ambientales como
+                        consumos,
+                        emisiones, gestión de residuos, entre otras.</p>
+
+                    <p>Para Fibra Inn el óptimo uso de los recursos es de vital importancia ya que es
+                        una de las formas más tangibles de contribuir a los objetivos ODS y a su vez impulsar su
+                        desempeño
+                        económico o la generación de valor.</p>
+
+                    <h1 class="text-center tc-blue">Energía</h1>
+                    <p class="text-justify">En Fibra Inn nuestras principales fuentes de
+                        energía son electricidad y
+                        gas natural.
+                        Estamos conscientes de nuestra responsabilidad con el medio ambiente por lo que buscamos
+                        implementar
+                        medidas de eficiencia y ahorro energético, como la instalación de luminarias LED y sistemas de
+                        aire
+                        acondicionado eficientes.
+                    </p>
+                </div>
+            </div>
+
+
+            {#            <div class="row d-flex align-items-center flex-wrap">#}
+            {#                <img class="img-fluid" src="{% static 'images/fuentes_energia.png' %}" width="3000" height="3400">#}
+            {#            </div>#}
+
+            <div id="cifras_relevantes_energia" class="content-wrap pt-3 pb-3 finn-counto">
+                <div class="container">
+                    <div class="section-title mb-3 text-center">
+                        <h3 class="title-effect">Cifras relevantes de energía</h3>
+                    </div>
+                    <div class="row honeycomb-wrapper justify-content-center">
+                        <div class="col-md-3 col-lg-2 tile">
+                            <div class="honeycomb">
+                                <svg class="honeycomb-path honeycomb-1" xmlns="http://www.w3.org/2000/svg"
+                                     width="150" viewBox="0 0 160 160">
+                                    <circle cx="80" cy="80" r="66" stroke-width="2" fill="none"></circle>
+                                </svg>
+                                <div class="content">
+                                    <h2 class="count" data-speed="1500" data-to="84584" data-in-viewport="yes"
+                                        data-decimals="0">0</h2><span class="title-effect "></span>
+                                </div>
+                            </div>
+                            <a href="#"><h5><b>Electricidad</b></h5></a>
+                        </div>
+                        <div class="col-md-3 col-lg-2 tile">
+                            <div class="honeycomb">
+                                <svg class="honeycomb-path honeycomb-1" xmlns="http://www.w3.org/2000/svg"
+                                     width="150" viewBox="0 0 160 160">
+                                    <circle cx="80" cy="80" r="66" stroke-width="2" fill="none"></circle>
+                                </svg>
+                                <div class="content">
+                                    <h2 class="count" data-speed="1500" data-to="14918" data-in-viewport="yes"
+                                        data-decimals="0">0</h2><span class="title-effect "></span>
+                                </div>
+                            </div>
+                            <a href="#"><h5><b>Gas LP</b></h5><br></a>
+                        </div>
+                        <div class="col-md-3 col-lg-2 tile">
+                            <div class="honeycomb">
+                                <svg class="honeycomb-path honeycomb-1" xmlns="http://www.w3.org/2000/svg"
+                                     width="150" viewBox="0 0 160 160">
+                                    <circle cx="80" cy="80" r="66" stroke-width="2" fill="none"></circle>
+                                </svg>
+                                <div class="content">
+                                    <h2 class="count" data-speed="1500" data-to="54063" data-in-viewport="yes"
+                                        data-decimals="0">0</h2><span class="title-effect "></span>
+                                </div>
+                            </div>
+                            <a href="#"><h5><b>Gas natural</b><br></h5></a>
+                        </div>
+                        <div class="col-md-3 col-lg-2 tile">
+                            <div class="honeycomb">
+                                <svg class="honeycomb-path honeycomb-1" xmlns="http://www.w3.org/2000/svg"
+                                     width="150" viewBox="0 0 160 160">
+                                    <circle cx="80" cy="80" r="66" stroke-width="2" fill="none"></circle>
+                                </svg>
+                                <div class="content">
+                                    <h2 class="count" data-speed="1500" data-to="322" data-in-viewport="yes"
+                                        data-decimals="0">0</h2><span class="title-effect "></span>
+                                </div>
+                            </div>
+                            <a href="#"><h5><b>Diésel</b></h5></a><br>
+                        </div>
+                        <div class="col-md-3 col-lg-2 tile">
+                            <div class="honeycomb">
+                                <svg class="honeycomb-path honeycomb-1" xmlns="http://www.w3.org/2000/svg"
+                                     width="150" viewBox="0 0 160 160">
+                                    <circle cx="80" cy="80" r="66" stroke-width="2" fill="none"></circle>
+                                </svg>
+                                <div class="content">
+                                    <h2 class="count" data-speed="1500" data-to="4473" data-in-viewport="yes"
+                                        data-decimals="0">0</h2><span class="title-effect "></span>
+                                </div>
+                            </div>
+                            <a href="#"><h5><b>Gasolina</b></h5></a><br>
+                        </div>
+                        <div class="col-md-3 col-lg-2 tile">
+                            <div class="honeycomb">
+                                <svg class="honeycomb-path honeycomb-1" xmlns="http://www.w3.org/2000/svg"
+                                     width="150" viewBox="0 0 160 160">
+                                    <circle cx="80" cy="80" r="66" stroke-dasharray="10,10" fill="none"></circle>
+                                </svg>
+                                <div class="content">
+                                    <h2 class="count" data-speed="1500" data-to="158360" data-in-viewport="yes"
+                                        data-decimals="0" style="color: red">0</h2><span
+                                        class="title-effect "></span>
+                                </div>
+                            </div>
+                            <a href="#"><h5><b>Total</b></h5>
+                            </a><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div id="chart1" style="height: 350px;"></div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div id="chart2" style="height: 350px;"></div>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <h1 class="text-center tc-blue">Emisiones</h1>
+                <p class="text-justify">Nuestras actividades y operaciones se
+                    encuentran sujetas a la Ley General del Cambio Climático, la cual establece el marco general
+                    aplicable al control y regulación de emisiones de gases y compuestos de efecto invernadero. En Fibra
+                    Inn colaboramos con
+                    los gestores de los hoteles y las marcas hoteleras para la gestión y monitoreo de las emisiones de
+                    GEI, así como la identificación de oportunidades y áreas de mejora para la reducción del impacto
+                    ambiental.
+                </p>
+            </div>
+
+            {#            <div class="row d-flex align-items-center flex-wrap">#}
+            {#                <img class="img-fluid" src="{% static 'images/emisiones.png' %}" width="3000" height="3400">#}
+            {#            </div>#}
+
+            <div id="cifras_relevantes_gei" class="content-wrap pt-3 pb-3 finn-counto">
+                <div class="container">
+                    <div class="section-title mb-3 text-center">
+                        <h3 class="title-effect">Cifras relevantes GEI</h3>
+                    </div>
+                    <div class="row honeycomb-wrapper justify-content-center">
+                        <div class="col-md-3 col-lg-2 tile">
+                            <div class="honeycomb">
+                                <svg class="honeycomb-path honeycomb-1" xmlns="http://www.w3.org/2000/svg"
+                                     width="150" viewBox="0 0 160 160">
+                                    <circle cx="80" cy="80" r="66" stroke-width="2" fill="none"></circle>
+                                </svg>
+                                <div class="content">
+                                    <h2 class="count" data-speed="1500" data-to="4324" data-in-viewport="yes"
+                                        data-decimals="0">0</h2><span class="title-effect "></span>
+                                </div>
+                            </div>
+                            <a href="#"><h5><b>Alcance 1 (A1)</b></h5></a>
+                        </div>
+                        <div class="col-md-3 col-lg-2 tile">
+                            <div class="honeycomb">
+                                <svg class="honeycomb-path honeycomb-1" xmlns="http://www.w3.org/2000/svg"
+                                     width="150" viewBox="0 0 160 160">
+                                    <circle cx="80" cy="80" r="66" stroke-width="2" fill="none"></circle>
+                                </svg>
+                                <div class="content">
+                                    <h2 class="count" data-speed="1500" data-to="11606" data-in-viewport="yes"
+                                        data-decimals="0">0</h2><span class="title-effect "></span>
+                                </div>
+                            </div>
+                            <a href="#"><h5><b>Alcance 2 (A2)</b></h5><br></a>
+                        </div>
+                        <div class="col-md-3 col-lg-2 tile">
+                            <div class="honeycomb">
+                                <svg class="honeycomb-path honeycomb-1" xmlns="http://www.w3.org/2000/svg"
+                                     width="150" viewBox="0 0 160 160">
+                                    <circle cx="80" cy="80" r="66" stroke-dasharray="10,10" fill="none"></circle>
+                                </svg>
+                                <div class="content">
+                                    <h2 class="count" data-speed="1500" data-to="15931" data-in-viewport="yes"
+                                        data-decimals="0" style="color: red">0</h2><span
+                                        class="title-effect "></span>
+                                </div>
+                            </div>
+                            <a href="#"><h5><b>Total</b></h5>
+                            </a><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div id="chart3" style="height: 350px;"></div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div id="chart4" style="height: 350px;"></div>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <h1 class="text-center tc-blue">Agua</h1>
+                <p class="text-justify">La mayor parte del agua que consume Fibra Inn,
+                    tanto en el corporativo como
+                    en los hoteles,
+                    proviene de terceros, ya sea de las redes de agua municipal o de pipas de agua, y se descarga y
+                    trata en las mismas, por lo que no se generan impactos negativos en cuerpos de agua cerca de los
+                    hoteles.</p>
+                <p>Con el objetivo de incrementar la eficiencia hídrica, Fibra Inn implementa tecnologías de
+                    ahorro de agua en sus hoteles e invita a los huéspedes a participar en la reducción del consumo
+                    de
+                    agua durante su estancia. De igual manera, se está evaluando la posibilidad de colocar medidores
+                    en
+                    las salidas de agua de las propiedades para contar con un mejor monitoreo y gestión.</p>
+            </div>
+
+            {#            <div class="row d-flex align-items-center flex-wrap">#}
+            {#                <img class="img-fluid" src="{% static 'images/origen_agua.png' %}" width="3000" height="3400">#}
+            {#            </div>#}
+
+            <div id="cifras_relevantes_agua" class="content-wrap pt-3 pb-3 finn-counto">
+                <div class="container">
+                    <div class="section-title mb-3 text-center">
+                        <h3 class="title-effect">Cifras relevantes del Agua</h3>
+                    </div>
+                    <div class="row honeycomb-wrapper justify-content-center">
+                        <div class="col-md-3 col-lg-2 tile">
+                            <div class="honeycomb">
+                                <svg class="honeycomb-path honeycomb-1" xmlns="http://www.w3.org/2000/svg"
+                                     width="150" viewBox="0 0 160 160">
+                                    <circle cx="80" cy="80" r="66" stroke-width="2" fill="none"></circle>
+                                </svg>
+                                <div class="content">
+                                    <h2 class="count" data-speed="1500" data-to="44249" data-in-viewport="yes"
+                                        data-decimals="0">0</h2><span class="title-effect "></span>
+                                </div>
+                            </div>
+                            <a href="#"><h5><b>Agua subterranea</b></h5></a>
+                        </div>
+                        <div class="col-md-3 col-lg-2 tile">
+                            <div class="honeycomb">
+                                <svg class="honeycomb-path honeycomb-1" xmlns="http://www.w3.org/2000/svg"
+                                     width="150" viewBox="0 0 160 160">
+                                    <circle cx="80" cy="80" r="66" stroke-width="2" fill="none"></circle>
+                                </svg>
+                                <div class="content">
+                                    <h2 class="count" data-speed="1500" data-to="367279" data-in-viewport="yes"
+                                        data-decimals="0">0</h2><span class="title-effect "></span>
+                                </div>
+                            </div>
+                            <a href="#"><h5><b>Agua de terceros</b></h5><br></a>
+                        </div>
+                        <div class="col-md-3 col-lg-2 tile">
+                            <div class="honeycomb">
+                                <svg class="honeycomb-path honeycomb-1" xmlns="http://www.w3.org/2000/svg"
+                                     width="150" viewBox="0 0 160 160">
+                                    <circle cx="80" cy="80" r="66" stroke-dasharray="10,10" fill="none"></circle>
+                                </svg>
+                                <div class="content">
+                                    <h2 class="count" data-speed="1500" data-to="411528" data-in-viewport="yes"
+                                        data-decimals="0" style="color: red">0</h2><span
+                                        class="title-effect "></span>
+                                </div>
+                            </div>
+                            <a href="#"><h5><b>Total</b></h5>
+                            </a><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div id="chart5" style="height: 350px;"></div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div id="chart6" style="height: 350px;"></div>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <p class="text-justify">Estamos conscientes de que debido a la naturaleza de nuestras actividades, el
+                    mayor
+                    impacto se puede
+                    generar a través de nuestros inmuebles. Es por esto que, se ha trabajo en la implementación de
+                    diferentes medidas en
+                    nuestros hoteles para minimizar el impacto ambiental negativo a través del aumento de la eficiencia
+                    de
+                    los
+                    equipos y la reducción en el consumo de recursos y el consumo responsable. Algunas de las medidas
+                    implementadas son las siguientes:</p>
+
+                <div class="text-center">
+                    <img class="img-fluid" src="{% static 'images/bullets1.png' %}" width="3000" height="3000" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block otherscripts %}
+    <script src="{% static 'javascripts/jquery.waypoints.min.js' %}"></script>
+    <script src="{% static 'javascripts/countTo.js' %}"></script>
+    <script>
+        $(window).on('load', function () {
+            $('.finn-counto').each(function () {
+                finn_waypoint('#' + $(this).attr('id'));
+                finn_counto('#' + $(this).attr('id'));
+            });
+        });
+
+        function finn_waypoint(elemento) {
+            var waypoint = new Waypoint({
+                element: $(elemento),
+                handler: function (direction) {
+                    $(elemento + ' .count').trigger('on-appear');
+                },
+                offset: '75%',
+                triggerOnce: true
+            })
+        }
+
+        function finn_counto(elemento) {
+            if ($().countTo) {
+                $(elemento + ' .count').on('on-appear', function () {
+                    $(elemento + ' .honeycomb-path.honeycomb-1').addClass('honeycomb-animated');
+
+                    $(this).each(function () {
+                        var to = parseFloat($(this).data('to')),
+                            speed = parseInt($(this).data('speed')),
+                            decimals = parseInt($(this).data('decimals'));
+
+                        $(this).countTo({
+                            to: to,
+                            speen: speed,
+                            decimals: decimals,
+                            formatter: function (value, options) {
+                                return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+                            },
+                            onComplete: function (value) {
+                                if (value === 1.9)
+                                    return this.innerHTML += '%';
+                            }
+
+                        });
+                    });
+                }); //counter
+            }
+        }
+    </script>
+
+    <script src="{% static 'javascripts/amcharts/amcharts.js' %}"></script>
+    <script src="{% static 'javascripts/amcharts/serial.js' %}"></script>
+    <script src="{% static 'javascripts/amcharts/pie.js' %}"></script>
+    <script src="{% static 'javascripts/amcharts/contenido/gestion-recursos.js' %}{{ css_js_version }}"></script>
+{% endblock %}

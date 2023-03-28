@@ -46,7 +46,7 @@ msgid "Correo electrónico"
 msgstr ""
 
 #: frontend/templates/partials/footer.html:57
-msgid "Pinfra - Diseñado y generado por"
+msgid "plani - Diseñado y generado por"
 msgstr ""
 
 #: frontend/templates/partials/menu.html:25 frontend/views.py:21

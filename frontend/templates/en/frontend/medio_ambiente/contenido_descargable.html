@@ -1,0 +1,33 @@
+{% extends 'layouts/interior.html' %}
+{% load static %}
+{% block otherstyles %}
+
+{% endblock %}
+
+{% block wrapper %}
+    <div class="content-wrap">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-4 col-lg-3 mb-5">
+                    <a class="d-flex flex-column"
+                       href="https://www.fibrainn.mx/assets/docs/informeasg-vf_62c471dd95327.pdf"
+                       target="_blank">
+                        <img class="mb-3" src="{% static 'images/miniatura1.png' %}" alt="">
+                        <button class="btn btn-default btn-primary">Informe ASG 2021</button>
+                    </a>
+                </div>
+                <div class="col-md-4 col-lg-3">
+                    <a class="d-flex flex-column"
+                       href="https://www.fibrainn.mx/assets/docs/informe-asg-fibrainn-2020_60f071a3de249.pdf"
+                       target="_blank">
+                        <img class="mb-3" src="{% static 'images/miniatura2.png' %}" alt="">
+                        <button class="btn btn-default btn-primary">Informe ASG 2020</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block otherscripts %}
+{% endblock %}

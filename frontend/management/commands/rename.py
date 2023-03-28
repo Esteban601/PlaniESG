@@ -18,7 +18,7 @@ class Command(BaseCommand):
             with open(f, 'r') as file:
                 filedata = file.read()
 
-            filedata = filedata.replace('gmurano', new_name)
+            filedata = filedata.replace('planiesg', new_name)
 
             with open(f, 'w') as file:
                 file.write(filedata)

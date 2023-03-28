@@ -1,0 +1,212 @@
+{% extends 'layouts/interior.html' %}
+{% load static %}
+{% block otherstyles %}
+
+{% endblock %}
+
+{% block wrapper %}
+    <div class="content-wrap pb-5">
+        <article id="contactForm">
+            <fieldset class="fieldset m-auto " style="max-width: 600px">
+                <div class="">
+                    <div class="col-12">
+                        <p class="obligatorio">Si desea mayor información puede ponerse en contacto con nosotros
+                            llenando el siguiente formulario.</p>
+                    </div>
+                    <div class="col-12">
+                        <form id="contacto" role="form" class="mb-0">
+                            {% csrf_token %}
+                            <div class="row clearfix">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input type="text" name="form_name" class="form-control"
+                                               value=""
+                                               placeholder="*Nombre" required="">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <div class="form-group">
+                                        <input type="text" name="form_phone"
+                                               class="form-control" value=""
+                                               placeholder="Teléfono">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <div class="form-group">
+                                        <input type="email" name="form_email"
+                                               class="form-control required email"
+                                               value="" placeholder="*Mail"
+                                               required="">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class="btn w-100 mb-3 card btn btn-default font-weight-bold"
+                                         style="background: white;color:#111135; cursor: pointer;"
+                                         data-toggle="collapse" href="#collapseExample2"
+                                         aria-expanded="false">
+                                        *Tema de interés
+                                    </div>
+                                    <div class="collapse mb-4 show" id="collapseExample2">
+                                        <div class="row">
+{#                                            <div class="col-md-6 col-sm-6 col-xs-12">#}
+{#                                                <div class="input-group mb-3">#}
+{#                                                    <div class="input-group-prepend">#}
+{#                                                        <div class="input-group-text">#}
+{#                                                            <input name="form_theme" type="radio"#}
+{#                                                                   value="Modelo ASG" checked>#}
+{#                                                        </div>#}
+{#                                                    </div>#}
+{#                                                    <input type="text" class="form-control bg-white"#}
+{#                                                           value="Modelo ASG" disabled>#}
+{#                                                </div>#}
+{#                                            </div>#}
+
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <div class="input-group mb-3">
+                                                    <div class="input-group-prepend">
+                                                        <div class="input-group-text">
+                                                            <input name="form_theme" type="radio"
+                                                                   value="Medio Ambiente">
+                                                        </div>
+                                                    </div>
+                                                    <input type="text" class="form-control bg-white"
+                                                           value="Medio Ambiente" disabled>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <div class="input-group mb-3">
+                                                    <div class="input-group-prepend">
+                                                        <div class="input-group-text">
+                                                            <input name="form_theme" type="radio"
+                                                                   value="Responsabilidad Social">
+                                                        </div>
+                                                    </div>
+                                                    <input type="text" class="form-control bg-white"
+                                                           value="Responsabilidad Social" disabled>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <div class="input-group mb-3">
+                                                    <div class="input-group-prepend">
+                                                        <div class="input-group-text">
+                                                            <input name="form_theme" type="radio"
+                                                                   value="Gobernanza">
+                                                        </div>
+                                                    </div>
+                                                    <input type="text" class="form-control bg-white"
+                                                           value="Gobernanza" disabled>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <div class="form-group">
+                                        <textarea name="form_message" class="form-control textarea required mb-4"
+                                                  required=""
+                                                  placeholder="*Comentario" rows="7"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mb-4">
+                                    <div class="form-group centered-movil mb-0">
+                                        <input id="form_botcheck" name="form_botcheck"
+                                               class="form-control" type="hidden" value="">
+
+                                    </div>
+                                    <div class="button-holder ">
+
+                                        <p class="obligatorio">Los campos marcados con asterisco (*) son
+                                            obligatorios</p>
+
+
+                                        {#                                <p class="g-recaptcha" data-sitekey="6LdwVC0UAAAAADuDRK5hkBgnuVVfUN56AOmVV6Ej">#}
+                                        {#                                <div style="width: 304px; height: 78px;">#}
+                                        {#                                    <div>#}
+                                        {#                                        <iframe title="reCAPTCHA"#}
+                                        {#                                                src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LdwVC0UAAAAADuDRK5hkBgnuVVfUN56AOmVV6Ej&amp;co=aHR0cHM6Ly93d3cuZWxlbWVudGlhbWF0ZXJpYWxlcy5jb206NDQz&amp;hl=es&amp;v=dPctOHA2ifhWm5WzFM_B5TjT&amp;size=normal&amp;cb=j0r4ez7ks731"#}
+                                        {#                                                width="304" height="78" role="presentation" name="a-b2oj5w2urad3"#}
+                                        {#                                                frameborder="0" scrolling="no"#}
+                                        {#                                                sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation"></iframe>#}
+                                        {#                                    </div>#}
+                                        {#                                    <textarea id="g-recaptcha-response" name="g-recaptcha-response"#}
+                                        {#                                              class="g-recaptcha-response"#}
+                                        {#                                              style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>#}
+                                        {#                                </div>#}
+                                        {#                                <iframe style="display: none;"></iframe>#}
+                                        {#                                </p>#}
+
+
+                                        <input class="field"
+                                               id="_Contactoportlet_WAR_contactoportlet_acceptLegalConditions"
+                                               name="_Contactoportlet_WAR_contactoportlet_acceptLegalConditions"
+                                               type="hidden"
+                                               value="true">
+
+
+                                        <button class="btn btn-primary" type="submit"
+                                                title="contactForm.button.send"
+                                                id="enviar">
+                                            Enviar
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </fieldset>
+        </article>
+    </div>
+
+    <div class="modal fade popup" id="popup1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered justify-content-center"
+             role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h3 id="title" class="mt-1 text-center"></h3>
+                <div class="container pb-3">
+                    <h4>
+                        Tu mensaje ha sido enviado
+                    </h4>
+                    <button type="button" class="btn btn-info" data-dismiss="modal" aria-label="Close">
+                        Entendido
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+{% endblock %}
+
+{% block otherscripts %}
+    <script>
+        $(function () {
+            $("#enviar").click(function (e) {
+                e.preventDefault();
+                if ($("#contacto").valid()) {
+                    $.ajax({
+                        type: 'POST',
+                        url: "{% url 'send-mail-contact' %}",
+                        dataType: 'json',
+                        data: $("#contacto").serialize(),
+                        complete: function (a, b) {
+                            $('.preloader').delay(1500).fadeOut(500);
+                        },
+                        success: function (response) {
+                            $("#contacto").trigger('reset');
+                            $('.preloader').fadeOut(500);
+                            $("#popup1").modal();
+                        }
+                    });
+                }
+            })
+        })
+    </script>
+{% endblock %}
