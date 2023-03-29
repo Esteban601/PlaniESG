@@ -1,0 +1,43 @@
+{% extends 'layouts/interior.html' %}
+{% load static %}
+{% block otherstyles %}
+
+{% endblock %}
+
+{% block wrapper %}
+    <div class="content-wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    {{ title }}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block otherscripts %}
+    <script>
+        $(function () {
+            $("#enviar").click(function (e) {
+                e.preventDefault();
+                if ($("#contacto").valid()) {
+                    $.ajax({
+                        type: 'POST',
+                        url: "{% url 'send-mail-contact' %}",
+                        dataType: 'json',
+                        data: $("#contacto").serialize(),
+                        complete: function (a, b) {
+                            $('.preloader').delay(1500).fadeOut(500);
+                        },
+                        success: function (response) {
+                            $("#contacto").trigger('reset');
+                            $('.preloader').fadeOut(500);
+                            $("#popup1").modal();
+                        }
+                    });
+                }
+            })
+        })
+    </script>
+{% endblock %}

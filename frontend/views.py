@@ -24,25 +24,35 @@ def index(request):
     return render(request, '{0}/frontend/index.html'.format(request.LANGUAGE_CODE), context)
 
 
+@gzip_page
+def ambiental(request):
+    context = {
+        'title': _("Ambiental"),
+        'page': 'ambiental',
+        'imagen': staticfiles_storage.url('images/headers/Materialidad.png'),
+    }
+    return render(request, '{0}/frontend/ambiental.html'.format(request.LANGUAGE_CODE), context)
+
+
 # Modelo ASG
 @gzip_page
 def materialidad(request):
     context = {
         'title': _("Materialidad"),
-        'page': 'index',
+        'page': 'materialidad',
         'imagen': staticfiles_storage.url('images/headers/Materialidad.png'),
     }
     return render(request, '{0}/frontend/modelo_asg/materialidad.html'.format(request.LANGUAGE_CODE), context)
 
 
 @gzip_page
-def estrategia_asg(request):
+def nuestro_enfoque_asg(request):
     context = {
-        'title': _("Estrategia ASG"),
-        'page': 'estrategia-asg',
-        'imagen': staticfiles_storage.url('images/headers/Estrategia-ASG.png'),
+        'title': _("Nuestro enfoque ASG"),
+        'page': 'nuestro-enfoque-asg',
+        'imagen': staticfiles_storage.url('images/headers/Materialidad.png'),
     }
-    return render(request, '{0}/frontend/modelo_asg/estrategia_asg.html'.format(request.LANGUAGE_CODE), context)
+    return render(request, '{0}/frontend/modelo_asg/nuestro_enfoque_asg.html'.format(request.LANGUAGE_CODE), context)
 
 
 @gzip_page
@@ -53,6 +63,74 @@ def vinculacion_ods(request):
         'imagen': staticfiles_storage.url('images/headers/ODS_h.jpg'),
     }
     return render(request, '{0}/frontend/modelo_asg/vinculacion_ods.html'.format(request.LANGUAGE_CODE), context)
+
+
+# Responsabilidad social
+@gzip_page
+def diversidad_inclusion(request):
+    context = {
+        'title': _("Diversidad e inclusión"),
+        'page': 'diversidad-inclusion',
+        'imagen': staticfiles_storage.url('images/headers/ODS_h.jpg'),
+    }
+    return render(request,
+                  '{0}/frontend/responsabilidad_social/diversidad_inclusion.html'.format(request.LANGUAGE_CODE),
+                  context)
+
+
+@gzip_page
+def grupos_interes(request):
+    context = {
+        'title': _("Grupos de interés"),
+        'page': 'grupos-interes',
+        'imagen': staticfiles_storage.url('images/headers/ODS_h.jpg'),
+    }
+    return render(request,
+                  '{0}/frontend/responsabilidad_social/grupos_interes.html'.format(request.LANGUAGE_CODE),
+                  context)
+
+
+@gzip_page
+def vinculacion_comunidad(request):
+    context = {
+        'title': _("Vinculación con la comunidad"),
+        'page': 'vinculacion-comunidad',
+        'imagen': staticfiles_storage.url('images/headers/ODS_h.jpg'),
+    }
+    return render(request,
+                  '{0}/frontend/responsabilidad_social/vinculacion_comunidad.html'.format(request.LANGUAGE_CODE),
+                  context)
+
+
+# Gobernanza
+@gzip_page
+def xxxx(request):
+    context = {
+        'title': _("Xxxx"),
+        'page': 'xxxx',
+        'imagen': staticfiles_storage.url('images/headers/ODS_h.jpg'),
+    }
+    return render(request, '{0}/frontend/gobernanza/xxxx.html'.format(request.LANGUAGE_CODE), context)
+
+
+@gzip_page
+def xxxxx(request):
+    context = {
+        'title': _("Xxxxx"),
+        'page': 'xxxxx',
+        'imagen': staticfiles_storage.url('images/headers/ODS_h.jpg'),
+    }
+    return render(request, '{0}/frontend/gobernanza/xxxxx.html'.format(request.LANGUAGE_CODE), context)
+
+
+@gzip_page
+def estrategia_asg(request):
+    context = {
+        'title': _("Estrategia ASG"),
+        'page': 'estrategia-asg',
+        'imagen': staticfiles_storage.url('images/headers/Estrategia-ASG.png'),
+    }
+    return render(request, '{0}/frontend/modelo_asg/estrategia_asg.html'.format(request.LANGUAGE_CODE), context)
 
 
 # Medio Ambiente
@@ -129,18 +207,6 @@ def cadena_suministros(request):
         'imagen': staticfiles_storage.url('images/headers/Materialidad.png'),
     }
     return render(request, '{0}/frontend/cadena_suministros.html'.format(request.LANGUAGE_CODE),
-                  context)
-
-
-@gzip_page
-def gobernanza(request):
-    context = {
-        'title': _("Gobernanza"),
-        'page': 'gobernanza',
-        'imagen': staticfiles_storage.url('images/headers/Gobernanza_h.png'),
-    }
-    return render(request,
-                  '{0}/frontend/gobernanza.html'.format(request.LANGUAGE_CODE),
                   context)
 
 

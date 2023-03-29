@@ -1,0 +1,50 @@
+{% extends 'layouts/interior.html' %}
+{% load static %}
+{% block otherstyles %}
+    <style>
+        .title {
+            text-align: center;
+            color: #2572ae;
+        }
+    </style>
+{% endblock %}
+
+{% block wrapper %}
+    <div class="content-wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="text-center tc-blue mt-5 mb-5">Reforzamiento al Sistema de Compliance, Integridad y
+                        Anticorrupción</h1>
+
+                    <p class="text-justify">A partir de un diagnóstico del nivel de cumplimiento de la organización, con
+                        la intención de
+                        alinearnos a las mejores prácticas, se efectuaron modificaciones al Sistema de Compliance,
+                        Integridad y Anticorrupción de la organización, comprendiendo la inclusión de la Política de
+                        Integridad, el Código de Ética y Conducta, el Manual de la Organización en Materia de
+                        Cumplimiento y la Política de Anticorrupción y Antisoborno.</p>
+
+                    <div class="text-center">
+                        <img class="img-fluid" src="{% static 'images/Politicas.png' %}" width="600" height="600">
+                    </div>
+
+                    <h1 class="text-center tc-blue mt-5 mb-5">DERECHOS HUMANOS</h1>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <br><br>
+                            <p class="text-justify">Como programa integral de cuidado y procuración de los derechos
+                                humanos, basamos nuestras
+                                políticas en la no discriminación y apoyo continuo a las comunidades.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="text-center">
+                                <img class="img-fluid" src="{% static 'images/Derechos_humanos.png' %}" width="300"
+                                     height="300">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

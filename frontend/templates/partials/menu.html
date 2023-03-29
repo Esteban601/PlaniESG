@@ -26,13 +26,23 @@
         </a>
     </li>
     <li>
+        <a href="{% url 'ambiental' %}">
+            <div>{% trans 'Ambiental' %}</div>
+        </a>
+    </li>
+    <li>
         <a href="#">
-            <div>{% trans 'Medio Ambiente' %}</div>
+            <div>{% trans 'Modelo ASG' %}</div>
         </a>
         <ul>
-            <li class="{% if page == 'gestion-ambiental' %}current{% endif %}">
-                <a href="{% url 'gestion-ambiental' %}">
-                    <div>{% trans "Gestión Ambiental" %}</div>
+            <li class="{% if page == 'materialidad' %}current{% endif %}">
+                <a href="{% url 'materialidad' %}">
+                    <div>{% trans "Materialidad" %}</div>
+                </a>
+            </li>
+            <li class="{% if page == 'nuestro-enfoque-asg' %}current{% endif %}">
+                <a href="{% url 'nuestro-enfoque-asg' %}">
+                    <div>{% trans "Nuestro enfoque ASG" %}</div>
                 </a>
             </li>
             <li class="{% if page == 'vinculacion-ods' %}current{% endif %}">
@@ -40,52 +50,50 @@
                     <div>{% trans "Vinculación con los ODS" %}</div>
                 </a>
             </li>
-            {#            <li class="{% if page == 'gestion-recursos' %}current{% endif %}">#}
-            {#                <a href="{% url 'gestion-recursos' %}">#}
-            {#                    <div>{% trans "Gestión de Recursos" %}</div>#}
-            {#                </a>#}
-            {#            </li>#}
-            {#            <li class="{% if page == 'residuos' %}current{% endif %}">#}
-            {#                <a href="{% url 'residuos' %}">#}
-            {#                    <div>{% trans "Residuos" %}</div>#}
-            {#                </a>#}
-            {#            </li>#}
-            {#            <li class="{% if page == 'contenido-descargable' %}current{% endif %}">#}
-            {#                <a href="{% url 'contenido-descargable' %}">#}
-            {#                    <div>{% trans "Contenido Descargable (Reporte)" %}</div>#}
-            {#                </a>#}
-            {#            </li>#}
         </ul>
     </li>
     <li>
-        <a href="{% url 'responsabilidad-social' %}">
+        <a href="#">
             <div>{% trans 'Responsabilidad Social' %}</div>
         </a>
+        <ul>
+            <li class="{% if page == 'diversidad-inclusion' %}current{% endif %}">
+                <a href="{% url 'diversidad-inclusion' %}">
+                    <div>{% trans "Diversidad e inclusión" %}</div>
+                </a>
+            </li>
+            <li class="{% if page == 'grupos-interes' %}current{% endif %}">
+                <a href="{% url 'grupos-interes' %}">
+                    <div>{% trans "Grupos de interés" %}</div>
+                </a>
+            </li>
+            <li class="{% if page == 'vinculacion-comunidad' %}current{% endif %}">
+                <a href="{% url 'vinculacion-comunidad' %}">
+                    <div>{% trans "Vinculación con la comunidad" %}</div>
+                </a>
+            </li>
+        </ul>
     </li>
     <li>
-        <a href="{% url 'gobernanza' %}">
+        <a href="#">
             <div>{% trans 'Gobernanza' %}</div>
         </a>
+        <ul>
+            <li class="{% if page == 'xxxx' %}current{% endif %}">
+                <a href="{% url 'xxxx' %}">
+                    <div>{% trans "Xxxx" %}</div>
+                </a>
+            </li>
+            <li class="{% if page == 'xxxxx' %}current{% endif %}">
+                <a href="{% url 'xxxxx' %}">
+                    <div>{% trans "Xxxxx" %}</div>
+                </a>
+            </li>
+        </ul>
     </li>
-    {#    <li>#}
-    {#        <a href="{% url 'cadena-suministros' %}">#}
-    {#            <div>{% trans 'Cadena de Suministros' %}</div>#}
-    {#        </a>#}
-    {#    </li>#}
     <li>
         <a href="{% url 'contacto' %}">
             <div>{% trans 'Contacto' %}</div>
         </a>
     </li>
-    {#    <li>#}
-    {#        <div class="{{ request.LANGUAGE_CODE }} ml-xl-5">#}
-    {#        <a class="cart-btn mr-3"  href="{% url 'prensa' %}">#}
-    {#            <span>{% trans 'Sala de Prensa' %}</span>#}
-    {#        </a>#}
-    {#            <a class=" cart-btn  {% if request.LANGUAGE_CODE == 'es' %}active{% endif %}"#}
-    {#               href="{% change_lang 'es' %}">ES </a>|#}
-    {#            <a class="cart-btn {% if request.LANGUAGE_CODE == 'en' %}active{% endif %}"#}
-    {#               href="{% change_lang 'en' %}">EN</a>#}
-    {#        </div>#}
-    {#    </li>#}
 </ul>

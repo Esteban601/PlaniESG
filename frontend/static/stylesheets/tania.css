@@ -74,7 +74,6 @@ body li {
     font-size: 1rem;
     font-family: var(--font-family-elementia);
     font-weight: lighter;
-
 }
 
 /* line 20, D:/begrand/app/assets/stylesheets/tania.css.scss */
@@ -931,8 +930,8 @@ h1.tc-blue {
     font-size: 0.625em !important;
     letter-spacing: 1px;
     color: #fff;
-    background: #2572ae none;
-    border: 1px #2572ae;
+    background: #dc291e none;
+    border: 1px #dc291e;
 }
 
 #fieldEmail {
@@ -970,7 +969,7 @@ h1.tc-blue {
 }
 
 .rs-footer {
-    color: #afb0b2;
+    color: #ffffff;
 }
 
 .rs-footer .footer-title:after {
@@ -1653,7 +1652,7 @@ blockquote {
 }
 
 #header.sticky-header #header-wrap {
-    background: #326A9B;
+    background: #dc291e;
     color: #ffffff;
 }
 
