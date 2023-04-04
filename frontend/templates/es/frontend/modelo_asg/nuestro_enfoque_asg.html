@@ -9,7 +9,22 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    {{ title }}
+                    <p>En Planigrupo buscamos generar valor sostenible y de largo plazo, teniendo un deber fiduciario
+                        con todos nuestros grupos de interés, siendo conscientes de los impactos que tenemos en el medio
+                        ambiente y la sociedad. Por consiguiente, en 2021 hicimos nuestro primer análisis de
+                        materialidad para guiar nuevas iniciativas y fortalecer las ya existentes con el fin de reforzar
+                        nuestra estrategia de sostenibilidad.</p>
+
+                    <p>Algunas de las iniciativas implementadas de responsabilidad social son “La Escuela más del
+                        Mundo”, que contribuyó a la educación de niños y jóvenes durante la pandemia brindando espacios
+                        seguros con internet de alta velocidad; “Bando de Tapitas”, ayudó al pago de quimioterapias de
+                        niños con cáncer, recolectando 39.5 toneladas de tapitas equivalentes a 745 quimioterapias o
+                        1,495 dosis de suplementos alimenticios; de igual manera, en alianza con Grupo Allen se
+                        reciclaron 30 toneladas de plástico PET, equivalente a 52,460 kg de CO<sub>2</sub></p>
+
+                    <div class="text-center">
+                        <img class="img-fluid" src="{% static 'images/Matriz_ASG.png' %}" alt="">
+                    </div>
                 </div>
             </div>
         </div>
@@ -17,27 +32,5 @@
 {% endblock %}
 
 {% block otherscripts %}
-    <script>
-        $(function () {
-            $("#enviar").click(function (e) {
-                e.preventDefault();
-                if ($("#contacto").valid()) {
-                    $.ajax({
-                        type: 'POST',
-                        url: "{% url 'send-mail-contact' %}",
-                        dataType: 'json',
-                        data: $("#contacto").serialize(),
-                        complete: function (a, b) {
-                            $('.preloader').delay(1500).fadeOut(500);
-                        },
-                        success: function (response) {
-                            $("#contacto").trigger('reset');
-                            $('.preloader').fadeOut(500);
-                            $("#popup1").modal();
-                        }
-                    });
-                }
-            })
-        })
-    </script>
+
 {% endblock %}
