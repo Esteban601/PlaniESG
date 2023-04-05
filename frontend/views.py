@@ -104,16 +104,6 @@ def vinculacion_comunidad(request):
 
 # Gobernanza
 @gzip_page
-def xxxx(request):
-    context = {
-        'title': _("Xxxx"),
-        'page': 'xxxx',
-        'imagen': staticfiles_storage.url('images/headers/ODS_h.jpg'),
-    }
-    return render(request, '{0}/frontend/gobernanza/xxxx.html'.format(request.LANGUAGE_CODE), context)
-
-
-@gzip_page
 def xxxxx(request):
     context = {
         'title': _("Xxxxx"),
@@ -121,6 +111,16 @@ def xxxxx(request):
         'imagen': staticfiles_storage.url('images/headers/ODS_h.jpg'),
     }
     return render(request, '{0}/frontend/gobernanza/xxxxx.html'.format(request.LANGUAGE_CODE), context)
+
+
+@gzip_page
+def sistema_gobierno(request):
+    context = {
+        'title': _("Sistema de gobierno"),
+        'page': 'sistema_gobierno',
+        'imagen': staticfiles_storage.url('images/headers/ODS_h.jpg'),
+    }
+    return render(request, '{0}/frontend/gobernanza/sistema_gobierno.html'.format(request.LANGUAGE_CODE), context)
 
 
 @gzip_page

@@ -14,8 +14,8 @@ urlpatterns = [
     path('grupos-interes', views.grupos_interes, name='grupos-interes'),
     path('vinculacion-comunidad', views.vinculacion_comunidad, name='vinculacion-comunidad'),
 
-    path('xxxx', views.xxxx, name='xxxx'),
     path('xxxxx', views.xxxxx, name='xxxxx'),
+    path('sistema-gobierno', views.sistema_gobierno, name='sistema_gobierno'),
 
     path('estrategia-asg', views.estrategia_asg, name='estrategia-asg'),
     path('gestion-ambiental', views.gestion_ambiental, name='gestion-ambiental'),
