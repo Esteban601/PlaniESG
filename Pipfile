@@ -10,7 +10,7 @@ django = "==2.1.5"
 django-heroku = "*"
 gunicorn = "==19.7.1"
 python-dotenv = "*"
-#[requires]
-#python_version = "3.7"
+[requires]
+python_version = "3.7"
 psycopg2-binary = "*"
 requests = "*"
