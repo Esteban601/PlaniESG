@@ -1,2 +1,1 @@
-
-web: gunicorn gmurano.wsgi
+web: gunicorn planiesg.wsgi
