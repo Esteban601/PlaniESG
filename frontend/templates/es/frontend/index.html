@@ -15,13 +15,13 @@
         .repo-left {
             background-color: #f2f2f2;
             padding: 100px;
-            border-top: 4px solid #025D97;
+            border-top: 4px solid #dc291e;
             height: 350px;
         }
 
         .calendar-right {
             background-color: #f2f2f2;
-            border-top: 4px solid #66BAEA;
+            border-top: 4px solid #939598;
             border-left: 2px solid #fff;
             height: 350px;
         }
@@ -342,10 +342,13 @@
                         <div class="col-md-7 d-flex" style="align-items: center">
                             <div class="why-choose-text">
                                 <div class="text texto1">
-                                    <p class="text-justify">El plan maestro para conseguir un futuro sostenible para
-                                        todos. Se interrelacionan entre sí e incorporan los desafíos globales a los que
-                                        nos enfrentamos día a día, como la pobreza, la desigualdad, el clima, la
-                                        degradación ambiental, la prosperidad, la paz y la justicia.</p>
+                                    <p class="text-justify">Nuestra estrategia se enfoca en la adopción de marcos
+                                        internacionales que fomentan el desarrollo sostenible de las comunidades,
+                                        empresas y países en general. En este sentido, establecemos una conexión entre
+                                        nuestros enfoques sobre los temas más relevantes para nuestro negocio y los
+                                        Objetivos de Desarrollo Sostenible (ODS) definidos por las Naciones Unidas.
+                                        Asegurando que nuestras acciones contribuyan activamente al logro de estos
+                                        objetivos globales.</p>
                                     <a href="{% url 'vinculacion-ods' %}"
                                        class="button button-border button-rounded button-large noleftmargin topmargin-sm mb-5">{% trans 'Quiero conocer más' %}</a>
                                 </div>
@@ -362,7 +365,44 @@
             </div>
         </div>
     </section>
-    <h1 class="text-center tc-blue mt-5 mb-5">Principales Avances en Gestión Ambiental</h1>
+    <h1 class="text-center tc-blue mt-5 mb-5">Planigrupo y su compromiso de colaborar con la <br>comunidad para alcanzar
+        un impacto significativo</h1>
+
+    <div class="container">
+        <div class="p-0 pb-5">
+            <div class="pl-4 pr-4">
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="figure">
+                            <div class="imagen overflow-hidden">
+                                <img src="{% static 'images/bosque.png' %}" alt="">
+                            </div>
+                            <div class="texto bg-light-gray p-4 d-flex flex-column">
+                                <h3 class="mb-2">Banco de Tapitas</h3>
+                                <p class="text-justify">Programa que ayuda al pago de quimioterapias de niños con
+                                    cáncer: en el 2021 se recolectaron 39.5 toneladas de tapitas, equivalentes a 745
+                                    quimioterapias o 1,495 dosis de suplementos alimenticios. <br><br></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="figure">
+                            <div class="imagen overflow-hidden">
+                                <img src="{% static 'images/comunidades.png' %}" alt="">
+                            </div>
+                            <div class="texto bg-light-gray p-4 d-flex flex-column">
+                                <h3 class="mb-2">Alianza con Grupo Allen</h3>
+                                <p class="text-justify">En colaboración con Grupo Allen, hemos implementado un programa
+                                    de reciclaje de 30 toneladas de plástico PET, lo que se traduce en una disminución
+                                    de emisiones de 52,460 kilogramos de CO2 al medio ambiente.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="container">
     <ul class="nav nav-tabs d-flex flex-wrap justify-content-between plan-accion" id="cadena" role="tablist">
         <li class="nav-item" role="presentation">

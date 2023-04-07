@@ -62,11 +62,6 @@
                     <div>{% trans "Diversidad e inclusión" %}</div>
                 </a>
             </li>
-            <li class="{% if page == 'grupos-interes' %}current{% endif %}">
-                <a href="{% url 'grupos-interes' %}">
-                    <div>{% trans "Grupos de interés" %}</div>
-                </a>
-            </li>
             <li class="{% if page == 'vinculacion-comunidad' %}current{% endif %}">
                 <a href="{% url 'vinculacion-comunidad' %}">
                     <div>{% trans "Vinculación con la comunidad" %}</div>
@@ -79,14 +74,14 @@
             <div>{% trans 'Gobernanza' %}</div>
         </a>
         <ul>
-            <li class="{% if page == 'xxxxx' %}current{% endif %}">
-                <a href="{% url 'xxxxx' %}">
-                    <div>{% trans "Xxxxx" %}</div>
-                </a>
-            </li>
             <li class="{% if page == 'sistema_gobierno' %}current{% endif %}">
                 <a href="{% url 'sistema_gobierno' %}">
                     <div>{% trans "Sistema de gobierno" %}</div>
+                </a>
+            </li>
+            <li class="{% if page == 'grupos-interes' %}current{% endif %}">
+                <a href="{% url 'grupos-interes' %}">
+                    <div>{% trans "Grupos de interés" %}</div>
                 </a>
             </li>
         </ul>

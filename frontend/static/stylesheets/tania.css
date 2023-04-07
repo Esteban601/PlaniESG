@@ -889,7 +889,7 @@ a.btn-infoe:hover {
 }
 
 h1.tc-blue {
-    color: #2572AE;
+    color: #dc291e;
 }
 
 #consumo .honeycomb-wrapper .tile .honeycomb .honeycomb-path circle {
@@ -1693,7 +1693,7 @@ ul#cadena .nav-item .nav-link {
 
 ul#cadena .nav-item.show .nav-link, ul#cadena .nav-link.active {
     color: #ffffff;
-    background-color: #025D97;
+    background-color: #dc291e;
     border-color: transparent;
     height: 100%;
 }
@@ -1715,11 +1715,20 @@ ul#cadena > li > .nav-link.active:before {
     height: 0;
     border-style: solid;
     border-width: 10px 10px 0 10px;
-    border-color: #025D97 transparent transparent;
+    border-color: #dc291e transparent transparent;
 }
 
 .vertical-align-center {
     vertical-align: middle !important;
+}
+
+.figure:hover .texto {
+    background-color: #dc291e !important;
+    color: #fff !important;
+}
+
+.figure:hover h3 {
+    color: #fff !important;
 }
 
 @media (max-width: 992px) {

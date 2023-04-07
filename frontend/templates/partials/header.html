@@ -1,45 +1,25 @@
 {% load static %}
 
 <header id="header" class="transparent-header sticky-header">
-
     <div id="header-wrap" class="not-dark">
-
         <div class="container clearfix">
-
             <div id="primary-menu-trigger"><i role="presentation" class="icon-reorder"></i></div>
             <div class="top-header" style="z-index: 9999;">
                 {% include 'partials/top-header.html' %}
             </div>
-            <!-- Logo
-            ============================================= -->
             <div id="logo" style="max-width: 250px;">
                 <h1>
                     <a href="{% url 'index' %}" class="" data-dark-logo="{% static 'images/logo-blanco.png' %}"
                        title="plani">
                         <img src="{% static 'images/logo-plani-menu.svg' %}" alt="Logo"
-                             style="margin-top: 3px; padding-bottom: 0; width: 230px; height: 75px"></a>
+                             style="padding-top: 10px; padding-bottom: 0; width: 210px; height: 65px"></a>
                 </h1>
-                {#                <a href="{% url 'index' %}" class="retina-logo" data-dark-logo="{% static 'images/utils/logo_elementia.svg' %}" style="margin-top: 5px; padding-bottom: 10px;" >#}
-                {#                    <img src="{% static 'images/utils/logo_elementia_white.png' %} " alt="Canvas Logo"></a>#}
-            </div><!-- #logo end -->
-
-            <!-- Primary Navigation
-            ============================================= -->
+            </div>
             <div class="container">
                 <nav id="primary-menu">
                     {% include 'partials/menu.html' %}
-                </nav><!-- #primary-menu end -->
-
+                </nav>
             </div>
-            {#            <button data-selector=".search-container" class="btn search-toggle"><i role="presentation" class="fa fa-search"></i> </button>#}
-            {#            <div class="search-container">#}
-            {#                <form action="{% url 'resultados' %}?" method="get" class=" search-box">#}
-            {#                    <input type="text" class=" text search-input " name="q" placeholder="Search" >#}
-            {##}
-            {#                </form>#}
-            {#            </div>#}
         </div>
-
     </div>
-
 </header>

@@ -79,18 +79,6 @@ def diversidad_inclusion(request):
 
 
 @gzip_page
-def grupos_interes(request):
-    context = {
-        'title': _("Grupos de interés"),
-        'page': 'grupos-interes',
-        'imagen': staticfiles_storage.url('images/headers/plani-grupos-de-interes.png'),
-    }
-    return render(request,
-                  '{0}/frontend/responsabilidad_social/grupos_interes.html'.format(request.LANGUAGE_CODE),
-                  context)
-
-
-@gzip_page
 def vinculacion_comunidad(request):
     context = {
         'title': _("Vinculación con la comunidad"),
@@ -103,15 +91,6 @@ def vinculacion_comunidad(request):
 
 
 # Gobernanza
-@gzip_page
-def xxxxx(request):
-    context = {
-        'title': _("Xxxxx"),
-        'page': 'xxxxx',
-        'imagen': staticfiles_storage.url('images/headers/plani-grupos-de-interes.png'),
-    }
-    return render(request, '{0}/frontend/gobernanza/xxxxx.html'.format(request.LANGUAGE_CODE), context)
-
 
 @gzip_page
 def sistema_gobierno(request):
@@ -131,6 +110,18 @@ def estrategia_asg(request):
         'imagen': staticfiles_storage.url('images/headers/Estrategia-ASG.png'),
     }
     return render(request, '{0}/frontend/modelo_asg/estrategia_asg.html'.format(request.LANGUAGE_CODE), context)
+
+
+@gzip_page
+def grupos_interes(request):
+    context = {
+        'title': _("Grupos de interés"),
+        'page': 'grupos-interes',
+        'imagen': staticfiles_storage.url('images/headers/plani-grupos-de-interes.png'),
+    }
+    return render(request,
+                  '{0}/frontend/gobernanza/grupos_interes.html'.format(request.LANGUAGE_CODE),
+                  context)
 
 
 # Medio Ambiente
