@@ -29,7 +29,7 @@ def ambiental(request):
     context = {
         'title': _("Ambiental"),
         'page': 'ambiental',
-        'imagen': staticfiles_storage.url('images/headers/Materialidad.png'),
+        'imagen': staticfiles_storage.url('images/headers/plani-ambiental.png'),
     }
     return render(request, '{0}/frontend/ambiental.html'.format(request.LANGUAGE_CODE), context)
 
@@ -40,7 +40,7 @@ def materialidad(request):
     context = {
         'title': _("Materialidad"),
         'page': 'materialidad',
-        'imagen': staticfiles_storage.url('images/headers/Materialidad.png'),
+        'imagen': staticfiles_storage.url('images/headers/plani-materialidad.png'),
     }
     return render(request, '{0}/frontend/modelo_asg/materialidad.html'.format(request.LANGUAGE_CODE), context)
 
@@ -50,7 +50,7 @@ def nuestro_enfoque_asg(request):
     context = {
         'title': _("Nuestro enfoque ASG"),
         'page': 'nuestro-enfoque-asg',
-        'imagen': staticfiles_storage.url('images/headers/Materialidad.png'),
+        'imagen': staticfiles_storage.url('images/headers/plani-asg.png'),
     }
     return render(request, '{0}/frontend/modelo_asg/nuestro_enfoque_asg.html'.format(request.LANGUAGE_CODE), context)
 
@@ -60,7 +60,7 @@ def vinculacion_ods(request):
     context = {
         'title': _("Vinculación con los ODS"),
         'page': 'vinculacion-ods',
-        'imagen': staticfiles_storage.url('images/headers/ODS_h.jpg'),
+        'imagen': staticfiles_storage.url('images/headers/plani-ods.png'),
     }
     return render(request, '{0}/frontend/modelo_asg/vinculacion_ods.html'.format(request.LANGUAGE_CODE), context)
 
@@ -71,7 +71,7 @@ def diversidad_inclusion(request):
     context = {
         'title': _("Diversidad e inclusión"),
         'page': 'diversidad-inclusion',
-        'imagen': staticfiles_storage.url('images/headers/ODS_h.jpg'),
+        'imagen': staticfiles_storage.url('images/headers/plani-inclusion.png'),
     }
     return render(request,
                   '{0}/frontend/responsabilidad_social/diversidad_inclusion.html'.format(request.LANGUAGE_CODE),
@@ -83,7 +83,7 @@ def grupos_interes(request):
     context = {
         'title': _("Grupos de interés"),
         'page': 'grupos-interes',
-        'imagen': staticfiles_storage.url('images/headers/ODS_h.jpg'),
+        'imagen': staticfiles_storage.url('images/headers/plani-grupos-de-interes.png'),
     }
     return render(request,
                   '{0}/frontend/responsabilidad_social/grupos_interes.html'.format(request.LANGUAGE_CODE),
@@ -95,7 +95,7 @@ def vinculacion_comunidad(request):
     context = {
         'title': _("Vinculación con la comunidad"),
         'page': 'vinculacion-comunidad',
-        'imagen': staticfiles_storage.url('images/headers/ODS_h.jpg'),
+        'imagen': staticfiles_storage.url('images/headers/plani-vinculacion-comunidad.png'),
     }
     return render(request,
                   '{0}/frontend/responsabilidad_social/vinculacion_comunidad.html'.format(request.LANGUAGE_CODE),
@@ -108,7 +108,7 @@ def xxxxx(request):
     context = {
         'title': _("Xxxxx"),
         'page': 'xxxxx',
-        'imagen': staticfiles_storage.url('images/headers/ODS_h.jpg'),
+        'imagen': staticfiles_storage.url('images/headers/plani-grupos-de-interes.png'),
     }
     return render(request, '{0}/frontend/gobernanza/xxxxx.html'.format(request.LANGUAGE_CODE), context)
 
@@ -118,7 +118,7 @@ def sistema_gobierno(request):
     context = {
         'title': _("Sistema de gobierno"),
         'page': 'sistema_gobierno',
-        'imagen': staticfiles_storage.url('images/headers/ODS_h.jpg'),
+        'imagen': staticfiles_storage.url('images/headers/plani-gobierno.png'),
     }
     return render(request, '{0}/frontend/gobernanza/sistema_gobierno.html'.format(request.LANGUAGE_CODE), context)
 
@@ -149,7 +149,7 @@ def vinculacion_ods(request):
     context = {
         'title': _("Vinculación con los ODS"),
         'page': 'vinculacion-ods',
-        'imagen': staticfiles_storage.url('images/headers/ODS_h.jpg'),
+        'imagen': staticfiles_storage.url('images/headers/plani-ods.png'),
     }
     return render(request, '{0}/frontend/medio_ambiente/vinculacion_ods.html'.format(request.LANGUAGE_CODE), context)
 
@@ -221,7 +221,7 @@ def contacto(request):
         'title': _("Contacto"),
         'page': 'contacto',
         'section': _('Contacto'),
-        'imagen': staticfiles_storage.url('images/headers/Contacto_h.png'),
+        'imagen': staticfiles_storage.url('images/headers/plani-contacto.png'),
 
         # 'imagen': imagen,
     }
