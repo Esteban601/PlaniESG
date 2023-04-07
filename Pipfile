@@ -6,11 +6,11 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-django = "==2.1.5"
+django = "==4.0"
 django-heroku = "*"
-gunicorn = "==19.7.1"
+gunicorn = "*"
 python-dotenv = "*"
 [requires]
-python_version = "3.7"
+python_version = "python-3.10.11"
 psycopg2-binary = "*"
 requests = "*"
