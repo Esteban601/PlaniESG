@@ -58,6 +58,50 @@
                         <li>- Eje X: La importancia de los impactos ESG en el negocio.</li>
                         <li>- Eje Y: La influencia en las evaluaciones y decisiones de los grupos de interés.</li>
                     </ul>
+
+                    <div class="col-12">
+                        <h1 class="text-center tc-blue mt-5 mb-5">Encuesta por grupos de interés</h1>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div id="directores" style="height: 350px;"></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div id="inquilinos" style="height: 350px;"></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div id="inversionistas" style="height: 350px;"></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div id="proveedores" style="height: 350px;"></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div id="bancos" style="height: 350px;"></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div id="colaboradores" style="height: 350px;"></div>
+                        </div>
+                        <div class="col-md-4 offset-md-2">
+                            <div id="consejo" style="height: 350px;"></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div id="otros" style="height: 350px;"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <h1 class="text-center tc-blue mt-5 mb-5">Internos vs Externos</h1>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div id="interno" style="height: 350px;"></div>
+                        </div>
+                        <div class="col-md-6">
+                            <div id="externo" style="height: 350px;"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -65,5 +109,284 @@
 {% endblock %}
 
 {% block otherscripts %}
+    <script src="{% static 'javascripts/amcharts/amcharts-2.js' %}"></script>
+    <script src="{% static 'javascripts/amcharts/pie-2.js' %}"></script>
+    <script src="{% static 'javascripts/amcharts/animate.js' %}"></script>
 
+    <script>
+        var directores = AmCharts.makeChart("directores", {
+            "type": "pie",
+            "theme": "none",
+            "dataProvider": [{"sector": "", "size": 6},
+                {"sector": "", "size": 94}],
+            "valueField": "size",
+            "titleField": "sector",
+            "labelText": "",
+            "balloonText": "",
+            "colors": ["#DC291E", "#939598"],
+            "startDuration": 0,
+            "innerRadius": 80,
+            "pullOutRadius": 30,
+            "marginTop": 10,
+            "titles": [{
+                "text": "Directores",
+                "size": 14
+            }],
+            "allLabels": [{
+                "y": "52%",
+                "align": "center",
+                "size": 25,
+                "bold": true,
+                "text": "6%",
+                "color": "#555"
+            }],
+        });
+        var inquilinos = AmCharts.makeChart("inquilinos", {
+            "type": "pie",
+            "theme": "none",
+            "dataProvider": [{"sector": "", "size": 8},
+                {"sector": "", "size": 92}],
+            "valueField": "size",
+            "titleField": "sector",
+            "labelText": "",
+            "balloonText": "",
+            "colors": ["#DC291E", "#939598"],
+            "startDuration": 0,
+            "innerRadius": 80,
+            "pullOutRadius": 30,
+            "marginTop": 10,
+            "titles": [{
+                "text": "Inquilinos",
+                "size": 14
+            }],
+            "allLabels": [{
+                "y": "52%",
+                "align": "center",
+                "size": 25,
+                "bold": true,
+                "text": "8%",
+                "color": "#555"
+            }],
+        });
+        var inversionistas = AmCharts.makeChart("inversionistas", {
+            "type": "pie",
+            "theme": "none",
+            "dataProvider": [{"sector": "", "size": 7},
+                {"sector": "", "size": 93}],
+            "valueField": "size",
+            "titleField": "sector",
+            "labelText": "",
+            "balloonText": "",
+            "colors": ["#DC291E", "#939598"],
+            "startDuration": 0,
+            "innerRadius": 80,
+            "pullOutRadius": 30,
+            "marginTop": 10,
+            "titles": [{
+                "text": "Inversionistas",
+                "size": 14
+            }],
+            "allLabels": [{
+                "y": "52%",
+                "align": "center",
+                "size": 25,
+                "bold": true,
+                "text": "7%",
+                "color": "#555"
+            }],
+        });
+        var proveedores = AmCharts.makeChart("proveedores", {
+            "type": "pie",
+            "theme": "none",
+            "dataProvider": [{"sector": "", "size": 24},
+                {"sector": "", "size": 76}],
+            "valueField": "size",
+            "titleField": "sector",
+            "labelText": "",
+            "balloonText": "",
+            "colors": ["#DC291E", "#939598"],
+            "startDuration": 0,
+            "innerRadius": 80,
+            "pullOutRadius": 30,
+            "marginTop": 10,
+            "titles": [{
+                "text": "Proveedores",
+                "size": 14
+            }],
+            "allLabels": [{
+                "y": "52%",
+                "align": "center",
+                "size": 25,
+                "bold": true,
+                "text": "24%",
+                "color": "#555"
+            }],
+        });
+        var bancos = AmCharts.makeChart("bancos", {
+            "type": "pie",
+            "theme": "none",
+            "dataProvider": [{"sector": "", "size": 13},
+                {"sector": "", "size": 87}],
+            "valueField": "size",
+            "titleField": "sector",
+            "labelText": "",
+            "balloonText": "",
+            "colors": ["#DC291E", "#939598"],
+            "startDuration": 0,
+            "innerRadius": 80,
+            "pullOutRadius": 30,
+            "marginTop": 10,
+            "titles": [{
+                "text": "Bancos",
+                "size": 14
+            }],
+            "allLabels": [{
+                "y": "52%",
+                "align": "center",
+                "size": 25,
+                "bold": true,
+                "text": "13%",
+                "color": "#555"
+            }],
+        });
+        var colaboradores = AmCharts.makeChart("colaboradores", {
+            "type": "pie",
+            "theme": "none",
+            "dataProvider": [{"sector": "", "size": 26},
+                {"sector": "", "size": 74}],
+            "valueField": "size",
+            "titleField": "sector",
+            "labelText": "",
+            "balloonText": "",
+            "colors": ["#DC291E", "#939598"],
+            "startDuration": 0,
+            "innerRadius": 80,
+            "pullOutRadius": 30,
+            "marginTop": 10,
+            "titles": [{
+                "text": "Colaboradores",
+                "size": 14
+            }],
+            "allLabels": [{
+                "y": "52%",
+                "align": "center",
+                "size": 25,
+                "bold": true,
+                "text": "26%",
+                "color": "#555"
+            }],
+        });
+        var consejo = AmCharts.makeChart("consejo", {
+            "type": "pie",
+            "theme": "none",
+            "dataProvider": [{"sector": "", "size": 9},
+                {"sector": "", "size": 91}],
+            "valueField": "size",
+            "titleField": "sector",
+            "labelText": "",
+            "balloonText": "",
+            "colors": ["#DC291E", "#939598"],
+            "startDuration": 0,
+            "innerRadius": 80,
+            "pullOutRadius": 30,
+            "marginTop": 10,
+            "titles": [{
+                "text": "Consejo",
+                "size": 14
+            }],
+            "allLabels": [{
+                "y": "52%",
+                "align": "center",
+                "size": 25,
+                "bold": true,
+                "text": "9%",
+                "color": "#555"
+            }],
+        });
+        var otros = AmCharts.makeChart("otros", {
+            "type": "pie",
+            "theme": "none",
+            "dataProvider": [{"sector": "", "size": 7},
+                {"sector": "", "size": 93}],
+            "valueField": "size",
+            "titleField": "sector",
+            "labelText": "",
+            "balloonText": "",
+            "colors": ["#DC291E", "#939598"],
+            "startDuration": 0,
+            "innerRadius": 80,
+            "pullOutRadius": 30,
+            "marginTop": 10,
+            "titles": [{
+                "text": "Otros",
+                "size": 14
+            }],
+            "allLabels": [{
+                "y": "52%",
+                "align": "center",
+                "size": 25,
+                "bold": true,
+                "text": "7%",
+                "color": "#555"
+            }],
+        });
+        var interno = AmCharts.makeChart("interno", {
+            "type": "pie",
+            "theme": "none",
+            "dataProvider": [{"sector": "", "size": 40},
+                {"sector": "", "size": 60}],
+            "valueField": "size",
+            "titleField": "sector",
+            "labelText": "",
+            "balloonText": "",
+            "colors": ["#DC291E", "#939598"],
+            "startDuration": 0,
+            "innerRadius": 80,
+            "pullOutRadius": 30,
+            "marginTop": 10,
+            "allLabels": [{
+                "y": "49%",
+                "align": "center",
+                "size": 25,
+                "bold": true,
+                "text": "Interno",
+                "color": "#555"
+            }, {
+                "y": "43%",
+                "align": "center",
+                "size": 15,
+                "text": "40%",
+                "color": "#555"
+            }],
+        });
+        var externo = AmCharts.makeChart("externo", {
+            "type": "pie",
+            "theme": "none",
+            "dataProvider": [{"sector": "", "size": 60},
+                {"sector": "", "size": 40}],
+            "valueField": "size",
+            "titleField": "sector",
+            "labelText": "",
+            "balloonText": "",
+            "colors": ["#DC291E", "#939598"],
+            "startDuration": 0,
+            "innerRadius": 80,
+            "pullOutRadius": 30,
+            "marginTop": 10,
+            "allLabels": [{
+                "y": "49%",
+                "align": "center",
+                "size": 25,
+                "bold": true,
+                "text": "Externo",
+                "color": "#555"
+            }, {
+                "y": "43%",
+                "align": "center",
+                "size": 15,
+                "text": "60%",
+                "color": "#555"
+            }],
+        });
+    </script>
 {% endblock %}
