@@ -1739,6 +1739,10 @@ ul#cadena > li > .nav-link.active:before {
     transform: scale(120%);
 }
 
+[data-toggle="collapse"] {
+    cursor: pointer;
+}
+
 @media (max-width: 992px) {
     ul#cadena li.nav-item {
         width: 50%;
