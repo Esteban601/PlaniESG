@@ -75,327 +75,102 @@
 
 {% block wrapper %}
     {% include 'partials/slider_index.html' %}
-    {#    <section class="content-wrap pt-4 mb-0">#}
-    {#        <div class="clearfix">#}
-    {#            <h1 class="text-center tc-blue mt-5 mb-5">Nuestras Marcas </h1>#}
-    {#            <div class="col-12">#}
-    {#                <div id="oc-clients"#}
-    {#                     class="nobgcolor notopmargin owl-carousel owl-carousel-full image-carousel carousel-widget"#}
-    {#                     data-margin="" data-loop="true" data-nav="false" data-autoplay="2000" data-items="8"#}
-    {#                     data-pagi="false" data-items-xs="1"#}
-    {#                     data-items-sm="2" data-items-md="3" data-items-lg="5" data-items-xl="5">#}
-    {#                    <div class="oc-item">#}
-    {#                        <a href="https://jw-marriott.marriott.com" aria-label="this opens in a new tab"#}
-    {#                           target="_blank">#}
-    {#                            <img src="{% static 'images/empresas/11c.png' %}"#}
-    {#                                 alt="Clients"></a>#}
-    {#                    </div>#}
-    {#                    <div class="oc-item">#}
-    {#                        <a href="https://www.marriott.com/default.mi"#}
-    {#                           aria-label="this opens in a new tab" target="_blank">#}
-    {#                            <img src="{% static 'images/empresas/11b.png' %}"#}
-    {#                                 alt="Clients"></a>#}
-    {#                    </div>#}
-    {#                    <div class="oc-item">#}
-    {#                        <a href="http://www.hcg.com.mx" aria-label="this opens in a new tab" target="_blank">#}
-    {#                            <img src="{% static 'images/empresas/2b.png' %}"#}
-    {#                                 alt="Clients"></a>#}
-    {#                    </div>#}
-    {#                    <div class="oc-item">#}
-    {#                        <a href="https://www.staybridge.com/hotels/us/es/reservation"#}
-    {#                           aria-label="this opens in a new tab"#}
-    {#                           target="_blank">#}
-    {#                            <img src="{% static 'images/empresas/14.png' %}"#}
-    {#                                 alt="Clients"></a>#}
-    {#                    </div>#}
-    {#                    <div class="oc-item">#}
-    {#                        <a href="https://www.wyndhamhotels.com/es-xl" aria-label="this opens in a new tab"#}
-    {#                           target="_blank">#}
-    {#                            <img src="{% static 'images/empresas/13.png' %}"#}
-    {#                                 alt="Clients"></a>#}
-    {#                    </div>#}
-    {#                    <div class="oc-item">#}
-    {#                        <a href="https://www.ihg.com/holidayinnexpress/hotels/us/es/reservation"#}
-    {#                           aria-label="this opens in a new tab"#}
-    {#                           target="_blank">#}
-    {#                            <img src="{% static 'images/empresas/12.png' %}"#}
-    {#                                 alt="Clients"></a>#}
-    {#                    </div>#}
-    {#                    <div class="oc-item">#}
-    {#                        <a href="https://www.ihg.com/holidayinnexpress/hotels/us/es/reservation"#}
-    {#                           aria-label="this opens in a new tab"#}
-    {#                           target="_blank">#}
-    {#                            <img src="{% static 'images/empresas/10.png' %}"#}
-    {#                                 alt="Clients"></a>#}
-    {#                    </div>#}
-    {#                    <div class="oc-item">#}
-    {#                        <a href="https://www.ihg.com/holidayinnexpress/hotels/us/es/reservation"#}
-    {#                           aria-label="this opens in a new tab"#}
-    {#                           target="_blank">#}
-    {#                            <img src="{% static 'images/empresas/009.png' %}"#}
-    {#                                 alt="Clients"></a>#}
-    {#                    </div>#}
-    {#                    <div class="oc-item">#}
-    {#                        <a href="https://www.hilton.com/en/hampton/" aria-label="this opens in a new tab"#}
-    {#                           target="_blank">#}
-    {#                            <img src="{% static 'images/empresas/007.png' %}"#}
-    {#                                 alt="Clients"></a>#}
-    {#                    </div>#}
-    {#                    <div class="oc-item">#}
-    {#                        <a href="https://fairfield.marriott.com" aria-label="this opens in a new tab"#}
-    {#                           target="_blank">#}
-    {#                            <img src="{% static 'images/empresas/006.png' %}"#}
-    {#                                 alt="Clients"></a><br>#}
-    {#                    </div>#}
-    {#                    <div class="oc-item">#}
-    {#                        <a href="https://www.ihg.com/crowneplaza/hotels/us/es/reservation"#}
-    {#                           aria-label="this opens in a new tab"#}
-    {#                           target="_blank">#}
-    {#                            <img src="{% static 'images/empresas/004.png' %}"#}
-    {#                                 alt="Clients"></a><br>#}
-    {#                    </div>#}
-    {#                    <div class="oc-item">#}
-    {#                        <a href="https://courtyard.marriott.com" aria-label="this opens in a new tab"#}
-    {#                           target="_blank">#}
-    {#                            <img src="{% static 'images/empresas/003.png' %}"#}
-    {#                                 alt="Clients"></a><br>#}
-    {#                    </div>#}
-    {#                    <div class="oc-item">#}
-    {#                        <a href="https://ac-hotels.marriott.com" aria-label="this opens in a new tab"#}
-    {#                           target="_blank">#}
-    {#                            <img src="{% static 'images/empresas/001.png' %}"#}
-    {#                                 alt="Clients"></a><br>#}
-    {#                    </div>#}
-    {#                </div>#}
-    {#            </div>#}
-    {#        </div>#}
-    {#    </section>#}
-    {#    <section id="content" class="">#}
-    {#        <div class="clearfix">#}
-    {#            <div class="container mt-5 pt-1 mb-0 pb-0">#}
-    {#                <div class="auto-container">#}
-    {#                    <h1 class="text-center tc-blue mt-5 mb-5">Avanzando hacia la Sustentabilidad</h1>#}
-    {##}
-    {#                    <div class="row clearfix d-flex align-items-center flex-wrap">#}
-    {#                        <div class="col-md-6 wow fadeInUp mb-5 mb-md-0" data-wow-duration="2s">#}
-    {#                            <div class="image display-block-image hidden-xs text-right">#}
-    {#                                <img class="wow fadeInLeft" data-wow-duration="2s"#}
-    {#                                     src="{% static 'images/Modelo_ASG.png' %}" alt="alternative text">#}
-    {#                            </div>#}
-    {#                        </div>#}
-    {#                        <div class="col-md-6 d-flex" style="align-items: center">#}
-    {#                            <div class="why-choose-text">#}
-    {#                                <h2 class="font-weight-bold">Modelo ASG</h2>#}
-    {#                                <div class="text texto1">#}
-    {#                                    <p class="text-justify">En Fibra Inn estamos comprometidos con la sostenibilidad y#}
-    {#                                        entendemos la responsabilidad que tiene la organización en materia ambiental,#}
-    {#                                        social y de gobernanza para cumplir con las expectativas de los grupos de#}
-    {#                                        interés#}
-    {#                                        y generar un impacto positivo en el medio ambiente y en las comunidades en las#}
-    {#                                        que operamos.</p>#}
-    {#                                </div>#}
-    {#                            </div>#}
-    {#                        </div>#}
-    {#                    </div>#}
-    {#                </div>#}
-    {#            </div>#}
-    {##}
-    {#            <div class="container mb-0 pb-0">#}
-    {#                <div class="auto-container">#}
-    {#                    <div class="row clearfix d-flex align-items-center flex-wrap">#}
-    {#                        <div class="col-md-6">#}
-    {#                            <div class="why-choose-text">#}
-    {#                                <div class="title">#}
-    {#                                    <h2 class="font-weight-bold">Medio Ambiente</h2>#}
-    {#                                </div>#}
-    {#                                <div class="text mb-4 mb-md-0">#}
-    {#                                    <p class="text-justify">El cuidado del medio ambiente es un tema de alta#}
-    {#                                        relevancia dentro de Fibra Inn. Buscamos generar consciencia y una gestión#}
-    {#                                        adecuada para cubrir las expectativas de nuestros grupos de interés tanto#}
-    {#                                        al interior como al exterior de la organización.</p>#}
-    {#                                </div>#}
-    {#                            </div>#}
-    {#                        </div>#}
-    {#                        <div class="col-md-6 mb-4">#}
-    {#                            <div class="image display-block-image hidden-xs">#}
-    {#                                <img class="wow fadeInRight" data-wow-duration="2s"#}
-    {#                                     src="{% static 'images/Medio_ambiente.png' %}" alt="alternative text">#}
-    {#                            </div>#}
-    {#                        </div>#}
-    {#                    </div>#}
-    {#                </div>#}
-    {#            </div>#}
-    {#        </div>#}
-    {#    </section>#}
-    {#    <section id="content">#}
-    {#        <div class="clearfix">#}
-    {#            <div class="container mb-0 pb-0">#}
-    {#                <div class="auto-container">#}
-    {#                    <div class="row clearfix d-flex align-items-center flex-wrap">#}
-    {#                        <div class="col-md-6 wow fadeInUp mb-5 mb-md-0" data-wow-duration="2s">#}
-    {#                            <div class="image display-block-image hidden-xs text-right">#}
-    {#                                <img class="wow fadeInLeft" data-wow-duration="2s"#}
-    {#                                     src="{% static 'images/Responsabilidad_social.png' %}"#}
-    {#                                     alt="alternative text">#}
-    {#                            </div>#}
-    {#                        </div>#}
-    {#                        <div class="col-md-6 d-flex" style="align-items: center">#}
-    {#                            <div class="why-choose-text">#}
-    {#                                <h2 class="font-weight-bold">Responsabilidad Social</h2>#}
-    {#                                <div class="text texto1">#}
-    {#                                    <p class="text-justify">En Fibra Inn somos conscientes del impacto que#}
-    {#                                        podemos generar en nuestros colaboradores, huéspedes, proveedores y#}
-    {#                                        comunidades en las que se encuentran nuestros hoteles, por lo que se#}
-    {#                                        han implementado diversas medidas e iniciativas que nos permitan crear#}
-    {#                                        vínculos fuertes y duraderos, entender sus necesidades y trabajar en#}
-    {#                                        conjunto para la generación de valor y un mayor impacto positivo.</p>#}
-    {#                                </div>#}
-    {#                            </div>#}
-    {#                        </div>#}
-    {#                    </div>#}
-    {#                </div>#}
-    {#            </div>#}
-    {##}
-    {#            <div class="container mb-5 pb-5">#}
-    {#                <div class="auto-container">#}
-    {#                    <div class="row clearfix d-flex align-items-center flex-wrap">#}
-    {#                        <div class="col-md-6">#}
-    {#                            <div class="why-choose-text">#}
-    {#                                <div class="title">#}
-    {#                                    <h2 class="font-weight-bold">Cadena de Suministros</h2>#}
-    {#                                </div>#}
-    {#                                <div class="text mb-4 mb-md-0">#}
-    {#                                    <p class="text-justify">En Fibra Inn contamos con una política de#}
-    {#                                        abastecimiento#}
-    {#                                        central,#}
-    {#                                        ya que creemos firmemente en nuestro compromiso y#}
-    {#                                        responsabilidad en materia ASG en todas nuestras actividades, incluyendo#}
-    {#                                        la cadena de suministro.</p>#}
-    {#                                </div>#}
-    {#                            </div>#}
-    {#                        </div>#}
-    {#                        <div class="col-md-6 mb-4">#}
-    {#                            <div class="image display-block-image hidden-xs">#}
-    {#                                <img class="wow fadeInRight" data-wow-duration="2s"#}
-    {#                                     src="{% static 'images/Cadena_suministros.png' %}" alt="alternative text">#}
-    {#                            </div>#}
-    {#                        </div>#}
-    {#                    </div>#}
-    {#                </div>#}
-    {#            </div>#}
-    {#            <div id="consumo" class="content-wrap pt-5 pb-3 finn-counto">#}
-    {#                <div class="container">#}
-    {#                    <div class="section-title mb-3 text-center">#}
-    {#                        <h1 class="title-effect tc-blue">Cifras Relevantes de la Gestión de Recursos#}
-    {#                            <br>(Consumo)#}
-    {#                        </h1>#}
-    {#                    </div>#}
-    {#                    <div class="row honeycomb-wrapper justify-content-center">#}
-    {#                        <div class="col-md-6 col-lg-4 tile">#}
-    {#                            <div class="honeycomb">#}
-    {#                                <svg class="honeycomb-path honeycomb-1" xmlns="http://www.w3.org/2000/svg"#}
-    {#                                     width="150" viewBox="0 0 160 160">#}
-    {#                                    <circle cx="80" cy="80" r="66" stroke-width="2" fill="none"></circle>#}
-    {#                                </svg>#}
-    {#                                <div class="content">#}
-    {#                                    <h2 class="count" data-speed="1500" data-to="158360" data-in-viewport="yes"#}
-    {#                                        data-decimals="0">0</h2><span class="title-effect "></span>#}
-    {#                                </div>#}
-    {#                            </div>#}
-    {#                            <a href="#"><h5><b>ENERGIA (GJ)</b></h5></a>#}
-    {#                        </div>#}
-    {#                        <div class="col-md-6 col-lg-4 tile">#}
-    {#                            <div class="honeycomb">#}
-    {#                                <svg class="honeycomb-path honeycomb-1" xmlns="http://www.w3.org/2000/svg"#}
-    {#                                     width="150" viewBox="0 0 160 160">#}
-    {#                                    <circle cx="80" cy="80" r="66" stroke-width="2" fill="none"></circle>#}
-    {#                                </svg>#}
-    {#                                <div class="content">#}
-    {#                                    <h2 class="count" data-speed="1500" data-to="411528" data-in-viewport="yes"#}
-    {#                                        data-decimals="0">0</h2><span class="title-effect "></span>#}
-    {#                                </div>#}
-    {#                            </div>#}
-    {#                            <a href="#"><h5><b>AGUA (m<sup>3</sup>)</b></h5><br></a>#}
-    {#                        </div>#}
-    {#                        <div class="col-md-6 col-lg-4 tile">#}
-    {#                            <div class="honeycomb">#}
-    {#                                <svg class="honeycomb-path honeycomb-1" xmlns="http://www.w3.org/2000/svg"#}
-    {#                                     width="150" viewBox="0 0 160 160">#}
-    {#                                    <circle cx="80" cy="80" r="66" stroke-width="2" fill="none"></circle>#}
-    {#                                </svg>#}
-    {#                                <div class="content">#}
-    {#                                    <h2 class="count" data-speed="1500" data-to="15931" data-in-viewport="yes"#}
-    {#                                        data-decimals="0">0</h2><span class="title-effect "></span>#}
-    {#                                </div>#}
-    {#                            </div>#}
-    {#                            <a href="#"><h5><b>GEI (TonCO<sub>2</sub>)</b><br></h5></a>#}
-    {#                        </div>#}
-    {#                    </div>#}
-    {#                </div>#}
-    {#            </div>#}
 
-    <section id="content" class="">
-        <div class="clearfix">
-            <div class="container mt-5 pt-1 mb-0 pb-0">
-                <div class="auto-container">
-                    <div class="row clearfix d-flex align-items-center flex-wrap">
-                        <div class="col-md-7 d-flex" style="align-items: center">
-                            <div class="why-choose-text">
-                                <div class="text texto1">
-                                    <p class="text-justify">Nuestra estrategia se enfoca en la adopción de marcos
-                                        internacionales que fomentan el desarrollo sostenible de las comunidades,
-                                        empresas y países en general. En este sentido, establecemos una conexión entre
-                                        nuestros enfoques sobre los temas más relevantes para nuestro negocio y los
-                                        Objetivos de Desarrollo Sostenible (ODS) definidos por las Naciones Unidas.
-                                        Asegurando que nuestras acciones contribuyan activamente al logro de estos
-                                        objetivos globales.</p>
-                                    <a href="{% url 'vinculacion-ods' %}"
-                                       class="button button-border button-rounded button-large noleftmargin topmargin-sm mb-5">{% trans 'Quiero conocer más' %}</a>
-                                </div>
-                            </div>
+    <div class="content-wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-justify">Con la finalidad de tener una base fundamentada que permitiera optimizar los
+                        recursos en
+                        estrategias que generen el mayor beneficio para todos, definiendo cuáles son los temas
+                        materiales con mayor impacto o aquellos asuntos que afectan al negocio y a los grupos de
+                        interés, así como reconocer los riesgos potenciales en la operación, Planigrupo realizó
+                        el primer análisis de materialidad para crear una estrategia ASG robusta y con mayor
+                        impacto. </p>
+
+                    <p class="text-justify">Para realizar el análisis de materialidad se encuestaron a un número
+                        representativo de cada uno
+                        de nuestros grupos de interés, con el apoyo de nuestro asesor Miranda ESG. La base para
+                        identificar y seleccionar a los grupos de interés participantes fue todo aquel grupo que
+                        estuviera directamente involucrado en procesos operativos tradicionales del negocio de acuerdo
+                        con nuestro objeto social.</p>
+
+                    <p class="text-justify">Dicha encuesta se delegó de manera interna a la Dirección de Finanzas, la
+                        cual a su vez presentó
+                        los resultados obtenidos al Consejo de Administración y Comité Técnico. A partir del análisis de
+                        información resultante de dichas interacciones con los grupos de interés, identificamos: </p>
+
+                    <div style="text-align:center;">
+                        <img src="{% static 'images/materialidad.png' %}"
+                             style="display:block; height: 500px;" alt="">
+                    </div>
+
+
+                    <div class="col-12">
+                        <h1 class="text-center tc-blue mt-5 mb-5">Encuesta por grupos de interés</h1>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div id="directores" style="height: 350px;"></div>
                         </div>
-                        <div class="col-md-5 wow fadeInUp mb-5 mb-md-0" data-wow-duration="2s">
-                            <div class="image display-block-image hidden-xs text-right">
-                                <img class="wow fadeInRight" data-wow-duration="2s"
-                                     src="{% static 'images/agenda_ods.png' %}" alt="alternative text">
-                            </div>
+                        <div class="col-md-4">
+                            <div id="inquilinos" style="height: 350px;"></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div id="inversionistas" style="height: 350px;"></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div id="proveedores" style="height: 350px;"></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div id="bancos" style="height: 350px;"></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div id="colaboradores" style="height: 350px;"></div>
+                        </div>
+                        <div class="col-md-4 offset-md-2">
+                            <div id="consejo" style="height: 350px;"></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div id="otros" style="height: 350px;"></div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <h1 class="text-center mt-5 mb-5" style="color: #dc291e;">Planigrupo y su compromiso de colaborar con la <br>comunidad
-        para alcanzar
-        un impacto significativo</h1>
 
-    <div class="container">
-        <div class="p-0 pb-5">
-            <div class="pl-4 pr-4">
-                <div class="row">
-                    <div class="col-md-6 mb-4">
-                        <div class="figure">
-                            <div class="imagen overflow-hidden">
-                                <img src="{% static 'images/tapitas.png' %}" alt="">
-                            </div>
-                            <div class="texto bg-light-gray p-4 d-flex flex-column">
-                                <h3 class="mb-2">Banco de Tapitas</h3>
-                                <p class="text-justify">Programa que ayuda al pago de quimioterapias de niños con
-                                    cáncer: en el 2021 se recolectaron 39.5 toneladas de tapitas, equivalentes a 745
-                                    quimioterapias o 1,495 dosis de suplementos alimenticios. <br><br></p>
-                            </div>
+                    <div class="col-12">
+                        <h1 class="text-center tc-blue mt-5 mb-5">Internos vs Externos</h1>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div id="interno" style="height: 350px;"></div>
+                        </div>
+                        <div class="col-md-6">
+                            <div id="externo" style="height: 350px;"></div>
                         </div>
                     </div>
-                    <div class="col-md-6 mb-4">
-                        <div class="figure">
-                            <div class="imagen overflow-hidden">
-                                <img src="{% static 'images/pet.png' %}" alt="">
+                    <h1 class="text-center tc-blue mt-5 mb-5">Matriz ASG</h1>
+                    <div style="text-align:center;">
+                        <img src="{% static 'images/relevantes_materialidad.png' %}"
+                             style="width:900px; height: 350px;"
+                             alt="">
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div style="text-align:center;">
+                                <img src="{% static 'images/matriz_m.png' %}"
+                                     style="display:block; width:100%; height: 550px;"
+                                     alt="">
                             </div>
-                            <div class="texto bg-light-gray p-4 d-flex flex-column">
-                                <h3 class="mb-2">Alianza con Grupo Allen</h3>
-                                <p class="text-justify">En colaboración con Grupo Allen, hemos implementado un programa
-                                    de reciclaje de 30 toneladas de plástico PET, lo que se traduce en una disminución
-                                    de emisiones de 52,460 kilogramos de CO2 al medio ambiente.</p>
+                        </div>
+
+
+                        <div class="col-md-6">
+                            <div style="text-align:center;">
+                                <img src="{% static 'images/Matriz_temas.png' %}"
+                                     style="display:block; width:100%; height: 550px;"
+                                     alt="">
                             </div>
                         </div>
                     </div>
@@ -404,7 +179,224 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="content-wrap pt-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p>En Planigrupo buscamos generar valor sostenible y de largo plazo, teniendo un deber fiduciario
+                        con todos nuestros grupos de interés, siendo conscientes de los impactos que tenemos en el medio
+                        ambiente y la sociedad. Por consiguiente, en 2021 hicimos nuestro primer análisis de
+                        materialidad para guiar nuevas iniciativas y fortalecer las ya existentes con el fin de reforzar
+                        nuestra estrategia de sostenibilidad.</p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div style="text-align:center;">
+                                <img src="{% static 'images/enfoque_asg.png' %}"
+                                     style="width:100%; height: 300px;"
+                                     alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div style="text-align:center;">
+                                <img src="{% static 'images/enfoque_asg2.png' %}"
+                                     style="width:100%; height: 300px;"
+                                     alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-wrap pt-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-justify">Con la estrategia de sustentabilidad que ha impulsado plani, estamos en el
+                        camino para contribuir con algunos de los objetivos impulsados por Las Naciones Unidas para la
+                        agenda 2030, los cuales se muestran a continuación:</p>
+
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th>OBJETIVO</th>
+                            <th>MEDIDA</th>
+                            <th>OBJETIVO</th>
+                            <th>MEDIDA</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>
+                                <div class="text-center">
+                                    <img class="img-fluid" src="{% static 'images/ODS_1.png' %}" width="100"
+                                         height="100">
+                                </div>
+                            </td>
+                            <td class="vertical-align-center">
+                                Empleo temporal
+                            </td>
+                            <td>
+                                <div class="text-center">
+                                    <img class="img-fluid" src="{% static 'images/ODS_3.png' %}" width="100"
+                                         height="100">
+                                </div>
+                            </td>
+                            <td class="vertical-align-center">
+                                Contar con medidas y acciones para prevenir accidentes y enfermedades en el trabajo
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="text-center">
+                                    <img class="img-fluid" src="{% static 'images/ODS_5.png' %}" width="100"
+                                         height="100">
+                                </div>
+                            </td>
+                            <td class="vertical-align-center">
+                                No discriminación
+                            </td>
+                            <td>
+                                <div class="text-center">
+                                    <img class="img-fluid" src="{% static 'images/ODS_7.png' %}" width="100"
+                                         height="100">
+                                </div>
+                            </td>
+                            <td class="vertical-align-center">
+                                Paneles solares
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="text-center">
+                                    <img class="img-fluid" src="{% static 'images/ODS_8.png' %}" width="100"
+                                         height="100">
+                                </div>
+                            </td>
+                            <td class="vertical-align-center">
+                                Empleos de calidad, programas para colaboradores, empleo temporal,
+                            </td>
+                            <td>
+                                <div class="text-center">
+                                    <img class="img-fluid" src="{% static 'images/ODS_9.png' %}" width="100"
+                                         height="100">
+                                </div>
+                            </td>
+                            <td class="vertical-align-center">
+                                No solo por el giro del negocio, sino parte de nuestra misión es contar con la
+                                tecnología de
+                                punta, que sea más eficiente
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="text-center">
+                                    <img class="img-fluid" src="{% static 'images/ODS_15.png' %}" width="100"
+                                         height="100">
+                                </div>
+                            </td>
+                            <td class="vertical-align-center">
+                                Programas de biodiversidad
+                            </td>
+                            <td>
+                                <div class="text-center">
+                                    <img class="img-fluid" src="{% static 'images/ODS_16.png' %}" width="100"
+                                         height="100">
+                                </div>
+                            </td>
+                            <td class="vertical-align-center">
+                                Medidas anticorrupción
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <p class="text-justify">En Planigrupo estamos comprometidos con el desarrollo sostenible de las
+                        comunidades, empresas y países en los que operamos, y para ello nos hemos enfocado en los
+                        Objetivos de Desarrollo Sostenible (ODS) de las Naciones Unidas.</p>
+
+                    <div style="text-align:center;">
+                        <img src="{% static 'images/vin_ods.png' %}" style="display:block; width:100%; height: 550px;"
+                             alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {#    <section id="content" class="">#}
+    {#        <div class="clearfix">#}
+    {#            <div class="container mt-5 pt-1 mb-0 pb-0">#}
+    {#                <div class="auto-container">#}
+    {#                    <div class="row clearfix d-flex align-items-center flex-wrap">#}
+    {#                        <div class="col-md-7 d-flex" style="align-items: center">#}
+    {#                            <div class="why-choose-text">#}
+    {#                                <div class="text texto1">#}
+    {#                                    <p class="text-justify">Nuestra estrategia se enfoca en la adopción de marcos#}
+    {#                                        internacionales que fomentan el desarrollo sostenible de las comunidades,#}
+    {#                                        empresas y países en general. En este sentido, establecemos una conexión entre#}
+    {#                                        nuestros enfoques sobre los temas más relevantes para nuestro negocio y los#}
+    {#                                        Objetivos de Desarrollo Sostenible (ODS) definidos por las Naciones Unidas.#}
+    {#                                        Asegurando que nuestras acciones contribuyan activamente al logro de estos#}
+    {#                                        objetivos globales.</p>#}
+    {#                                    <a href="{% url 'vinculacion-ods' %}"#}
+    {#                                       class="button button-border button-rounded button-large noleftmargin topmargin-sm mb-5">{% trans 'Quiero conocer más' %}</a>#}
+    {#                                </div>#}
+    {#                            </div>#}
+    {#                        </div>#}
+    {#                        <div class="col-md-5 wow fadeInUp mb-5 mb-md-0" data-wow-duration="2s">#}
+    {#                            <div class="image display-block-image hidden-xs text-right">#}
+    {#                                <img class="wow fadeInRight" data-wow-duration="2s"#}
+    {#                                     src="{% static 'images/agenda_ods.png' %}" alt="alternative text">#}
+    {#                            </div>#}
+    {#                        </div>#}
+    {#                    </div>#}
+    {#                </div>#}
+    {#            </div>#}
+    {#        </div>#}
+    {#    </section>#}
+    {#    <h1 class="text-center mt-5 mb-5" style="color: #dc291e;">Planigrupo y su compromiso de colaborar con la <br>comunidad#}
+    {#        para alcanzar#}
+    {#        un impacto significativo</h1>#}
+    {##}
+    {#    <div class="container">#}
+    {#        <div class="p-0 pb-5">#}
+    {#            <div class="pl-4 pr-4">#}
+    {#                <div class="row">#}
+    {#                    <div class="col-md-6 mb-4">#}
+    {#                        <div class="figure">#}
+    {#                            <div class="imagen overflow-hidden">#}
+    {#                                <img src="{% static 'images/tapitas.png' %}" alt="">#}
+    {#                            </div>#}
+    {#                            <div class="texto bg-light-gray p-4 d-flex flex-column">#}
+    {#                                <h3 class="mb-2">Banco de Tapitas</h3>#}
+    {#                                <p class="text-justify">Programa que ayuda al pago de quimioterapias de niños con#}
+    {#                                    cáncer: en el 2021 se recolectaron 39.5 toneladas de tapitas, equivalentes a 745#}
+    {#                                    quimioterapias o 1,495 dosis de suplementos alimenticios. <br><br></p>#}
+    {#                            </div>#}
+    {#                        </div>#}
+    {#                    </div>#}
+    {#                    <div class="col-md-6 mb-4">#}
+    {#                        <div class="figure">#}
+    {#                            <div class="imagen overflow-hidden">#}
+    {#                                <img src="{% static 'images/pet.png' %}" alt="">#}
+    {#                            </div>#}
+    {#                            <div class="texto bg-light-gray p-4 d-flex flex-column">#}
+    {#                                <h3 class="mb-2">Alianza con Grupo Allen</h3>#}
+    {#                                <p class="text-justify">En colaboración con Grupo Allen, hemos implementado un programa#}
+    {#                                    de reciclaje de 30 toneladas de plástico PET, lo que se traduce en una disminución#}
+    {#                                    de emisiones de 52,460 kilogramos de CO2 al medio ambiente.</p>#}
+    {#                            </div>#}
+    {#                        </div>#}
+    {#                    </div>#}
+    {#                </div>#}
+    {#            </div>#}
+    {#        </div>#}
+    {#    </div>#}
+    {##}
+    {#    <div class="container">#}
+
     <div class="pt-5 pb-5 mb-4">
         <div class="container">
             <div class="section-title mb-3 text-center">
@@ -430,9 +422,6 @@
             </div>
         </div>
     </div>
-    {#    </div>#}
-    {#    </section>#}
-
 {% endblock %}
 {% block otherscripts %}
     <script src="{% static 'javascripts/wow.min.js' %}"></script>
@@ -440,6 +429,287 @@
         new WOW().init();
     </script>
     <link rel="stylesheet" type="text/css" href="{% static 'stylesheets/css/index_comp.min.css' %}?v=1.0.1"/>
+
+    <script src="{% static 'javascripts/amcharts/amcharts-2.js' %}"></script>
+    <script src="{% static 'javascripts/amcharts/pie-2.js' %}"></script>
+    <script src="{% static 'javascripts/amcharts/animate.js' %}"></script>
+
+    <script>
+        var directores = AmCharts.makeChart("directores", {
+            "type": "pie",
+            "theme": "none",
+            "dataProvider": [{"sector": "", "size": 6},
+                {"sector": "", "size": 94}],
+            "valueField": "size",
+            "titleField": "sector",
+            "labelText": "",
+            "balloonText": "",
+            "colors": ["#DC291E", "#939598"],
+            "startDuration": 0,
+            "innerRadius": 80,
+            "pullOutRadius": 30,
+            "marginTop": 10,
+            "titles": [{
+                "text": "Directores",
+                "size": 14
+            }],
+            "allLabels": [{
+                "y": "52%",
+                "align": "center",
+                "size": 25,
+                "bold": true,
+                "text": "6%",
+                "color": "#555"
+            }],
+        });
+        var inquilinos = AmCharts.makeChart("inquilinos", {
+            "type": "pie",
+            "theme": "none",
+            "dataProvider": [{"sector": "", "size": 8},
+                {"sector": "", "size": 92}],
+            "valueField": "size",
+            "titleField": "sector",
+            "labelText": "",
+            "balloonText": "",
+            "colors": ["#DC291E", "#939598"],
+            "startDuration": 0,
+            "innerRadius": 80,
+            "pullOutRadius": 30,
+            "marginTop": 10,
+            "titles": [{
+                "text": "Inquilinos",
+                "size": 14
+            }],
+            "allLabels": [{
+                "y": "52%",
+                "align": "center",
+                "size": 25,
+                "bold": true,
+                "text": "8%",
+                "color": "#555"
+            }],
+        });
+        var inversionistas = AmCharts.makeChart("inversionistas", {
+            "type": "pie",
+            "theme": "none",
+            "dataProvider": [{"sector": "", "size": 7},
+                {"sector": "", "size": 93}],
+            "valueField": "size",
+            "titleField": "sector",
+            "labelText": "",
+            "balloonText": "",
+            "colors": ["#DC291E", "#939598"],
+            "startDuration": 0,
+            "innerRadius": 80,
+            "pullOutRadius": 30,
+            "marginTop": 10,
+            "titles": [{
+                "text": "Inversionistas",
+                "size": 14
+            }],
+            "allLabels": [{
+                "y": "52%",
+                "align": "center",
+                "size": 25,
+                "bold": true,
+                "text": "7%",
+                "color": "#555"
+            }],
+        });
+        var proveedores = AmCharts.makeChart("proveedores", {
+            "type": "pie",
+            "theme": "none",
+            "dataProvider": [{"sector": "", "size": 24},
+                {"sector": "", "size": 76}],
+            "valueField": "size",
+            "titleField": "sector",
+            "labelText": "",
+            "balloonText": "",
+            "colors": ["#DC291E", "#939598"],
+            "startDuration": 0,
+            "innerRadius": 80,
+            "pullOutRadius": 30,
+            "marginTop": 10,
+            "titles": [{
+                "text": "Proveedores",
+                "size": 14
+            }],
+            "allLabels": [{
+                "y": "52%",
+                "align": "center",
+                "size": 25,
+                "bold": true,
+                "text": "24%",
+                "color": "#555"
+            }],
+        });
+        var bancos = AmCharts.makeChart("bancos", {
+            "type": "pie",
+            "theme": "none",
+            "dataProvider": [{"sector": "", "size": 13},
+                {"sector": "", "size": 87}],
+            "valueField": "size",
+            "titleField": "sector",
+            "labelText": "",
+            "balloonText": "",
+            "colors": ["#DC291E", "#939598"],
+            "startDuration": 0,
+            "innerRadius": 80,
+            "pullOutRadius": 30,
+            "marginTop": 10,
+            "titles": [{
+                "text": "Bancos",
+                "size": 14
+            }],
+            "allLabels": [{
+                "y": "52%",
+                "align": "center",
+                "size": 25,
+                "bold": true,
+                "text": "13%",
+                "color": "#555"
+            }],
+        });
+        var colaboradores = AmCharts.makeChart("colaboradores", {
+            "type": "pie",
+            "theme": "none",
+            "dataProvider": [{"sector": "", "size": 26},
+                {"sector": "", "size": 74}],
+            "valueField": "size",
+            "titleField": "sector",
+            "labelText": "",
+            "balloonText": "",
+            "colors": ["#DC291E", "#939598"],
+            "startDuration": 0,
+            "innerRadius": 80,
+            "pullOutRadius": 30,
+            "marginTop": 10,
+            "titles": [{
+                "text": "Colaboradores",
+                "size": 14
+            }],
+            "allLabels": [{
+                "y": "52%",
+                "align": "center",
+                "size": 25,
+                "bold": true,
+                "text": "26%",
+                "color": "#555"
+            }],
+        });
+        var consejo = AmCharts.makeChart("consejo", {
+            "type": "pie",
+            "theme": "none",
+            "dataProvider": [{"sector": "", "size": 9},
+                {"sector": "", "size": 91}],
+            "valueField": "size",
+            "titleField": "sector",
+            "labelText": "",
+            "balloonText": "",
+            "colors": ["#DC291E", "#939598"],
+            "startDuration": 0,
+            "innerRadius": 80,
+            "pullOutRadius": 30,
+            "marginTop": 10,
+            "titles": [{
+                "text": "Consejo",
+                "size": 14
+            }],
+            "allLabels": [{
+                "y": "52%",
+                "align": "center",
+                "size": 25,
+                "bold": true,
+                "text": "9%",
+                "color": "#555"
+            }],
+        });
+        var otros = AmCharts.makeChart("otros", {
+            "type": "pie",
+            "theme": "none",
+            "dataProvider": [{"sector": "", "size": 7},
+                {"sector": "", "size": 93}],
+            "valueField": "size",
+            "titleField": "sector",
+            "labelText": "",
+            "balloonText": "",
+            "colors": ["#DC291E", "#939598"],
+            "startDuration": 0,
+            "innerRadius": 80,
+            "pullOutRadius": 30,
+            "marginTop": 10,
+            "titles": [{
+                "text": "Otros",
+                "size": 14
+            }],
+            "allLabels": [{
+                "y": "52%",
+                "align": "center",
+                "size": 25,
+                "bold": true,
+                "text": "7%",
+                "color": "#555"
+            }],
+        });
+        var interno = AmCharts.makeChart("interno", {
+            "type": "pie",
+            "theme": "none",
+            "dataProvider": [{"sector": "", "size": 40},
+                {"sector": "", "size": 60}],
+            "valueField": "size",
+            "titleField": "sector",
+            "labelText": "",
+            "balloonText": "",
+            "colors": ["#DC291E", "#939598"],
+            "startDuration": 0,
+            "innerRadius": 80,
+            "pullOutRadius": 30,
+            "marginTop": 10,
+            "allLabels": [{
+                "y": "49%",
+                "align": "center",
+                "size": 25,
+                "bold": true,
+                "text": "Interno",
+                "color": "#555"
+            }, {
+                "y": "43%",
+                "align": "center",
+                "size": 15,
+                "text": "40%",
+                "color": "#555"
+            }],
+        });
+        var externo = AmCharts.makeChart("externo", {
+            "type": "pie",
+            "theme": "none",
+            "dataProvider": [{"sector": "", "size": 60},
+                {"sector": "", "size": 40}],
+            "valueField": "size",
+            "titleField": "sector",
+            "labelText": "",
+            "balloonText": "",
+            "colors": ["#DC291E", "#939598"],
+            "startDuration": 0,
+            "innerRadius": 80,
+            "pullOutRadius": 30,
+            "marginTop": 10,
+            "allLabels": [{
+                "y": "49%",
+                "align": "center",
+                "size": 25,
+                "bold": true,
+                "text": "Externo",
+                "color": "#555"
+            }, {
+                "y": "43%",
+                "align": "center",
+                "size": 15,
+                "text": "60%",
+                "color": "#555"
+            }],
+        });
+    </script>
 
     <script src="{% static 'javascripts/js/rs-plugin/jquery.themepunch.tools.min.js' %}"></script>
     <script src="{% static 'javascripts/js/rs-plugin/jquery.themepunch.tools.min.js' %}"></script>
@@ -593,7 +863,7 @@
                     responsiveLevels: [1140, 992, 768, 480],
                     visibilityLevels: [1140, 992, 768, 480],
                     gridwidth: [1140, 992, 768, 480],
-                    gridheight: [700, 768, 960, 720],
+                    gridheight: [1100, 1300, 1500, 1500],
                     hideThumbs: 200,
 
                     thumbWidth: 100,

@@ -25,29 +25,28 @@
             <div>{% trans 'Inicio' %}</div>
         </a>
     </li>
-
-    <li>
-        <a href="#">
-            <div>{% trans 'Modelo ASG' %}</div>
-        </a>
-        <ul>
-            <li class="{% if page == 'materialidad' %}current{% endif %}">
-                <a href="{% url 'materialidad' %}">
-                    <div>{% trans "Materialidad" %}</div>
-                </a>
-            </li>
-            <li class="{% if page == 'nuestro-enfoque-asg' %}current{% endif %}">
-                <a href="{% url 'nuestro-enfoque-asg' %}">
-                    <div>{% trans "Nuestro enfoque ASG" %}</div>
-                </a>
-            </li>
-            <li class="{% if page == 'vinculacion-ods' %}current{% endif %}">
-                <a href="{% url 'vinculacion-ods' %}">
-                    <div>{% trans "Vinculación con los ODS" %}</div>
-                </a>
-            </li>
-        </ul>
-    </li>
+    {#    <li>#}
+    {#        <a href="#">#}
+    {#            <div>{% trans 'Modelo ASG' %}</div>#}
+    {#        </a>#}
+    {#        <ul>#}
+    {#            <li class="{% if page == 'materialidad' %}current{% endif %}">#}
+    {#                <a href="{% url 'materialidad' %}">#}
+    {#                    <div>{% trans "Materialidad" %}</div>#}
+    {#                </a>#}
+    {#            </li>#}
+    {#            <li class="{% if page == 'nuestro-enfoque-asg' %}current{% endif %}">#}
+    {#                <a href="{% url 'nuestro-enfoque-asg' %}">#}
+    {#                    <div>{% trans "Nuestro enfoque ASG" %}</div>#}
+    {#                </a>#}
+    {#            </li>#}
+    {#            <li class="{% if page == 'vinculacion-ods' %}current{% endif %}">#}
+    {#                <a href="{% url 'vinculacion-ods' %}">#}
+    {#                    <div>{% trans "Vinculación con los ODS" %}</div>#}
+    {#                </a>#}
+    {#            </li>#}
+    {#        </ul>#}
+    {#    </li>#}
     <li>
         <a href="{% url 'ambiental' %}">
             <div>{% trans 'Ambiental' %}</div>

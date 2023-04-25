@@ -1748,6 +1748,15 @@ ul#cadena > li > .nav-link.active:before {
     color: white;
 }
 
+#slider {
+    height: 500px;
+}
+
+.tp-leftarrow.tparrows.persephone, .tp-rightarrow.tparrows.persephone {
+    top: 35% !important;
+}
+
+
 @media (max-width: 992px) {
     ul#cadena li.nav-item {
         width: 50%;
