@@ -959,7 +959,7 @@ h1.tc-blue {
 }
 
 .rs-footer .footer-title {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     padding-bottom: 5px;
     color: #fff;
     font-size: 16px;
@@ -1756,6 +1756,17 @@ ul#cadena > li > .nav-link.active:before {
     top: 35% !important;
 }
 
+.owl-carousel .owl-nav [class*=owl-] {
+    top: 37%;
+}
+
+.owl-carousel .owl-dots .owl-dot {
+    background-color: #dc291e;
+}
+
+.owl-carousel .owl-nav [class*=owl-]:hover {
+    background-color: #dc291e;
+}
 
 @media (max-width: 992px) {
     ul#cadena li.nav-item {
