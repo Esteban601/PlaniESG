@@ -16207,9 +16207,9 @@ button.toast-close-button {
         margin-left: 25px;
     }
 
-    .tp-caption {
-        font-size: 25px !important;
-    }
+    /*.tp-caption {*/
+    /*    font-size: 25px !important;*/
+    /*}*/
 
     /* line 12003, D:/begrand/app/assets/stylesheets/css/style.css.scss */
     #toast-container > div {

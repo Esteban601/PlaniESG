@@ -1748,13 +1748,9 @@ ul#cadena > li > .nav-link.active:before {
     color: white;
 }
 
-#slider {
-    height: 500px;
-}
-
-.tp-leftarrow.tparrows.persephone, .tp-rightarrow.tparrows.persephone {
-    top: 35% !important;
-}
+/*#slider {*/
+/*    height: 500px;*/
+/*}*/
 
 .owl-carousel .owl-nav [class*=owl-] {
     top: 37%;
