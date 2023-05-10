@@ -12,14 +12,77 @@ from django.views.decorators.cache import cache_page
 from django.contrib.staticfiles.storage import staticfiles_storage
 from django.utils.translation import gettext as _
 import requests
+from django.views import generic
+
+
+class EventosView(generic.ListView):
+    def get_event_es_data():
+        eventsESList = [
+            {
+                "title": "Banco de Tapitas Enero-Julio 2022",
+                "date": "2022-06-01",
+                "description": "Se realizó una donación de más de 3 mil tapitas.",
+                "url": "",
+                "img": "images/eventos/Banco-de-tapitas-enero-julio-2022.png"
+            },
+            {
+                "title": "Máquinas de Reciclaje-AlEn",
+                "date": "2022-06-01",
+                "description": "De enero-julio 2022 se reciclaron más de 600 mil botellas de plástico que equivale a una disminución de 30 mil kg de CO2.",
+                "url": "",
+                "img": "images/eventos/Reciclar-para-ganar-Enero-julio-2022.png"
+            },
+            {
+                "title": "Máquinas de Reciclaje-AIEn",
+                "date": "2022-03-01",
+                "description": "De enero-abril 2022 se reciclaron más de 300 mil botellas de plástico equivalentes a una reducción de 17,642 kg de CO2",
+                "url": "",
+                "img": "images/eventos/Reciclar-para-ganar-abril-2022.png"
+            },
+            {
+                "title": "Reciclar para ganar. Alianza con grupo AIEn",
+                "date": "2022-03-01",
+                "description": "En lo que va del 2022 se han reciclado 324,448 botellas de plástico, una reducción de 17,642 kg de CO2",
+                "url": "",
+                "img": "images/eventos/Reciclar-2022-324-botellas.png"
+            },
+            {
+                "title": "Donación de Materiales a Fundación Hélice",
+                "date": "2022-03-01",
+                "description": "Se realizó una donación con la cual se obtuvieron diversos beneficios ambientales",
+                "url": "",
+                "img": "images/eventos/Helice.png"
+            },
+
+        ]
+        # Get the blog from id and add it to the context
+        context =  eventsESList
+        return eventsESList
+
+
+    def get_event_en_data():
+        eventsENList = [
+            {
+                "title": "VIVA AEROBUS REPORTS MONTHLY PASSENGER FIGURES CORRESPONDING TO FEBRUARY 2023",
+                "date": "2023-03-08",
+                "description": "description",
+                "url": "https://investorcloud.s3.amazonaws.com/VivaAerobus/InformacionFinanciera/SalaPrensa/2023-03-08-Trafico-febrero-2023-en.pdf"
+            }
+        ]
+        # Get the blog from id and add it to the context
+        context =  eventsENList
+        return eventsENList
 
 
 @gzip_page
 # @cache_page(60 * 15)
 def index(request):
+    eventos = EventosView.get_event_es_data()
     context = {
         'title': _("Inicio"),
         'page': 'index',
+        'eventos': eventos,
+
     }
     return render(request, '{0}/frontend/index.html'.format(request.LANGUAGE_CODE), context)
 
