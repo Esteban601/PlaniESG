@@ -16,14 +16,14 @@ from django.views import generic
 
 
 class EventosView(generic.ListView):
-    def get_event_es_data():
-        eventsESList = [
+    def get_event_amb_es_data():
+        eventsAmbESList = [
             {
                 "title": "Banco de Tapitas Enero-Julio 2022",
                 "date": "2022-06-01",
                 "description": "Se realizó una donación de más de 3 mil tapitas.",
                 "url": "",
-                "img": "images/eventos/Banco-de-tapitas-enero-julio-2022.png"
+                "img": "images/eventos/Banco-de-tapitas-enero-julio-2022.webp"
             },
             {
                 "title": "Máquinas de Reciclaje-AlEn",
@@ -56,8 +56,129 @@ class EventosView(generic.ListView):
 
         ]
         # Get the blog from id and add it to the context
-        context =  eventsESList
-        return eventsESList
+        context =  eventsAmbESList
+        return eventsAmbESList
+
+
+    def get_event_soc_es_data():
+        eventsSocESList = [
+            {
+                "title": "Inauguración de “ESPAZIOS IEMUJERES Y PUNTO NARANJA” ",
+                "date": "2022-06-01",
+                "description": "Inauguración de espacios para mujeres emprendedoras, así como un punto para atender y apoyar a mujeres que se sientan inseguras.",
+                "url": "",
+                "img": "images/eventos_soc/ESPAZIOS-IEMUJERES-Y-PUNTO-NARANJA.jpg"
+            },
+            {
+                "title": "Encendido de arbolitos 2022",
+                "date": "2022-06-01",
+                "description": "Se realizo el tradicional encendido de arbolitos navideños 2022 en nuestros centros comerciales.",
+                "url": "",
+                "img": "images/eventos_soc/encendido-arbolito.jpeg"
+            },
+            {
+                "title": "Alianza Fundación Lilo",
+                "date": "2022-06-01",
+                "description": "Nuestro programa “MANOS AL CORAZÓN” brinda apoyo con gastos hospitalarios y dispositivos",
+                "url": "",
+                "img": "images/eventos_soc/fundacion-lilo.png"
+            },
+            {
+                "title": "Reconocimiento a CiudadelaUV por el banco de tapitas ",
+                "date": "2022-06-01",
+                "description": "Reconocimiento al Banco de Tapitas A.C por su participación en Programa de Recolección de Tapitas de plástico.",
+                "url": "",
+                "img": "images/eventos_soc/Banco-tapitas-Junio-Ciudadela.png"
+            },
+            {
+                "title": "Entrega de juguetes",
+                "date": "2022-06-01",
+                "description": "Se realizo la entrega de juguetes que se recolectaron con la alianza DIF de Santa Catarina y Alianza Anticáncer.",
+                "url": "",
+                "img": "images/eventos_soc/entrega_juguetes.jpg"
+            },
+            {
+                "title": "Apoyo a Fundación ALIANZA ANTICÁNCER",
+                "date": "2022-06-01",
+                "description": "En conjunto con el DIF de Santa Catarina se recaudaron 382 artículos entre juguetes y taparroscas",
+                "url": "",
+                "img": "images/eventos_soc/Alianza-anti-cancer.png"
+            },
+            {
+                "title": "Teletón Coahuila",
+                "date": "2022-06-01",
+                "description": "Se contribuyo en la atención médica y rehabilitación de calidad para niñas y niños del CRIT Coahuila.",
+                "url": "",
+                "img": "images/eventos_soc/Teletn.png"
+            },
+            {
+                "title": "Corazones Rosa en Colaboración con Grupo AIEn",
+                "date": "2022-06-01",
+                "description": "Se recolectaron tapitas en puntos estratégicos de nuestras plazas, que se transformaron en un donativo para la fundación Asociación Unidas Contigo.",
+                "url": "",
+                "img": "images/eventos_soc/Corazones-rosas-con-grupo-alen.jpg"
+            },
+            {
+                "title": "Patrocinadores Oficiales de Reciclatón 2021 Fundación Teletón",
+                "date": "2022-06-01",
+                "description": "Planigrupo realizó un donativo para apoyar a los niños del CRIT Coahuila.",
+                "url": "",
+                "img": "images/eventos_soc/Reciclaton.jpg"
+            },
+            {
+                "title": "Banco de Tapitas febrero 2022",
+                "date": "2022-06-01",
+                "description": "Más de 40 toneladas, 750 quimioterapias, 1,500 suplementos alimenticios y 500 pacientes atendidos.",
+                "url": "",
+                "img": "images/eventos_soc/Banco-Tapitas-febrero-2022.jpeg"
+            },
+            {
+                "title": "Donativo en el Día de los Abuelos",
+                "date": "2022-06-01",
+                "description": "Se realizo visita y apoyo a asilos de abuelos en 4 comunidades, Cd Juárez, Guadalajara, Monterrey y Saltillo",
+                "url": "",
+                "img": "images/eventos_soc/donativo-abuelos.jpg"
+            },
+            {
+                "title": "Donativo Mobiliario a “Casa Hogar Manos de Amor por Bahía”",
+                "date": "2022-06-01",
+                "description": "Se realizó un donativo de mobiliario para niños en situación de pobreza extrema, huérfanos, entre otros",
+                "url": "",
+                "img": "images/eventos_soc/Donativo-hogar-manos-amor-por-habia.jpg"
+            },
+            {
+                "title": "Rosca de Reyes 2020",
+                "date": "2022-06-01",
+                "description": "Se realizó la tradicional rosca de reyes y diversas actividades con los reyes magos",
+                "url": "",
+                "img": "images/eventos_soc/dia-reyes.png"
+            },
+            {
+                "title": "Sanitización de Centros Comerciales a Nivel Nacional",
+                "date": "2022-06-01",
+                "description": "Se realizo la sanitización de centros comerciales para brindar mayor seguridad a los clientes",
+                "url": "",
+                "img": "images/eventos_soc/planigrupo-busca-adquirir-dos-centros-comerciales.png"
+            },
+            {
+                "title": "Recolección de tapitas para niños con cáncer",
+                "date": "2022-06-01",
+                "description": "Agradecemos a las personas que han recolectado tapitas y se han sumado a esta causa.",
+                "url": "",
+                "img": "images/eventos_soc/Recoleccion-tapitas-para-niños-con-cancer.jpg"
+            },
+            {
+                "title": "Donativo de Caretas al Municipio de Zapoapan, Jalisco",
+                "date": "2022-06-01",
+                "description": "Planigrupo apoya con la donación de 2,100 caretas que son de utilidad para la protección de los oficiales del municipio de Zapopan.",
+                "url": "",
+                "img": "images/plani1.png"
+            },
+
+        ]
+        # Get the blog from id and add it to the context
+        context =  eventsSocESList
+        return eventsSocESList
 
 
     def get_event_en_data():
@@ -77,11 +198,13 @@ class EventosView(generic.ListView):
 @gzip_page
 # @cache_page(60 * 15)
 def index(request):
-    eventos = EventosView.get_event_es_data()
+    eventos_amb = EventosView.get_event_amb_es_data()
+    eventos_soc = EventosView.get_event_soc_es_data()
     context = {
         'title': _("Inicio"),
         'page': 'index',
-        'eventos': eventos,
+        'eventos_amb': eventos_amb,
+        'eventos_soc': eventos_soc,
 
     }
     return render(request, '{0}/frontend/index.html'.format(request.LANGUAGE_CODE), context)
