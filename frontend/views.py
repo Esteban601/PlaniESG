@@ -212,9 +212,11 @@ def index(request):
 
 @gzip_page
 def ambiental(request):
+    eventos_amb = EventosView.get_event_amb_es_data()
     context = {
         'title': _("Ambiental"),
         'page': 'ambiental',
+        'eventos_amb': eventos_amb,
         'imagen': staticfiles_storage.url('images/headers/plani-ambiental.png'),
     }
     return render(request, '{0}/frontend/ambiental.html'.format(request.LANGUAGE_CODE), context)
@@ -254,9 +256,11 @@ def vinculacion_ods(request):
 # Responsabilidad social
 @gzip_page
 def diversidad_inclusion(request):
+    eventos_soc = EventosView.get_event_soc_es_data()
     context = {
         'title': _("Diversidad e inclusión"),
         'page': 'diversidad-inclusion',
+        'eventos_soc': eventos_soc,
         'imagen': staticfiles_storage.url('images/headers/plani-inclusion.png'),
     }
     return render(request,
@@ -266,9 +270,11 @@ def diversidad_inclusion(request):
 
 @gzip_page
 def vinculacion_comunidad(request):
+    eventos_soc = EventosView.get_event_soc_es_data()
     context = {
         'title': _("Vinculación con la comunidad"),
         'page': 'vinculacion-comunidad',
+        'eventos_soc': eventos_soc,
         'imagen': staticfiles_storage.url('images/headers/plani-vinculacion-comunidad.png'),
     }
     return render(request,
