@@ -167,13 +167,6 @@ class EventosView(generic.ListView):
                 "url": "",
                 "img": "images/eventos_soc/Recoleccion-tapitas-para-niños-con-cancer.jpg"
             },
-            {
-                "title": "Donativo de Caretas al Municipio de Zapoapan, Jalisco",
-                "date": "2022-06-01",
-                "description": "Planigrupo apoya con la donación de 2,100 caretas que son de utilidad para la protección de los oficiales del municipio de Zapopan.",
-                "url": "",
-                "img": "images/plani1.png"
-            },
 
         ]
         # Get the blog from id and add it to the context
