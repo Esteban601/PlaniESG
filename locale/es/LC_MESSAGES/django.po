@@ -97,7 +97,7 @@ msgstr ""
 msgid ""
 "Hemos realizado cambios y reforzamientos en nuestros sistemas de gobernanza, "
 "procurando siempre seguir alineados a nuestra metodología sustentable. "
-msgstr ""
+msgstr "We have made great progress in integrating and institutionalizing a sustainability approach into our culture, processes, and operations."
 
 #: frontend/templates/registration/login.html:8
 msgid "Cifras Principales"
