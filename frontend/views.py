@@ -215,6 +215,18 @@ def ambiental(request):
     return render(request, '{0}/frontend/ambiental.html'.format(request.LANGUAGE_CODE), context)
 
 
+@gzip_page
+def ambiental_info(request):
+    eventos_amb = EventosView.get_event_amb_es_data()
+    context = {
+        'title': _("Ambiental"),
+        'page': 'ambiental',
+        'eventos_amb': eventos_amb,
+        'imagen': staticfiles_storage.url('images/headers/plani-ambiental.png'),
+    }
+    return render(request, '{0}/frontend/ambiental_info.html'.format(request.LANGUAGE_CODE), context)
+
+
 # Modelo ASG
 @gzip_page
 def materialidad(request):
