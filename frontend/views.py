@@ -288,38 +288,57 @@ def vinculacion_ods(request):
 #
 
 # Gobernanza
-
 @gzip_page
-def sistema_gobierno(request):
+def gobernanza(request):
     context = {
-        'title': _("Sistema de gobierno"),
-        'page': 'sistema_gobierno',
+        'title': _("Gobernanza"),
+        'page': 'gobernanza',
         'imagen': staticfiles_storage.url('images/headers/plani-gobierno.png'),
     }
-    return render(request, '{0}/frontend/gobernanza/sistema_gobierno.html'.format(request.LANGUAGE_CODE), context)
+    return render(request, '{0}/frontend/gobernanza.html'.format(request.LANGUAGE_CODE), context)
 
 
 @gzip_page
-def estrategia_asg(request):
+def gobernanza_info(request):
     context = {
-        'title': _("Estrategia ASG"),
-        'page': 'estrategia-asg',
-        'imagen': staticfiles_storage.url('images/headers/Estrategia-ASG.png'),
+        'title': _("Gobernanza"),
+        'page': 'gobernanza',
+        'imagen': staticfiles_storage.url('images/headers/plani-gobierno.png'),
     }
-    return render(request, '{0}/frontend/modelo_asg/estrategia_asg.html'.format(request.LANGUAGE_CODE), context)
+    return render(request, '{0}/frontend/gobernanza_info.html'.format(request.LANGUAGE_CODE), context)
 
-
-@gzip_page
-def grupos_interes(request):
-    context = {
-        'title': _("Grupos de interés"),
-        'page': 'grupos-interes',
-        'imagen': staticfiles_storage.url('images/headers/plani-grupos-de-interes.png'),
-    }
-    return render(request,
-                  '{0}/frontend/gobernanza/grupos_interes.html'.format(request.LANGUAGE_CODE),
-                  context)
-
+#
+# @gzip_page
+# def sistema_gobierno(request):
+#     context = {
+#         'title': _("Sistema de gobierno"),
+#         'page': 'sistema_gobierno',
+#         'imagen': staticfiles_storage.url('images/headers/plani-gobierno.png'),
+#     }
+#     return render(request, '{0}/frontend/gobernanza/sistema_gobierno.html'.format(request.LANGUAGE_CODE), context)
+#
+#
+# @gzip_page
+# def estrategia_asg(request):
+#     context = {
+#         'title': _("Estrategia ASG"),
+#         'page': 'estrategia-asg',
+#         'imagen': staticfiles_storage.url('images/headers/Estrategia-ASG.png'),
+#     }
+#     return render(request, '{0}/frontend/modelo_asg/estrategia_asg.html'.format(request.LANGUAGE_CODE), context)
+#
+#
+# @gzip_page
+# def grupos_interes(request):
+#     context = {
+#         'title': _("Grupos de interés"),
+#         'page': 'grupos-interes',
+#         'imagen': staticfiles_storage.url('images/headers/plani-grupos-de-interes.png'),
+#     }
+#     return render(request,
+#                   '{0}/frontend/gobernanza/grupos_interes.html'.format(request.LANGUAGE_CODE),
+#                   context)
+#
 
 # Medio Ambiente
 @gzip_page

@@ -1,0 +1,60 @@
+{% extends 'layouts/interior.html' %}
+{% load static %}
+{% block otherstyles %}
+
+{% endblock %}
+
+{% block wrapper %}
+    <div class="content-wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                   <div class="image_wrapper">
+                        <a class="banner_page" href="{% url 'gobernanza_info' %}#sistema_gobierno">
+                            <img width="100%" src="{% static 'images/plani1.png' %}" alt="">
+                            <div class="overlay">
+                                <div class=" overlay_2">
+                                    <h3 class="text-white">Sistema de Gobierno</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6">
+                   <div class="image_wrapper">
+                        <a class="banner_page" href="{% url 'gobernanza_info' %}#grupos_interes">
+                            <img width="100%" src="{% static 'images/plani1.png' %}" alt="">
+                            <div class="overlay">
+                                <div class=" overlay_2">
+                                    <h3 class="text-white">Grupos de Interés</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block otherscripts %}
+    <script src="{% static 'javascripts/amcharts/amcharts.js' %}"></script>
+    <script src="{% static 'javascripts/amcharts/serial.js' %}"></script>
+    <script src="{% static 'javascripts/amcharts/pie.js' %}"></script>
+    <script src="{% static 'javascripts/amcharts/contenido/responsabilidad-social.js' %}"></script>
+    <script src="{% static 'javascripts/owl.carousel.min.js' %}"></script>
+    <script>
+        $(function () {
+
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 30,
+                nav: false,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                autoplayHoverPause: true,
+                items: 1,
+            });
+        })
+    </script>
+{% endblock %}
