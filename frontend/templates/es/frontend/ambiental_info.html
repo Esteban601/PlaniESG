@@ -1,0 +1,378 @@
+{% extends 'layouts/interior.html' %}
+{% load static %}
+{% block otherstyles %}
+
+{% endblock %}
+
+{% block wrapper %}
+    <div class="content-wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-justify">En Planigrupo, contamos con una estrategia integral para hacer frente al
+                        cambio climático. Para
+                        ello, hemos implementado diversas iniciativas en distintas áreas para promover la
+                        sustentabilidad y el cuidado del medio ambiente.</p>
+
+                    <p class="text-justify">En cuanto al manejo de desechos, contamos con procedimientos específicos en
+                        nuestros centros
+                        comerciales, los cuales tienen un impacto ecológico positivo para todos. Además, hemos
+                        establecido una alianza con Grupo Allen para recolectar PET y reciclarlo, con el fin de reducir
+                        nuestro impacto ambiental.</p>
+
+                    <p class="text-justify">Por otro lado, el uso consciente y responsable del agua es esencial para su
+                        conservación y
+                        mantenimiento a largo plazo. Por ello, hemos implementado diversas medidas en nuestros centros
+                        comerciales, como la instalación de recolectores de agua pluvial, mingitorios secos y llaves con
+                        sensores para evitar el desperdicio de agua. De esta forma, buscamos cuidar este recurso vital
+                        para el planeta.</p>
+
+                    <p class="text-justify">Para Planigrupo el óptimo uso de los recursos es de suma importancia ya que
+                        es una de las formas
+                        más tangibles de contribuir a los objetivos ODS y a su vez impulsar su desempeño económico o la
+                        generación de valor.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="cifras_relevantes_energia" class="content-wrap pt-3 pb-3 finn-counto">
+            <div class="container">
+                <div class="section-title mb-3 text-center">
+                    <h3 class="title-effect">Cifras relevantes de Energía:</h3>
+                </div>
+                <div class="row honeycomb-wrapper justify-content-center">
+                    <div class="col-md-3 tile">
+                        <div class="honeycomb">
+                            <svg class="honeycomb-path honeycomb-1" xmlns="http://www.w3.org/2000/svg"
+                                 width="150" viewBox="0 0 160 160">
+                                <circle cx="80" cy="80" r="66" stroke-width="2" fill="none"></circle>
+                            </svg>
+                            <div class="content">
+                                <h2 class="count" data-speed="1500" data-to="1000" data-in-viewport="yes"
+                                    data-decimals="0">0</h2><span class="title-effect "></span>
+                            </div>
+                        </div>
+                        <a href="#"><h5><b>Electricidad</b></h5></a>
+                    </div>
+                    <div class="col-md-3 tile">
+                        <div class="honeycomb">
+                            <svg class="honeycomb-path honeycomb-1" xmlns="http://www.w3.org/2000/svg"
+                                 width="150" viewBox="0 0 160 160">
+                                <circle cx="80" cy="80" r="66" stroke-width="2" fill="none"></circle>
+                            </svg>
+                            <div class="content">
+                                <h2 class="count" data-speed="1500" data-to="1000" data-in-viewport="yes"
+                                    data-decimals="0">0</h2><span class="title-effect "></span>
+                            </div>
+                        </div>
+                        <a href="#"><h5><b>Gas Natural</b></h5><br></a>
+                    </div>
+                    <div class="col-md-3 tile">
+                        <div class="honeycomb">
+                            <svg class="honeycomb-path honeycomb-1" xmlns="http://www.w3.org/2000/svg"
+                                 width="150" viewBox="0 0 160 160">
+                                <circle cx="80" cy="80" r="66" stroke-width="2" fill="none"></circle>
+                            </svg>
+                            <div class="content">
+                                <h2 class="count" data-speed="1500" data-to="1000" data-in-viewport="yes"
+                                    data-decimals="0">0</h2><span class="title-effect "></span>
+                            </div>
+                        </div>
+                        <a href="#"><h5><b>Gasolina</b><br></h5></a>
+                    </div>
+                    <div class="col-md-3 tile">
+                        <div class="honeycomb">
+                            <svg class="honeycomb-path honeycomb-1" xmlns="http://www.w3.org/2000/svg"
+                                 width="150" viewBox="0 0 160 160">
+                                <circle cx="80" cy="80" r="66" stroke-dasharray="10,10" fill="none"></circle>
+                            </svg>
+                            <div class="content">
+                                <h2 class="count" data-speed="1500" data-to="3000" data-in-viewport="yes"
+                                    data-decimals="0" style="color: #dc291e">0</h2><span
+                                    class="title-effect "></span>
+                            </div>
+                        </div>
+                        <a href="#"><h5><b>Total</b></h5>
+                        </a><br>
+                    </div>
+                    <div class="col-md-8 mx-auto mb-4">
+                        <div id="chart1" style="height: 350px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="cifras_relevantes_agua" class="content-wrap pt-3 pb-3 finn-counto">
+            <div class="container">
+                <div class="section-title mb-3 text-center">
+                    <h3 class="title-effect">Cifras relevantes del Agua:</h3>
+                </div>
+                <div class="row honeycomb-wrapper justify-content-center">
+                    <div class="col-md-3 tile">
+                        <div class="honeycomb">
+                            <svg class="honeycomb-path honeycomb-1" xmlns="http://www.w3.org/2000/svg"
+                                 width="150" viewBox="0 0 160 160">
+                                <circle cx="80" cy="80" r="66" stroke-width="2" fill="none"></circle>
+                            </svg>
+                            <div class="content">
+                                <h2 class="count" data-speed="1500" data-to="1000" data-in-viewport="yes"
+                                    data-decimals="0">0</h2><span class="title-effect "></span>
+                            </div>
+                        </div>
+                        <a href="#"><h5><b>Agua subterrránea</b></h5></a>
+                    </div>
+                    <div class="col-md-3 tile">
+                        <div class="honeycomb">
+                            <svg class="honeycomb-path honeycomb-1" xmlns="http://www.w3.org/2000/svg"
+                                 width="150" viewBox="0 0 160 160">
+                                <circle cx="80" cy="80" r="66" stroke-width="2" fill="none"></circle>
+                            </svg>
+                            <div class="content">
+                                <h2 class="count" data-speed="1500" data-to="1000" data-in-viewport="yes"
+                                    data-decimals="0">0</h2><span class="title-effect "></span>
+                            </div>
+                        </div>
+                        <a href="#"><h5><b>Agua de terceros</b></h5><br></a>
+                    </div>
+                    <div class="col-md-3 tile">
+                        <div class="honeycomb">
+                            <svg class="honeycomb-path honeycomb-1" xmlns="http://www.w3.org/2000/svg"
+                                 width="150" viewBox="0 0 160 160">
+                                <circle cx="80" cy="80" r="66" stroke-dasharray="10,10" fill="none"></circle>
+                            </svg>
+                            <div class="content">
+                                <h2 class="count" data-speed="1500" data-to="2000" data-in-viewport="yes"
+                                    data-decimals="0" style="color: #dc291e">0</h2><span
+                                    class="title-effect "></span>
+                            </div>
+                        </div>
+                        <a href="#"><h5><b>Total</b></h5>
+                        </a><br>
+                    </div>
+                    <div class="col-md-8 mx-auto mb-4">
+                        <div id="chart2" style="height: 350px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="cifras_relevantes_gei" class="content-wrap pt-3 pb-3 finn-counto">
+            <div class="container">
+                <div class="section-title mb-3 text-center">
+                    <h3 class="title-effect">Cifras Relevantes GEI</h3>
+                </div>
+                <div class="row honeycomb-wrapper justify-content-center">
+                    <div class="col-md-3 col-lg-2 tile">
+                        <div class="honeycomb">
+                            <svg class="honeycomb-path honeycomb-1" xmlns="http://www.w3.org/2000/svg"
+                                 width="150" viewBox="0 0 160 160">
+                                <circle cx="80" cy="80" r="66" stroke-width="2" fill="none"></circle>
+                            </svg>
+                            <div class="content">
+                                <h2 class="count" data-speed="1500" data-to="1000" data-in-viewport="yes"
+                                    data-decimals="0">0</h2><span class="title-effect "></span>
+                            </div>
+                        </div>
+                        <a href="#"><h5><b>Alcance 1</b></h5></a>
+                    </div>
+                    <div class="col-md-3 col-lg-2 tile">
+                        <div class="honeycomb">
+                            <svg class="honeycomb-path honeycomb-1" xmlns="http://www.w3.org/2000/svg"
+                                 width="150" viewBox="0 0 160 160">
+                                <circle cx="80" cy="80" r="66" stroke-width="2" fill="none"></circle>
+                            </svg>
+                            <div class="content">
+                                <h2 class="count" data-speed="1500" data-to="1000" data-in-viewport="yes"
+                                    data-decimals="0">0</h2><span class="title-effect "></span>
+                            </div>
+                        </div>
+                        <a href="#"><h5><b>Alcance 2</b></h5><br></a>
+                    </div>
+                    <div class="col-md-3 col-lg-2 tile">
+                        <div class="honeycomb">
+                            <svg class="honeycomb-path honeycomb-1" xmlns="http://www.w3.org/2000/svg"
+                                 width="150" viewBox="0 0 160 160">
+                                <circle cx="80" cy="80" r="66" stroke-dasharray="10,10" fill="none"></circle>
+                            </svg>
+                            <div class="content">
+                                <h2 class="count" data-speed="1500" data-to="2000" data-in-viewport="yes"
+                                    data-decimals="0" style="color: #dc291e">0</h2><span
+                                    class="title-effect "></span>
+                            </div>
+                        </div>
+                        <a href="#"><h5><b>Total</b></h5>
+                        </a><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div id="chart3" style="height: 350px;"></div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div id="chart4" style="height: 350px;"></div>
+                </div>
+            </div>
+        </div>
+        {% include 'partials/carousel_eventos_amb.html' %}
+
+        {#        <section class="s-block pb-0">#}
+        {#            <div class="container">#}
+        {#                <div class="row">#}
+        {#                    <div class="col-12">#}
+        {#                        <h1 class="text-center tc-blue mt-5 mb-0">Eventos Ambientales</h1>#}
+        {#                        <div class="owl-carousel owl-theme h-100">#}
+        {#                            <div class="item d-flex flex-column h-100 align-items-center justify-content-center pl-5 pt-5 pr-5 pb-1">#}
+        {#                                <div class="row d-flex align-items-center flex-wrap">#}
+        {#                                    <div class="col-4">#}
+        {#                                        <div class="item">#}
+        {#                                            <h4 class="font-weight-bold">Banco de Tapitas Enero-Julio 2022 </h4>#}
+        {#                                            <p class="text-justify">Se realizó una donación de más de 3 mil tapitas.</p>#}
+        {#                                        </div>#}
+        {#                                    </div>#}
+        {#                                    <div class="col-8">#}
+        {#                                        <img width="100%" src="{% static 'images/plani1.png' %}"#}
+        {#                                             alt="">#}
+        {#                                    </div>#}
+        {#                                </div>#}
+        {#                            </div>#}
+        {#                            <div class="item d-flex flex-column h-100 align-items-center justify-content-center pl-5 pt-5 pr-5 pb-1">#}
+        {#                                <div class="row d-flex align-items-center flex-wrap">#}
+        {#                                    <div class="col-4">#}
+        {#                                        <div class="item">#}
+        {#                                            <h4 class="font-weight-bold">Máquinas de Reciclaje-AlEn </h4>#}
+        {#                                            <p class="text-justify">De enero-julio 2022 se reciclaron más de 600 mil#}
+        {#                                                botellas de plástico que equivale a una disminución de 30 mil kg de CO2.</p>#}
+        {#                                        </div>#}
+        {#                                    </div>#}
+        {#                                    <div class="col-8">#}
+        {#                                        <img width="100%" src="{% static 'images/plani1.png' %}"#}
+        {#                                             alt="">#}
+        {#                                    </div>#}
+        {#                                </div>#}
+        {#                            </div>#}
+        {#                            <div class="item d-flex flex-column h-100 align-items-center justify-content-center pl-5 pt-5 pr-5 pb-1">#}
+        {#                                <div class="row d-flex align-items-center flex-wrap">#}
+        {#                                    <div class="col-4">#}
+        {#                                        <div class="item">#}
+        {#                                            <h4 class="font-weight-bold">Máquinas de Reciclaje-AIEn </h4>#}
+        {#                                            <p class="text-justify">De enero-abril 2022 se reciclaron más de 300 mil#}
+        {#                                                botellas de plástico equivalentes a una reducción de 17,642 kg de CO2</p>#}
+        {#                                        </div>#}
+        {#                                    </div>#}
+        {#                                    <div class="col-8">#}
+        {#                                        <img width="100%" src="{% static 'images/plani1.png' %}"#}
+        {#                                             alt="">#}
+        {#                                    </div>#}
+        {#                                </div>#}
+        {#                            </div>#}
+        {#                            <div class="item d-flex flex-column h-100 align-items-center justify-content-center pl-5 pt-5 pr-5 pb-1">#}
+        {#                                <div class="row d-flex align-items-center flex-wrap">#}
+        {#                                    <div class="col-4">#}
+        {#                                        <div class="item">#}
+        {#                                            <h4 class="font-weight-bold">Reciclar para ganar. Alianza con grupo AIEn </h4>#}
+        {#                                            <p class="text-justify">En lo que va del 2022 se han reciclado 139,072 botellas#}
+        {#                                                de plástico, una reducción de 7,562 kg de CO2.</p>#}
+        {#                                        </div>#}
+        {#                                    </div>#}
+        {#                                    <div class="col-8">#}
+        {#                                        <img width="100%" src="{% static 'images/plani1.png' %}"#}
+        {#                                             alt="">#}
+        {#                                    </div>#}
+        {#                                </div>#}
+        {#                            </div>#}
+        {#                            <div class="item d-flex flex-column h-100 align-items-center justify-content-center pl-5 pt-5 pr-5 pb-1">#}
+        {#                                <div class="row d-flex align-items-center flex-wrap">#}
+        {#                                    <div class="col-4">#}
+        {#                                        <div class="item">#}
+        {#                                            <h4 class="font-weight-bold">Donación de Materiales a Fundación Hélice </h4>#}
+        {#                                            <p class="text-justify">Se realizó una donación con la cual se obtuvieron#}
+        {#                                                diversos beneficios ambientales.</p>#}
+        {#                                        </div>#}
+        {#                                    </div>#}
+        {#                                    <div class="col-8">#}
+        {#                                        <img width="100%" src="{% static 'images/plani1.png' %}"#}
+        {#                                             alt="">#}
+        {#                                    </div>#}
+        {#                                </div>#}
+        {#                            </div>#}
+        {#                        </div>#}
+        {#                    </div>#}
+        {#                </div>#}
+        {#            </div>#}
+        {#        </section>#}
+
+    </div>
+{% endblock %}
+
+{% block otherscripts %}
+    <script src="{% static 'javascripts/jquery.waypoints.min.js' %}"></script>
+    <script src="{% static 'javascripts/countTo.js' %}"></script>
+    <script>
+        $(window).on('load', function () {
+            $('.finn-counto').each(function () {
+                finn_waypoint('#' + $(this).attr('id'));
+                finn_counto('#' + $(this).attr('id'));
+            });
+        });
+
+        function finn_waypoint(elemento) {
+            var waypoint = new Waypoint({
+                element: $(elemento),
+                handler: function (direction) {
+                    $(elemento + ' .count').trigger('on-appear');
+                },
+                offset: '75%',
+                triggerOnce: true
+            })
+        }
+
+        function finn_counto(elemento) {
+            if ($().countTo) {
+                $(elemento + ' .count').on('on-appear', function () {
+                    $(elemento + ' .honeycomb-path.honeycomb-1').addClass('honeycomb-animated');
+
+                    $(this).each(function () {
+                        var to = parseFloat($(this).data('to')),
+                            speed = parseInt($(this).data('speed')),
+                            decimals = parseInt($(this).data('decimals'));
+
+                        $(this).countTo({
+                            to: to,
+                            speen: speed,
+                            decimals: decimals,
+                            formatter: function (value, options) {
+                                return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+                            },
+                            onComplete: function (value) {
+                                if (value === 1.9)
+                                    return this.innerHTML += '%';
+                            }
+
+                        });
+                    });
+                }); //counter
+            }
+        }
+    </script>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 30,
+            nav: true,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            autoplayHoverPause: true,
+            items: 1,
+        });
+    </script>
+
+    <script src="{% static 'javascripts/amcharts/amcharts.js' %}"></script>
+    <script src="{% static 'javascripts/amcharts/serial.js' %}"></script>
+    <script src="{% static 'javascripts/amcharts/pie.js' %}"></script>
+    <script src="{% static 'javascripts/amcharts/contenido/ambiental.min.js' %}{{ css_js_version }}"></script>
+{% endblock %}
