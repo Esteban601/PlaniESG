@@ -307,25 +307,25 @@ def gobernanza_info(request):
     }
     return render(request, '{0}/frontend/gobernanza_info.html'.format(request.LANGUAGE_CODE), context)
 
-#
-# @gzip_page
-# def sistema_gobierno(request):
-#     context = {
-#         'title': _("Sistema de gobierno"),
-#         'page': 'sistema_gobierno',
-#         'imagen': staticfiles_storage.url('images/headers/plani-gobierno.png'),
-#     }
-#     return render(request, '{0}/frontend/gobernanza/sistema_gobierno.html'.format(request.LANGUAGE_CODE), context)
-#
-#
-# @gzip_page
-# def estrategia_asg(request):
-#     context = {
-#         'title': _("Estrategia ASG"),
-#         'page': 'estrategia-asg',
-#         'imagen': staticfiles_storage.url('images/headers/Estrategia-ASG.png'),
-#     }
-#     return render(request, '{0}/frontend/modelo_asg/estrategia_asg.html'.format(request.LANGUAGE_CODE), context)
+
+@gzip_page
+def sistema_gobierno(request):
+    context = {
+        'title': _("Sistema de gobierno"),
+        'page': 'sistema_gobierno',
+        'imagen': staticfiles_storage.url('images/headers/plani-gobierno.png'),
+    }
+    return render(request, '{0}/frontend/gobernanza/sistema_gobierno.html'.format(request.LANGUAGE_CODE), context)
+
+
+@gzip_page
+def estrategia_asg(request):
+    context = {
+        'title': _("Estrategia ASG"),
+        'page': 'estrategia-asg',
+        'imagen': staticfiles_storage.url('images/headers/Estrategia-ASG.png'),
+    }
+    return render(request, '{0}/frontend/modelo_asg/estrategia_asg.html'.format(request.LANGUAGE_CODE), context)
 
 
 @gzip_page

@@ -21,7 +21,7 @@ urlpatterns = [
     path('vinculacion-comunidad', views.vinculacion_comunidad, name='vinculacion-comunidad'),
 
     path('grupos-interes', views.grupos_interes, name='grupos-interes'),
-    # path('sistema-gobierno', views.sistema_gobierno, name='sistema_gobierno'),
+    path('sistema-gobierno', views.sistema_gobierno, name='sistema_gobierno'),
 
     # path('estrategia-asg', views.estrategia_asg, name='estrategia-asg'),
     # path('gestion-ambiental', views.gestion_ambiental, name='gestion-ambiental'),
