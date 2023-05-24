@@ -20,7 +20,7 @@ urlpatterns = [
     # path('diversidad-inclusion', views.diversidad_inclusion, name='diversidad-inclusion'),
     # path('vinculacion-comunidad', views.vinculacion_comunidad, name='vinculacion-comunidad'),
 
-    # path('grupos-interes', views.grupos_interes, name='grupos-interes'),
+    path('grupos-interes', views.grupos_interes, name='grupos-interes'),
     # path('sistema-gobierno', views.sistema_gobierno, name='sistema_gobierno'),
 
     # path('estrategia-asg', views.estrategia_asg, name='estrategia-asg'),

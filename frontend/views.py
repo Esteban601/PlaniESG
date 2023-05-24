@@ -326,19 +326,19 @@ def gobernanza_info(request):
 #         'imagen': staticfiles_storage.url('images/headers/Estrategia-ASG.png'),
 #     }
 #     return render(request, '{0}/frontend/modelo_asg/estrategia_asg.html'.format(request.LANGUAGE_CODE), context)
-#
-#
-# @gzip_page
-# def grupos_interes(request):
-#     context = {
-#         'title': _("Grupos de interés"),
-#         'page': 'grupos-interes',
-#         'imagen': staticfiles_storage.url('images/headers/plani-grupos-de-interes.png'),
-#     }
-#     return render(request,
-#                   '{0}/frontend/gobernanza/grupos_interes.html'.format(request.LANGUAGE_CODE),
-#                   context)
-#
+
+
+@gzip_page
+def grupos_interes(request):
+    context = {
+        'title': _("Grupos de interés"),
+        'page': 'grupos-interes',
+        'imagen': staticfiles_storage.url('images/headers/plani-grupos-de-interes.png'),
+    }
+    return render(request,
+                  '{0}/frontend/gobernanza/grupos_interes.html'.format(request.LANGUAGE_CODE),
+                  context)
+
 
 # Medio Ambiente
 @gzip_page
