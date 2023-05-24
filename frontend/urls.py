@@ -17,8 +17,8 @@ urlpatterns = [
     path('nuestro-enfoque-asg', views.nuestro_enfoque_asg, name='nuestro-enfoque-asg'),
     path('vinculacion-ods', views.vinculacion_ods, name='vinculacion-ods'),
 
-    # path('diversidad-inclusion', views.diversidad_inclusion, name='diversidad-inclusion'),
-    # path('vinculacion-comunidad', views.vinculacion_comunidad, name='vinculacion-comunidad'),
+    path('diversidad-inclusion', views.diversidad_inclusion, name='diversidad-inclusion'),
+    path('vinculacion-comunidad', views.vinculacion_comunidad, name='vinculacion-comunidad'),
 
     path('grupos-interes', views.grupos_interes, name='grupos-interes'),
     # path('sistema-gobierno', views.sistema_gobierno, name='sistema_gobierno'),

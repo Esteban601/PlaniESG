@@ -259,33 +259,33 @@ def vinculacion_ods(request):
 
 
 # Responsabilidad social
-# @gzip_page
-# def diversidad_inclusion(request):
-#     eventos_soc = EventosView.get_event_soc_es_data()
-#     context = {
-#         'title': _("Diversidad e inclusión"),
-#         'page': 'diversidad-inclusion',
-#         'eventos_soc': eventos_soc,
-#         'imagen': staticfiles_storage.url('images/headers/plani-inclusion.png'),
-#     }
-#     return render(request,
-#                   '{0}/frontend/responsabilidad_social/diversidad_inclusion.html'.format(request.LANGUAGE_CODE),
-#                   context)
-#
-#
-# @gzip_page
-# def vinculacion_comunidad(request):
-#     eventos_soc = EventosView.get_event_soc_es_data()
-#     context = {
-#         'title': _("Vinculación con la comunidad"),
-#         'page': 'vinculacion-comunidad',
-#         'eventos_soc': eventos_soc,
-#         'imagen': staticfiles_storage.url('images/headers/plani-vinculacion-comunidad.png'),
-#     }
-#     return render(request,
-#                   '{0}/frontend/responsabilidad_social/vinculacion_comunidad.html'.format(request.LANGUAGE_CODE),
-#                   context)
-#
+@gzip_page
+def diversidad_inclusion(request):
+    eventos_soc = EventosView.get_event_soc_es_data()
+    context = {
+        'title': _("Diversidad e inclusión"),
+        'page': 'diversidad-inclusion',
+        'eventos_soc': eventos_soc,
+        'imagen': staticfiles_storage.url('images/headers/plani-inclusion.png'),
+    }
+    return render(request,
+                  '{0}/frontend/responsabilidad_social/diversidad_inclusion.html'.format(request.LANGUAGE_CODE),
+                  context)
+
+
+@gzip_page
+def vinculacion_comunidad(request):
+    eventos_soc = EventosView.get_event_soc_es_data()
+    context = {
+        'title': _("Vinculación con la comunidad"),
+        'page': 'vinculacion-comunidad',
+        'eventos_soc': eventos_soc,
+        'imagen': staticfiles_storage.url('images/headers/plani-vinculacion-comunidad.png'),
+    }
+    return render(request,
+                  '{0}/frontend/responsabilidad_social/vinculacion_comunidad.html'.format(request.LANGUAGE_CODE),
+                  context)
+
 
 # Gobernanza
 @gzip_page
