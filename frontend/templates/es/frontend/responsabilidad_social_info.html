@@ -1,0 +1,120 @@
+{% extends 'layouts/interior.html' %}
+{% load static %}
+{% block otherstyles %}
+    {#    <link rel="stylesheet" href="{% static 'stylesheets/css/owl.carousel.min.css' %}">#}
+    {#    <link rel="stylesheet" href="{% static 'stylesheets/css/owl.theme.default.css' %}">#}
+    <style>
+        .text-grande {
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            display: flex;
+            font-size: 24px;
+        }
+
+        .owl-carousel .owl-dots .owl-dot {
+            background: black;
+        {#height: 0px;#}
+        }
+    </style>
+{% endblock %}
+
+{% block wrapper %}
+    <div class="content-wrap">
+        <section id="diversidad_inclusion">
+            <div class="container">
+                <h2>
+                    Diversidad e inclusión
+                </h2>
+                <div class="row">
+                    <div class="col-md-5">
+                        <p class="text-justify">En planigrupo se genera un ambiente equitativo con diversidad e
+                            inclusión,
+                            donde se acepta y respeta las perspectivas diversas, apoyando a todos.</p>
+                    </div>
+                    <div class="col-md-7">
+                        <div style="text-align:center;">
+                            <img src="{% static 'images/dia_mujer.png' %}"
+                                 style="text-align: center; width:900px; height: 300px;"
+                                 alt="">
+                        </div>
+                    </div>
+                </div>
+                <div style="text-align:center;">
+                    <img src="{% static 'images/distribucion_personal.png' %}"
+                         style="display:block; width:100%; height: 550px;"
+                         alt="">
+                </div>
+            </div>
+            {% include 'partials/carousel_eventos_soc.html' %}
+        </section>
+
+        <section id="vinculacion_comunidad">
+            <div class="container">
+                <h2>
+                    Vinculación con la comunidad
+                </h2>
+                <div class="row">
+                    <div class="col-12">
+                        <p class="text-justify">A lo largo de su historia, Planigrupo ha buscado mantener un vínculo
+                            cercano
+                            con
+                            las comunidades y fomentar la responsabilidad social.</p>
+
+                        <p class="text-justify">Planigrupo siempre brinda su apoyo cuando se le solicita, ya sea a
+                            través
+                            del acopio
+                            de bienes para responder a desastres naturales, donaciones para el fondeo de proyectos, u
+                            ofreciendo
+                            pláticas comunitarias. Para brindar ayuda a las diferentes comunidades en donde tiene
+                            presencia,
+                            ha impulsado distintas iniciativas enfocadas en atender necesidades como nutrición,
+                            educación,
+                            salud y apoyo a personas con discapacidad o enfermedad terminal.</p>
+
+                        <p class="text-justify">En Planigrupo nos preocupamos por el bienestar de las comunidades al
+                            realizar
+                            distintas actividades de integración, salud, eventos sociales y de seguridad, por lo que
+                            algunas
+                            de las
+                            iniciativas que implementamos incluyen programas como:</p>
+
+                        <div style="text-align:center;">
+                            <img src="{% static 'images/iniciativas_comunidad.png' %}"
+                                 style="display:block; width:100%; height: 700px;"
+                                 alt=""><br>
+                        </div>
+
+                        <p class="text-justify">Nuestro compromiso con la comunidad nos ha permitido en ocasiones ser un
+                            puente entre el entidades
+                            gubernamentales y asociaciones civiles que buscan promover o proporcionar recursos o
+                            actividades, con lo que hemos generado
+                            importantes sinergias dentro de las entidades en las que se ubican nuestras plazas
+                            comerciales.</p>
+                    </div>
+                </div>
+            </div>
+{#            {% include 'partials/carousel_eventos_soc.html' %}#}
+        </section>
+
+    </div>
+{% endblock %}
+
+{% block otherscripts %}
+{#    <script src="{% static 'javascripts/amcharts/amcharts.js' %}"></script>#}
+{#    <script src="{% static 'javascripts/amcharts/serial.js' %}"></script>#}
+{#    <script src="{% static 'javascripts/amcharts/pie.js' %}"></script>#}
+{#    <script src="{% static 'javascripts/amcharts/contenido/responsabilidad-social.js' %}"></script>#}
+{#    <script src="{% static 'javascripts/owl.carousel.min.js' %}"></script>#}
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 30,
+            nav: true,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            autoplayHoverPause: true,
+            items: 1,
+        });
+    </script>
+{% endblock %}
