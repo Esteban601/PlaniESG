@@ -259,33 +259,33 @@ def vinculacion_ods(request):
 
 
 # Responsabilidad social
-@gzip_page
-def diversidad_inclusion(request):
-    eventos_soc = EventosView.get_event_soc_es_data()
-    context = {
-        'title': _("Diversidad e inclusión"),
-        'page': 'diversidad-inclusion',
-        'eventos_soc': eventos_soc,
-        'imagen': staticfiles_storage.url('images/headers/plani-inclusion.png'),
-    }
-    return render(request,
-                  '{0}/frontend/responsabilidad_social/diversidad_inclusion.html'.format(request.LANGUAGE_CODE),
-                  context)
-
-
-@gzip_page
-def vinculacion_comunidad(request):
-    eventos_soc = EventosView.get_event_soc_es_data()
-    context = {
-        'title': _("Vinculación con la comunidad"),
-        'page': 'vinculacion-comunidad',
-        'eventos_soc': eventos_soc,
-        'imagen': staticfiles_storage.url('images/headers/plani-vinculacion-comunidad.png'),
-    }
-    return render(request,
-                  '{0}/frontend/responsabilidad_social/vinculacion_comunidad.html'.format(request.LANGUAGE_CODE),
-                  context)
-
+# @gzip_page
+# def diversidad_inclusion(request):
+#     eventos_soc = EventosView.get_event_soc_es_data()
+#     context = {
+#         'title': _("Diversidad e inclusión"),
+#         'page': 'diversidad-inclusion',
+#         'eventos_soc': eventos_soc,
+#         'imagen': staticfiles_storage.url('images/headers/plani-inclusion.png'),
+#     }
+#     return render(request,
+#                   '{0}/frontend/responsabilidad_social/diversidad_inclusion.html'.format(request.LANGUAGE_CODE),
+#                   context)
+#
+#
+# @gzip_page
+# def vinculacion_comunidad(request):
+#     eventos_soc = EventosView.get_event_soc_es_data()
+#     context = {
+#         'title': _("Vinculación con la comunidad"),
+#         'page': 'vinculacion-comunidad',
+#         'eventos_soc': eventos_soc,
+#         'imagen': staticfiles_storage.url('images/headers/plani-vinculacion-comunidad.png'),
+#     }
+#     return render(request,
+#                   '{0}/frontend/responsabilidad_social/vinculacion_comunidad.html'.format(request.LANGUAGE_CODE),
+#                   context)
+#
 
 # Gobernanza
 
@@ -381,9 +381,21 @@ def responsabilidad_social(request):
         'page': 'responsabilidad-social',
         'imagen': staticfiles_storage.url('images/headers/Responsabilidad_social_h.png'),
     }
-    return render(request,
-                  '{0}/frontend/responsabilidad_social.html'.format(request.LANGUAGE_CODE),
-                  context)
+    return render(request, '{0}/frontend/responsabilidad_social.html'.format(request.LANGUAGE_CODE), context)
+
+
+# Responsabilidad Social
+@gzip_page
+def responsabilidad_social_info(request):
+    eventos_soc = EventosView.get_event_soc_es_data()
+
+    context = {
+        'title': _("Responsabilidad Social"),
+        'page': 'responsabilidad-social',
+        'eventos_soc': eventos_soc,
+        'imagen': staticfiles_storage.url('images/headers/Responsabilidad_social_h.png'),
+    }
+    return render(request, '{0}/frontend/responsabilidad_social_info.html'.format(request.LANGUAGE_CODE), context)
 
 
 # Cadena de Suministros

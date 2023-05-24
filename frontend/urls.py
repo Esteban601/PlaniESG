@@ -7,6 +7,9 @@ urlpatterns = [
     path('ambiental', views.ambiental, name='ambiental'),
     path('ambiental_info', views.ambiental_info, name='ambiental_info'),
 
+    path('responsabilidad_social', views.responsabilidad_social, name='responsabilidad_social'),
+    path('responsabilidad_social_info', views.responsabilidad_social_info, name='responsabilidad_social_info'),
+
     path('materialidad', views.materialidad, name='materialidad'),
     path('nuestro-enfoque-asg', views.nuestro_enfoque_asg, name='nuestro-enfoque-asg'),
     path('vinculacion-ods', views.vinculacion_ods, name='vinculacion-ods'),
@@ -23,7 +26,6 @@ urlpatterns = [
     path('gestion-recursos', views.gestion_recursos, name='gestion-recursos'),
     path('residuos', views.residuos, name='residuos'),
     path('contenido-descargable', views.contenido_descargable, name='contenido-descargable'),
-    path('responsabilidad-social', views.responsabilidad_social, name='responsabilidad-social'),
     path('cadena-suministros', views.cadena_suministros, name='cadena-suministros'),
     path('contacto', views.contacto, name='contacto'),
     path('send-subscription', views.send_subscription, name='send-subscription'),
