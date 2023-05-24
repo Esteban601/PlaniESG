@@ -153,10 +153,10 @@ LOCALE_PATHS = (
 )
 
 LANGUAGES = [
-    ('en', _('English')),
+    # ('en', _('English')),
     ('es', _('Spanish')),
 ]
-LANGUAGE_CODE = 'en'
+LANGUAGE_CODE = 'es'
 
 LOGIN_URL = reverse_lazy('login')
 
