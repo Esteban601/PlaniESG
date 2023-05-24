@@ -77,6 +77,34 @@
     {% include 'partials/slider_index.html' %}
 
     <div class="content-wrap">
+        <div class="container mt-5 pt-1 mb-0 pb-0">
+            <div class="auto-container">
+                <div class="row clearfix d-flex align-items-center flex-wrap">
+                    <div class="col-md-5 wow fadeInUp mb-5 mb-md-0" data-wow-duration="2s">
+                        <div class="image display-block-image hidden-xs text-right">
+                            <img class="wow fadeInLeft" data-wow-duration="2s"
+                                 src="{% static 'images/ODS-agenda-2030.png' %}" alt="alternative text">
+                        </div>
+                    </div>
+                    <div class="col-md-7 d-flex" style="align-items: center">
+                        <div class="why-choose-text">
+                            <div class="text texto1">
+                                <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                                    qui officia deserunt mollit anim id est laborum</p>
+                                <a href="{% url 'grupos-interes' %}"
+                                   class="button button-border button-rounded button-large noleftmargin topmargin-sm mb-5">{% trans 'Ver más' %}</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content-wrap">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -111,29 +139,29 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-md-4">
-                            <div id="directores" style="height: 350px;"></div>
+                        <div class="col-md-3">
+                            <div id="directores" style="height: 200px;"></div>
                         </div>
-                        <div class="col-md-4">
-                            <div id="inquilinos" style="height: 350px;"></div>
+                        <div class="col-md-3">
+                            <div id="inquilinos" style="height: 200px;"></div>
                         </div>
-                        <div class="col-md-4">
-                            <div id="inversionistas" style="height: 350px;"></div>
+                        <div class="col-md-3">
+                            <div id="inversionistas" style="height: 200px;"></div>
                         </div>
-                        <div class="col-md-4">
-                            <div id="proveedores" style="height: 350px;"></div>
+                        <div class="col-md-3">
+                            <div id="proveedores" style="height: 200px;"></div>
                         </div>
-                        <div class="col-md-4">
-                            <div id="bancos" style="height: 350px;"></div>
+                        <div class="col-md-3">
+                            <div id="bancos" style="height: 200px;"></div>
                         </div>
-                        <div class="col-md-4">
-                            <div id="colaboradores" style="height: 350px;"></div>
+                        <div class="col-md-3">
+                            <div id="colaboradores" style="height: 200px;"></div>
                         </div>
-                        <div class="col-md-4 offset-md-2">
-                            <div id="consejo" style="height: 350px;"></div>
+                        <div class="col-md-3">
+                            <div id="consejo" style="height: 200px;"></div>
                         </div>
-                        <div class="col-md-4">
-                            <div id="otros" style="height: 350px;"></div>
+                        <div class="col-md-3">
+                            <div id="otros" style="height: 200px;"></div>
                         </div>
                     </div>
 
@@ -143,10 +171,10 @@
 
                     <div class="row">
                         <div class="col-md-6">
-                            <div id="interno" style="height: 350px;"></div>
+                            <div id="interno" style="height: 200px;"></div>
                         </div>
                         <div class="col-md-6">
-                            <div id="externo" style="height: 350px;"></div>
+                            <div id="externo" style="height: 200px;"></div>
                         </div>
                     </div>
                     <h1 class="text-center tc-blue mt-5 mb-5">Matriz ASG</h1>
@@ -227,77 +255,7 @@
         </div>
     </div>
 
-    {#    <section id="content" class="">#}
-    {#        <div class="clearfix">#}
-    {#            <div class="container mt-5 pt-1 mb-0 pb-0">#}
-    {#                <div class="auto-container">#}
-    {#                    <div class="row clearfix d-flex align-items-center flex-wrap">#}
-    {#                        <div class="col-md-7 d-flex" style="align-items: center">#}
-    {#                            <div class="why-choose-text">#}
-    {#                                <div class="text texto1">#}
-    {#                                    <p class="text-justify">Nuestra estrategia se enfoca en la adopción de marcos#}
-    {#                                        internacionales que fomentan el desarrollo sostenible de las comunidades,#}
-    {#                                        empresas y países en general. En este sentido, establecemos una conexión entre#}
-    {#                                        nuestros enfoques sobre los temas más relevantes para nuestro negocio y los#}
-    {#                                        Objetivos de Desarrollo Sostenible (ODS) definidos por las Naciones Unidas.#}
-    {#                                        Asegurando que nuestras acciones contribuyan activamente al logro de estos#}
-    {#                                        objetivos globales.</p>#}
-    {#                                    <a href="{% url 'vinculacion-ods' %}"#}
-    {#                                       class="button button-border button-rounded button-large noleftmargin topmargin-sm mb-5">{% trans 'Quiero conocer más' %}</a>#}
-    {#                                </div>#}
-    {#                            </div>#}
-    {#                        </div>#}
-    {#                        <div class="col-md-5 wow fadeInUp mb-5 mb-md-0" data-wow-duration="2s">#}
-    {#                            <div class="image display-block-image hidden-xs text-right">#}
-    {#                                <img class="wow fadeInRight" data-wow-duration="2s"#}
-    {#                                     src="{% static 'images/agenda_ods.png' %}" alt="alternative text">#}
-    {#                            </div>#}
-    {#                        </div>#}
-    {#                    </div>#}
-    {#                </div>#}
-    {#            </div>#}
-    {#        </div>#}
-    {#    </section>#}
-    {#    <h1 class="text-center mt-5 mb-5" style="color: #dc291e;">Planigrupo y su compromiso de colaborar con la <br>comunidad#}
-    {#        para alcanzar#}
-    {#        un impacto significativo</h1>#}
-    {##}
-    {#    <div class="container">#}
-    {#        <div class="p-0 pb-5">#}
-    {#            <div class="pl-4 pr-4">#}
-    {#                <div class="row">#}
-    {#                    <div class="col-md-6 mb-4">#}
-    {#                        <div class="figure">#}
-    {#                            <div class="imagen overflow-hidden">#}
-    {#                                <img src="{% static 'images/tapitas.png' %}" alt="">#}
-    {#                            </div>#}
-    {#                            <div class="texto bg-light-gray p-4 d-flex flex-column">#}
-    {#                                <h3 class="mb-2">Banco de Tapitas</h3>#}
-    {#                                <p class="text-justify">Programa que ayuda al pago de quimioterapias de niños con#}
-    {#                                    cáncer: en el 2021 se recolectaron 39.5 toneladas de tapitas, equivalentes a 745#}
-    {#                                    quimioterapias o 1,495 dosis de suplementos alimenticios. <br><br></p>#}
-    {#                            </div>#}
-    {#                        </div>#}
-    {#                    </div>#}
-    {#                    <div class="col-md-6 mb-4">#}
-    {#                        <div class="figure">#}
-    {#                            <div class="imagen overflow-hidden">#}
-    {#                                <img src="{% static 'images/pet.png' %}" alt="">#}
-    {#                            </div>#}
-    {#                            <div class="texto bg-light-gray p-4 d-flex flex-column">#}
-    {#                                <h3 class="mb-2">Alianza con Grupo Allen</h3>#}
-    {#                                <p class="text-justify">En colaboración con Grupo Allen, hemos implementado un programa#}
-    {#                                    de reciclaje de 30 toneladas de plástico PET, lo que se traduce en una disminución#}
-    {#                                    de emisiones de 52,460 kilogramos de CO2 al medio ambiente.</p>#}
-    {#                            </div>#}
-    {#                        </div>#}
-    {#                    </div>#}
-    {#                </div>#}
-    {#            </div>#}
-    {#        </div>#}
-    {#    </div>#}
-    {##}
-    {#    <div class="container">#}
+
 
     <div class="pt-5 pb-5 mb-4">
         <div class="container">
@@ -327,334 +285,6 @@
     {% include 'partials/carousel_eventos_amb.html' %}
     {% include 'partials/carousel_eventos_soc.html' %}
 
-{#    <section class="s-block pb-0">#}
-{#        <div class="container">#}
-{#            <div class="row">#}
-{#                <div class="col-12">#}
-{#                    <h1 class="text-center tc-blue mt-5 mb-0">Eventos Ambientales</h1>#}
-{#                    <div class="owl-carousel owl-theme h-100">#}
-{#                        <div class="item d-flex flex-column h-100 align-items-center justify-content-center pl-5 pt-5 pr-5 pb-1">#}
-{#                            <div class="row d-flex align-items-center flex-wrap">#}
-{#                                <div class="col-4">#}
-{#                                    <div class="item">#}
-{#                                        <h4 class="font-weight-bold">Banco de Tapitas Enero-Julio 2022 </h4>#}
-{#                                        <p class="text-justify">Se realizó una donación de más de 3 mil tapitas.</p>#}
-{#                                    </div>#}
-{#                                </div>#}
-{#                                <div class="col-8">#}
-{#                                    <img width="100%" src="{% static 'images/plani1.png' %}"#}
-{#                                         alt="">#}
-{#                                </div>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                        <div class="item d-flex flex-column h-100 align-items-center justify-content-center pl-5 pt-5 pr-5 pb-1">#}
-{#                            <div class="row d-flex align-items-center flex-wrap">#}
-{#                                <div class="col-4">#}
-{#                                    <div class="item">#}
-{#                                        <h4 class="font-weight-bold">Máquinas de Reciclaje-AlEn </h4>#}
-{#                                        <p class="text-justify">De enero-julio 2022 se reciclaron más de 600 mil#}
-{#                                            botellas de plástico que equivale a una disminución de 30 mil kg de CO2.</p>#}
-{#                                    </div>#}
-{#                                </div>#}
-{#                                <div class="col-8">#}
-{#                                    <img width="100%" src="{% static 'images/plani1.png' %}"#}
-{#                                         alt="">#}
-{#                                </div>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                        <div class="item d-flex flex-column h-100 align-items-center justify-content-center pl-5 pt-5 pr-5 pb-1">#}
-{#                            <div class="row d-flex align-items-center flex-wrap">#}
-{#                                <div class="col-4">#}
-{#                                    <div class="item">#}
-{#                                        <h4 class="font-weight-bold">Máquinas de Reciclaje-AIEn </h4>#}
-{#                                        <p class="text-justify">De enero-abril 2022 se reciclaron más de 300 mil#}
-{#                                            botellas de plástico equivalentes a una reducción de 17,642 kg de CO2</p>#}
-{#                                    </div>#}
-{#                                </div>#}
-{#                                <div class="col-8">#}
-{#                                    <img width="100%" src="{% static 'images/plani1.png' %}"#}
-{#                                         alt="">#}
-{#                                </div>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                        <div class="item d-flex flex-column h-100 align-items-center justify-content-center pl-5 pt-5 pr-5 pb-1">#}
-{#                            <div class="row d-flex align-items-center flex-wrap">#}
-{#                                <div class="col-4">#}
-{#                                    <div class="item">#}
-{#                                        <h4 class="font-weight-bold">Reciclar para ganar. Alianza con grupo AIEn </h4>#}
-{#                                        <p class="text-justify">En lo que va del 2022 se han reciclado 139,072 botellas#}
-{#                                            de plástico, una reducción de 7,562 kg de CO2.</p>#}
-{#                                    </div>#}
-{#                                </div>#}
-{#                                <div class="col-8">#}
-{#                                    <img width="100%" src="{% static 'images/plani1.png' %}"#}
-{#                                         alt="">#}
-{#                                </div>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                        <div class="item d-flex flex-column h-100 align-items-center justify-content-center pl-5 pt-5 pr-5 pb-1">#}
-{#                            <div class="row d-flex align-items-center flex-wrap">#}
-{#                                <div class="col-4">#}
-{#                                    <div class="item">#}
-{#                                        <h4 class="font-weight-bold">Donación de Materiales a Fundación Hélice </h4>#}
-{#                                        <p class="text-justify">Se realizó una donación con la cual se obtuvieron#}
-{#                                            diversos beneficios ambientales.</p>#}
-{#                                    </div>#}
-{#                                </div>#}
-{#                                <div class="col-8">#}
-{#                                    <img width="100%" src="{% static 'images/plani1.png' %}"#}
-{#                                         alt="">#}
-{#                                </div>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                    </div>#}
-{#                </div>#}
-{#            </div>#}
-{#        </div>#}
-{#    </section>#}
-
-{#    <section class="s-block pb-5">#}
-{#        <div class="container">#}
-{#            <div class="row">#}
-{#                <div class="col-12">#}
-{#                    <h1 class="text-center tc-blue mt-5 mb-0">Eventos Sociales</h1>#}
-{#                    <div class="owl-carousel owl-theme h-100">#}
-{#                        <div class="item d-flex flex-column h-100 align-items-center justify-content-center pl-5 pt-5 pr-5 pb-1">#}
-{#                            <div class="row d-flex align-items-center flex-wrap">#}
-{#                                <div class="col-4">#}
-{#                                    <div class="item">#}
-{#                                        <h4 class="font-weight-bold">Inauguración de “ESPAZIOS IEMUJERES Y PUNTO#}
-{#                                            NARANJA” </h4>#}
-{#                                        <p class="text-justify">Inauguración de espacios para mujeres emprendedoras, así#}
-{#                                            como un punto para atender y apoyar a mujeres que se sientan inseguras.</p>#}
-{#                                    </div>#}
-{#                                </div>#}
-{#                                <div class="col-8">#}
-{#                                    <img width="100%" src="{% static 'images/plani1.png' %}"#}
-{#                                         alt="">#}
-{#                                </div>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                        <div class="item d-flex flex-column h-100 align-items-center justify-content-center pl-5 pt-5 pr-5 pb-1">#}
-{#                            <div class="row d-flex align-items-center flex-wrap">#}
-{#                                <div class="col-4">#}
-{#                                    <div class="item">#}
-{#                                        <h4 class="font-weight-bold">Encendido de arbolitos 2022</h4>#}
-{#                                        <p class="text-justify">Se realizo el tradicional encendido de arbolitos#}
-{#                                            navideños 2022 en nuestros centros comerciales.</p>#}
-{#                                    </div>#}
-{#                                </div>#}
-{#                                <div class="col-8">#}
-{#                                    <img width="100%" src="{% static 'images/plani1.png' %}"#}
-{#                                         alt="">#}
-{#                                </div>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                        <div class="item d-flex flex-column h-100 align-items-center justify-content-center pl-5 pt-5 pr-5 pb-1">#}
-{#                            <div class="row d-flex align-items-center flex-wrap">#}
-{#                                <div class="col-4">#}
-{#                                    <div class="item">#}
-{#                                        <h4 class="font-weight-bold">Alianza Fundación Lilo </h4>#}
-{#                                        <p class="text-justify">Nuestro programa “MANOS AL CORAZÓN” brinda apoyo con#}
-{#                                            gastos hospitalarios y dispositivos.</p>#}
-{#                                    </div>#}
-{#                                </div>#}
-{#                                <div class="col-8">#}
-{#                                    <img width="100%" src="{% static 'images/plani1.png' %}"#}
-{#                                         alt="">#}
-{#                                </div>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                        <div class="item d-flex flex-column h-100 align-items-center justify-content-center pl-5 pt-5 pr-5 pb-1">#}
-{#                            <div class="row d-flex align-items-center flex-wrap">#}
-{#                                <div class="col-4">#}
-{#                                    <div class="item">#}
-{#                                        <h4 class="font-weight-bold">Reconocimiento a CiudadelaUV por el banco de#}
-{#                                            tapitas </h4>#}
-{#                                        <p class="text-justify">Reconocimiento al Banco de Tapitas A.C por su#}
-{#                                            participación en Programa de Recolección de Tapitas de plástico.</p>#}
-{#                                    </div>#}
-{#                                </div>#}
-{#                                <div class="col-8">#}
-{#                                    <img width="100%" src="{% static 'images/plani1.png' %}"#}
-{#                                         alt="">#}
-{#                                </div>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                        <div class="item d-flex flex-column h-100 align-items-center justify-content-center pl-5 pt-5 pr-5 pb-1">#}
-{#                            <div class="row d-flex align-items-center flex-wrap">#}
-{#                                <div class="col-4">#}
-{#                                    <div class="item">#}
-{#                                        <h4 class="font-weight-bold">Entrega de juguetes </h4>#}
-{#                                        <p class="text-justify">Se realizo la entrega de juguetes que se recolectaron#}
-{#                                            con la alianza DIF de Santa Catarina y Alianza Anticáncer.</p>#}
-{#                                    </div>#}
-{#                                </div>#}
-{#                                <div class="col-8">#}
-{#                                    <img width="100%" src="{% static 'images/plani1.png' %}"#}
-{#                                         alt="">#}
-{#                                </div>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                        <div class="item d-flex flex-column h-100 align-items-center justify-content-center pl-5 pt-5 pr-5 pb-1">#}
-{#                            <div class="row d-flex align-items-center flex-wrap">#}
-{#                                <div class="col-4">#}
-{#                                    <div class="item">#}
-{#                                        <h4 class="font-weight-bold">Apoyo a Fundación ALIANZA ANTICÁNCER </h4>#}
-{#                                        <p class="text-justify">En conjunto con el DIF de Santa Catarina se recaudaron#}
-{#                                            382 artículos entre juguetes y taparroscas.</p>#}
-{#                                    </div>#}
-{#                                </div>#}
-{#                                <div class="col-8">#}
-{#                                    <img width="100%" src="{% static 'images/plani1.png' %}"#}
-{#                                         alt="">#}
-{#                                </div>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                        <div class="item d-flex flex-column h-100 align-items-center justify-content-center pl-5 pt-5 pr-5 pb-1">#}
-{#                            <div class="row d-flex align-items-center flex-wrap">#}
-{#                                <div class="col-4">#}
-{#                                    <div class="item">#}
-{#                                        <h4 class="font-weight-bold">Teletón Coahuila </h4>#}
-{#                                        <p class="text-justify">Se contribuyo en la atención médica y rehabilitación de#}
-{#                                            calidad para niñas y niños del CRIT Coahuila.</p>#}
-{#                                    </div>#}
-{#                                </div>#}
-{#                                <div class="col-8">#}
-{#                                    <img width="100%" src="{% static 'images/plani1.png' %}"#}
-{#                                         alt="">#}
-{#                                </div>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                        <div class="item d-flex flex-column h-100 align-items-center justify-content-center pl-5 pt-5 pr-5 pb-1">#}
-{#                            <div class="row d-flex align-items-center flex-wrap">#}
-{#                                <div class="col-4">#}
-{#                                    <div class="item">#}
-{#                                        <h4 class="font-weight-bold">Corazones Rosa en Colaboración con Grupo AIEn </h4>#}
-{#                                        <p class="text-justify">Se recolectaron tapitas en puntos estratégicos de#}
-{#                                            nuestras plazas, que se transformaron en un donativo para la fundación#}
-{#                                            Asociación Unidas Contigo.</p>#}
-{#                                    </div>#}
-{#                                </div>#}
-{#                                <div class="col-8">#}
-{#                                    <img width="100%" src="{% static 'images/plani1.png' %}"#}
-{#                                         alt="">#}
-{#                                </div>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                        <div class="item d-flex flex-column h-100 align-items-center justify-content-center pl-5 pt-5 pr-5 pb-1">#}
-{#                            <div class="row d-flex align-items-center flex-wrap">#}
-{#                                <div class="col-4">#}
-{#                                    <div class="item">#}
-{#                                        <h4 class="font-weight-bold">Patrocinadores Oficiales de Reciclatón 2021#}
-{#                                            Fundación Teletón </h4>#}
-{#                                        <p class="text-justify">Planigrupo realizó un donativo para apoyar a los niños#}
-{#                                            del CRIT Coahuila.</p>#}
-{#                                    </div>#}
-{#                                </div>#}
-{#                                <div class="col-8">#}
-{#                                    <img width="100%" src="{% static 'images/plani1.png' %}"#}
-{#                                         alt="">#}
-{#                                </div>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                        <div class="item d-flex flex-column h-100 align-items-center justify-content-center pl-5 pt-5 pr-5 pb-1">#}
-{#                            <div class="row d-flex align-items-center flex-wrap">#}
-{#                                <div class="col-4">#}
-{#                                    <div class="item">#}
-{#                                        <h4 class="font-weight-bold">Banco de Tapitas febrero 2022 </h4>#}
-{#                                        <p class="text-justify">Más de 40 toneladas, 750 quimioterapias, 1,500#}
-{#                                            suplementos alimenticios y 500 pacientes atendidos.</p>#}
-{#                                    </div>#}
-{#                                </div>#}
-{#                                <div class="col-8">#}
-{#                                    <img width="100%" src="{% static 'images/plani1.png' %}"#}
-{#                                         alt="">#}
-{#                                </div>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                        <div class="item d-flex flex-column h-100 align-items-center justify-content-center pl-5 pt-5 pr-5 pb-1">#}
-{#                            <div class="row d-flex align-items-center flex-wrap">#}
-{#                                <div class="col-4">#}
-{#                                    <div class="item">#}
-{#                                        <h4 class="font-weight-bold">Donativo en el Día de los Abuelos </h4>#}
-{#                                        <p class="text-justify">Se realizo visita y apoyo a asilos de abuelos en 4#}
-{#                                            comunidades, Cd Juárez, Guadalajara, Monterrey y Saltillo.</p>#}
-{#                                    </div>#}
-{#                                </div>#}
-{#                                <div class="col-8">#}
-{#                                    <img width="100%" src="{% static 'images/plani1.png' %}"#}
-{#                                         alt="">#}
-{#                                </div>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                        <div class="item d-flex flex-column h-100 align-items-center justify-content-center pl-5 pt-5 pr-5 pb-1">#}
-{#                            <div class="row d-flex align-items-center flex-wrap">#}
-{#                                <div class="col-4">#}
-{#                                    <div class="item">#}
-{#                                        <h4 class="font-weight-bold">Donativo Mobiliario a “Casa Hogar Manos de Amor por#}
-{#                                            Bahía” </h4>#}
-{#                                        <p class="text-justify">Se realizó un donativo de mobiliario para niños en#}
-{#                                            situación de pobreza extrema, huérfanos, entre otros.</p>#}
-{#                                    </div>#}
-{#                                </div>#}
-{#                                <div class="col-8">#}
-{#                                    <img width="100%" src="{% static 'images/plani1.png' %}"#}
-{#                                         alt="">#}
-{#                                </div>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                        <div class="item d-flex flex-column h-100 align-items-center justify-content-center pl-5 pt-5 pr-5 pb-1">#}
-{#                            <div class="row d-flex align-items-center flex-wrap">#}
-{#                                <div class="col-4">#}
-{#                                    <div class="item">#}
-{#                                        <h4 class="font-weight-bold">Rosca de Reyes 2020 </h4>#}
-{#                                        <p class="text-justify">Se realizó la tradicional rosca de reyes y diversas#}
-{#                                            actividades con los reyes magos.</p>#}
-{#                                    </div>#}
-{#                                </div>#}
-{#                                <div class="col-8">#}
-{#                                    <img width="100%" src="{% static 'images/plani1.png' %}"#}
-{#                                         alt="">#}
-{#                                </div>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                        <div class="item d-flex flex-column h-100 align-items-center justify-content-center pl-5 pt-5 pr-5 pb-1">#}
-{#                            <div class="row d-flex align-items-center flex-wrap">#}
-{#                                <div class="col-4">#}
-{#                                    <div class="item">#}
-{#                                        <h4 class="font-weight-bold">Sanitización de Centros Comerciales a Nivel#}
-{#                                            Nacional </h4>#}
-{#                                        <p class="text-justify">Se realizo la sanitización de centros comerciales para#}
-{#                                            brindar mayor seguridad a los clientes.</p>#}
-{#                                    </div>#}
-{#                                </div>#}
-{#                                <div class="col-8">#}
-{#                                    <img width="100%" src="{% static 'images/plani1.png' %}"#}
-{#                                         alt="">#}
-{#                                </div>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                        <div class="item d-flex flex-column h-100 align-items-center justify-content-center pl-5 pt-5 pr-5 pb-1">#}
-{#                            <div class="row d-flex align-items-center flex-wrap">#}
-{#                                <div class="col-4">#}
-{#                                    <div class="item">#}
-{#                                        <h4 class="font-weight-bold">Recolección de tapitas para niños con cáncer </h4>#}
-{#                                        <p class="text-justify">Agradecemos a las personas que han recolectado tapitas y#}
-{#                                            se han sumado a esta causa.</p>#}
-{#                                    </div>#}
-{#                                </div>#}
-{#                                <div class="col-8">#}
-{#                                    <img width="100%" src="{% static 'images/plani1.png' %}"#}
-{#                                         alt="">#}
-{#                                </div>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                    </div>#}
-{#                </div>#}
-{#            </div>#}
-{#        </div>#}
-{#    </section>#}
 {% endblock %}
 {% block otherscripts %}
     <script src="{% static 'javascripts/wow.min.js' %}"></script>
@@ -689,15 +319,15 @@
             "balloonText": "",
             "colors": ["#DC291E", "#939598"],
             "startDuration": 0,
-            "innerRadius": 80,
-            "pullOutRadius": 30,
+            "innerRadius": 40,
+            "pullOutRadius": 20,
             "marginTop": 10,
             "titles": [{
                 "text": "Directores",
                 "size": 14
             }],
             "allLabels": [{
-                "y": "52%",
+                "y": "50%",
                 "align": "center",
                 "size": 25,
                 "bold": true,
@@ -716,8 +346,8 @@
             "balloonText": "",
             "colors": ["#DC291E", "#939598"],
             "startDuration": 0,
-            "innerRadius": 80,
-            "pullOutRadius": 30,
+            "innerRadius": 40,
+            "pullOutRadius": 20,
             "marginTop": 10,
             "titles": [{
                 "text": "Inquilinos",
@@ -743,8 +373,8 @@
             "balloonText": "",
             "colors": ["#DC291E", "#939598"],
             "startDuration": 0,
-            "innerRadius": 80,
-            "pullOutRadius": 30,
+            "innerRadius": 40,
+            "pullOutRadius": 20,
             "marginTop": 10,
             "titles": [{
                 "text": "Inversionistas",
@@ -770,8 +400,8 @@
             "balloonText": "",
             "colors": ["#DC291E", "#939598"],
             "startDuration": 0,
-            "innerRadius": 80,
-            "pullOutRadius": 30,
+            "innerRadius": 40,
+            "pullOutRadius": 20,
             "marginTop": 10,
             "titles": [{
                 "text": "Proveedores",
@@ -797,8 +427,8 @@
             "balloonText": "",
             "colors": ["#DC291E", "#939598"],
             "startDuration": 0,
-            "innerRadius": 80,
-            "pullOutRadius": 30,
+            "innerRadius": 40,
+            "pullOutRadius": 20,
             "marginTop": 10,
             "titles": [{
                 "text": "Bancos",
@@ -824,8 +454,8 @@
             "balloonText": "",
             "colors": ["#DC291E", "#939598"],
             "startDuration": 0,
-            "innerRadius": 80,
-            "pullOutRadius": 30,
+            "innerRadius": 40,
+            "pullOutRadius": 20,
             "marginTop": 10,
             "titles": [{
                 "text": "Colaboradores",
@@ -851,8 +481,8 @@
             "balloonText": "",
             "colors": ["#DC291E", "#939598"],
             "startDuration": 0,
-            "innerRadius": 80,
-            "pullOutRadius": 30,
+            "innerRadius": 40,
+            "pullOutRadius": 20,
             "marginTop": 10,
             "titles": [{
                 "text": "Consejo",
@@ -878,8 +508,8 @@
             "balloonText": "",
             "colors": ["#DC291E", "#939598"],
             "startDuration": 0,
-            "innerRadius": 80,
-            "pullOutRadius": 30,
+            "innerRadius": 40,
+            "pullOutRadius": 20,
             "marginTop": 10,
             "titles": [{
                 "text": "Otros",
@@ -905,13 +535,13 @@
             "balloonText": "",
             "colors": ["#DC291E", "#939598"],
             "startDuration": 0,
-            "innerRadius": 80,
-            "pullOutRadius": 30,
+            "innerRadius": 40,
+            "pullOutRadius": 20,
             "marginTop": 10,
             "allLabels": [{
                 "y": "49%",
                 "align": "center",
-                "size": 25,
+                "size": 18,
                 "bold": true,
                 "text": "Interno",
                 "color": "#555"
@@ -934,13 +564,13 @@
             "balloonText": "",
             "colors": ["#DC291E", "#939598"],
             "startDuration": 0,
-            "innerRadius": 80,
-            "pullOutRadius": 30,
+            "innerRadius": 40,
+            "pullOutRadius": 20,
             "marginTop": 10,
             "allLabels": [{
                 "y": "49%",
                 "align": "center",
-                "size": 25,
+                "size": 18,
                 "bold": true,
                 "text": "Externo",
                 "color": "#555"
