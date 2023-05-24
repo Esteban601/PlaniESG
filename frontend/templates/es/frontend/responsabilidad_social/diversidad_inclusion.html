@@ -11,33 +11,40 @@
                 <div class="col-md-5"><br><br<br><br><br><br>
                     <p class="text-justify">En planigrupo se genera un ambiente equitativo con diversidad e inclusión,
                         donde se acepta y respeta las perspectivas diversas, apoyando a todos.</p>
-                        </div>
-                            <div class="col-md-7">
-                            <div style="text-align:center;">
-                            <img src="{% static 'images/dia_mujer.png' %}" style="align-center; width:900px; height: 300px;"
-                                 alt="">
-                            </div>
-                      </div>
                 </div>
-                <div style="text-align:center;">
-                    <img src="{% static 'images/distribucion_personal.png' %}" style="display:block; width:100%; height: 550px;"
-                         alt="">
-              </div>
+                <div class="col-md-7">
+                    <div style="text-align:center;">
+                        <img src="{% static 'images/dia_mujer.png' %}" style="align-center; width:900px; height: 300px;"
+                             alt="">
+                    </div>
+                </div>
             </div>
-            {% include 'partials/carousel_eventos_soc.html' %}
+            <div style="text-align:center;">
+                <img src="{% static 'images/distribucion_personal.png' %}"
+                     style="display:block; width:100%; height: 550px;"
+                     alt="">
+            </div>
         </div>
+        {% include 'partials/carousel_eventos_soc.html' %}
+        <div class="container">
+            <a class="btn bg-danger text-white" href="{% url 'responsabilidad_social' %}">
+                volver
+            </a>
+        </div>
+    </div>
+
 {% endblock %}
 
 {% block otherscripts %}
-<script>
-    $('.owl-carousel').owlCarousel({
-        loop: true,
-        margin: 30,
-        nav: true,
-        autoplay: true,
-        autoplayTimeout: 5000,
-        autoplayHoverPause: true,
-        items: 1,
-    });
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 30,
+            nav: true,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            autoplayHoverPause: true,
+            items: 1,
+        });
     </script>
 {% endblock %}
