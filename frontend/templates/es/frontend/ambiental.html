@@ -1,7 +1,9 @@
 {% extends 'layouts/interior.html' %}
 {% load static %}
 {% block otherstyles %}
+    <style>
 
+    </style>
 {% endblock %}
 
 {% block wrapper %}
@@ -9,9 +11,17 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <a href="{% url 'ambiental_info' %}">
-                        <img width="100%" src="{% static 'images/plani1.png' %}" alt="">
-                    </a>
+                    <div class="image_wrapper">
+                        <a class="banner_page" href="{% url 'ambiental_info' %}">
+                            <img width="100%" src="{% static 'images/plani1.png' %}" alt="">
+                            <div class="overlay">
+                                <div class=" overlay_2">
+                                    <h3 class="text-white">Ir a Ambiental</h3>
+                                </div>
+                            </div>
+
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
