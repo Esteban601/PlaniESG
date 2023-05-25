@@ -313,7 +313,7 @@ def sistema_gobierno(request):
     context = {
         'title': _("Sistema de gobierno"),
         'page': 'sistema_gobierno',
-        'imagen': staticfiles_storage.url('images/headers/plani-gobierno.png'),
+        'imagen': staticfiles_storage.url('images/headers/sistema_gobierno_h.png'),
     }
     return render(request, '{0}/frontend/gobernanza/sistema_gobierno.html'.format(request.LANGUAGE_CODE), context)
 
