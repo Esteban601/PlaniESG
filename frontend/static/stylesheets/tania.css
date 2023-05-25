@@ -1852,4 +1852,18 @@ ul#cadena > li > .nav-link.active:before {
 
 }
 
+@media (max-width: 767px) {
+    .image_wrapper .overlay_2 {
+        display: flex;
+        background: #95c11f;
+        align-items: end;
+        justify-content: center;
+
+        opacity: 1;
+
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
 /* fin seccion ambiental*/
