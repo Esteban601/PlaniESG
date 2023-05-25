@@ -266,7 +266,7 @@ def diversidad_inclusion(request):
         'title': _("Diversidad e inclusión"),
         'page': 'diversidad-inclusion',
         'eventos_soc': eventos_soc,
-        'imagen': staticfiles_storage.url('images/headers/plani-inclusion.png'),
+        'imagen': staticfiles_storage.url('images/headers/diversidad_inclusion1.png'),
     }
     return render(request,
                   '{0}/frontend/responsabilidad_social/diversidad_inclusion.html'.format(request.LANGUAGE_CODE),
@@ -280,7 +280,7 @@ def vinculacion_comunidad(request):
         'title': _("Vinculación con la comunidad"),
         'page': 'vinculacion-comunidad',
         'eventos_soc': eventos_soc,
-        'imagen': staticfiles_storage.url('images/headers/plani-vinculacion-comunidad.png'),
+        'imagen': staticfiles_storage.url('images/headers/vinculacion_comunidad1.png'),
     }
     return render(request,
                   '{0}/frontend/responsabilidad_social/vinculacion_comunidad.html'.format(request.LANGUAGE_CODE),
@@ -398,7 +398,7 @@ def responsabilidad_social(request):
     context = {
         'title': _("Responsabilidad Social"),
         'page': 'responsabilidad-social',
-        'imagen': staticfiles_storage.url('images/headers/Responsabilidad_social_h.png'),
+        'imagen': staticfiles_storage.url('images/headers/responsabilidad_social.png'),
     }
     return render(request, '{0}/frontend/responsabilidad_social.html'.format(request.LANGUAGE_CODE), context)
 
