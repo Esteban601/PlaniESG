@@ -7,8 +7,15 @@
 <section id="eventos">
     <div class="content-wrap" style="padding: 50px 0 80px;">
         <div class="container clearfix">
+            <h2>Actividades</h2>
             <div class="d-flex justify-content-end align-items-center mb-5">
                 <div class="form-inline">
+                    <h3 class="mb-0 mr-3 font-weight-bold text-black">filtrar por:</h3>
+                    <select class="form-control form-control-sm mr-3" name="select_category" id="select_category">
+                        <option value="all">Todas</option>
+                        <option value="Sociales">Sociales</option>
+                        <option value="Ambientales">Ambientales</option>
+                    </select>
                     <h3 class="mb-0 mr-3 font-weight-bold text-black">Año</h3>
                     <select class="form-control form-control-sm" name="select_anno" id="select_anno">
                         <option value="all">Todo</option>
@@ -22,9 +29,10 @@
             </div>
             <div class="events-list my-3 mx-3">
                 <div class="row">
-                    {% for event in eventos_amb %}
+                    {% for event in eventos %}
                         <article class="bg-image col-md-4 event-item all show-event"
                                  data-date="{{ event.date }}"
+                                 data-category="{{ event.category }}"
                                  style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
                                          url({% static event.img %});
                                          background-size: cover">
@@ -40,6 +48,10 @@
                                 >
 {#                                <span class="event-date">#}
 {#                                    {{ event.date }}#}
+{#                                </span>#}
+
+{#                                <span class="event-category">#}
+{#                                    {{ event.category }}#}
 {#                                </span>#}
                                     <h4 class="mb-0">
                                         {{ event.title }}

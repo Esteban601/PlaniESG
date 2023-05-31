@@ -11,3 +11,93 @@ $(".modal-galery").click(function (e) {
 $("#GalleryModal1 .close-btn").click(function (e) {
     $("#GalleryModal1").modal('hide');
 });
+
+const step = 6;
+
+filterSelection("all", '', 1, step);
+
+$('#select_anno').change(function () {
+    console.log($(this).val());
+    filterSelection($(this).val(), '', 1, step);
+});
+$('#select_category').change(function () {
+    console.log($(this).val());
+    filterSelection($(this).val(), '', 1, step);
+});
+
+
+function filterSelection(c, search = '', page = 1, step = step) {
+    let elements = 0;
+    let x, i;
+    x = document.getElementsByClassName("event-item");
+
+    for (i = 0; i < x.length; i++) {
+        let xi = $(x[i]);
+        CardRemoveClass(x[i], "show-event");
+        CardAddClass(x[i], "hide-event");
+
+        if (xi.hasClass(c) || (xi.data('date') && xi.data('date').split('-')[0] === c) || (xi.data('category') && xi.data('category') === c)) {
+            elements++;
+            if ((elements > ((page - 1) * step)) && (elements <= page * step)) {
+                CardAddClass(x[i], "show-event");
+            }
+        }
+    }
+    if (!elements) {
+        let n = $('#no-event')
+        n.removeClass('hide-event');
+        n.removeClass('show-event');
+    }
+    if (page === 1)
+        drawPagination(c, search, elements, page, step);
+}
+
+function CardAddClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {
+            element.className += " " + arr2[i];
+        }
+    }
+}
+
+function CardRemoveClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1);
+        }
+    }
+    element.className = arr1.join(" ");
+}
+
+function drawPagination(c, search, elements, page, step) {
+    paginationholder = $('#paginationholder');
+    paginationholder.html('');
+    paginationholder.html('<ul id="pagination"></ul>');
+    total = elements / step;
+
+    if ((elements % step) > 0)
+        total += 1;
+
+    if (total > 0)
+        $('#pagination').twbsPagination({
+
+            totalPages: total,
+            prev: '<i class="icon-arrow-left"></i>',
+            next: '<i class="icon-arrow-right"></i>',
+            pageClass: 'page-item',
+            anchorClass: 'page-link',
+            hideOnlyOnePage: true,
+            first: null,
+            last: null,
+            initiateStartPageClick: false,
+            onPageClick: function (event, num) {
+                filterSelection(c, search, num, step);
+            },
+        })
+}

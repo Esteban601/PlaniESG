@@ -23,6 +23,7 @@ class EventosView(generic.ListView):
                 "date": "2022-06-01",
                 "description": "Se realizó una donación de más de 3 mil tapitas.",
                 "url": "",
+                "category": "Ambientales",
                 "img": "images/eventos/Banco-de-tapitas-enero-julio-2022.webp"
             },
             {
@@ -30,6 +31,7 @@ class EventosView(generic.ListView):
                 "date": "2022-06-01",
                 "description": "De enero-julio 2022 se reciclaron más de 600 mil botellas de plástico que equivale a una disminución de 30 mil kg de CO2.",
                 "url": "",
+                "category": "Ambientales",
                 "img": "images/eventos/Reciclar-para-ganar-Enero-julio-2022.png"
             },
             {
@@ -37,6 +39,7 @@ class EventosView(generic.ListView):
                 "date": "2022-03-01",
                 "description": "De enero-abril 2022 se reciclaron más de 300 mil botellas de plástico equivalentes a una reducción de 17,642 kg de CO2",
                 "url": "",
+                "category": "Ambientales",
                 "img": "images/eventos/Reciclar-para-ganar-abril-2022.png"
             },
             {
@@ -44,6 +47,7 @@ class EventosView(generic.ListView):
                 "date": "2022-03-01",
                 "description": "En lo que va del 2022 se han reciclado 324,448 botellas de plástico, una reducción de 17,642 kg de CO2",
                 "url": "",
+                "category": "Ambientales",
                 "img": "images/eventos/Reciclar-2022-324-botellas.png"
             },
             {
@@ -51,14 +55,14 @@ class EventosView(generic.ListView):
                 "date": "2022-03-01",
                 "description": "Se realizó una donación con la cual se obtuvieron diversos beneficios ambientales",
                 "url": "",
+                "category": "Ambientales",
                 "img": "images/eventos/Helice.png"
             },
 
         ]
         # Get the blog from id and add it to the context
-        context =  eventsAmbESList
+        context = eventsAmbESList
         return eventsAmbESList
-
 
     def get_event_soc_es_data():
         eventsSocESList = [
@@ -67,6 +71,7 @@ class EventosView(generic.ListView):
                 "date": "2022-06-01",
                 "description": "Inauguración de espacios para mujeres emprendedoras, así como un punto para atender y apoyar a mujeres que se sientan inseguras.",
                 "url": "",
+                "category": "Sociales",
                 "img": "images/eventos_soc/ESPAZIOS-IEMUJERES-Y-PUNTO-NARANJA.jpg"
             },
             {
@@ -74,6 +79,7 @@ class EventosView(generic.ListView):
                 "date": "2022-06-01",
                 "description": "Se realizo el tradicional encendido de arbolitos navideños 2022 en nuestros centros comerciales.",
                 "url": "",
+                "category": "Sociales",
                 "img": "images/eventos_soc/encendido-arbolito.jpeg"
             },
             {
@@ -81,6 +87,7 @@ class EventosView(generic.ListView):
                 "date": "2022-06-01",
                 "description": "Nuestro programa “MANOS AL CORAZÓN” brinda apoyo con gastos hospitalarios y dispositivos",
                 "url": "",
+                "category": "Sociales",
                 "img": "images/eventos_soc/fundacion-lilo.png"
             },
             {
@@ -88,6 +95,7 @@ class EventosView(generic.ListView):
                 "date": "2022-06-01",
                 "description": "Reconocimiento al Banco de Tapitas A.C por su participación en Programa de Recolección de Tapitas de plástico.",
                 "url": "",
+                "category": "Sociales",
                 "img": "images/eventos_soc/Banco-tapitas-Junio-Ciudadela.png"
             },
             {
@@ -95,6 +103,7 @@ class EventosView(generic.ListView):
                 "date": "2022-06-01",
                 "description": "Se realizo la entrega de juguetes que se recolectaron con la alianza DIF de Santa Catarina y Alianza Anticáncer.",
                 "url": "",
+                "category": "Sociales",
                 "img": "images/eventos_soc/entrega_juguetes.jpg"
             },
             {
@@ -102,6 +111,7 @@ class EventosView(generic.ListView):
                 "date": "2022-06-01",
                 "description": "En conjunto con el DIF de Santa Catarina se recaudaron 382 artículos entre juguetes y taparroscas",
                 "url": "",
+                "category": "Sociales",
                 "img": "images/eventos_soc/Alianza-anti-cancer.png"
             },
             {
@@ -109,6 +119,7 @@ class EventosView(generic.ListView):
                 "date": "2022-06-01",
                 "description": "Se contribuyo en la atención médica y rehabilitación de calidad para niñas y niños del CRIT Coahuila.",
                 "url": "",
+                "category": "Sociales",
                 "img": "images/eventos_soc/Teletn.png"
             },
             {
@@ -116,6 +127,7 @@ class EventosView(generic.ListView):
                 "date": "2022-06-01",
                 "description": "Se recolectaron tapitas en puntos estratégicos de nuestras plazas, que se transformaron en un donativo para la fundación Asociación Unidas Contigo.",
                 "url": "",
+                "category": "Sociales",
                 "img": "images/eventos_soc/Corazones-rosas-con-grupo-alen.jpg"
             },
             {
@@ -123,6 +135,7 @@ class EventosView(generic.ListView):
                 "date": "2022-06-01",
                 "description": "Planigrupo realizó un donativo para apoyar a los niños del CRIT Coahuila.",
                 "url": "",
+                "category": "Sociales",
                 "img": "images/eventos_soc/Reciclaton.jpg"
             },
             {
@@ -130,6 +143,7 @@ class EventosView(generic.ListView):
                 "date": "2022-06-01",
                 "description": "Más de 40 toneladas, 750 quimioterapias, 1,500 suplementos alimenticios y 500 pacientes atendidos.",
                 "url": "",
+                "category": "Sociales",
                 "img": "images/eventos_soc/Banco-Tapitas-febrero-2022.jpeg"
             },
             {
@@ -137,6 +151,7 @@ class EventosView(generic.ListView):
                 "date": "2022-06-01",
                 "description": "Se realizo visita y apoyo a asilos de abuelos en 4 comunidades, Cd Juárez, Guadalajara, Monterrey y Saltillo",
                 "url": "",
+                "category": "Sociales",
                 "img": "images/eventos_soc/donativo-abuelos.jpg"
             },
             {
@@ -144,6 +159,7 @@ class EventosView(generic.ListView):
                 "date": "2022-06-01",
                 "description": "Se realizó un donativo de mobiliario para niños en situación de pobreza extrema, huérfanos, entre otros",
                 "url": "",
+                "category": "Sociales",
                 "img": "images/eventos_soc/Donativo-hogar-manos-amor-por-habia.jpg"
             },
             {
@@ -151,6 +167,7 @@ class EventosView(generic.ListView):
                 "date": "2022-06-01",
                 "description": "Se realizó la tradicional rosca de reyes y diversas actividades con los reyes magos",
                 "url": "",
+                "category": "Sociales",
                 "img": "images/eventos_soc/dia-reyes.png"
             },
             {
@@ -158,6 +175,7 @@ class EventosView(generic.ListView):
                 "date": "2022-06-01",
                 "description": "Se realizo la sanitización de centros comerciales para brindar mayor seguridad a los clientes",
                 "url": "",
+                "category": "Sociales",
                 "img": "images/eventos_soc/planigrupo-busca-adquirir-dos-centros-comerciales.png"
             },
             {
@@ -165,14 +183,14 @@ class EventosView(generic.ListView):
                 "date": "2022-06-01",
                 "description": "Agradecemos a las personas que han recolectado tapitas y se han sumado a esta causa.",
                 "url": "",
+                "category": "Sociales",
                 "img": "images/eventos_soc/Recoleccion-tapitas-para-niños-con-cancer.jpg"
             },
 
         ]
         # Get the blog from id and add it to the context
-        context =  eventsSocESList
+        context = eventsSocESList
         return eventsSocESList
-
 
     def get_event_en_data():
         eventsENList = [
@@ -184,7 +202,7 @@ class EventosView(generic.ListView):
             }
         ]
         # Get the blog from id and add it to the context
-        context =  eventsENList
+        context = eventsENList
         return eventsENList
 
 
@@ -198,6 +216,7 @@ def index(request):
         'page': 'index',
         'eventos_amb': eventos_amb,
         'eventos_soc': eventos_soc,
+        'eventos': eventos_amb+eventos_soc,
 
     }
     return render(request, '{0}/frontend/index.html'.format(request.LANGUAGE_CODE), context)
@@ -218,10 +237,14 @@ def ambiental(request):
 @gzip_page
 def ambiental_info(request):
     eventos_amb = EventosView.get_event_amb_es_data()
+    eventos_soc = EventosView.get_event_soc_es_data()
+    eventos = eventos_amb+ eventos_soc
     context = {
         'title': _("Ambiental"),
         'page': 'ambiental',
-        'eventos_amb': eventos_amb,
+        # 'eventos_amb': eventos_amb,
+        # 'eventos_soc': eventos_soc,
+        'eventos': eventos,
         'imagen': staticfiles_storage.url('images/headers/plani-ambiental.png'),
     }
     return render(request, '{0}/frontend/ambiental_info.html'.format(request.LANGUAGE_CODE), context)
