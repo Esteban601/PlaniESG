@@ -6,6 +6,7 @@ $(".modal-galery").click(function (e) {
     $("#GalleryModal1 .event-title").text(target.data('title'));
     $("#GalleryModal1 .event-description").text(target.data('description'));
     $("#GalleryModal1 .event-date").text(target.data('date'));
+    $("#GalleryModal1 .event-category").text(target.data('category'));
     $("#GalleryModal1").modal('show');
 });
 $("#GalleryModal1 .close-btn").click(function (e) {
@@ -14,15 +15,15 @@ $("#GalleryModal1 .close-btn").click(function (e) {
 
 const step = 6;
 
-filterSelection("all", '', 1, step);
+filterSelection({a:"all", c:"all"}, '', 1, step);
 
 $('#select_anno').change(function () {
     console.log($(this).val());
-    filterSelection($(this).val(), '', 1, step);
+    filterSelection({a: $(this).val(), c: $('#select_category').val()}, '', 1, step);
 });
 $('#select_category').change(function () {
     console.log($(this).val());
-    filterSelection($(this).val(), '', 1, step);
+    filterSelection({c: $(this).val(), a: $('#select_anno').val()}, '', 1, step);
 });
 
 
@@ -36,7 +37,8 @@ function filterSelection(c, search = '', page = 1, step = step) {
         CardRemoveClass(x[i], "show-event");
         CardAddClass(x[i], "hide-event");
 
-        if (xi.hasClass(c) || (xi.data('date') && xi.data('date').split('-')[0] === c) || (xi.data('category') && xi.data('category') === c)) {
+        if ((xi.hasClass(c.a) || (xi.data('date') && xi.data('date').split('-')[0] === c.a)) &&
+            (xi.hasClass(c.c) || (xi.data('category') && xi.data('category') === c.c))) {
             elements++;
             if ((elements > ((page - 1) * step)) && (elements <= page * step)) {
                 CardAddClass(x[i], "show-event");

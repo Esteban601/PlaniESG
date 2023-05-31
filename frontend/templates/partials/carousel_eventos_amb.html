@@ -43,6 +43,7 @@
                                    data-mdb-target="#GaleryModal1"
                                    data-img="{% static event.img %}"
                                    data-title="{{ event.title }}"
+                                   data-category="{{ event.category }}"
                                    data-description="{{ event.description }}"
                                    data-date="{{ event.date }}"
                                 >
@@ -87,6 +88,8 @@
                     </h4>
                     <span class="event-date">
                         <i class="fa fa-calendar fa-4x"></i>
+                    </span>
+                    <span class="event-category">
                     </span>
                     <p class="event-description card-text mt-5">
                     </p>
