@@ -225,103 +225,33 @@
             </a>
         </div>
 
-        {#        <section class="s-block pb-0">#}
-        {#            <div class="container">#}
-        {#                <div class="row">#}
-        {#                    <div class="col-12">#}
-        {#                        <h1 class="text-center tc-blue mt-5 mb-0">Eventos Ambientales</h1>#}
-        {#                        <div class="owl-carousel owl-theme h-100">#}
-        {#                            <div class="item d-flex flex-column h-100 align-items-center justify-content-center pl-5 pt-5 pr-5 pb-1">#}
-        {#                                <div class="row d-flex align-items-center flex-wrap">#}
-        {#                                    <div class="col-4">#}
-        {#                                        <div class="item">#}
-        {#                                            <h4 class="font-weight-bold">Banco de Tapitas Enero-Julio 2022 </h4>#}
-        {#                                            <p class="text-justify">Se realizó una donación de más de 3 mil tapitas.</p>#}
-        {#                                        </div>#}
-        {#                                    </div>#}
-        {#                                    <div class="col-8">#}
-        {#                                        <img width="100%" src="{% static 'images/plani1.png' %}"#}
-        {#                                             alt="">#}
-        {#                                    </div>#}
-        {#                                </div>#}
-        {#                            </div>#}
-        {#                            <div class="item d-flex flex-column h-100 align-items-center justify-content-center pl-5 pt-5 pr-5 pb-1">#}
-        {#                                <div class="row d-flex align-items-center flex-wrap">#}
-        {#                                    <div class="col-4">#}
-        {#                                        <div class="item">#}
-        {#                                            <h4 class="font-weight-bold">Máquinas de Reciclaje-AlEn </h4>#}
-        {#                                            <p class="text-justify">De enero-julio 2022 se reciclaron más de 600 mil#}
-        {#                                                botellas de plástico que equivale a una disminución de 30 mil kg de CO2.</p>#}
-        {#                                        </div>#}
-        {#                                    </div>#}
-        {#                                    <div class="col-8">#}
-        {#                                        <img width="100%" src="{% static 'images/plani1.png' %}"#}
-        {#                                             alt="">#}
-        {#                                    </div>#}
-        {#                                </div>#}
-        {#                            </div>#}
-        {#                            <div class="item d-flex flex-column h-100 align-items-center justify-content-center pl-5 pt-5 pr-5 pb-1">#}
-        {#                                <div class="row d-flex align-items-center flex-wrap">#}
-        {#                                    <div class="col-4">#}
-        {#                                        <div class="item">#}
-        {#                                            <h4 class="font-weight-bold">Máquinas de Reciclaje-AIEn </h4>#}
-        {#                                            <p class="text-justify">De enero-abril 2022 se reciclaron más de 300 mil#}
-        {#                                                botellas de plástico equivalentes a una reducción de 17,642 kg de CO2</p>#}
-        {#                                        </div>#}
-        {#                                    </div>#}
-        {#                                    <div class="col-8">#}
-        {#                                        <img width="100%" src="{% static 'images/plani1.png' %}"#}
-        {#                                             alt="">#}
-        {#                                    </div>#}
-        {#                                </div>#}
-        {#                            </div>#}
-        {#                            <div class="item d-flex flex-column h-100 align-items-center justify-content-center pl-5 pt-5 pr-5 pb-1">#}
-        {#                                <div class="row d-flex align-items-center flex-wrap">#}
-        {#                                    <div class="col-4">#}
-        {#                                        <div class="item">#}
-        {#                                            <h4 class="font-weight-bold">Reciclar para ganar. Alianza con grupo AIEn </h4>#}
-        {#                                            <p class="text-justify">En lo que va del 2022 se han reciclado 139,072 botellas#}
-        {#                                                de plástico, una reducción de 7,562 kg de CO2.</p>#}
-        {#                                        </div>#}
-        {#                                    </div>#}
-        {#                                    <div class="col-8">#}
-        {#                                        <img width="100%" src="{% static 'images/plani1.png' %}"#}
-        {#                                             alt="">#}
-        {#                                    </div>#}
-        {#                                </div>#}
-        {#                            </div>#}
-        {#                            <div class="item d-flex flex-column h-100 align-items-center justify-content-center pl-5 pt-5 pr-5 pb-1">#}
-        {#                                <div class="row d-flex align-items-center flex-wrap">#}
-        {#                                    <div class="col-4">#}
-        {#                                        <div class="item">#}
-        {#                                            <h4 class="font-weight-bold">Donación de Materiales a Fundación Hélice </h4>#}
-        {#                                            <p class="text-justify">Se realizó una donación con la cual se obtuvieron#}
-        {#                                                diversos beneficios ambientales.</p>#}
-        {#                                        </div>#}
-        {#                                    </div>#}
-        {#                                    <div class="col-8">#}
-        {#                                        <img width="100%" src="{% static 'images/plani1.png' %}"#}
-        {#                                             alt="">#}
-        {#                                    </div>#}
-        {#                                </div>#}
-        {#                            </div>#}
-        {#                        </div>#}
-        {#                    </div>#}
-        {#                </div>#}
-        {#            </div>#}
-        {#        </section>#}
-
     </div>
 {% endblock %}
 
 {% block otherscripts %}
     <script src="{% static 'javascripts/jquery.waypoints.min.js' %}"></script>
     <script src="{% static 'javascripts/countTo.js' %}"></script>
+    <script src="{% static 'javascripts/js/jquery.twbsPagination.min.js' %}"></script>
+
     <script>
         $(window).on('load', function () {
             $('.finn-counto').each(function () {
                 finn_waypoint('#' + $(this).attr('id'));
                 finn_counto('#' + $(this).attr('id'));
+            });
+
+            $(".modal-galery").click(function (e) {
+                e.preventDefault();
+                let target = $(e.currentTarget);
+
+                $("#GalleryModal1 .event-img").attr('src', target.data('img'));
+                $("#GalleryModal1 .event-title").text(target.data('title'));
+                $("#GalleryModal1 .event-description").text(target.data('description'));
+                $("#GalleryModal1 .event-date").text(target.data('date'));
+                $("#GalleryModal1").modal('show');
+            });
+            $("#GalleryModal1 .close-btn").click(function (e) {
+                $("#GalleryModal1").modal('hide');
             });
         });
 
@@ -375,6 +305,98 @@
             autoplayHoverPause: true,
             items: 1,
         });
+    </script>
+
+
+    <script>
+        const step = 5;
+
+        filterSelection("all", '', 1, step);
+
+        $('#select_anno').change(function () {
+            filterSelection($(this).val(), '', 1, step);
+            console.log($(this).val());
+        });
+
+
+        function filterSelection(c, search = '', page = 1, step = step) {
+            let elements = 0;
+            let x, i;
+            x = document.getElementsByClassName("event-item");
+            {#if (c === "all") c = "";#}
+            for (i = 0; i < x.length; i++) {
+                let xi = $(x[i]);
+                CardRemoveClass(x[i], "show-event");
+                CardAddClass(x[i], "hide-event");
+                {#if ($(x[i]).hasClass(c)) {#}
+
+                if (xi.hasClass(c) || (xi.data('date') && xi.data('date').split('-')[0] === c)) {
+                    elements++;
+                    if ((elements > ((page - 1) * step)) && (elements <= page * step)) {
+                        CardAddClass(x[i], "show-event");
+                    }
+                }
+            }
+            if (!elements) {
+                let n = $('#no-event')
+                n.removeClass('hide-event');
+                n.removeClass('show-event');
+            }
+            if (page === 1)
+                drawPagination(c, search, elements, page, step);
+        }
+
+        function CardAddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {
+                    element.className += " " + arr2[i];
+                }
+            }
+        }
+
+        function CardRemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+
+        function drawPagination(c, search, elements, page, step) {
+            paginationholder = $('#paginationholder');
+            paginationholder.html('');
+            paginationholder.html('<ul id="pagination"></ul>');
+            total = elements / step;
+
+            if ((elements % step) > 0)
+                total += 1;
+
+            if (total > 0)
+                $('#pagination').twbsPagination({
+                    {#pageVariable: '{{page}}',#}
+                    {#totalPagesVariable: '{{total_pages}}',#}
+                    totalPages: total,
+                    {#visiblePages: total_pages,#}
+                    prev: '<i class="icon-arrow-left"></i>',
+                    next: '<i class="icon-arrow-right"></i>',
+                    pageClass: 'page-item',
+                    anchorClass: 'page-link',
+                    hideOnlyOnePage: true,
+                    first: null,
+                    last: null,
+                    initiateStartPageClick: false,
+                    onPageClick: function (event, num) {
+                        filterSelection(c, search, num, step);
+                    },
+                })
+        }
     </script>
 
     <script src="{% static 'javascripts/amcharts/amcharts.js' %}"></script>

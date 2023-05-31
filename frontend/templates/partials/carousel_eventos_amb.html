@@ -1,29 +1,201 @@
 {% load i18n %}
 {% load static %}
-<section class="s-block pb-0">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <h1 class="text-center tc-blue mt-5 mb-0">Eventos Ambientales</h1>
-                <div class="owl-carousel owl-theme ">
+
+{% block otherstyles %}
+    <style>
+
+        #eventos #pagination {
+            border-radius: 10px;
+            border: 1px solid #dee2e6 !important;
+            padding: 1rem;
+        }
+
+        #eventos .pagination .page-item.active a.page-link {
+            background-color: transparent !important;
+            color: #8cd400 !important;
+            border-color: transparent !important;
+            /*text-shadow: 1px 1px 1px rgb(0 0 0 / 20%);*/
+        }
+
+        #eventos #pagination.pagination .page-link:hover {
+            color: #8cd400 !important;
+            border: none !important;
+            background: none !important;
+        }
+
+        #eventos #pagination.pagination .page-item a.page-link {
+            margin: 0.2rem;
+            border: none !important;
+            /*line-height: normal;*/
+            /*background: #f6f7f8;*/
+            color: #004A23;
+        }
+
+        #eventos #pagination.pagination .next a.page-link, #eventos #pagination.pagination .prev a.page-link {
+            margin: 0.2rem;
+            border-radius: 50%;
+            /*line-height: normal;*/
+            background: #002612 !important;
+            color: white !important;
+        }
+
+        #eventos #pagination.pagination .next a.page-link:hover, #eventos #pagination.pagination .prev a.page-link:hover {
+            margin: 0.2rem;
+            border-radius: 50%;
+            /*line-height: normal;*/
+            background: #8cd400 !important;
+            color: white !important;
+        }
+
+        #eventos #pagination.pagination .disabled a.page-link {
+            margin: 0.2rem;
+            border-radius: 50%;
+            /*line-height: normal;*/
+            background: #e8e9ec !important;
+            color: #ffff !important;
+        }
+
+        #eventos .hide-event {
+            display: none;
+        }
+
+        #eventos .show-event {
+            display: block;
+        }
+
+        #eventos .events-list {
+            margin-bottom: 0.5rem;
+            color: white;
+        }
+
+        #eventos .event-item {
+        {#margin-bottom: 0.5rem;#} background-color: hsla(120, 60%, 70%, 0.3);
+            filter: alpha(opacity=60);
+        {#opacity: 0.5;#}
+        }
+
+        #eventos a {
+            color: white;
+        }
+
+        #eventos h4 {
+            margin-bottom: 1rem !important;
+            color: white;
+            font-weight: bold;
+        }
+
+        #eventos h4:after {
+            content: "";
+            display: block;
+            height: 2px;
+            width: 120px;
+            background: #00A8FF;
+            left: 20px;
+            top: 30%;
+            position: absolute;
+        }
+
+        #eventos .event-date {
+            margin-bottom: 1rem !important;
+        }
+
+        #eventos p {
+            display: block;
+            display: -webkit-box;
+        {#-webkit-line-clamp: 3;#} -webkit-box-orient: vertical;
+        {#overflow: hidden;#}{#white-space: nowrap;#} text-overflow: ellipsis;
+
+
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3; /* start showing ellipsis when 3rd line is reached */
+        {#white-space: pre-wrap; /* let the text wrap preserving spaces */#}
+        }
+    </style>
+
+{% endblock %}
+<section id="eventos">
+    <div class="content-wrap" style="padding: 50px 0 80px;">
+        <div class="container clearfix">
+            <div class="d-flex justify-content-end align-items-center mb-5">
+                <div class="form-inline">
+                    <h3 class="mb-0 mr-3 font-weight-bold text-black">Año</h3>
+                    <select class="form-control form-control-sm" name="select_anno" id="select_anno">
+                        <option value="all">Todo</option>
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                    </select>
+                </div>
+
+            </div>
+            <div class="events-list my-3 mx-3">
+                <div class="row">
                     {% for event in eventos_amb %}
-                        <div class="item d-flex flex-column align-items-center justify-content-center pl-5 pt-5 pr-5 pb-1">
-                            <div class="row d-flex align-items-center flex-wrap">
-                                <div class="col-4">
-                                    <div class="item">
-                                        <h4 class="font-weight-bold">{{ event.title }}</h4>
-                                        <p class="text-justify">{{ event.description }}</p>
-                                    </div>
-                                </div>
-                                <div class="col-8">
-                                    <img width="100%" src="{% static event.img %}"
-                                         alt="" class="img-fluid" style="max-height: 500px">
-                                </div>
+                        <article class="bg-image col-md-4 event-item all show-event"
+                                 data-date="{{ event.date }}"
+                                 style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
+                                         url({% static event.img %});
+                                         background-size: cover">
+                            <div class="d-flex justify-content-center flex-column py-5">
+                                <a href="#"
+                                   class="modal-galery"
+                                   data-mdb-toggle="modal"
+                                   data-mdb-target="#GaleryModal1"
+                                   data-img="{% static event.img %}"
+                                   data-title="{{ event.title }}"
+                                   data-description="{{ event.description }}"
+                                   data-date="{{ event.date }}"
+                                >
+{#                                <span class="event-date">#}
+{#                                    {{ event.date }}#}
+{#                                </span>#}
+                                    <h4 class="mb-0">
+                                        {{ event.title }}
+                                    </h4>
+                                    <p class="description mt-5">
+                                        {{ event.description }}
+                                    </p>
+                                </a>
                             </div>
-                        </div>
+                        </article>
                     {% endfor %}
+                    <article id="no-event" class="col-md-3 event-item hide-event">
+                        <h3 class="mb-0 uppercase">
+                            No hay noticias.
+                        </h3>
+                    </article>
                 </div>
             </div>
+            <div id="paginationholder" class="mb-3 mb-lg-0 d-flex justify-content-end">
+                <ul id="pagination" class="pagination-lg"></ul>
+            </div>
+
         </div>
     </div>
 </section>
+<div class="modal fade popup" id="GalleryModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="card">
+                <div class="card-body">
+                    <img class="cover event-img" src="">
+                    <h4 class="event-title card-title mb-0">
+                    </h4>
+                    <span class="event-date">
+                        <i class="fa fa-calendar fa-4x"></i>
+                    </span>
+                    <p class="event-description card-text mt-5">
+                    </p>
+                </div>
+            </div>
+            <div class="text-center py-3">
+                <button type="button" class="btn btn-secondary close-btn card-link" data-mdb-dismiss="modal">
+                    Cerrar
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
