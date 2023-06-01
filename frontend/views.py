@@ -237,14 +237,10 @@ def ambiental(request):
 @gzip_page
 def ambiental_info(request):
     eventos_amb = EventosView.get_event_amb_es_data()
-    eventos_soc = EventosView.get_event_soc_es_data()
-    eventos = eventos_amb+ eventos_soc
     context = {
         'title': _("Ambiental"),
         'page': 'ambiental',
-        # 'eventos_amb': eventos_amb,
-        # 'eventos_soc': eventos_soc,
-        'eventos': eventos,
+        'eventos': eventos_amb,
         'imagen': staticfiles_storage.url('images/headers/plani-ambiental.png'),
     }
     return render(request, '{0}/frontend/ambiental_info.html'.format(request.LANGUAGE_CODE), context)
@@ -288,7 +284,7 @@ def diversidad_inclusion(request):
     context = {
         'title': _("Diversidad e inclusión"),
         'page': 'diversidad-inclusion',
-        'eventos_soc': eventos_soc,
+        'eventos': eventos_soc,
         'imagen': staticfiles_storage.url('images/headers/diversidad_inclusion1.png'),
     }
     return render(request,
