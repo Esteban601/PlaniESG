@@ -1867,3 +1867,21 @@ ul#cadena > li > .nav-link.active:before {
 }
 
 /* fin seccion ambiental*/
+/*ODS index*/
+#ods .ods {
+    display: block;
+    height: 2px;
+    width: 120px;
+    background: #00A8FF;
+    /*margin-top: 1rem;*/
+}
+
+#ods img {
+    padding-bottom: 1rem;
+}
+
+#ods .ods-body {
+    background-color: #cccc;
+    padding: 3rem;
+    padding-bottom: 0;
+}
