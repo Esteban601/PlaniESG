@@ -1,27 +1,72 @@
 {% load i18n %}
 {% load static %}
-<section class="s-block pb-5">
+<section id="eventos" class="s-block pb-5">
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h1 class="text-center tc-blue mt-5 mb-0">Eventos Sociales</h1>
-                <div class="owl-carousel owl-theme ">
-                    {% for event in eventos_soc %}
-                        <div class="item d-flex flex-column align-items-center justify-content-center pl-5 pt-5 pr-5 pb-1">
-                            <div class="row d-flex align-items-center flex-wrap">
-                                <div class="col-4">
-                                    <div class="item">
-                                        <h4 class="font-weight-bold">{{ event.title }}</h4>
-                                        <p class="text-justify">{{ event.description }}</p>
-                                    </div>
+                <h1 class="text-center tc-blue mt-5 mb-0">Actividades</h1>
+                <div class="d-flex justify-content-end align-items-center mb-5">
+                    <div class="form-inline">
+                        <h3 class="mb-0 mr-3 font-weight-bold text-black">filtrar por:</h3>
+                        <select class="form-control form-control-sm mr-3" name="select_category" id="select_category">
+                            <option value="all">Todas</option>
+                            <option value="Sociales">Sociales</option>
+                            <option value="Ambientales">Ambientales</option>
+                        </select>
+                        <h3 class="mb-0 mr-3 font-weight-bold text-black">Año</h3>
+                        <select class="form-control form-control-sm" name="select_anno" id="select_anno">
+                            <option value="all">Todo</option>
+                            <option value="2023">2023</option>
+                            <option value="2022">2022</option>
+                            <option value="2021">2021</option>
+                            <option value="2020">2020</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="events-list my-3 mx-3">
+                    <div class="row">
+                        {% for event in eventos %}
+                            <article class="col-md-4 event-item all show-event pl-0 pr-0"
+                                     data-date="{{ event.date }}"
+                                     data-category="{{ event.category }}">
+                                <div class="image_wrapper2">
+                                    <a href="#"
+                                       class="banner_page modal-galery"
+                                       data-mdb-toggle="modal"
+                                       data-mdb-target="#GaleryModal1"
+                                       data-img="{% static event.img %}"
+                                       data-title="{{ event.title }}"
+                                       data-category="{{ event.category }}"
+                                       data-description="{{ event.description }}"
+                                       data-date="{{ event.date }}">
+                                        <img src="{% static event.img %}" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                {{ event.title }}
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    {{ event.title }}
+                                                </h4>
+                                                <p class="text-white description">{{ event.description }}</p>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
-                                <div class="col-8">
-                                    <img width="100%" src="{% static event.img %}"
-                                         alt="" class="img-fluid" style="max-height: 500px">
-                                </div>
-                            </div>
-                        </div>
-                    {% endfor %}
+                            </article>
+                        {% endfor %}
+                        <article id="no-event" class="col-md-3 event-item hide-event">
+                            <h3 class="mb-0 uppercase">
+                                No hay noticias.
+                            </h3>
+                        </article>
+                    </div>
+                </div>
+                <div id="paginationholder" class="mb-3 mb-lg-0 d-flex justify-content-end">
+                    <ul id="pagination" class="pagination-lg"></ul>
                 </div>
             </div>
         </div>
