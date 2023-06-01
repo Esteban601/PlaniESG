@@ -249,9 +249,11 @@ def ambiental_info(request):
 # Modelo ASG
 @gzip_page
 def materialidad(request):
+    eventos_amb = EventosView.get_event_amb_es_data()
     context = {
         'title': _("Materialidad y estrategia ASG"),
         'page': 'materialidad',
+        'eventos': eventos_amb,
         'imagen': staticfiles_storage.url('images/headers/plani-materialidad.png'),
     }
     return render(request, '{0}/frontend/modelo_asg/materialidad.html'.format(request.LANGUAGE_CODE), context)
@@ -298,7 +300,7 @@ def vinculacion_comunidad(request):
     context = {
         'title': _("Vinculación con la comunidad"),
         'page': 'vinculacion-comunidad',
-        'eventos_soc': eventos_soc,
+        'eventos': eventos_soc,
         'imagen': staticfiles_storage.url('images/headers/vinculacion_comunidad1.png'),
     }
     return render(request,
