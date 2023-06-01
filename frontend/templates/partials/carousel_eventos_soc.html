@@ -1,5 +1,8 @@
 {% load i18n %}
 {% load static %}
+{% block otherstyles %}
+    <link rel="stylesheet" href="{% static 'stylesheets/carousel.eventos.min.css' %}">
+{% endblock %}
 <section id="eventos" class="s-block pb-5">
     <div class="container">
         <div class="row">
@@ -24,7 +27,6 @@
                     </div>
 
                 </div>
-
                 <div class="events-list my-3 mx-3">
                     <div class="row">
                         {% for event in eventos %}
@@ -72,3 +74,31 @@
         </div>
     </div>
 </section>
+<div class="modal fade popup" id="GalleryModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="card">
+                <div class="card-body">
+                    <img class="cover event-img" src="">
+                    <h4 class="event-title card-title mb-0">
+                    </h4>
+                    <i class="fa fa-calendar"></i>
+                    <span class="event-date">
+                    </span>
+                    <i class="fa fa-folder"></i>
+
+                    <span class="event-category">
+                    </span>
+                    <p class="event-description card-text mt-5">
+                    </p>
+                </div>
+            </div>
+            <div class="text-center py-3">
+                <button type="button" class="btn btn-secondary close-btn card-link" data-mdb-dismiss="modal">
+                    Cerrar
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+

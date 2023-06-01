@@ -225,3 +225,17 @@
         transform: translate3d(0, 0, 0);
     }
 }
+#GalleryModal1 .event-description{
+    border-left: 4px solid #011e4f;
+    background-color: #9fcdff;
+    padding: 1rem;
+}
+#GalleryModal1 .event-title{
+   font-size: 20px;
+}
+#GalleryModal1 .event-img{
+   display: block;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
