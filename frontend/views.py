@@ -254,7 +254,7 @@ def ambiental_info(request):
 @gzip_page
 def materialidad(request):
     context = {
-        'title': _("Materialidad"),
+        'title': _("Materialidad y estrategia ASG"),
         'page': 'materialidad',
         'imagen': staticfiles_storage.url('images/headers/plani-materialidad.png'),
     }
