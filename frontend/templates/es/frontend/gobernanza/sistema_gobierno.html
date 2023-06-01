@@ -148,6 +148,8 @@
                 </div>
             </div>
         </div>
+        {% include 'partials/carousel_eventos_soc.html' %}
+
         <div class="container">
             <a class="btn bg-danger text-white" href="{% url 'gobernanza' %}">
                 volver
@@ -157,5 +159,6 @@
 {% endblock %}
 
 {% block otherscripts %}
-
+<script src="{% static 'javascripts/js/jquery.twbsPagination.min.js' %}"></script>
+    <script src="{% static 'javascripts/carousel.eventos.js' %}"></script>
 {% endblock %}

@@ -237,14 +237,10 @@ def ambiental(request):
 @gzip_page
 def ambiental_info(request):
     eventos_amb = EventosView.get_event_amb_es_data()
-    eventos_soc = EventosView.get_event_soc_es_data()
-    eventos = eventos_amb+ eventos_soc
     context = {
         'title': _("Ambiental"),
         'page': 'ambiental',
-        # 'eventos_amb': eventos_amb,
-        # 'eventos_soc': eventos_soc,
-        'eventos': eventos,
+        'eventos': eventos_amb,
         'imagen': staticfiles_storage.url('images/headers/plani-ambiental.png'),
     }
     return render(request, '{0}/frontend/ambiental_info.html'.format(request.LANGUAGE_CODE), context)
@@ -253,9 +249,11 @@ def ambiental_info(request):
 # Modelo ASG
 @gzip_page
 def materialidad(request):
+    eventos_amb = EventosView.get_event_amb_es_data()
     context = {
         'title': _("Materialidad y estrategia ASG"),
         'page': 'materialidad',
+        'eventos': eventos_amb,
         'imagen': staticfiles_storage.url('images/headers/plani-materialidad.png'),
     }
     return render(request, '{0}/frontend/modelo_asg/materialidad.html'.format(request.LANGUAGE_CODE), context)
@@ -288,7 +286,7 @@ def diversidad_inclusion(request):
     context = {
         'title': _("Diversidad e inclusión"),
         'page': 'diversidad-inclusion',
-        'eventos_soc': eventos_soc,
+        'eventos': eventos_soc,
         'imagen': staticfiles_storage.url('images/headers/diversidad_inclusion1.png'),
     }
     return render(request,
@@ -302,7 +300,7 @@ def vinculacion_comunidad(request):
     context = {
         'title': _("Vinculación con la comunidad"),
         'page': 'vinculacion-comunidad',
-        'eventos_soc': eventos_soc,
+        'eventos': eventos_soc,
         'imagen': staticfiles_storage.url('images/headers/vinculacion_comunidad1.png'),
     }
     return render(request,
@@ -333,9 +331,11 @@ def gobernanza_info(request):
 
 @gzip_page
 def sistema_gobierno(request):
+    eventos_soc = EventosView.get_event_soc_es_data()
     context = {
         'title': _("Sistema de gobierno"),
         'page': 'sistema_gobierno',
+        'eventos': eventos_soc,
         'imagen': staticfiles_storage.url('images/headers/sistema_gobierno_h.png'),
     }
     return render(request, '{0}/frontend/gobernanza/sistema_gobierno.html'.format(request.LANGUAGE_CODE), context)
@@ -353,9 +353,12 @@ def estrategia_asg(request):
 
 @gzip_page
 def grupos_interes(request):
+    eventos_soc = EventosView.get_event_soc_es_data()
+
     context = {
         'title': _("Grupos de interés"),
         'page': 'grupos-interes',
+        'eventos': eventos_soc,
         'imagen': staticfiles_storage.url('images/headers/plani-grupos-de-interes.png'),
     }
     return render(request,
