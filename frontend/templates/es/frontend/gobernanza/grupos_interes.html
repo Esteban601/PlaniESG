@@ -228,6 +228,8 @@
 
             </div>
         </div>
+        {% include 'partials/carousel_eventos_soc.html' %}
+
         <div class="container">
             <a class="btn bg-danger text-white" href="{% url 'gobernanza' %}">
                 volver
@@ -241,7 +243,8 @@
     <script src="{% static 'javascripts/amcharts/amcharts-2.js' %}"></script>
     <script src="{% static 'javascripts/amcharts/pie-2.js' %}"></script>
     <script src="{% static 'javascripts/amcharts/animate.js' %}"></script>
-
+    <script src="{% static 'javascripts/js/jquery.twbsPagination.min.js' %}"></script>
+    <script src="{% static 'javascripts/carousel.eventos.js' %}"></script>
 
     <script>
         var directores = AmCharts.makeChart("directores", {

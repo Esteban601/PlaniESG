@@ -331,9 +331,11 @@ def gobernanza_info(request):
 
 @gzip_page
 def sistema_gobierno(request):
+    eventos_soc = EventosView.get_event_soc_es_data()
     context = {
         'title': _("Sistema de gobierno"),
         'page': 'sistema_gobierno',
+        'eventos': eventos_soc,
         'imagen': staticfiles_storage.url('images/headers/sistema_gobierno_h.png'),
     }
     return render(request, '{0}/frontend/gobernanza/sistema_gobierno.html'.format(request.LANGUAGE_CODE), context)
@@ -351,9 +353,12 @@ def estrategia_asg(request):
 
 @gzip_page
 def grupos_interes(request):
+    eventos_soc = EventosView.get_event_soc_es_data()
+
     context = {
         'title': _("Grupos de interés"),
         'page': 'grupos-interes',
+        'eventos': eventos_soc,
         'imagen': staticfiles_storage.url('images/headers/plani-grupos-de-interes.png'),
     }
     return render(request,
