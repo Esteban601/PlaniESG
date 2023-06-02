@@ -108,7 +108,7 @@
 /*aqui eventos*/
 
 #eventos .event-item {
-    background-color: hsla(120, 60%, 70%, 0.3);
+    /*background-color: hsla(120, 60%, 70%, 0.3);*/
     filter: alpha(opacity=60);
     height: auto;
     /*min-height: 280px;*/

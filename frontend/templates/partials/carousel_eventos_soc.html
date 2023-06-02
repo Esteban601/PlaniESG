@@ -30,7 +30,7 @@
                 <div class="events-list my-3 mx-3">
                     <div class="row">
                         {% for event in eventos %}
-                            <article class="col-md-4 event-item all show-event pl-0 pr-0"
+                            <article class="col-md-4 event-item all show-event py-1 px-1"
                                      data-date="{{ event.date }}"
                                      data-category="{{ event.category }}">
                                 <div class="image_wrapper2">
@@ -94,7 +94,7 @@
                 </div>
             </div>
             <div class="text-center py-3">
-                <button type="button" class="btn btn-secondary close-btn card-link" data-mdb-dismiss="modal">
+                <button type="button" class="btn btn-danger close-btn card-link" data-mdb-dismiss="modal">
                     Cerrar
                 </button>
             </div>
