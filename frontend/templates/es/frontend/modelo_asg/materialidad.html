@@ -32,43 +32,46 @@
                 <p class="text-justify">En Planigrupo estamos comprometidos con el desarrollo sostenible de las
                     comunidades, empresas y países en los que operamos, y para ello nos hemos enfocado en los
                     Objetivos de Desarrollo Sostenible (ODS) de las Naciones Unidas.</p>
-                <div class="row">
-                    <div class="col-md-4">
+
+            </div>
+
+            <div class="col-10 offset-1">
+                <div class="row d-flex justify-content-center align-items-center center">
+                    <div class="col-md-3">
                         <div class="text-center">
                             <img class="img-fluid" src="{% static 'images/ODS_1.png' %}" width="200px"
                                  height="600px" alt="">
                         </div>
                     </div>
                     <div class="col-md-8">
-                        <p class="text-justify"><br><br>
+                        <p class="text-justify">
                             Planigrupo aporta en este objetivo mediante la creación de oportunidades laborales,
                             proporcionando
                             condiciones de trabajo dignas a empleados y proveedores e impactando positivamente en las
-                            comunidades locales.</p>
-
+                            comunidades locales.
+                        </p>
                     </div>
                     <div class="col-md-8">
-                        <p class="text-justify"><br><br>
+                        <p class="text-justify">
                             En la empresa hemos adoptado políticas y procedimientos para garantizar los mismos derechos
                             y oportunidades laborales
-                            para las mujeres, fomentando así el crecimiento económico y el desarrollo social.</p>
-
-
+                            para las mujeres, fomentando así el crecimiento económico y el desarrollo social.
+                        </p>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <div class="text-center">
                             <img class="img-fluid" src="{% static 'images/ODS_5.png' %}" width="200px"
                                  height="600px" alt="">
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <div class="text-center">
                             <img class="img-fluid" src="{% static 'images/ODS_8.png' %}" width="200px"
                                  height="600px" alt="">
                         </div>
                     </div>
                     <div class="col-md-8">
-                        <p class="text-justify"><br><br>
+                        <p class="text-justify">
                             Planigrupo aporta a la creación de puestos de trabajo decentes en las comunidades en las que
                             operamos. Todas las mujeres
                             y hombres, incluidos los jóvenes y las personas con discapacidad, cuentan con condiciones
@@ -76,27 +79,26 @@
                             vez nos acercamos más a la igualdad de remuneración por trabajo de igual valor. Dentro de
                             esto, protegemos los derechos
                             laborales y promovemos un entorno de trabajo seguro y sin riesgos para todos los
-                            trabajadores de Planigrupo.</p>
-
+                            trabajadores de Planigrupo.
+                        </p>
                     </div>
                     <div class="col-md-8">
-                        <p class="text-justify"><br><br>
+                        <p class="text-justify">
                             Proporcionamos condiciones laborales dignas a través de toda nuestra cadena de valor,
                             especialmente para grupos desfavorecidos,
                             redistribuyendo de forma más igualitaria los salarios a los colaboradores, implantando
                             mecanismos para evitar la evasión fiscal y
-                            fomentando proyectos de cooperación al desarrollo.</p>
-
-
+                            fomentando proyectos de cooperación al desarrollo.
+                        </p>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <div class="text-center">
                             <img class="img-fluid" src="{% static 'images/ODS_10.png' %}" width="200px"
                                  height="600px" alt="">
                         </div>
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <div class="text-center">
                             <img class="img-fluid" src="{% static 'images/ODS_11.png' %}" width="200px"
                                  height="600px" alt="">
@@ -123,13 +125,13 @@
 
 
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <div class="text-center">
                             <img class="img-fluid" src="{% static 'images/ODS_16.png' %}" width="200px"
                                  height="600px" alt="">
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <div class="text-center">
                             <img class="img-fluid" src="{% static 'images/ODS_17.png' %}" width="200px"
                                  height="600px" alt="">
@@ -148,11 +150,15 @@
 
                     </div>
                 </div>
-
-                </section>
-                {% include 'partials/carousel_eventos_soc.html' %}
-
             </div>
+            </section>
+            {% include 'partials/carousel_eventos_soc.html' %}
+            <div class="container">
+                <a class="btn bg-danger text-white" href="{% url 'index' %}">
+                    volver
+                </a>
+            </div>
+
         </div>
     </div>
 {% endblock %}
