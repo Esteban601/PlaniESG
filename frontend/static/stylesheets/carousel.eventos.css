@@ -230,8 +230,8 @@
 }
 
 #GalleryModal1 .event-description {
-    border-left: 4px solid #011e4f;
-    background-color: #9fcdff;
+    border-left: 4px solid #252628;
+    background: rgba(173, 172, 172, 0.5);
     padding: 1rem;
 }
 
