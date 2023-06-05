@@ -58,6 +58,7 @@ class EventosView(generic.ListView):
                 "category": "Ambientales",
                 "img": "images/eventos/Helice.png"
             },
+            
 
         ]
         # Get the blog from id and add it to the context
@@ -185,6 +186,46 @@ class EventosView(generic.ListView):
                 "url": "",
                 "category": "Sociales",
                 "img": "images/eventos_soc/Recoleccion-tapitas-para-niños-con-cancer.jpg"
+            },
+            {
+                "title": "Donativo Instituto Estatal de las Mujeres",
+                "date": "2023-03-09",
+                "description": "Se realizó un donativo en Mall Plaza Lincoln, consistente en sillas y mesas.",
+                "url": "",
+                "category": "Sociales",
+                "img": "images/eventos_soc/donativo_instituto_estatal_mujeres.png"
+            },
+            {
+                "title": "Inauguración de ESPAZIOS IEMUJERES y PUNTO NARANJA",
+                "date": "2023-03-09",
+                "description": "Se inauguró ESPAZIOS IEMUJERES en nuestra plaza comercial Urban Village Garza Sada",
+                "url": "",
+                "category": "Sociales",
+                "img": "images/eventos_soc/inauguracion_espazio_iemujeres.png"
+            },
+             {
+                "title": "Banco de Tapitas Julio 2021",
+                "date": "2021-08-02",
+                "description": "Se recolectaron 26.98 toneladas de tapitas en el mes de julio 2021, beneficiando a más de 400 personas",
+                "url": "",
+                "category": "Sociales",
+                "img": "images/eventos_soc/banco_tapitas_julio_2021.png"
+            },
+            {
+                "title": "Centros de Acopio Incendios Forestales en Sierra Arteaga",
+                "date": "2021-05-17",
+                "description": "Se crearon centros de acopio en las plazas comerciales de Nuevo León y Coahuila para apoyar con los incendios forestales recientes",
+                "url": "",
+                "category": "Sociales",
+                "img": "images/eventos_soc/centros_acopio_forestal.png"
+            },
+            {
+                "title": "Día de la Mujer 2021",
+                "date": "2021-05-17",
+                "description": "Se realizó la conferencia de Liderazgo femenino con las invitadas Karla Ahumada y Paola Espinoza",
+                "url": "",
+                "category": "Sociales",
+                "img": "images/eventos_soc/dia_mujer_2021.png"
             },
 
         ]
