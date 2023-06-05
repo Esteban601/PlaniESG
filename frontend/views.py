@@ -58,6 +58,7 @@ class EventosView(generic.ListView):
                 "category": "Ambientales",
                 "img": "images/eventos/Helice.png"
             },
+            
 
         ]
         # Get the blog from id and add it to the context
@@ -185,6 +186,166 @@ class EventosView(generic.ListView):
                 "url": "",
                 "category": "Sociales",
                 "img": "images/eventos_soc/Recoleccion-tapitas-para-niños-con-cancer.jpg"
+            },
+            {
+                "title": "Donativo Instituto Estatal de las Mujeres",
+                "date": "2023-03-09",
+                "description": "Se realizó un donativo en Mall Plaza Lincoln, consistente en sillas y mesas.",
+                "url": "",
+                "category": "Sociales",
+                "img": "images/eventos_soc/donativo_instituto_estatal_mujeres.png"
+            },
+            {
+                "title": "Inauguración de ESPAZIOS IEMUJERES y PUNTO NARANJA",
+                "date": "2023-03-09",
+                "description": "Se inauguró ESPAZIOS IEMUJERES en nuestra plaza comercial Urban Village Garza Sada",
+                "url": "",
+                "category": "Sociales",
+                "img": "images/eventos_soc/inauguracion_espazio_iemujeres.png"
+            },
+             {
+                "title": "Banco de Tapitas Julio 2021",
+                "date": "2021-08-02",
+                "description": "Se recolectaron 26.98 toneladas de tapitas en el mes de julio 2021, beneficiando a más de 400 personas",
+                "url": "",
+                "category": "Sociales",
+                "img": "images/eventos_soc/banco_tapitas_julio_2021.png"
+            },
+            {
+                "title": "Centros de Acopio Incendios Forestales en Sierra Arteaga",
+                "date": "2021-05-17",
+                "description": "Se crearon centros de acopio en las plazas comerciales de Nuevo León y Coahuila para apoyar con los incendios forestales recientes",
+                "url": "",
+                "category": "Sociales",
+                "img": "images/eventos_soc/centros_acopio_forestal.png"
+            },
+            {
+                "title": "Día de la Mujer 2021",
+                "date": "2021-05-17",
+                "description": "Se realizó la conferencia de Liderazgo femenino con las invitadas Karla Ahumada y Paola Espinoza",
+                "url": "",
+                "category": "Sociales",
+                "img": "images/eventos_soc/dia_mujer_2021.png"
+            },
+            {
+                "title": "Donación de Materiales a Fundación Hélice",
+                "date": "2021-04-08",
+                "description": "Se realizó la donación de materiales para la Fundación Hélice",
+                "url": "",
+                "category": "Sociales",
+                "img": "images/eventos_soc/donacion_materiales_helice.png"
+            },
+            {
+                "title": "Alianza Grupo Alen",
+                "date": "2021-03-04",
+                "description": "Se colocaron 2 máquinas de reciclaje en las plazas Urban Village Garza Sada y Plaza Real Saltillo",
+                "url": "",
+                "category": "Sociales",
+                "img": "images/eventos_soc/alianza_grupo_alen.png"
+            },
+            {
+                "title": "Alianza Banco de Tapitas",
+                "date": "2021-03-04",
+                "description": "A la fecha se han recolectado más de 15 toneladas de tapitas y así ayudado a más de 130 pacientes con Cáncer Infantil",
+                "url": "",
+                "category": "Sociales",
+                "img": "images/eventos_soc/alianza_banco_tapitas.png"
+            },
+             {
+                "title": "La Escuela Más Grande del Mundo",
+                "date": "2021-03-04",
+                "description": "Nos sumamos a la iniciativa para promover espacios en nuestras plazas para los estudiantes",
+                "url": "",
+                "category": "Sociales",
+                "img": "images/eventos_soc/la_escuela_mas_grande_del_mundo.png"
+            },
+            {
+                "title": "Concurso de nacimientos navideños 2020",
+                "date": "2021-03-04",
+                "description": "Se realizó un concurso de nacimientos a nivel nacional, hecho de materiales reciclados",
+                "url": "",
+                "category": "Sociales",
+                "img": "images/eventos_soc/concurso_nacimientos_2020.png"
+            },
+             {
+                "title": "Encendido de Árboles navideños 2020",
+                "date": "2020-12-17",
+                "description": "Se dio inicio a las fiestas navideñas con el encendido de árboles navideños a nivel nacional",
+                "url": "",
+                "category": "Sociales",
+                "img": "images/eventos_soc/encendido-arbolito.jpeg"
+            },
+             {
+                "title": "Laptops con Causa",
+                "date": "2020-10-08",
+                "description": "NOs unimos a la iniciativa Laptops con Causa para apoyar a estudiantes de preparatoria y univesidad a continuar sus estudios",
+                "url": "",
+                "category": "Sociales",
+                "img": "images/eventos_soc/laptops_con_causa.png"
+            },
+             {
+                "title": "Rosca de Reyes-Planigrupo Monterrey",
+                "date": "2020-08-18",
+                "description": "Se realizó la tradicional rosca de reyes y actividades con los Reyes magos para toda la familia",
+                "url": "",
+                "category": "Sociales",
+                "img": "images/eventos_soc/rosca_reyes_2020.png"
+            },
+            {
+                "title": "Sanitización de Centros Comerciales a nivel nacional",
+                "date": "2020-08-18",
+                "description": "Se realizo la sanitización de centros comerciales para brindar mayor seguridad a los clientes",
+                "url": "",
+                "category": "Sociales",
+                "img": "images/eventos_soc/sanitizacion_centros_comerciales.png"
+            },
+            {
+                "title": "Recolección de tapitas para niños con cáncer",
+                "date": "2020-08-18",
+                "description": "Agradecemos a las personas que colaboraron en la recolección de tapitas y a Banco Tapitas por su compromiso y labor",
+                "url": "",
+                "category": "Sociales",
+                "img": "images/eventos_soc/recoleccion_tapitas_niños.png"
+            },
+            {
+                "title": "Donativo de Caretas al municipio de Zapopan, Jalisco",
+                "date": "2020-05-26",
+                "description": "Donativo de Caretas al Municipio de Zapopan, Jalisco",
+                "url": "",
+                "category": "Sociales",
+                "img": "images/eventos_soc/donativo_caretas_zapopan.png"
+            },
+            {
+                "title": "Encendido de los pinos en todas las plazas",
+                "date": "2020-05-26",
+                "description": "Se realizó el encendido del Pino Navideño en todas las Plazas Comerciales",
+                "url": "",
+                "category": "Sociales",
+                "img": "images/eventos_soc/encendido_pinos.png"
+            },
+            {
+                "title": "Carrera Planigrupo-Santa Catarina",
+                "date": "2019-12-13",
+                "description": "Se realizó la carrera Planigrupo-Santa Catarina en conjunto con el gobierno de Santa Catarina, NL",
+                "url": "",
+                "category": "Sociales",
+                "img": "images/eventos_soc/carrera_santa_catarina.png"
+            },
+            {
+                "title": "Gran Casting La Academia",
+                "date": "2019-11-15",
+                "description": "Se realizó la carrera Planigrupo-Santa Catarina en conjunto con el gobierno de Santa Catarina, NL",
+                "url": "",
+                "category": "Sociales",
+                "img": "images/eventos_soc/casting_academia.png"
+            },
+            {
+                "title": "Festival Cultural Tradición Viva",
+                "date": "2019-11-15",
+                "description": "Se realizó un evento con actividades culturales para preservar y fomentar las tradiciones mexicanas",
+                "url": "",
+                "category": "Sociales",
+                "img": "images/eventos_soc/festival_cultural_tradicion_viva.png"
             },
 
         ]
