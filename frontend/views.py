@@ -77,7 +77,7 @@ def ambiental(request):
     context = {
         'title': _("Ambiental"),
         'page': 'ambiental',
-        'eventos_amb': eventos_amb,
+        'eventos': eventos_amb,
         'imagen': staticfiles_storage.url('images/headers/plani-ambiental.png'),
     }
     return render(request, '{0}/frontend/ambiental.html'.format(request.LANGUAGE_CODE), context)
@@ -160,9 +160,12 @@ def vinculacion_comunidad(request):
 # Gobernanza
 @gzip_page
 def gobernanza(request):
+    eventos_cor = EventosView.get_event_cor_es_data()
+
     context = {
         'title': _("Gobernanza"),
         'page': 'gobernanza',
+        'eventos': eventos_cor,
         'imagen': staticfiles_storage.url('images/headers/plani-gobierno.png'),
     }
     return render(request, '{0}/frontend/gobernanza.html'.format(request.LANGUAGE_CODE), context)
@@ -270,9 +273,12 @@ def contenido_descargable(request):
 # Responsabilidad Social
 @gzip_page
 def responsabilidad_social(request):
+    eventos_soc = EventosView.get_event_soc_es_data()
+
     context = {
         'title': _("Responsabilidad Social"),
         'page': 'responsabilidad-social',
+        'eventos': eventos_soc,
         'imagen': staticfiles_storage.url('images/headers/responsabilidad_social.png'),
     }
     return render(request, '{0}/frontend/responsabilidad_social.html'.format(request.LANGUAGE_CODE), context)

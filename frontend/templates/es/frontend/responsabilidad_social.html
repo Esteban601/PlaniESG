@@ -9,18 +9,23 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6"><br>
-                <p class="text-justify">Creemos que la responsabilidad social es esencial para construir un futuro mejor, es por esto que estamos comprometidos 
-                    con la construcción de un entorno más inclusivo y el desarrollo sostenible de nuestras comunidades.</p>
-                    
-                    <p class="text-justify">En nuestra sección de diversidad e inclusión compartimos nuestro compromiso de crear un entorno laboral inclusivo y respetuoso. 
-                        Valoramos y celebramos la diversidad en todas sus formas, promoviendo la igualdad de oportunidades para todos nuestros colaboradores.</p>
-                        
-                    <p class="text-justify">El elemento más importante y fundamental para Planigrupo son las personas, para eso trabajamos con y para ellas, en el 2023 
+                    <p class="text-justify">Creemos que la responsabilidad social es esencial para construir un futuro
+                        mejor, es por esto que estamos comprometidos
+                        con la construcción de un entorno más inclusivo y el desarrollo sostenible de nuestras
+                        comunidades.</p>
+
+                    <p class="text-justify">En nuestra sección de diversidad e inclusión compartimos nuestro compromiso
+                        de crear un entorno laboral inclusivo y respetuoso.
+                        Valoramos y celebramos la diversidad en todas sus formas, promoviendo la igualdad de
+                        oportunidades para todos nuestros colaboradores.</p>
+
+                    <p class="text-justify">El elemento más importante y fundamental para Planigrupo son las personas,
+                        para eso trabajamos con y para ellas, en el 2023
                         nos enfocaremos en prácticas que favorezcan a nuestros colaboradores y a la sociedad en general:
-                    </div>
-                     <div class="col-md-6">
+                </div>
+                <div class="col-md-6">
                     <div style="text-align:center;">
-                        
+
                         <img src="{% static 'images/metas_sociales.png' %}"
                              style="display:block; width:800px; height: 350px;"
                              alt=""><br>
@@ -29,7 +34,7 @@
             </div>
             <h1 class="text-center tc-blue mt-5 mb-5">Diversidad e Inclusión</h1>
             <div class="row">
-                
+
                 <div class="col-md-5"><br><br<br><br><br><br>
                     <p class="text-justify">En planigrupo se genera un ambiente equitativo con diversidad e inclusión,
                         donde se acepta y respeta las perspectivas diversas, apoyando a todos.</p>
@@ -47,12 +52,14 @@
                      alt="">
             </div>
             <h1 class="text-center tc-blue mt-5 mb-5">Vinculación con la Comunidad</h1>
-            <p class="text-justify">En el caso de la vinculación con la comunidad, nos involucramos en proyectos y colaboraciones que contribuyen al 
-                desarrollo sostenible de las comunidades en las que operamos. Desde programas de voluntariado hasta proyectos de mejora de 
-                infraestructuras y apoyo a causas sociales y medioambientales, trabajamos en estrecha colaboración con las comunidades para 
+            <p class="text-justify">En el caso de la vinculación con la comunidad, nos involucramos en proyectos y
+                colaboraciones que contribuyen al
+                desarrollo sostenible de las comunidades en las que operamos. Desde programas de voluntariado hasta
+                proyectos de mejora de
+                infraestructuras y apoyo a causas sociales y medioambientales, trabajamos en estrecha colaboración con
+                las comunidades para
                 generar un impacto positivo y duradero.</p>
 
-           
 
             <div style="text-align:center;">
                 <img src="{% static 'images/iniciativas_comunidad1.png' %}"
@@ -67,7 +74,9 @@
                 importantes sinergias dentro de las entidades en las que se ubican nuestras plazas
                 comerciales.</p>
         </div>
-                          <!---   <p class="text-justify">Para más información, visitar los siguientes enlaces:</p>
+        {% include 'partials/carousel_eventos_soc.html' %}
+
+        <!---   <p class="text-justify">Para más información, visitar los siguientes enlaces:</p>
             
             <div class="row">
                 <div class="col-6">
@@ -95,7 +104,6 @@
                     </div>
                 </div>
             </div> --->
-        </div>
     </div>
 {% endblock %}
 
@@ -105,6 +113,8 @@
     <script src="{% static 'javascripts/amcharts/pie.js' %}"></script>
     <script src="{% static 'javascripts/amcharts/contenido/responsabilidad-social.js' %}"></script>
     <script src="{% static 'javascripts/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'javascripts/js/jquery.twbsPagination.min.js' %}"></script>
+    <script src="{% static 'javascripts/carousel.eventos.js' %}"></script>
     <script>
         $(function () {
 
