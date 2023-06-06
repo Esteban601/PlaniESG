@@ -1,0 +1,166 @@
+{
+  "eventos_sociales": [
+    {
+      "title": "Inauguración de “ESPAZIOS IEMUJERES Y PUNTO NARANJA” ",
+      "date": "2022-06-01",
+      "description": "Inauguración de espacios para mujeres emprendedoras, así como un punto para atender y apoyar a mujeres que se sientan inseguras.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/ESPAZIOS-IEMUJERES-Y-PUNTO-NARANJA.jpg"
+    },
+    {
+      "title": "Encendido de arbolitos 2022",
+      "date": "2022-06-01",
+      "description": "Se realizo el tradicional encendido de arbolitos navideños 2022 en nuestros centros comerciales.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/encendido-arbolito.jpeg"
+    },
+    {
+      "title": "Alianza Fundación Lilo",
+      "date": "2022-06-01",
+      "description": "Nuestro programa “MANOS AL CORAZÓN” brinda apoyo con gastos hospitalarios y dispositivos",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/fundacion-lilo.png"
+    },
+    {
+      "title": "Reconocimiento a CiudadelaUV por el banco de tapitas ",
+      "date": "2022-06-01",
+      "description": "Reconocimiento al Banco de Tapitas A.C por su participación en Programa de Recolección de Tapitas de plástico.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/Banco-tapitas-Junio-Ciudadela.png"
+    },
+    {
+      "title": "Entrega de juguetes",
+      "date": "2022-06-01",
+      "description": "Se realizo la entrega de juguetes que se recolectaron con la alianza DIF de Santa Catarina y Alianza Anticáncer.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/entrega_juguetes.jpg"
+    },
+    {
+      "title": "Apoyo a Fundación ALIANZA ANTICÁNCER",
+      "date": "2022-06-01",
+      "description": "En conjunto con el DIF de Santa Catarina se recaudaron 382 artículos entre juguetes y taparroscas",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/Alianza-anti-cancer.png"
+    },
+    {
+      "title": "Teletón Coahuila",
+      "date": "2022-06-01",
+      "description": "Se contribuyo en la atención médica y rehabilitación de calidad para niñas y niños del CRIT Coahuila.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/Teletn.png"
+    },
+    {
+      "title": "Corazones Rosa en Colaboración con Grupo AIEn",
+      "date": "2022-06-01",
+      "description": "Se recolectaron tapitas en puntos estratégicos de nuestras plazas, que se transformaron en un donativo para la fundación Asociación Unidas Contigo.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/Corazones-rosas-con-grupo-alen.jpg"
+    },
+    {
+      "title": "Patrocinadores Oficiales de Reciclatón 2021 Fundación Teletón",
+      "date": "2022-06-01",
+      "description": "Planigrupo realizó un donativo para apoyar a los niños del CRIT Coahuila.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/Reciclaton.jpg"
+    },
+    {
+      "title": "Banco de Tapitas febrero 2022",
+      "date": "2022-06-01",
+      "description": "Más de 40 toneladas, 750 quimioterapias, 1,500 suplementos alimenticios y 500 pacientes atendidos.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/Banco-Tapitas-febrero-2022.jpeg"
+    },
+    {
+      "title": "Donativo en el Día de los Abuelos",
+      "date": "2022-06-01",
+      "description": "Se realizo visita y apoyo a asilos de abuelos en 4 comunidades, Cd Juárez, Guadalajara, Monterrey y Saltillo",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/donativo-abuelos.jpg"
+    },
+    {
+      "title": "Donativo Mobiliario a “Casa Hogar Manos de Amor por Bahía”",
+      "date": "2022-06-01",
+      "description": "Se realizó un donativo de mobiliario para niños en situación de pobreza extrema, huérfanos, entre otros",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/Donativo-hogar-manos-amor-por-habia.jpg"
+    },
+    {
+      "title": "Rosca de Reyes 2020",
+      "date": "2022-06-01",
+      "description": "Se realizó la tradicional rosca de reyes y diversas actividades con los reyes magos",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/dia-reyes.png"
+    },
+    {
+      "title": "Sanitización de Centros Comerciales a Nivel Nacional",
+      "date": "2022-06-01",
+      "description": "Se realizo la sanitización de centros comerciales para brindar mayor seguridad a los clientes",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/planigrupo-busca-adquirir-dos-centros-comerciales.png"
+    },
+    {
+      "title": "Recolección de tapitas para niños con cáncer",
+      "date": "2022-06-01",
+      "description": "Agradecemos a las personas que han recolectado tapitas y se han sumado a esta causa.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/Recoleccion-tapitas-para-niños-con-cancer.jpg"
+    }
+  ],
+  "eventos_ambientales": [
+    {
+      "title": "Banco de Tapitas Enero-Julio 2022",
+      "date": "2022-06-01",
+      "description": "Se realizó una donación de más de 3 mil tapitas.",
+      "url": "",
+      "category": "Ambientales",
+      "img": "images/eventos/Banco-de-tapitas-enero-julio-2022.webp"
+    },
+    {
+      "title": "Máquinas de Reciclaje-AlEn",
+      "date": "2022-06-01",
+      "description": "De enero-julio 2022 se reciclaron más de 600 mil botellas de plástico que equivale a una disminución de 30 mil kg de CO2.",
+      "url": "",
+      "category": "Ambientales",
+      "img": "images/eventos/Reciclar-para-ganar-Enero-julio-2022.png"
+    },
+    {
+      "title": "Máquinas de Reciclaje-AIEn",
+      "date": "2022-03-01",
+      "description": "De enero-abril 2022 se reciclaron más de 300 mil botellas de plástico equivalentes a una reducción de 17,642 kg de CO2",
+      "url": "",
+      "category": "Ambientales",
+      "img": "images/eventos/Reciclar-para-ganar-abril-2022.png"
+    },
+    {
+      "title": "Reciclar para ganar. Alianza con grupo AIEn",
+      "date": "2022-03-01",
+      "description": "En lo que va del 2022 se han reciclado 324,448 botellas de plástico, una reducción de 17,642 kg de CO2",
+      "url": "",
+      "category": "Ambientales",
+      "img": "images/eventos/Reciclar-2022-324-botellas.png"
+    },
+    {
+      "title": "Donación de Materiales a Fundación Hélice",
+      "date": "2022-03-01",
+      "description": "Se realizó una donación con la cual se obtuvieron diversos beneficios ambientales",
+      "url": "",
+      "category": "Ambientales",
+      "img": "images/eventos/Helice.png"
+    }
+  ]
+}
