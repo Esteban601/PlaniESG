@@ -1,55 +1,56 @@
 {% load i18n %}
 {% load static %}
 
-<footer id="site-footer" class="site-footer pt-4 pb-2 position-relative rs-footer">
+<footer id="site-footer" class="site-footer pt-4 pb-1 position-relative rs-footer">
     {#    <a id="denuncia" href="#" class="octf-btn d-flex align-items-center"><i#}
     {#            role="presentation" role="presentation"#}
     {#            class="fa fa-commenting-o text-white"></i> {% trans 'Canal de denuncias' %}</a>#}
     <div class="container">
         <div class="row">
-            <div class="col-md-4 mb-4">
+            <div class="col-md-4 mb-1">
                 <div class="about-widget">
                     <h3 class="footer-title">Oficinas Corporativas</h3>
-                    <div class="row text-center ml-1 mb-3 text-justify">
-                        
+                    <div class="ml-1 mb-1 text-justify">
+                        <span class="text-center bolder">Corporativo Estado de México</span>
+                        <p class="mb-1">
+                            Av. Conscripto 360
+                            Paseo Hipódromo, PB, local SA002,
+                            Col. Lomas Hipódromo
+                            Naucalpan de Juárez 53900
+                            Estado de México.
+                        </p>
+                        <span class="text-center bolder">Corporativo Monterrey MTY</span>
+                        <p class="mb-0">
+                            Av. Eugenio Garza Sada #3431
+                            Urban Village Garza Sada, P1, local SA012,
+                            Col. Arroyo Seco CP. 64740
+                            Monterrey, Nuevo León.
+                        </p>
                     </div>
-                    
-                
-                            <p><b>Corporativo Estado de México</b><br>
-                                Av. Conscripto 360
-                                Paseo Hipódromo, PB, local SA002,
-                                Col. Lomas Hipódromo
-                                Naucalpan de Juárez 53900
-                                Estado de México.
-                                </p>
-
-                                <p><b>Corporativo Monterrey MTY</b><br>
-                                    Av. Eugenio Garza Sada #3431
-                                    Urban Village Garza Sada, P1, local SA012,
-                                    Col. Arroyo Seco CP. 64740
-                                    Monterrey, Nuevo León.</p>
                 </div>
             </div>
-            <div class="col-md-4 cont mb-4">
+            <div class="col-md-4 cont mb-1">
                 <h3 class="footer-title">Contacto</h3>
-              <p class="mb-1" style="text-center">
-
-                        <a target="_blank" class="news-note" href="https://www.planigrupo.com.mx"
-                           style="color:#ffffff!important"><i class="fa fa-globe" aria-hidden="true"></i>
-                            www.planigrupo.com.mx</a></p>
-                <p class="news-note mb-1"><i class="fa fa-phone" aria-hidden="true"></i> Tel. (55) 9177 0870</p>
-               
                 <p class="mb-1">
-                    <a class="news-note" href="mailto:relacioninversionistas@planigrupo.com" style="color:#ffffff!important"><i
+
+                    <a target="_blank" class="news-note" href="https://www.planigrupo.com.mx"
+                       style="color:#ffffff!important"><i class="fa fa-globe" aria-hidden="true"></i>
+                        www.planigrupo.com.mx</a>
+                </p>
+                <p class="news-note mb-1"><i class="fa fa-phone" aria-hidden="true"></i> Tel. (55) 9177 0870</p>
+
+                <p class="mb-1">
+                    <a class="news-note" href="mailto:relacioninversionistas@planigrupo.com"
+                       style="color:#ffffff!important"><i
                             class="fa fa-envelope" aria-hidden="true"></i>
                         relacioninversionistas@planigrupo.com
                     </a></p>
-                
-                    
+
+
             </div>
-            <div class="col-md-4 mb-2">
+            <div class="col-md-4 mb-1">
                 <h3 class="footer-title">Más información</h3>
-                <p class="mb-3">
+                <p class="mb-1">
                     Reciba periódicamente información ASG relacionada con nuestra compañía.
                 </p>
                 <form class="form mb-0 text-center was-validated" method="post" id="newsletter-form-footer">
@@ -65,7 +66,7 @@
         </div>
         <div class="row">
             <div class="col-lg-12 align-self-center">
-                <p class="copyright text-center mb-0">
+                <p class="copyright text-center my-0">
                     © {% now 'Y' %} {% trans 'plani - Diseñado y generado por' %}
                     <img class="ml-1" src="{% static 'images/ir-design-white.svg' %}" width="90px" alt="">
                 </p>
