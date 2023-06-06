@@ -31,18 +31,27 @@ class EventosView(generic.ListView):
         context = eventsSocESList
         return eventsSocESList
 
-    def get_event_en_data():
-        eventsENList = [
-            {
-                "title": "VIVA AEROBUS REPORTS MONTHLY PASSENGER FIGURES CORRESPONDING TO FEBRUARY 2023",
-                "date": "2023-03-08",
-                "description": "description",
-                "url": "https://investorcloud.s3.amazonaws.com/VivaAerobus/InformacionFinanciera/SalaPrensa/2023-03-08-Trafico-febrero-2023-en.pdf"
-            }
-        ]
+    def get_event_cor_es_data():
+        with open('frontend/static/datos/eventos.json', encoding='utf-8') as f:
+            data = json.load(f)
+        eventsCorESList = data["eventos_corporativas"]
         # Get the blog from id and add it to the context
-        context = eventsENList
-        return eventsENList
+        context = eventsCorESList
+        return eventsCorESList
+
+
+def get_event_en_data():
+    eventsENList = [
+        {
+            "title": "VIVA AEROBUS REPORTS MONTHLY PASSENGER FIGURES CORRESPONDING TO FEBRUARY 2023",
+            "date": "2023-03-08",
+            "description": "description",
+            "url": "https://investorcloud.s3.amazonaws.com/VivaAerobus/InformacionFinanciera/SalaPrensa/2023-03-08-Trafico-febrero-2023-en.pdf"
+        }
+    ]
+    # Get the blog from id and add it to the context
+    context = eventsENList
+    return eventsENList
 
 
 @gzip_page
@@ -50,12 +59,13 @@ class EventosView(generic.ListView):
 def index(request):
     eventos_amb = EventosView.get_event_amb_es_data()
     eventos_soc = EventosView.get_event_soc_es_data()
+    eventos_cor = EventosView.get_event_cor_es_data()
     context = {
         'title': _("Inicio"),
         'page': 'index',
         'eventos_amb': eventos_amb,
         'eventos_soc': eventos_soc,
-        'eventos': eventos_amb+eventos_soc,
+        'eventos': eventos_amb + eventos_soc + eventos_cor,
 
     }
     return render(request, '{0}/frontend/index.html'.format(request.LANGUAGE_CODE), context)
