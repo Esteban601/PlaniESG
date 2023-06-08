@@ -10,16 +10,16 @@
             <div class="col-md-4 mb-1">
                 <div class="about-widget">
                     <h3 class="footer-title">Oficinas Corporativas</h3>
-                    <div class="ml-1 mb-1 text-justify">
+                    <div class="ml-1 mb-1 text-justify d-flex flex-column justify-content-between align-items-baseline">
                         <span class="text-center bolder">Corporativo Estado de México</span>
-                        <p class="mb-1">
+                        <p class="mb-2">
                             Av. Conscripto 360
                             Paseo Hipódromo, PB, local SA002,
                             Col. Lomas Hipódromo
                             Naucalpan de Juárez 53900
                             Estado de México.
                         </p>
-                        <span class="text-center bolder">Corporativo Monterrey MTY</span>
+                        <span class="text-center bolder mt-2">Corporativo Monterrey MTY</span>
                         <p class="mb-0">
                             Av. Eugenio Garza Sada #3431
                             Urban Village Garza Sada, P1, local SA012,
@@ -50,18 +50,21 @@
             </div>
             <div class="col-md-4 mb-1">
                 <h3 class="footer-title">Más información</h3>
-                <p class="mb-1">
-                    Reciba periódicamente información ASG relacionada con nuestra compañía.
-                </p>
-                <form class="form mb-0 text-center was-validated" method="post" id="newsletter-form-footer">
-                    <div class="form-group mb-1">
-                        <input class="col-md-8 col-sm-7 col-8" id="fieldEmail" name="email"
-                               type="email" placeholder="{% trans 'Correo electrónico' %}" required
-                               data-msg-required="" data-msg-email=""/>
-                        <button id="newsletter-submit-footer" type="submit" class="btn">Suscribirse</button>
-                    </div>
-                    <div class="alert-message-footer"></div>
-                </form>
+                <div class="d-flex flex-column justify-content-around align-items-baseline">
+                    <p class="mb-3">
+                        Reciba periódicamente información ASG relacionada con nuestra compañía.
+                    </p>
+                    <form class="form mb-2 pt-2 text-center was-validated" method="post" id="newsletter-form-footer">
+                        <div class="form-group mb-1">
+                            <input class="col-md-8 col-sm-7 col-8" id="fieldEmail" name="email"
+                                   type="email" placeholder="{% trans 'Correo electrónico' %}" required
+                                   data-msg-required="" data-msg-email=""/>
+                            <button id="newsletter-submit-footer" type="submit" class="btn">Suscribirse</button>
+                        </div>
+                        <div class="alert-message-footer"></div>
+                    </form>
+                </div>
+
             </div>
         </div>
         <div class="row">
