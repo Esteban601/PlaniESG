@@ -247,7 +247,7 @@
       "description": "Se realiza la separación de cartón, para después recolectarlo y así ayudar a su reciclaje.",
       "url": "",
       "category": "Sociales",
-      "img": "images/eventos_soc/caravana_vintage.png"
+      "img": "images/eventos_soc/separacion_residuos_lr.jpg"
     },
     {
       "title": "Colocación de domos y tragaluces",
@@ -255,7 +255,7 @@
       "description": "Se colocaron 4 domos en el área de food court, los cuales permiten aprovechar la luz solar 7 horas todos los días y se cuentan con 9 tragaluces los cuales permiten aprovechar la luz solar.",
       "url": "",
       "category": "Sociales",
-      "img": "images/eventos_soc/caravana_vintage.png"
+      "img": "images/eventos_soc/domo_tragaluceslr.jpg"
     },
     {
       "title": "Sustitución de luminarias",
@@ -303,7 +303,7 @@
       "description": "Con el apoyo de protección civil, se tiene la preservación de un árbol ficus y solo se poda con autorización de dichas dependencias ya que es un medio natural de producción de oxigeno.",
       "url": "",
       "category": "Sociales",
-      "img": "images/eventos_soc/caravana_vintage.png"
+      "img": "images/eventos_soc/proteccion_naturaleza.png"
     },
     {
       "title": "Cambio de mingitorios",
@@ -335,7 +335,7 @@
       "description": "Se realizan recolecciones mensuales de cartón y reciclaje.",
       "url": "",
       "category": "Sociales",
-      "img": "images/eventos_soc/caravana_vintage.png"
+      "img": "images/eventos_soc/reciclaje_recoleccion.png"
     },
     {
       "title": "Cambio de luminarias",
@@ -343,7 +343,7 @@
       "description": "Se realizo el cambio de luminarias en etapas iniciando desde el año 2016 para reducir el consumo energético y en el 2017 se siguieron cambiando luminarias en el exterior e interior de la plaza.",
       "url": "",
       "category": "Sociales",
-      "img": "images/eventos_soc/caravana_vintage.png"
+      "img": "images/eventos_soc/cambio_luminaria.jpg"
     },
     {
       "title": "Centro de acopio",
@@ -367,7 +367,7 @@
       "description": "Se implementa la recolección de residuos y reciclaje desde el 2015.",
       "url": "",
       "category": "Sociales",
-      "img": "images/eventos_soc/caravana_vintage.png"
+      "img": "images/eventos_soc/separacion_residuos_pa.jpg"
     },
     {
       "title": "Cambio de sanitarios",
@@ -375,7 +375,7 @@
       "description": "Se cambiaron mingitorios y baños para el ahorro de agua. Cambiando a sistemas e agua libre en el 2016 y cambios en planta baja y área de restaurantes en el año 2018 y 2019.",
       "url": "",
       "category": "Sociales",
-      "img": "images/eventos_soc/caravana_vintage.png"
+      "img": "images/eventos_soc/instalacion_mingitorios_pu.png"
     },
     {
       "title": "1er carrera unidos",
@@ -423,7 +423,7 @@
       "description": "Se implementó la ley que prohíbe el uso de popotes y bolsas de plástico. Abril 2019.",
       "url": "",
       "category": "Sociales",
-      "img": "images/eventos_soc/caravana_vintage.png"
+      "img": "images/eventos_soc/separacion_basura_carton.png"
     },
     {
       "title": "Instalación de luminaria ahorrativa y colocación de solatubes",
@@ -495,7 +495,7 @@
       "description": "Se colocaron luminarias ahorrativas para el cuidado del medio ambiente",
       "url": "",
       "category": "Sociales",
-      "img": "images/eventos_soc/caravana_vintage.png"
+      "img": "images/eventos_soc/cambio_luminarias_mdv.png"
     },
     {
       "title": "Instalación de equipos ahorradores de agua y papel",
@@ -854,19 +854,51 @@
     
     {
       "title": "Máquinas de Reciclaje-AIEn",
-      "date": "2022-03-01",
+      "date": "2022-06-17",
       "description": "De enero-abril 2022 se reciclaron más de 300 mil botellas de plástico equivalentes a una reducción de 17,642 kg de CO2",
       "url": "",
       "category": "Ambientales",
       "img": "images/eventos/Reciclar-para-ganar-abril-2022.png"
     },
     {
+      "title": "Reconocimiento a CiudadelaUV por el banco de tapitas ",
+      "date": "2022-06-01",
+      "description": "Reconocimiento al Banco de Tapitas A.C por su participación en Programa de Recolección de Tapitas de plástico.",
+      "url": "",
+      "category": "Ambientales",
+      "img": "images/eventos_soc/Banco-tapitas-Junio-Ciudadela.png"
+    },
+    {
       "title": "Reciclar para ganar. Alianza con grupo AIEn",
-      "date": "2022-03-01",
+      "date": "2022-08-19",
       "description": "En lo que va del 2022 se han reciclado 324,448 botellas de plástico, una reducción de 17,642 kg de CO2",
       "url": "",
       "category": "Ambientales",
       "img": "images/eventos/Reciclar-2022-324-botellas.png"
+    },
+    {
+      "title": "Alianza Grupo Alen",
+      "date": "2021-03-04",
+      "description": "Se colocaron 2 máquinas de reciclaje en las plazas Urban Village Garza Sada y Plaza Real Saltillo",
+      "url": "",
+      "category": "Ambientales",
+      "img": "images/eventos_soc/alianza_grupo_alen.png"
+    },
+    {
+      "title": "Separación de residuos",
+      "date": "2019-10-02",
+      "description": "Se realiza la separación de cartón, para después recolectarlo y así ayudar a su reciclaje.",
+      "url": "",
+      "category": "Ambientales",
+      "img": "images/eventos_soc/caravana_vintage.png"
+    },
+    {
+      "title": "Colocación de domos y tragaluces",
+      "date": "2019-10-02",
+      "description": "Se colocaron 4 domos en el área de food court, los cuales permiten aprovechar la luz solar 7 horas todos los días y se cuentan con 9 tragaluces los cuales permiten aprovechar la luz solar.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/domo_tragaluceslr.jpg"
     },
     {
       "title": "Donación de Materiales a Fundación Hélice",
@@ -875,6 +907,126 @@
       "url": "",
       "category": "Ambientales",
       "img": "images/eventos/Helice.png"
+    },
+    {
+      "title": "Separación de residuos y reciclaje",
+      "date": "2019-10-02",
+      "description": "Se realiza la separación de residuos orgánicos, vidrio, cartón y plástico. Para ayudar al medio ambiente. Durante el año 2018 y lo que va del 2019",
+      "url": "",
+      "category": "Ambientales",
+      "img": "images/eventos_soc/separacion_residuos_lr.jpg"
+    },
+    {
+      "title": "Cambio de luminarias",
+      "date": "2019-10-02",
+      "description": "Se instalo tecnología led en el exterior e interior de la plaza. Se cambiaron 181 luminarias",
+      "url": "",
+      "category": "Ambientales",
+      "img": "images/eventos_soc/cambio_luminarias_mdv.png"
+    },
+    {
+      "title": "Protección de la naturaleza",
+      "date": "2019-10-01",
+      "description": "Con el apoyo de protección civil, se tiene la preservación de un árbol ficus y solo se poda con autorización de dichas dependencias ya que es un medio natural de producción de oxigeno.",
+      "url": "",
+      "category": "Ambientales",
+      "img": "images/eventos_soc/proteccion_naturaleza.png"
+    },
+    {
+      "title": "Cambio de mingitorios",
+      "date": "2019-10-01",
+      "description": "Se cambiaron mingitorios y baños para el ahorro de agua. Cambiando a sistemas e agua libre en el 2016 y cambios en planta baja y área de restaurantes en el año 2018 y 2019.",
+      "url": "",
+      "category": "Ambientales",
+      "img": "images/eventos_soc/cambio_mingitorios_o.png"
+    },
+    {
+      "title": "Instalación de sensores de luz",
+      "date": "2019-10-01",
+      "description": "Se instalaron sensores de luz, para tener un ahorro energético y reducir las emisiones de co2 en la plaza.",
+      "url": "",
+      "category": "Ambientales",
+      "img": "images/eventos_soc/caravana_vintage.png"
+    },
+    {
+      "title": "Cambio de luminarias",
+      "date": "2019-10-01",
+      "description": "Se cambiaron 85 luminarias ordinarias a luminarias con tecnología LED.",
+      "url": "",
+      "category": "Ambientales",
+      "img": "images/eventos_soc/cambio_luminaria_mi.png"
+    },
+    {
+      "title": "Reciclaje y recolección",
+      "date": "2019-10-01",
+      "description": "Se realizan recolecciones mensuales de cartón y reciclaje.",
+      "url": "",
+      "category": "Ambientales",
+      "img": "images/eventos_soc/reciclaje_recoleccion.png"
+    },
+    {
+      "title": "Cambio de luminarias",
+      "date": "2019-10-01",
+      "description": "Se realizo el cambio de luminarias en etapas iniciando desde el año 2016 para reducir el consumo energético y en el 2017 se siguieron cambiando luminarias en el exterior e interior de la plaza.",
+      "url": "",
+      "category": "Ambientales",
+      "img": "images/eventos_soc/cambio_luminaria.jpg"
+    },
+    {
+      "title": "Reciclaje y separación de residuos",
+      "date": "2019-10-01",
+      "description": "Se implementa la recolección de residuos y reciclaje desde el 2015.",
+      "url": "",
+      "category": "Ambientales",
+      "img": "images/eventos_soc/separacion_residuos_pa.jpg"
+    },
+    {
+      "title": "Cambio de sanitarios",
+      "date": "2019-10-01",
+      "description": "Se cambiaron mingitorios y baños para el ahorro de agua. Cambiando a sistemas e agua libre en el 2016 y cambios en planta baja y área de restaurantes en el año 2018 y 2019.",
+      "url": "",
+      "category": "Ambientales",
+      "img": "images/eventos_soc/instalacion_mingitorios_pu.png"
+    },
+    {
+      "title": "Cambio de luminarias",
+      "date": "2019-10-01",
+      "description": "Se colocaron luminarias ahorrativas para el cuidado del medio ambiente",
+      "url": "",
+      "category": "Ambientales",
+      "img": "images/eventos_soc/cambio_luminarias_mdv.png"
+    },
+    {
+      "title": "Separación de basura y ley que prohibe uso de popotes y bolsas de plástico",
+      "date": "2019-10-01",
+      "description": "Se implementó la ley que prohíbe el uso de popotes y bolsas de plástico. Abril 2019.",
+      "url": "",
+      "category": "Ambientales",
+      "img": "images/eventos_soc/separacion_basura_carton.png"
+    },
+    {
+      "title": "Instalacion de mingitorios secos y equipos ahorradores de agua y papel",
+      "date": "2019-10-01",
+      "description": "Se instalaron mingitorios secos para el ahorro de agua",
+      "url": "",
+      "category": "Ambientales",
+      "img": "images/eventos_soc/instalacion_mingitorios_pu.png"
+    },
+    {
+      "title": "Cambio de jardinería y programas de adopción de camellones",
+      "date": "2019-09-30",
+      "description": "Se realizo el cambio de jardinería a plantas desérticas para reducir el consumo de agua.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/cambio_jardines_camellos.png"
+    },
+    {
+      "title": "Recolección de Electrodomésticos",
+      "date": "2019-09-12",
+      "description": "Colectivo Ambiental Isla Verde nos invitó a sumarnos a su campaña de reciclaje de electrodomésticos, la cual fue llevada a cabo dentro de nuestro centro comercial. Se apoyó con espacio dentro de la plaza para juntar los electrodomésticos recolectados. Se lograron juntar 18,640 kg de diversos electrodomésticos",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/recoleccion_electrodomesticos_cgp.png"
     }
   ],
   "eventos_corporativas": [
