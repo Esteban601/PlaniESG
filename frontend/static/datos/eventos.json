@@ -287,7 +287,7 @@
       "description": "Se realiza la separación de residuos orgánicos, vidrio, cartón y plástico. Para ayudar al medio ambiente. Durante el año 2018 y lo que va del 2019",
       "url": "",
       "category": "Sociales",
-      "img": "images/eventos_soc/caravana_vintage.png"
+      "img": "images/eventos_soc/separacion_residuos_lr.jpg"
     },
     {
       "title": "Colecta y apoyo para damnificaos",
@@ -311,7 +311,7 @@
       "description": "Se instalaron mingitorios ecológicos, que disminuyen las descargas y no necesitan agua. No presentan malos olores.",
       "url": "",
       "category": "Sociales",
-      "img": "images/eventos_soc/caravana_vintage.png"
+      "img": "images/eventos_soc/cambio_migitorios_o.png"
     },
     {
       "title": "Instalación de sensores de luz",
@@ -319,7 +319,7 @@
       "description": "Se instalaron sensores de luz, para tener un ahorro energético y reducir las emisiones de co2 en la plaza.",
       "url": "",
       "category": "Sociales",
-      "img": "images/eventos_soc/caravana_vintage.png"
+      "img": "images/eventos_soc/instalacion_sensores_lus.png"
     },
     {
       "title": "Cambio de luminarias",
@@ -327,7 +327,7 @@
       "description": "Se cambiaron 85 luminarias ordinarias a luminarias con tecnología LED.",
       "url": "",
       "category": "Sociales",
-      "img": "images/eventos_soc/caravana_vintage.png"
+      "img": "images/eventos_soc/instalacion_sensores_lus.png"
     },
     {
       "title": "Reciclaje y recolección",
@@ -890,7 +890,7 @@
       "description": "Se realiza la separación de cartón, para después recolectarlo y así ayudar a su reciclaje.",
       "url": "",
       "category": "Ambientales",
-      "img": "images/eventos_soc/caravana_vintage.png"
+      "img": "images/eventos_soc/separacion_residuos_lr.jpg"
     },
     {
       "title": "Colocación de domos y tragaluces",
@@ -938,7 +938,7 @@
       "description": "Se cambiaron mingitorios y baños para el ahorro de agua. Cambiando a sistemas e agua libre en el 2016 y cambios en planta baja y área de restaurantes en el año 2018 y 2019.",
       "url": "",
       "category": "Ambientales",
-      "img": "images/eventos_soc/cambio_mingitorios_o.png"
+      "img": "images/eventos_soc/cambio_migitorios_o.png"
     },
     {
       "title": "Instalación de sensores de luz",
@@ -946,7 +946,7 @@
       "description": "Se instalaron sensores de luz, para tener un ahorro energético y reducir las emisiones de co2 en la plaza.",
       "url": "",
       "category": "Ambientales",
-      "img": "images/eventos_soc/caravana_vintage.png"
+      "img": "images/eventos_soc/instalacion_sensores_lus.png"
     },
     {
       "title": "Cambio de luminarias",
@@ -954,7 +954,7 @@
       "description": "Se cambiaron 85 luminarias ordinarias a luminarias con tecnología LED.",
       "url": "",
       "category": "Ambientales",
-      "img": "images/eventos_soc/cambio_luminaria_mi.png"
+      "img": "images/eventos_soc/cambio_luminarias_o.png"
     },
     {
       "title": "Reciclaje y recolección",
