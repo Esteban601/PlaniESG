@@ -1,21 +1,6 @@
 {
   "eventos_sociales": [
-    {
-      "title": "Inauguración de “ESPAZIOS IEMUJERES Y PUNTO NARANJA” ",
-      "date": "2022-06-01",
-      "description": "Inauguración de espacios para mujeres emprendedoras, así como un punto para atender y apoyar a mujeres que se sientan inseguras.",
-      "url": "",
-      "category": "Sociales",
-      "img": "images/eventos_soc/ESPAZIOS-IEMUJERES-Y-PUNTO-NARANJA.jpg"
-    },
-    {
-      "title": "Encendido de arbolitos 2022",
-      "date": "2022-06-01",
-      "description": "Se realizo el tradicional encendido de arbolitos navideños 2022 en nuestros centros comerciales.",
-      "url": "",
-      "category": "Sociales",
-      "img": "images/eventos_soc/encendido-arbolito.jpeg"
-    },
+
     {
       "title": "Alianza Fundación Lilo",
       "date": "2022-06-01",
@@ -23,22 +8,6 @@
       "url": "",
       "category": "Sociales",
       "img": "images/eventos_soc/fundacion-lilo.png"
-    },
-    {
-      "title": "Reconocimiento a CiudadelaUV por el banco de tapitas ",
-      "date": "2022-06-01",
-      "description": "Reconocimiento al Banco de Tapitas A.C por su participación en Programa de Recolección de Tapitas de plástico.",
-      "url": "",
-      "category": "Sociales",
-      "img": "images/eventos_soc/Banco-tapitas-Junio-Ciudadela.png"
-    },
-    {
-      "title": "Entrega de juguetes",
-      "date": "2022-06-01",
-      "description": "Se realizo la entrega de juguetes que se recolectaron con la alianza DIF de Santa Catarina y Alianza Anticáncer.",
-      "url": "",
-      "category": "Sociales",
-      "img": "images/eventos_soc/entrega_juguetes.jpg"
     },
     {
       "title": "Apoyo a Fundación ALIANZA ANTICÁNCER",
@@ -55,22 +24,6 @@
       "url": "",
       "category": "Sociales",
       "img": "images/eventos_soc/Teletn.png"
-    },
-    {
-      "title": "Corazones Rosa en Colaboración con Grupo AIEn",
-      "date": "2022-06-01",
-      "description": "Se recolectaron tapitas en puntos estratégicos de nuestras plazas, que se transformaron en un donativo para la fundación Asociación Unidas Contigo.",
-      "url": "",
-      "category": "Sociales",
-      "img": "images/eventos_soc/Corazones-rosas-con-grupo-alen.jpg"
-    },
-    {
-      "title": "Patrocinadores Oficiales de Reciclatón 2021 Fundación Teletón",
-      "date": "2022-06-01",
-      "description": "Planigrupo realizó un donativo para apoyar a los niños del CRIT Coahuila.",
-      "url": "",
-      "category": "Sociales",
-      "img": "images/eventos_soc/Reciclaton.jpg"
     },
     {
       "title": "Banco de Tapitas febrero 2022",
@@ -97,60 +50,12 @@
       "img": "images/eventos_soc/Donativo-hogar-manos-amor-por-habia.jpg"
     },
     {
-      "title": "Rosca de Reyes 2020",
-      "date": "2022-06-01",
-      "description": "Se realizó la tradicional rosca de reyes y diversas actividades con los reyes magos",
-      "url": "",
-      "category": "Sociales",
-      "img": "images/eventos_soc/dia-reyes.png"
-    },
-    {
-      "title": "Sanitización de Centros Comerciales a Nivel Nacional",
-      "date": "2022-06-01",
-      "description": "Se realizo la sanitización de centros comerciales para brindar mayor seguridad a los clientes",
-      "url": "",
-      "category": "Sociales",
-      "img": "images/eventos_soc/planigrupo-busca-adquirir-dos-centros-comerciales.png"
-    },
-    {
-      "title": "Recolección de tapitas para niños con cáncer",
-      "date": "2022-06-01",
-      "description": "Agradecemos a las personas que han recolectado tapitas y se han sumado a esta causa.",
-      "url": "",
-      "category": "Sociales",
-      "img": "images/eventos_soc/Recoleccion-tapitas-para-niños-con-cancer.jpg"
-    },
-    {
-      "title": "Donativo Instituto Estatal de las Mujeres",
-      "date": "2023-03-09",
-      "description": "Se realizó un donativo en Mall Plaza Lincoln, consistente en sillas y mesas.",
-      "url": "",
-      "category": "Sociales",
-      "img": "images/eventos_soc/donativo_instituto_estatal_mujeres.png"
-    },
-    {
       "title": "Inauguración de ESPAZIOS IEMUJERES y PUNTO NARANJA",
       "date": "2023-03-09",
       "description": "Se inauguró ESPAZIOS IEMUJERES en nuestra plaza comercial Urban Village Garza Sada",
       "url": "",
       "category": "Sociales",
       "img": "images/eventos_soc/inauguracion_espazio_iemujeres.png"
-    },
-    {
-      "title": "Banco de Tapitas Julio 2021",
-      "date": "2021-08-02",
-      "description": "Se recolectaron 26.98 toneladas de tapitas en el mes de julio 2021, beneficiando a más de 400 personas",
-      "url": "",
-      "category": "Sociales",
-      "img": "images/eventos_soc/banco_tapitas_julio_2021.png"
-    },
-    {
-      "title": "Centros de Acopio Incendios Forestales en Sierra Arteaga",
-      "date": "2021-05-17",
-      "description": "Se crearon centros de acopio en las plazas comerciales de Nuevo León y Coahuila para apoyar con los incendios forestales recientes",
-      "url": "",
-      "category": "Sociales",
-      "img": "images/eventos_soc/centros_acopio_forestal.png"
     },
     {
       "title": "Día de la Mujer 2021",
@@ -167,14 +72,6 @@
       "url": "",
       "category": "Sociales",
       "img": "images/eventos_soc/donacion_materiales_helice.png"
-    },
-    {
-      "title": "Alianza Grupo Alen",
-      "date": "2021-03-04",
-      "description": "Se colocaron 2 máquinas de reciclaje en las plazas Urban Village Garza Sada y Plaza Real Saltillo",
-      "url": "",
-      "category": "Sociales",
-      "img": "images/eventos_soc/alianza_grupo_alen.png"
     },
     {
       "title": "Alianza Banco de Tapitas",
@@ -241,14 +138,6 @@
       "img": "images/eventos_soc/recoleccion_tapitas_niños.png"
     },
     {
-      "title": "Donativo de Caretas al municipio de Zapopan, Jalisco",
-      "date": "2020-05-26",
-      "description": "Donativo de Caretas al Municipio de Zapopan, Jalisco",
-      "url": "",
-      "category": "Sociales",
-      "img": "images/eventos_soc/donativo_caretas_zapopan.png"
-    },
-    {
       "title": "Encendido de los pinos en todas las plazas",
       "date": "2020-05-26",
       "description": "Se realizó el encendido del Pino Navideño en todas las Plazas Comerciales",
@@ -279,25 +168,690 @@
       "url": "",
       "category": "Sociales",
       "img": "images/eventos_soc/festival_cultural_tradicion_viva.png"
+    },
+    {
+      "title": "Festival Cultural Tradición Viva",
+      "date": "2019-11-15",
+      "description": "Se realizó un evento con actividades culturales para preservar y fomentar las tradiciones mexicanas",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/festival_cultural_tradicion_viva.png"
+    },
+    {
+      "title": "Apoyando a Fer",
+      "date": "2019-11-15",
+      "description": "Nos unimos a la causa de Apoyar a FER a que tenga una mejor calidad de vida debido a que necesita de manera urgente un trasplante de riñón.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/apoyo_fer.png"
+    },
+    {
+      "title": "Caravana Vintage",
+      "date": "2019-11-15",
+      "description": "Se tuvo el acercamiento con el Museo del Auto en Monterrey para llevar la exhibición de más de 200 autos clásicos en la plaza.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/caravana_vintage.png"
+    },
+    {
+      "title": "Sembrando Compasión por ti y por el planeta",
+      "date": "2019-10-23",
+      "description": "Planigrupo recibió el reconocimiento por parte de El Encuentro Mundial de Valores ABP.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/caravana_vintage.png"
+    },
+    {
+      "title": "Planigrupo Como Empresa Compasiva",
+      "date": "2019-10-21",
+      "description": "El pasado 12 de octubre del 2019 el Comité XI Encuentro Mundial de Valores otorgó a la Arq. Karime Garza Serna quien es nuestra directora de operaciones el documento en el cual se le otorga la Certificación Mundial a PLANIGRUPO como Empresa Compasiva",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/caravana_vintage.png"
+    },
+    {
+      "title": "Sustitución de luminarios",
+      "date": "2019-10-02",
+      "description": "Se instalo iluminación LED en el interior y exterior de la plaza. 99 luminarias en total sustituidas.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/caravana_vintage.png"
+    },
+    {
+      "title": "Colecta para daminificados por sismo",
+      "date": "2019-10-02",
+      "description": "Se llevo a cabo campaña para recolectar artículos de primera necesidad y ayudar a los damnificados del sismo del 2017.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/caravana_vintage.png"
+    },
+    {
+      "title": "Recolección de víveres",
+      "date": "2019-10-02",
+      "description": "En apoyo a las zonas afectadas por el sismo de septiembre del 2017, se colocó un centro de acopio en la plaza, lo recolectado fue entregado al DIF municipal el 5 de octubre del 2017.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/caravana_vintage.png"
+    },
+    {
+      "title": "Apoyo a caravanas de empleo",
+      "date": "2019-10-02",
+      "description": "Se otorga un espacio en el estacionamiento de la plaza para llevar a cabo la feria del empleo.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/caravana_vintage.png"
+    },
+    {
+      "title": "Separación de residuos",
+      "date": "2019-10-02",
+      "description": "Se realiza la separación de cartón, para después recolectarlo y así ayudar a su reciclaje.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/caravana_vintage.png"
+    },
+    {
+      "title": "Colocación de domos y tragaluces",
+      "date": "2019-10-02",
+      "description": "Se colocaron 4 domos en el área de food court, los cuales permiten aprovechar la luz solar 7 horas todos los días y se cuentan con 9 tragaluces los cuales permiten aprovechar la luz solar.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/caravana_vintage.png"
+    },
+    {
+      "title": "Sustitución de luminarias",
+      "date": "2019-10-02",
+      "description": "Se implementaron luminarias tipo led, para apoyar al medio ambiente y disminuir el uso de energía eléctrica.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/caravana_vintage.png"
+    },
+    {
+      "title": "Difusión de campañas de vacunación",
+      "date": "2019-10-02",
+      "description": "Se apoya a campañas de vacunación del instituto mexicano del seguro social de febrero a marzo del 2019.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/caravana_vintage.png"
+    },
+    {
+      "title": "Centro de Acopio",
+      "date": "2019-10-02",
+      "description": "Se creo un centro de acopio por el sismo de septiembre del 2017 en Chiapas y Oaxaca.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/caravana_vintage.png"
+    },
+    {
+      "title": "Separación de residuos y reciclaje",
+      "date": "2019-10-02",
+      "description": "Se realiza la separación de residuos orgánicos, vidrio, cartón y plástico. Para ayudar al medio ambiente. Durante el año 2018 y lo que va del 2019",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/caravana_vintage.png"
+    },
+    {
+      "title": "Colecta y apoyo para damnificaos",
+      "date": "2019-10-01",
+      "description": "En el 2018 se apoyo en la recolección de víveres para los afectados de las inundaciones en Sinaloa, se tuvo un modulo para la recolección de artículos de primera necesidad",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/caravana_vintage.png"
+    },
+    {
+      "title": "Protección de la naturaleza",
+      "date": "2019-10-01",
+      "description": "Con el apoyo de protección civil, se tiene la preservación de un árbol ficus y solo se poda con autorización de dichas dependencias ya que es un medio natural de producción de oxigeno.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/caravana_vintage.png"
+    },
+    {
+      "title": "Cambio de mingitorios",
+      "date": "2019-10-01",
+      "description": "Se instalaron mingitorios ecológicos, que disminuyen las descargas y no necesitan agua. No presentan malos olores.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/caravana_vintage.png"
+    },
+    {
+      "title": "Instalación de sensores de luz",
+      "date": "2019-10-01",
+      "description": "Se instalaron sensores de luz, para tener un ahorro energético y reducir las emisiones de co2 en la plaza.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/caravana_vintage.png"
+    },
+    {
+      "title": "Cambio de luminarias",
+      "date": "2019-10-01",
+      "description": "Se cambiaron 85 luminarias ordinarias a luminarias con tecnología LED.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/caravana_vintage.png"
+    },
+    {
+      "title": "Reciclaje y recolección",
+      "date": "2019-10-01",
+      "description": "Se realizan recolecciones mensuales de cartón y reciclaje.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/caravana_vintage.png"
+    },
+    {
+      "title": "Cambio de luminarias",
+      "date": "2019-10-01",
+      "description": "Se realizo el cambio de luminarias en etapas iniciando desde el año 2016 para reducir el consumo energético y en el 2017 se siguieron cambiando luminarias en el exterior e interior de la plaza.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/caravana_vintage.png"
+    },
+    {
+      "title": "Centro de acopio",
+      "date": "2019-10-01",
+      "description": "Apoyo con víveres a damnificados en baja california en el 2014.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/caravana_vintage.png"
+    },
+    {
+      "title": "Apoyo a la cultura",
+      "date": "2019-10-01",
+      "description": "Apoyo en la difusión cultural de la música mexicana a nivel internacional del 23 al 31 de agosto del 2018.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/caravana_vintage.png"
+    },
+    {
+      "title": "Reciclaje y separación de residuos",
+      "date": "2019-10-01",
+      "description": "Se implementa la recolección de residuos y reciclaje desde el 2015.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/caravana_vintage.png"
+    },
+    {
+      "title": "Cambio de sanitarios",
+      "date": "2019-10-01",
+      "description": "Se cambiaron mingitorios y baños para el ahorro de agua. Cambiando a sistemas e agua libre en el 2016 y cambios en planta baja y área de restaurantes en el año 2018 y 2019.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/caravana_vintage.png"
+    },
+    {
+      "title": "1er carrera unidos",
+      "date": "2019-10-01",
+      "description": "Se fue cede de la primer carrera unidos por la inclusión. Donde se reúnen personas de todas las edades, géneros y capacidades diferentes.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/caravana_vintage.png"
+    },
+    {
+      "title": "Apoyo a artesanos locales",
+      "date": "2019-10-01",
+      "description": "Se les brinda espació dentro del área común a pequeños productores de productos orgánicos.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/caravana_vintage.png"
+    },
+    {
+      "title": "Apoyo al UNICEF",
+      "date": "2019-10-01",
+      "description": "Se proporciona espacios de manera altruista para el apoyo de la causa de UNICEFF a favor de la niñez. 6 de marzo del 2018.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/caravana_vintage.png"
+    },
+    {
+      "title": "Centro de acopio",
+      "date": "2019-10-01",
+      "description": "Se creo un centro de acopio para los damnificados de Oaxaca. 11 de octubre 2017.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/centro_acopio_pu.png"
+    },
+    {
+      "title": "Jornada de empleo",
+      "date": "2019-10-01",
+      "description": "Se participó en las jornadas por el empleo, impartida por la presidencia municipal.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/caravana_vintage.png"
+    },
+    {
+      "title": "Separación de basura y ley que prohibe uso de popotes y bolsas de plástico",
+      "date": "2019-10-01",
+      "description": "Se implementó la ley que prohíbe el uso de popotes y bolsas de plástico. Abril 2019.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/caravana_vintage.png"
+    },
+    {
+      "title": "Instalación de luminaria ahorrativa y colocación de solatubes",
+      "date": "2019-10-01",
+      "description": "Se colocaron luminarias ahorradoras en interior y exterior con tecnología LED para disminuir el consumo de energía.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/caravana_vintage.png"
+    }, 
+    {
+      "title": "Instalación de mingitorios secos y equipos ahorradores de agua y papel",
+      "date": "2019-10-01",
+      "description": "Se instalaron mingitorios secos para el ahorro de agua, equipos ahorradores de agua en lavamanos y baños, así como equipos ahorradores de papel higiénico",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/caravana_vintage.png"
+    },
+    {
+      "title": "Centros de acopio",
+      "date": "2019-10-01",
+      "description": "Se creó un centro de acopio donde se recaudaron víveres para ayudar a los damnificados del sismo de Oaxaca en el 2017.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/caravana_vintage.png"
+    },
+    {
+      "title": "Curos de primeros auxilios",
+      "date": "2019-10-01",
+      "description": "Se brindaron cursos de primeros auxilios por parte de la cruz roja mexicana.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/caravana_vintage.png"
+    },
+    {
+      "title": "Campañas Cruz Roja Mexicana",
+      "date": "2019-10-01",
+      "description": "Se realizan campañas en conjunto con la cruz roja mexicana, brindando cursos e información.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/caravana_vintage.png"
+    },
+    {
+      "title": "Campañas Green Peace",
+      "date": "2019-10-01",
+      "description": "Se tuvo participación con Green Peace en la campaña unión a la organización como socio donador, cyber-activista o voluntario.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/caravana_vintage.png"
+    },
+    {
+      "title": "Equipos de aire acondicionado",
+      "date": "2019-10-01",
+      "description": "Se utilizan equipos de aire acondicionado tipo r410 que son ecológicos y ayudan al medio ambiente.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/caravana_vintage.png"
+    },
+    {
+      "title": "Sepación de basura y cartón",
+      "date": "2019-10-01",
+      "description": "Se colocaron cestos de basura para su separación (orgánica e inorgánica).",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/caravana_vintage.png"
+    },
+    {
+      "title": "Cambio de luminarias",
+      "date": "2019-10-01",
+      "description": "Se colocaron luminarias ahorrativas para el cuidado del medio ambiente",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/caravana_vintage.png"
+    },
+    {
+      "title": "Instalación de equipos ahorradores de agua y papel",
+      "date": "2019-10-01",
+      "description": "Se instalaron equipos ahorradores de agua en lavamanos y sanitarios.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/caravana_vintage.png"
+    },
+    {
+      "title": "Empresa Compasiva",
+      "date": "2019-10-01",
+      "description": "El principio de la compasión esta en el corazón de todas las tradiciones religiosas, éticas y espirituales, llamándonos siempre a tratar a todos los demás como deseamos ser tratados a nosotros mismos.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/caravana_vintage.png"
+    },
+    {
+      "title": "Cambio de luminaria a LED",
+      "date": "2019-10-01",
+      "description": "Se realizó el cambio de luminaria a tecnología LED, dentro y fuera de la plaza.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/cambio_luminaria_led_plazamonumento.png"
+    },
+    {
+      "title": "Entrega de Kits escolares",
+      "date": "2019-10-01",
+      "description": "Se realizó la entrega de diversos kits de útiles escolares a niños de la comunidad.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/entrega_kits_escolares.png"
+    },
+    {
+      "title": "Cambio de cinta de alumnos de Taekwondo",
+      "date": "2019-10-01",
+      "description": "Se llevo a cabo el cambio de cinta a los alumnos de taekwondo del centro FOVISSSTE y se realizo una exhibición para promover el deporte.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/taekwondo.png"
+    },
+    {
+      "title": "Participación en la carrera de la amistad y actividades de deporte",
+      "date": "2019-10-01",
+      "description": "Se tuvo participación en la carrera de la amistad, donde se entregaron obsequios a los participantes.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/carrera_amistad.png"
+    },
+    {
+      "title": "Campamento de verdano",
+      "date": "2019-10-01",
+      "description": "Se realizaron actividades de esparcimiento, realizando campamento de verano para la comunidad en juio 2018 y 2019.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/campamento_verano.png"
+    },
+    {
+      "title": "Festejo del día del niño",
+      "date": "2019-10-01",
+      "description": "Se realizo una visita a comedor infantil el buen pastor, para celebrar el día del niño donde se convivió con ellos y se les entregaron obsequios.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/festejo_dia_niño.png"
+    },
+    {
+      "title": "Cambio a lámparas LED y Programa de recolección de cartón",
+      "date": "2019-09-30",
+      "description": "Se cambiaron lámparas en interior y exterior para el ahorro de energía.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/cambio_led_pbm.png"
+    },
+    {
+      "title": "Centro de acopio de reciclado electrónico",
+      "date": "2019-09-30",
+      "description": "Acopio de computadoras, CPU, teclados, mouse para donarlo a alguna asociación.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/centro_acopio_reciclado_electronico.png"
+    },
+    {
+      "title": "Apoyo a escuelas de arte de la comunidad",
+      "date": "2019-09-30",
+      "description": "Con la finalidad de promover el desarrollo mental y físico la escuela kinkayou realizó exhibiciones en la plaza",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/apoyo_escuelas_arte.png"
+    },
+    {
+      "title": "Abatir el rezago educativo",
+      "date": "2019-09-30",
+      "description": "El instituto nacional para la educación de los adultos (INEA) ofreció servicio de educación básica a personas mayores de 15 años, entregando 1085 certificados entre primaria y secundaria.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/abatir_rezago_educativo.png"
+    },
+    {
+      "title": "Cambio de luminaria y programa de reciclaje",
+      "date": "2019-09-30",
+      "description": "En el 2018 y lo que va del 2019 se reemplazaron luminarias de halógeno y fluorescentes a LED, dentro y fuera de la plaza",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/cambio_luminaria_mi.png"
+    },
+    {
+      "title": "Cambio de jardinería y programas de adopción de camellones",
+      "date": "2019-09-30",
+      "description": "Se realizo el cambio de jardinería a plantas desérticas para reducir el consumo de agua.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/cambio_jardines_camellos.png"
+    },
+    {
+      "title": "Programa espacios para la cultura",
+      "date": "2019-09-30",
+      "description": "Se le brindo espació a escuela Fusión Arts para su exhibición de baile como un elemento de expresión para jóvenes.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/cespacio_cultural.png"
+    },
+    {
+      "title": "Día mundial del autismo y programa informativo y destección de Hepatitis",
+      "date": "2019-09-30",
+      "description": " El 2 de abril del 2019, se conto con la presencia de la escuela CAM jardín Guaycura, escuela dedicada a atender niños con autismo. Asistieron cerca de 100 niños con su familia.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/dia_mundial_autismo.png"
+    },
+    {
+      "title": "Programa contra Cáncer de mama",
+      "date": "2019-09-30",
+      "description": "El 26 de noviembre del 2018, se brindó un espacio donde se realizaron 64 estudios de mastografía para la detección de cáncer de mama. Por la Dra. Eva Guerrer para el programa cáncer de la mujer de la jurisdicción sanitaria Tijuana del ISESALUD BC.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/programa_cancer_mama.png"
+    },
+    {
+      "title": "Programa Expon Carrera",
+      "date": "2019-09-30",
+      "description": "El 19 de febrero del 2018, se llevó a cabo la primer expo carreras con la participación de 10 universidades. Donde los asistentes tuvieron la oportunidad de conocer ofertas académicas.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/programa_expo_carrera.png"
+    },
+    {
+      "title": "Encendido de árbol navideño y rosca de reyes",
+      "date": "2019-09-30",
+      "description": "El 24 de noviembre del 2018, se llevó a cabo el encendido del árbol navideño, donde se realizaron distintas actividades para los asistentes.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/encendido_arbol_rosca reyes.png"
+    },
+    {
+      "title": "12 Aniversario de la plaza",
+      "date": "2019-09-30",
+      "description": "Se celebró el 12 aniversario de la plaza. Donde se contaron con actividades para todos los asistentes, fomentando la participación de la comunidad y la convivencia.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/12_aniversario_plaza.png"
+    },
+    {
+      "title": "Caseta de seguridad pública municipal",
+      "date": "2019-09-30",
+      "description": "En el estacionamiento de la plaza se inauguró la caseta de seguridad pública municipal, la cual cuenta con juez calificador, policía judicial y ministerial. También con 2 motocicletas y 2 patrullas.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/caseta_seguridad_publica.png"
+    },
+    {
+      "title": "Apoyo a damnificados por sismo",
+      "date": "2019-09-30",
+      "description": "Se realizó una convocatoria para la recaudación de víveres en apoyo a los damnificados por el sismo del 7 de septiembre del 2017. Donde se logró recaudar 5 toneladas de víveres.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/apoyo_damnificados_mi.png"
+    },
+    {
+      "title": "Cambio de luminarias y proyecto solatubes",
+      "date": "2019-09-30",
+      "description": "Se realizó el cambio de luminarias en interiores y exteriores a tecnología LED. Se cambiaron un total de 183 luminarias.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/cambio_luminarias_mdv.png"
+    },
+    {
+      "title": "Año Nuevo Chino",
+      "date": "2019-09-30",
+      "description": "La comunidad China jugó un papel importante en el nacimiento de Mexicali, como comunidad cada año participamos en los festejos del año nuevo chino que es una fecha muy importante para ellos. Al celebrarlo es creencia en riqueza y prosperidad.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/año_nuevo_chino.png"
+    },
+    {
+      "title": "Orquesta Militar y Orquesta Centinela",
+      "date": "2019-09-30",
+      "description": "Se tuvo la participación de la banda militar a cargo de la ll región militar, con una presencia de 500 personas.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/orquesta_militar.png"
+    },
+    {
+      "title": "Carrera Ciclistas Mexicali-Rumorosa",
+      "date": "2019-09-30",
+      "description": "Por tercer año consecutivo se participó como patrocinador de la carrera ciclista MXLI-Rumorosa, con participantes de México, USA y Canadá.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/carrera_ciclista.png"
+    },
+    {
+      "title": "Campañas de salud y apoyo al DIF",
+      "date": "2019-09-30",
+      "description": "Cada año el instituto de salud pública del Estado de Baja California nos solicita un espacio para sus campañas de vacunación. A lo largo del año se tienen entre 4 y 5 campañas.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/campañas_salud_dif.png"
+    },
+    {
+      "title": "Dona tu libro viejo e intercambio con el Museo Sol del Niño",
+      "date": "2019-09-30",
+      "description": "Cada año se participa como centro de acopio para la fundación Hélice asociación civil sin fines de lucro.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/dona_libro.png"
+    },
+    {
+      "title": "Sumate a la ayuda",
+      "date": "2019-09-30",
+      "description": "En apoyo a los estados de Chiapas y Oaxaca se instaló un centro de acopio, donde se juntaron cerca de 2 toneladas de víveres.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/sumat_ayuda.png"
+    },
+    {
+      "title": "Dibujando mil sonrisas",
+      "date": "2019-09-30",
+      "description": "Durante el mes de octubre se apoyó a la fundación dibujando mil sonrisas, donde se encuentran apoyando a la fundación mujeres que viven, sobrevivientes al cáncer. Se realizó la recolección de cabello para elaboración de pelucas a cambio de esto la fundación mujeres que viven apoyan con prótesis de pecho y brasieres ortopédicos y ayuda psicológica par las mujeres.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/dibujando_mil_sonrisas.png"
+    },
+    {
+      "title": "Obsequio de pañales para adultos mayores",
+      "date": "2019-09-27",
+      "description": "Se obsequiaron pañales para adulto mayores.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/pañales_adultos.png"
+    },
+    {
+      "title": "Entrega de útiles escolares y campamentos de verano",
+      "date": "2019-09-27",
+      "description": "Se realizo la entrega de artículos escolares a niños, fomentando así la educación.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/entrega_utiles_escolares_cclm.png"
+    },
+    {
+      "title": "Cambio de luminarias a tecnología LED",
+      "date": "2019-09-27",
+      "description": "Se realizaron cambios en luminarias para apoyar al medio ambiente, ya que consumen 8.9 veces menos que una bombilla tradicional.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/cambio_luminarias_cclm.png"
+    },
+    {
+      "title": "Apoyo a damnificados por sismo",
+      "date": "2019-09-27",
+      "description": "Se realizo la colecta en favor a los damnificados por el sismo del mes de septiembre del 2017. Donde se recaudaron diferentes cosas y fueron enviadas a las comunidades afectadas.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/apoyo_sismo_cclm.png"
+    },
+    {
+      "title": "Apoyando actividades deportivas y a la juventud",
+      "date": "2019-09-27",
+      "description": "Se realizan distintas actividades donde se fomenta el deporte; como la exhibición de una escuela de Taekwondo.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/apoyando_deportes.png"
+    },
+    {
+      "title": "Eventos durante todo el año",
+      "date": "2019-09-27",
+      "description": "Durante todo el año se realizan actividades de entretenimiento. Para fomentar la participación de la comunidad y la convivencia familiar.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/eventos_todoelaño.png"
+    },
+    {
+      "title": "Seguimos haciendo Comunidad",
+      "date": "2019-09-19",
+      "description": "Planigrupo se dio a la tarea obsequiar material deportivo para niños y niñas de diferentes casas hogar. Donde de ahora en adelante podrán hacer gimnasia, jugar béisbol y futbol.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/seguimos_comunidad.png"
+    },
+    {
+      "title": "Donaciones de ropa y juguetes",
+      "date": "2019-09-19",
+      "description": "Planigrupo colocó centros de recolección de ropa, mantas y juguetes en Plaza Real Saltillo, La Nogalera, Plaza Bella Ramos Arizpe, Plaza Bella Huinalá, Plaza Bella Anahuac y Mall Plaza Lincoln, donde se recogieron un total de 3120 artículos, 100 pares de zapatos, 535 juguetes y 10 mantas.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/donaciones_ropa_juguetes.png"
+    },
+    {
+      "title": "Aquí tu servilleta, ayuda de corazón",
+      "date": "2019-09-19",
+      "description": "Planigrupo junto a la asociación civil “Aquí está tu servilleta”, acudieron a una comunidad de escasos recursos donde ahí se les regaló una Rosca de Reyes y una tarde llena de diversión con algunos de sus súper héroes favoritos y a su vez se les obsequiaron diversos pares de zapatos para toda la familia.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/servilleta_ayuda.png"
+    },
+    {
+      "title": "Manda tus kilos a volar",
+      "date": "2019-09-19",
+      "description": "Manda tus Kilos a Volar con la motivación de un viaje a Cancún. Donde durante 7 semanas se convivió con amigos y familias mediante diversos tipos de baile para mandar esos kilos a volar. Se perdieron 172 kilos y 257 centímetros reducidos.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/manda_kilos_volar.png"
+    },
+    {
+      "title": "UNHCR Reconocimiento 2019",
+      "date": "2019-09-13",
+      "description": "Plaza Hipódromo es reconocida por su apoyo a la facilitación de sus instalaciones para la recaudación de fondos a través del programa cara a cara ACNUR, septiembre de 2019.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/unchr.png"
+    },
+    {
+      "title": "1er Carrera UNIDOS 2018 y 2019",
+      "date": "2019-09-13",
+      "description": "Ciudadela Urban Village fue sede de la 1ra. United Race y volverá a estar en la carrera en 2019.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/1er_carrera_2018.png"
+    },
+    {
+      "title": "Fundación tiempos por sonrisas",
+      "date": "2019-09-13",
+      "description": "En apoyo de la Fundación Tiempo por sonrisas en la que por cada 1000 tapitas recolectadas se le dio una quimioterapia gratis a un niño. Macroplaza del Valle recolectó 2,000,000 de tapitas que son equivalentes a 2,000 quimioterapias.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/fundacion_tiempo_sonrisas.png"
+    },
+    {
+      "title": "Recolección de Electrodomésticos",
+      "date": "2019-09-12",
+      "description": "Colectivo Ambiental Isla Verde nos invitó a sumarnos a su campaña de reciclaje de electrodomésticos, la cual fue llevada a cabo dentro de nuestro centro comercial. Se apoyó con espacio dentro de la plaza para juntar los electrodomésticos recolectados. Se lograron juntar 18,640 kg de diversos electrodomésticos",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/recoleccion_electrodomesticos_cgp.png"
     }
   ],
   "eventos_ambientales": [
-    {
-      "title": "Banco de Tapitas Enero-Julio 2022",
-      "date": "2022-06-01",
-      "description": "Se realizó una donación de más de 3 mil tapitas.",
-      "url": "",
-      "category": "Ambientales",
-      "img": "images/eventos/Banco-de-tapitas-enero-julio-2022.webp"
-    },
-    {
-      "title": "Máquinas de Reciclaje-AlEn",
-      "date": "2022-06-01",
-      "description": "De enero-julio 2022 se reciclaron más de 600 mil botellas de plástico que equivale a una disminución de 30 mil kg de CO2.",
-      "url": "",
-      "category": "Ambientales",
-      "img": "images/eventos/Reciclar-para-ganar-Enero-julio-2022.png"
-    },
+    
     {
       "title": "Máquinas de Reciclaje-AIEn",
       "date": "2022-03-01",
@@ -325,36 +879,100 @@
   ],
   "eventos_corporativas": [
     {
-      "title": "Corporativas 1",
-      "date": "2023-06-01",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, quod.",
-      "url": "",
-      "category": "Corporativas",
-      "img": "images/eventos/Banco-de-tapitas-enero-julio-2022.webp"
-    },
-    {
-      "title": "Corporativas 2",
+      "title": "Inauguración de “ESPAZIOS IEMUJERES Y PUNTO NARANJA” ",
       "date": "2022-06-01",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, quod.",
+      "description": "Inauguración de espacios para mujeres emprendedoras, así como un punto para atender y apoyar a mujeres que se sientan inseguras.",
+      "url": "",
+      "category": "Corporativas",
+      "img": "images/eventos_soc/ESPAZIOS-IEMUJERES-Y-PUNTO-NARANJA.jpg"
+    },
+    {
+      "title": "Donativo Instituto Estatal de las Mujeres",
+      "date": "2023-03-09",
+      "description": "Se realizó un donativo en Mall Plaza Lincoln, consistente en sillas y mesas.",
+      "url": "",
+      "category": "Corporativas",
+      "img": "images/eventos_soc/donativo_instituto_estatal_mujeres.png"
+    },
+    {
+      "title": "Encendido de arbolitos 2022",
+      "date": "2022-06-01",
+      "description": "Se realizo el tradicional encendido de arbolitos navideños 2022 en nuestros centros comerciales.",
+      "url": "",
+      "category": "Corporativas",
+      "img": "images/eventos_soc/encendido-arbolito.jpeg"
+    },
+    {
+      "title": "Banco de Tapitas Enero-Julio 2022",
+      "date": "2022-06-01",
+      "description": "Se realizó una donación de más de 3 mil tapitas.",
       "url": "",
       "category": "Corporativas",
       "img": "images/eventos/Banco-de-tapitas-enero-julio-2022.webp"
     },
     {
-      "title": "Corporativas 3",
-      "date": "2021-06-01",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, quod.",
+      "title": "Corazones Rosa en Colaboración con Grupo AIEn",
+      "date": "2022-06-01",
+      "description": "Se recolectaron tapitas en puntos estratégicos de nuestras plazas, que se transformaron en un donativo para la fundación Asociación Unidas Contigo.",
       "url": "",
       "category": "Corporativas",
-      "img": "images/eventos/Banco-de-tapitas-enero-julio-2022.webp"
+      "img": "images/eventos_soc/Corazones-rosas-con-grupo-alen.jpg"
     },
     {
-      "title": "Corporativas 4",
-      "date": "2020-06-01",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, quod.",
+      "title": "Reconocimiento a CiudadelaUV por el banco de tapitas ",
+      "date": "2022-06-01",
+      "description": "Reconocimiento al Banco de Tapitas A.C por su participación en Programa de Recolección de Tapitas de plástico.",
       "url": "",
       "category": "Corporativas",
-      "img": "images/eventos/Banco-de-tapitas-enero-julio-2022.webp"
+      "img": "images/eventos_soc/Banco-tapitas-Junio-Ciudadela.png"
+    },
+    {
+      "title": "Entrega de juguetes",
+      "date": "2022-06-01",
+      "description": "Se realizo la entrega de juguetes que se recolectaron con la alianza DIF de Santa Catarina y Alianza Anticáncer.",
+      "url": "",
+      "category": "Corporativas",
+      "img": "images/eventos_soc/entrega_juguetes.jpg"
+    },
+    {
+      "title": "Alianza Grupo Alen",
+      "date": "2021-03-04",
+      "description": "Se colocaron 2 máquinas de reciclaje en las plazas Urban Village Garza Sada y Plaza Real Saltillo",
+      "url": "",
+      "category": "Corporativas",
+      "img": "images/eventos_soc/alianza_grupo_alen.png"
+    },
+    {
+      "title": "Rosca de Reyes 2020",
+      "date": "2022-06-01",
+      "description": "Se realizó la tradicional rosca de reyes y diversas actividades con los reyes magos",
+      "url": "",
+      "category": "Corporativas",
+      "img": "images/eventos_soc/dia-reyes.png"
+    },
+    {
+      "title": "Sanitización de Centros Comerciales a Nivel Nacional",
+      "date": "2022-06-01",
+      "description": "Se realizo la sanitización de centros comerciales para brindar mayor seguridad a los clientes",
+      "url": "",
+      "category": "Corporativas",
+      "img": "images/eventos_soc/planigrupo-busca-adquirir-dos-centros-comerciales.png"
+    },
+    {
+      "title": "Recolección de tapitas para niños con cáncer",
+      "date": "2022-06-01",
+      "description": "Agradecemos a las personas que han recolectado tapitas y se han sumado a esta causa.",
+      "url": "",
+      "category": "Corporativas",
+      "img": "images/eventos_soc/Recoleccion-tapitas-para-niños-con-cancer.jpg"
+    },
+    {
+      "title": "Donativo de Caretas al municipio de Zapopan, Jalisco",
+      "date": "2020-05-26",
+      "description": "Donativo de Caretas al Municipio de Zapopan, Jalisco",
+      "url": "",
+      "category": "Corporativas",
+      "img": "images/eventos_soc/donativo_caretas_zapopan.png"
     }
   ]
 }
