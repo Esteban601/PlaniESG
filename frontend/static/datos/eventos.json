@@ -851,7 +851,6 @@
     }
   ],
   "eventos_ambientales": [
-    
     {
       "title": "Máquinas de Reciclaje-AIEn",
       "date": "2022-06-17",
@@ -1020,13 +1019,46 @@
       "category": "Sociales",
       "img": "images/eventos_soc/cambio_jardines_camellos.png"
     },
+
     {
       "title": "Recolección de Electrodomésticos",
       "date": "2019-09-12",
       "description": "Colectivo Ambiental Isla Verde nos invitó a sumarnos a su campaña de reciclaje de electrodomésticos, la cual fue llevada a cabo dentro de nuestro centro comercial. Se apoyó con espacio dentro de la plaza para juntar los electrodomésticos recolectados. Se lograron juntar 18,640 kg de diversos electrodomésticos",
       "url": "",
-      "category": "Sociales",
+      "category": "Ambientales",
       "img": "images/eventos_soc/recoleccion_electrodomesticos_cgp.png"
+    },
+    {
+      "title": "Instalación de luminaria ahorrativa y colocación de solatubes",
+      "date": "2021-10-02",
+      "description": "Se colocaron luminarias ahorradoras en interior y exterior con tecnología LED para disminuir el consumo de energía.",
+      "url": "",
+      "category": "Ambientales",
+      "img": "images/eventos_soc/caravana_vintage.png"
+    },
+    {
+      "title": "Equipos de aire acondicionado",
+      "date": "2021-10-02",
+      "description": "Se utilizan equipos de aire acondicionado tipo r410 que son ecológicos y ayudan al medio ambiente.",
+      "url": "",
+      "category": "Ambientales",
+      "img": "images/eventos_soc/caravana_vintage.png"
+    },
+   {
+      "title": "Separación de basura y cartón",
+      "date": "2021-10-02",
+      "description": "Se colocaron cestos de basura para su separación (orgánica e inorgánica).",
+      "url": "",
+      "category": "Ambientales",
+      "img": "images/eventos_soc/caravana_vintage.png"
+    },
+    {
+      "title": "Instalación de solatubes y mingitorios de gravedad",
+      "date": "2021-10-02",
+      "description": "Se instalaron solatubes para el aprovechamiento de luz natural y disminución de energía eléctrica.",
+      "url": "",
+      "category": "Ambientales",
+      "img": "images/eventos/Reciclar-para-ganar-abril-2022.png"
     }
   ],
   "eventos_corporativas": [
