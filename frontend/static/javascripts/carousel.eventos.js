@@ -14,16 +14,18 @@ $("#GalleryModal1 .close-btn").click(function (e) {
 });
 
 const step = 6;
+const year_form = $('#select_anno');
+const cat_form = $('#select_category');
 
-filterSelection({a:"all", c:"all"}, '', 1, step);
+filterSelection({a:year_form.val(), c:cat_form.val()}, '', 1, step);
 
-$('#select_anno').change(function () {
+year_form.change(function () {
     console.log($(this).val());
-    filterSelection({a: $(this).val(), c: $('#select_category').val()}, '', 1, step);
+    filterSelection({a: $(this).val(), c: cat_form.val()}, '', 1, step);
 });
-$('#select_category').change(function () {
+cat_form.change(function () {
     console.log($(this).val());
-    filterSelection({c: $(this).val(), a: $('#select_anno').val()}, '', 1, step);
+    filterSelection({c: $(this).val(), a: year_form.val()}, '', 1, step);
 });
 
 
