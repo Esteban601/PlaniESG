@@ -170,14 +170,6 @@
       "img": "images/eventos_soc/festival_cultural_tradicion_viva.png"
     },
     {
-      "title": "Festival Cultural Tradición Viva",
-      "date": "2019-11-15",
-      "description": "Se realizó un evento con actividades culturales para preservar y fomentar las tradiciones mexicanas",
-      "url": "",
-      "category": "Sociales",
-      "img": "images/eventos_soc/festival_cultural_tradicion_viva.png"
-    },
-    {
       "title": "Apoyando a Fer",
       "date": "2019-11-15",
       "description": "Nos unimos a la causa de Apoyar a FER a que tenga una mejor calidad de vida debido a que necesita de manera urgente un trasplante de riñón.",
@@ -199,7 +191,7 @@
       "description": "Planigrupo recibió el reconocimiento por parte de El Encuentro Mundial de Valores ABP.",
       "url": "",
       "category": "Sociales",
-      "img": "images/eventos_soc/caravana_vintage.png"
+      "img": "images/eventos_soc/s_c.jpg"
     },
     {
       "title": "Planigrupo Como Empresa Compasiva",
@@ -207,7 +199,7 @@
       "description": "El pasado 12 de octubre del 2019 el Comité XI Encuentro Mundial de Valores otorgó a la Arq. Karime Garza Serna quien es nuestra directora de operaciones el documento en el cual se le otorga la Certificación Mundial a PLANIGRUPO como Empresa Compasiva",
       "url": "",
       "category": "Sociales",
-      "img": "images/eventos_soc/caravana_vintage.png"
+      "img": "images/eventos_soc/empresa.png"
     },
     {
       "title": "Sustitución de luminarios",
@@ -215,7 +207,7 @@
       "description": "Se instalo iluminación LED en el interior y exterior de la plaza. 99 luminarias en total sustituidas.",
       "url": "",
       "category": "Sociales",
-      "img": "images/eventos_soc/caravana_vintage.png"
+      "img": "images/eventos_soc/sustitucion_s.jpg"
     },
     {
       "title": "Colecta para daminificados por sismo",
@@ -223,7 +215,7 @@
       "description": "Se llevo a cabo campaña para recolectar artículos de primera necesidad y ayudar a los damnificados del sismo del 2017.",
       "url": "",
       "category": "Sociales",
-      "img": "images/eventos_soc/caravana_vintage.png"
+      "img": "images/eventos_soc/colecta_d.jpg"
     },
     {
       "title": "Recolección de víveres",
@@ -231,7 +223,7 @@
       "description": "En apoyo a las zonas afectadas por el sismo de septiembre del 2017, se colocó un centro de acopio en la plaza, lo recolectado fue entregado al DIF municipal el 5 de octubre del 2017.",
       "url": "",
       "category": "Sociales",
-      "img": "images/eventos_soc/caravana_vintage.png"
+      "img": "images/eventos_soc/recoleccion_v.jpg"
     },
     {
       "title": "Apoyo a caravanas de empleo",
@@ -239,7 +231,7 @@
       "description": "Se otorga un espacio en el estacionamiento de la plaza para llevar a cabo la feria del empleo.",
       "url": "",
       "category": "Sociales",
-      "img": "images/eventos_soc/caravana_vintage.png"
+      "img": "images/eventos_soc/apoyo_c.jpg"
     },
     {
       "title": "Separación de residuos",
@@ -263,7 +255,7 @@
       "description": "Se implementaron luminarias tipo led, para apoyar al medio ambiente y disminuir el uso de energía eléctrica.",
       "url": "",
       "category": "Sociales",
-      "img": "images/eventos_soc/caravana_vintage.png"
+      "img": "images/eventos_soc/luminaras_sus.jpg"
     },
     {
       "title": "Difusión de campañas de vacunación",
@@ -271,7 +263,7 @@
       "description": "Se apoya a campañas de vacunación del instituto mexicano del seguro social de febrero a marzo del 2019.",
       "url": "",
       "category": "Sociales",
-      "img": "images/eventos_soc/caravana_vintage.png"
+      "img": "images/eventos_soc/camp_van.jpg"
     },
     {
       "title": "Centro de Acopio",
@@ -279,7 +271,7 @@
       "description": "Se creo un centro de acopio por el sismo de septiembre del 2017 en Chiapas y Oaxaca.",
       "url": "",
       "category": "Sociales",
-      "img": "images/eventos_soc/caravana_vintage.png"
+      "img": "images/eventos_soc/centro_acopio_lr.png"
     },
     {
       "title": "Separación de residuos y reciclaje",
@@ -295,7 +287,7 @@
       "description": "En el 2018 se apoyo en la recolección de víveres para los afectados de las inundaciones en Sinaloa, se tuvo un modulo para la recolección de artículos de primera necesidad",
       "url": "",
       "category": "Sociales",
-      "img": "images/eventos_soc/caravana_vintage.png"
+      "img": "images/eventos_soc/colecta_apoyo_damnificados.png"
     },
     {
       "title": "Protección de la naturaleza",
@@ -327,7 +319,7 @@
       "description": "Se cambiaron 85 luminarias ordinarias a luminarias con tecnología LED.",
       "url": "",
       "category": "Sociales",
-      "img": "images/eventos_soc/instalacion_sensores_lus.png"
+      "img": "images/eventos_soc/cambio_luminarias_z.png"
     },
     {
       "title": "Reciclaje y recolección",
@@ -351,7 +343,7 @@
       "description": "Apoyo con víveres a damnificados en baja california en el 2014.",
       "url": "",
       "category": "Sociales",
-      "img": "images/eventos_soc/caravana_vintage.png"
+      "img": "images/eventos_soc/centro_acopio.png"
     },
     {
       "title": "Apoyo a la cultura",
@@ -359,7 +351,7 @@
       "description": "Apoyo en la difusión cultural de la música mexicana a nivel internacional del 23 al 31 de agosto del 2018.",
       "url": "",
       "category": "Sociales",
-      "img": "images/eventos_soc/caravana_vintage.png"
+      "img": "images/eventos_soc/apoyo_cultura.png"
     },
     {
       "title": "Reciclaje y separación de residuos",
@@ -375,7 +367,7 @@
       "description": "Se cambiaron mingitorios y baños para el ahorro de agua. Cambiando a sistemas e agua libre en el 2016 y cambios en planta baja y área de restaurantes en el año 2018 y 2019.",
       "url": "",
       "category": "Sociales",
-      "img": "images/eventos_soc/instalacion_mingitorios_pu.png"
+      "img": "images/eventos_soc/cambio_sanitarios_ciudadela.png"
     },
     {
       "title": "1er carrera unidos",
@@ -383,7 +375,7 @@
       "description": "Se fue cede de la primer carrera unidos por la inclusión. Donde se reúnen personas de todas las edades, géneros y capacidades diferentes.",
       "url": "",
       "category": "Sociales",
-      "img": "images/eventos_soc/caravana_vintage.png"
+      "img": "images/eventos_soc/carrera_unidos.jpg"
     },
     {
       "title": "Apoyo a artesanos locales",
@@ -391,7 +383,7 @@
       "description": "Se les brinda espació dentro del área común a pequeños productores de productos orgánicos.",
       "url": "",
       "category": "Sociales",
-      "img": "images/eventos_soc/caravana_vintage.png"
+      "img": "images/eventos_soc/apoyo_artesanos_locales.png"
     },
     {
       "title": "Apoyo al UNICEF",
@@ -399,7 +391,7 @@
       "description": "Se proporciona espacios de manera altruista para el apoyo de la causa de UNICEFF a favor de la niñez. 6 de marzo del 2018.",
       "url": "",
       "category": "Sociales",
-      "img": "images/eventos_soc/caravana_vintage.png"
+      "img": "images/eventos_soc/apoyo_unicef.png"
     },
     {
       "title": "Centro de acopio",
@@ -407,7 +399,7 @@
       "description": "Se creo un centro de acopio para los damnificados de Oaxaca. 11 de octubre 2017.",
       "url": "",
       "category": "Sociales",
-      "img": "images/eventos_soc/caravana_vintage.png"
+      "img": "images/eventos_soc/centro_acopio.png"
     },
     {
       "title": "Jornada de empleo",
@@ -415,7 +407,7 @@
       "description": "Se participó en las jornadas por el empleo, impartida por la presidencia municipal.",
       "url": "",
       "category": "Sociales",
-      "img": "images/eventos_soc/caravana_vintage.png"
+      "img": "images/eventos_soc/jornada_empleo.png"
     },
     {
       "title": "Separación de basura y ley que prohibe uso de popotes y bolsas de plástico",
@@ -431,7 +423,7 @@
       "description": "Se colocaron luminarias ahorradoras en interior y exterior con tecnología LED para disminuir el consumo de energía.",
       "url": "",
       "category": "Sociales",
-      "img": "images/eventos_soc/caravana_vintage.png"
+      "img": "images/eventos_soc/instalacion_luminarias_pua.png"
     }, 
     {
       "title": "Instalación de mingitorios secos y equipos ahorradores de agua y papel",
@@ -439,7 +431,7 @@
       "description": "Se instalaron mingitorios secos para el ahorro de agua, equipos ahorradores de agua en lavamanos y baños, así como equipos ahorradores de papel higiénico",
       "url": "",
       "category": "Sociales",
-      "img": "images/eventos_soc/caravana_vintage.png"
+      "img": "images/eventos_soc/instalacion_mingitorios_pua.png"
     },
     {
       "title": "Centros de acopio",
@@ -447,15 +439,15 @@
       "description": "Se creó un centro de acopio donde se recaudaron víveres para ayudar a los damnificados del sismo de Oaxaca en el 2017.",
       "url": "",
       "category": "Sociales",
-      "img": "images/eventos_soc/caravana_vintage.png"
+      "img": "images/eventos_soc/centro_ac.png"
     },
     {
-      "title": "Curos de primeros auxilios",
+      "title": "Cursos de primeros auxilios",
       "date": "2019-10-01",
       "description": "Se brindaron cursos de primeros auxilios por parte de la cruz roja mexicana.",
       "url": "",
       "category": "Sociales",
-      "img": "images/eventos_soc/caravana_vintage.png"
+      "img": "images/eventos_soc/curso_primeros_auxilios.png"
     },
     {
       "title": "Campañas Cruz Roja Mexicana",
@@ -463,7 +455,7 @@
       "description": "Se realizan campañas en conjunto con la cruz roja mexicana, brindando cursos e información.",
       "url": "",
       "category": "Sociales",
-      "img": "images/eventos_soc/caravana_vintage.png"
+      "img": "images/eventos_soc/campañas_cruz_roja.png"
     },
     {
       "title": "Campañas Green Peace",
@@ -471,7 +463,7 @@
       "description": "Se tuvo participación con Green Peace en la campaña unión a la organización como socio donador, cyber-activista o voluntario.",
       "url": "",
       "category": "Sociales",
-      "img": "images/eventos_soc/caravana_vintage.png"
+      "img": "images/eventos_soc/campaña_green_peace.png"
     },
     {
       "title": "Equipos de aire acondicionado",
@@ -479,7 +471,7 @@
       "description": "Se utilizan equipos de aire acondicionado tipo r410 que son ecológicos y ayudan al medio ambiente.",
       "url": "",
       "category": "Sociales",
-      "img": "images/eventos_soc/caravana_vintage.png"
+      "img": "images/eventos_soc/equipos_aire.png"
     },
     {
       "title": "Sepación de basura y cartón",
@@ -487,7 +479,7 @@
       "description": "Se colocaron cestos de basura para su separación (orgánica e inorgánica).",
       "url": "",
       "category": "Sociales",
-      "img": "images/eventos_soc/caravana_vintage.png"
+      "img": "images/eventos_soc/separacion_bac.png"
     },
     {
       "title": "Cambio de luminarias",
@@ -495,7 +487,7 @@
       "description": "Se colocaron luminarias ahorrativas para el cuidado del medio ambiente",
       "url": "",
       "category": "Sociales",
-      "img": "images/eventos_soc/cambio_luminarias_mdv.jpg"
+      "img": "images/eventos_soc/lumin.png"
     },
     {
       "title": "Instalación de equipos ahorradores de agua y papel",
@@ -503,7 +495,7 @@
       "description": "Se instalaron equipos ahorradores de agua en lavamanos y sanitarios.",
       "url": "",
       "category": "Sociales",
-      "img": "images/eventos_soc/caravana_vintage.png"
+      "img": "images/eventos_soc/instalacion_equipos_ahorradores.png"
     },
     {
       "title": "Empresa Compasiva",
@@ -511,7 +503,7 @@
       "description": "El principio de la compasión esta en el corazón de todas las tradiciones religiosas, éticas y espirituales, llamándonos siempre a tratar a todos los demás como deseamos ser tratados a nosotros mismos.",
       "url": "",
       "category": "Sociales",
-      "img": "images/eventos_soc/caravana_vintage.png"
+      "img": "images/eventos_soc/empresa_compasiva2.png"
     },
     {
       "title": "Cambio de luminaria a LED",
@@ -575,7 +567,7 @@
       "description": "Acopio de computadoras, CPU, teclados, mouse para donarlo a alguna asociación.",
       "url": "",
       "category": "Sociales",
-      "img": "images/eventos_soc/caravana_vintage.png"
+      "img": "images/eventos_soc/centro_reciclado_computo.png"
     },
     {
       "title": "Apoyo a escuelas de arte de la comunidad",
@@ -1034,7 +1026,7 @@
       "description": "Se colocaron luminarias ahorradoras en interior y exterior con tecnología LED para disminuir el consumo de energía.",
       "url": "",
       "category": "Ambientales",
-      "img": "images/eventos_soc/caravana_vintage.png"
+      "img": "images/eventos_soc/inst_lumi.png"
     },
     {
       "title": "Equipos de aire acondicionado",
@@ -1042,7 +1034,7 @@
       "description": "Se utilizan equipos de aire acondicionado tipo r410 que son ecológicos y ayudan al medio ambiente.",
       "url": "",
       "category": "Ambientales",
-      "img": "images/eventos_soc/caravana_vintage.png"
+      "img": "images/eventos_soc/equipos_aire.png"
     },
    {
       "title": "Separación de basura y cartón",
@@ -1050,7 +1042,7 @@
       "description": "Se colocaron cestos de basura para su separación (orgánica e inorgánica).",
       "url": "",
       "category": "Ambientales",
-      "img": "images/eventos_soc/caravana_vintage.png"
+      "img": "images/eventos_soc/separacion_bac.png"
     },
     {
       "title": "Cambio de luminaria a LED",
@@ -1074,7 +1066,7 @@
       "description": "Acopio de computadoras, CPU, teclados, mouse para donarlo a alguna asociación.",
       "url": "",
       "category": "Ambientales",
-      "img": "images/eventos_soc/caravana_vintage.png"
+      "img": "images/eventos_soc/centro_a.png"
     },
     {
       "title": "Cambio de luminarias y programa de reciclaje",
@@ -1082,7 +1074,7 @@
       "description": "En el 2018 y lo que va del 2019 se reemplazaron luminarias de halógeno y fluorescentes a LED, dentro y fuera de la plaza.",
       "url": "",
       "category": "Ambientales",
-      "img": "images/eventos_soc/caravana_vintage.png"
+      "img": "images/eventos_soc/cambio_l.jpg"
     },
     {
       "title": "Cambio de jardinería y programa adopción de camellones",
@@ -1090,7 +1082,7 @@
       "description": "Se realizo el cambio de jardinería a plantas desérticas para reducir el consumo de agua.",
       "url": "",
       "category": "Ambientales",
-      "img": "images/eventos_soc/caravana_vintage.png"
+      "img": "images/eventos_soc/cambio_j.jpg"
     },
     {
       "title": "Cambio de luminarias y proyecto solatubes",
@@ -1106,7 +1098,7 @@
       "description": "Se realizaron cambios en luminarias para apoyar al medio ambiente, ya que consumen 8.9 veces menos que una bombilla tradicional.",
       "url": "",
       "category": "Ambientales",
-      "img": "images/eventos_soc/cambio_luminarias_mdv.jpg"
+      "img": "images/eventos_soc/cambio.jpg"
     },
     {
       "title": "Recolección de Electrodomésticos",
@@ -1122,7 +1114,7 @@
       "description": "Se instalaron solatubes para el aprovechamiento de luz natural y disminución de energía eléctrica.",
       "url": "",
       "category": "Ambientales",
-      "img": "images/eventos/Reciclar-para-ganar-abril-2022.png"
+      "img": "images/eventos_soc/instalacion_sol.png"
     }
   ],
   "eventos_corporativas": [
