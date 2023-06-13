@@ -1,8 +1,7 @@
 {% extends 'layouts/interior.html' %}
 {% load static %}
+
 {% block otherstyles %}
-
-
 {% endblock %}
 
 {% block wrapper %}
@@ -26,16 +25,83 @@
                     el papel, cartón, PET, vidrio, electrónicos, e incluso energía y agua:
                 </p>
 
-
-                
-                    <div style="text-align:center;">
-                        
-                        <img src="{% static 'images/metas_ambi.png' %}"
-                             style="display:block; width:1000px; height: 350px;"
-                             alt=""><br>
+                <div class="col-12 mb-5">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="row d-flex align-items-center">
+                                <div class="col-md-6">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto cumque
+                                        cupiditate deserunt dolorem ducimus eum, explicabo fugit ipsum, laudantium
+                                        molestiae nobis numquam possimus quaerat quam quod sequi sit totam voluptas.</p>
+                                </div>
+                                <div class="col-md-6 text-center">
+                                    <img src="{% static 'images/metas_ambi.png' %}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row d-flex align-items-center">
+                                <div class="col-md-6">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto cumque
+                                        cupiditate deserunt dolorem ducimus eum, explicabo fugit ipsum, laudantium
+                                        molestiae nobis numquam possimus quaerat quam quod sequi sit totam voluptas.</p>
+                                </div>
+                                <div class="col-md-6 text-center">
+                                    <img src="{% static 'images/metas_ambi.png' %}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row d-flex align-items-center">
+                                <div class="col-md-6">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto cumque
+                                        cupiditate deserunt dolorem ducimus eum, explicabo fugit ipsum, laudantium
+                                        molestiae nobis numquam possimus quaerat quam quod sequi sit totam voluptas.</p>
+                                </div>
+                                <div class="col-md-6 text-center">
+                                    <img src="{% static 'images/metas_ambi.png' %}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row d-flex align-items-center">
+                                <div class="col-md-6">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto cumque
+                                        cupiditate deserunt dolorem ducimus eum, explicabo fugit ipsum, laudantium
+                                        molestiae nobis numquam possimus quaerat quam quod sequi sit totam voluptas.</p>
+                                </div>
+                                <div class="col-md-6 text-center">
+                                    <img src="{% static 'images/metas_ambi.png' %}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row d-flex align-items-center">
+                                <div class="col-md-6">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto cumque
+                                        cupiditate deserunt dolorem ducimus eum, explicabo fugit ipsum, laudantium
+                                        molestiae nobis numquam possimus quaerat quam quod sequi sit totam voluptas.</p>
+                                </div>
+                                <div class="col-md-6 text-center">
+                                    <img src="{% static 'images/metas_ambi.png' %}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row d-flex align-items-center">
+                                <div class="col-md-6">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto cumque
+                                        cupiditate deserunt dolorem ducimus eum, explicabo fugit ipsum, laudantium
+                                        molestiae nobis numquam possimus quaerat quam quod sequi sit totam voluptas.</p>
+                                </div>
+                                <div class="col-md-6 text-center">
+                                    <img src="{% static 'images/metas_ambi.png' %}" alt="">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-              
-              
+                </div>
+
                 <!--- 
                  <p class="text-justify">Para más información, visitar el siguiente enlace:</p>
                     <div class="image_wrapper">
@@ -49,7 +115,6 @@
                         </a>
                     </div>
                 </div> -->
-
 
                 <p class="text-justify">En Planigrupo, contamos con una estrategia integral para hacer frente al
                     cambio climático. Para
@@ -257,7 +322,6 @@
                     </div>
                 </div>
                 {% include 'partials/carousel_eventos_soc.html' %}
-
             </div>
         </div>
     </div>
@@ -323,7 +387,7 @@
             margin: 30,
             nav: true,
             autoplay: true,
-            autoplayTimeout: 5000,
+            autoplayTimeout: 45000,
             autoplayHoverPause: true,
             items: 1,
         });
@@ -332,6 +396,5 @@
     <script src="{% static 'javascripts/amcharts/amcharts.js' %}"></script>
     <script src="{% static 'javascripts/amcharts/serial.js' %}"></script>
     <script src="{% static 'javascripts/amcharts/pie.js' %}"></script>
-
     <script src="{% static 'javascripts/amcharts/contenido/ambiental.min.js' %}{{ css_js_version }}"></script>
 {% endblock %}
