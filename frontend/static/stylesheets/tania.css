@@ -1891,22 +1891,26 @@ ul#cadena > li > .nav-link.active:before {
     padding: 3rem;
     padding-bottom: 0;
 }
+
 #boxes {
     background-color: #efefef;
     padding-top: 80px;
 }
-#boxes .card-group{
+
+#boxes .card-group {
     max-width: 904px;
     min-width: 226px;
     margin: auto;
 }
-#boxes .card-group .card{
+
+#boxes .card-group .card {
     max-width: 226px;
     min-width: 226px;
     max-height: 226px;
     min-height: 226px;
 }
-#boxes .card-group .card img{
+
+#boxes .card-group .card img {
     width: 226px;
     transform: none;
     z-index: 1;
@@ -1916,10 +1920,12 @@ ul#cadena > li > .nav-link.active:before {
     transition: all .6s ease-in-out;
     box-sizing: border-box;
 }
-#boxes .card-group .card:hover img{
+
+#boxes .card-group .card:hover img {
     transform: rotateX(180deg) rotateY(0);
 }
-#boxes .card-group .card .card-body{
+
+#boxes .card-group .card .card-body {
     color: #FFFFFF !important;
     transform: rotateX(-180deg) rotateY(0);
     transform-style: preserve-3d;
@@ -1933,12 +1939,18 @@ ul#cadena > li > .nav-link.active:before {
     text-align: center;
     vertical-align: middle;
 }
-#boxes .card-group .card:hover .card-body{
+
+#boxes .card-group .card:hover .card-body {
     transform: none;
 }
-#boxes .card-group .card .card-body p{
+
+#boxes .card-group .card .card-body p {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 200px;
+}
+
+.parallax {
+    will-change: unset;
 }
