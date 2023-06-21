@@ -3,28 +3,40 @@
 {% load i18n %}
 
 <ul>
-    {#    <li>#}
-    {#        <a href="#">#}
-    {#            <div>{% trans 'Modelo ASG' %}</div>#}
-    {#        </a>#}
-    {#        <ul>#}
-    {#            <li class="{% if page == 'materialidad' %}current{% endif %}">#}
-    {#                <a href="{% url 'materialidad' %}">#}
-    {#                    <div>{% trans "Materialidad" %}</div>#}
-    {#                </a>#}
-    {#            </li>#}
-    {#            <li class="{% if page == 'vinculacion-ods' %}current{% endif %}">#}
-    {#                <a href="{% url 'vinculacion-ods' %}">#}
-    {#                    <div>{% trans "Vinculación con los ODS" %}</div>#}
-    {#                </a>#}
-    {#            </li>#}
-    {#        </ul>#}
-    {#    </li>#}
     <li>
         <a href="{% url 'index' %}">
             <div>{% trans 'Inicio' %}</div>
         </a>
     </li>
+    <li>
+        <a href="{% url 'materialidad' %}">
+            <div>{% trans 'Estrategia de Sostenibilidad' %}</div>
+        </a>
+        <ul>
+            <li class="{% if page == 'materialidad' %}current{% endif %}">
+                <a href="{% url 'materialidad' %}#matriz">
+                    <div>{% trans "Matriz" %}</div>
+                </a>
+            </li>
+            <li class="{% if page == 'materialidad' %}current{% endif %}">
+                <a href="{% url 'materialidad' %}#estrategia">
+                    <div>{% trans "Estrategia" %}</div>
+                </a>
+            </li>
+            <li class="{% if page == 'materialidad' %}current{% endif %}">
+                <a href="{% url 'materialidad' %}#objetivos">
+                    <div>{% trans "Objetivos ODS" %}</div>
+                </a>
+            </li>
+            <li class="{% if page == 'materialidad' %}current{% endif %}">
+                <a href="{% url 'materialidad' %}#actividades">
+                    <div>{% trans "Actividades" %}</div>
+                </a>
+            </li>
+
+        </ul>
+    </li>
+
     <li>
         <a href="{% url 'ambiental' %}">
             <div>{% trans 'Ambiental' %}</div>
@@ -40,40 +52,40 @@
             <div>{% trans 'Gobernanza' %}</div>
         </a>
     </li>
-{#    <li>#}
-{#        <a href="#">#}
-{#            <div>{% trans 'Responsabilidad Social' %}</div>#}
-{#        </a>#}
-{#        <ul>#}
-{#            <li class="{% if page == 'diversidad-inclusion' %}current{% endif %}">#}
-{#                <a href="{% url 'diversidad-inclusion' %}">#}
-{#                    <div>{% trans "Diversidad e inclusión" %}</div>#}
-{#                </a>#}
-{#            </li>#}
-{#            <li class="{% if page == 'vinculacion-comunidad' %}current{% endif %}">#}
-{#                <a href="{% url 'vinculacion-comunidad' %}">#}
-{#                    <div>{% trans "Vinculación con la comunidad" %}</div>#}
-{#                </a>#}
-{#            </li>#}
-{#        </ul>#}
-{#    </li>#}
-{#    <li>#}
-{#        <a href="#">#}
-{#            <div>{% trans 'Gobernanza' %}</div>#}
-{#        </a>#}
-{#        <ul>#}
-{#            <li class="{% if page == 'sistema_gobierno' %}current{% endif %}">#}
-{#                <a href="{% url 'sistema_gobierno' %}">#}
-{#                    <div>{% trans "Sistema de gobierno" %}</div>#}
-{#                </a>#}
-{#            </li>#}
-{#            <li class="{% if page == 'grupos-interes' %}current{% endif %}">#}
-{#                <a href="{% url 'grupos-interes' %}">#}
-{#                    <div>{% trans "Grupos de interés" %}</div>#}
-{#                </a>#}
-{#            </li>#}
-{#        </ul>#}
-{#    </li>#}
+    {#    <li>#}
+    {#        <a href="#">#}
+    {#            <div>{% trans 'Responsabilidad Social' %}</div>#}
+    {#        </a>#}
+    {#        <ul>#}
+    {#            <li class="{% if page == 'diversidad-inclusion' %}current{% endif %}">#}
+    {#                <a href="{% url 'diversidad-inclusion' %}">#}
+    {#                    <div>{% trans "Diversidad e inclusión" %}</div>#}
+    {#                </a>#}
+    {#            </li>#}
+    {#            <li class="{% if page == 'vinculacion-comunidad' %}current{% endif %}">#}
+    {#                <a href="{% url 'vinculacion-comunidad' %}">#}
+    {#                    <div>{% trans "Vinculación con la comunidad" %}</div>#}
+    {#                </a>#}
+    {#            </li>#}
+    {#        </ul>#}
+    {#    </li>#}
+    {#    <li>#}
+    {#        <a href="#">#}
+    {#            <div>{% trans 'Gobernanza' %}</div>#}
+    {#        </a>#}
+    {#        <ul>#}
+    {#            <li class="{% if page == 'sistema_gobierno' %}current{% endif %}">#}
+    {#                <a href="{% url 'sistema_gobierno' %}">#}
+    {#                    <div>{% trans "Sistema de gobierno" %}</div>#}
+    {#                </a>#}
+    {#            </li>#}
+    {#            <li class="{% if page == 'grupos-interes' %}current{% endif %}">#}
+    {#                <a href="{% url 'grupos-interes' %}">#}
+    {#                    <div>{% trans "Grupos de interés" %}</div>#}
+    {#                </a>#}
+    {#            </li>#}
+    {#        </ul>#}
+    {#    </li>#}
     <li>
         <a href="{% url 'contacto' %}">
             <div>{% trans 'Contacto' %}</div>

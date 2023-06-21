@@ -1439,6 +1439,10 @@ p {
     color: gray !important;
 }
 
+.text-blue3 {
+    color: #1C3557 !important;
+}
+
 .acerca .practice-column {
     margin-bottom: 0;
 }

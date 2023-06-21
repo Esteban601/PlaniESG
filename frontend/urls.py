@@ -5,6 +5,7 @@ from . import views
 urlpatterns = [
     path('', views.index, name='index'),
     path('ambiental', views.ambiental, name='ambiental'),
+
     path('ambiental_info', views.ambiental_info, name='ambiental_info'),
 
     path('responsabilidad_social', views.responsabilidad_social, name='responsabilidad_social'),
@@ -14,6 +15,7 @@ urlpatterns = [
     path('gobernanza_info', views.gobernanza_info, name='gobernanza_info'),
 
     path('materialidad', views.materialidad, name='materialidad'),
+
     path('nuestro-enfoque-asg', views.nuestro_enfoque_asg, name='nuestro-enfoque-asg'),
     path('vinculacion-ods', views.vinculacion_ods, name='vinculacion-ods'),
 
