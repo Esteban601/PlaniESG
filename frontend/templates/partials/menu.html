@@ -51,7 +51,25 @@
         <a href="{% url 'gobernanza' %}">
             <div>{% trans 'Gobernanza' %}</div>
         </a>
+        <ul>
+            <li class="{% if page == 'gobernanza' %}current{% endif %}">
+                <a href="{% url 'gobernanza' %}#sistema">
+                    <div>{% trans "Sistema de Gobierno" %}</div>
+                </a>
+            </li>
+            <li class="{% if page == 'gobernanza' %}current{% endif %}">
+                <a href="{% url 'gobernanza' %}#comites">
+                    <div>{% trans "Comités" %}</div>
+                </a>
+            </li>
+            <li class="{% if page == 'gobernanza' %}current{% endif %}">
+                <a href="{% url 'gobernanza' %}#lineamientos">
+                    <div>{% trans "Lineamientos y Políticas" %}</div>
+                </a>
+            </li>
+        </ul>
     </li>
+
     {#    <li>#}
     {#        <a href="#">#}
     {#            <div>{% trans 'Responsabilidad Social' %}</div>#}
