@@ -1,7 +1,15 @@
 $(".modal-galery").click(function (e) {
     e.preventDefault();
     let target = $(e.currentTarget);
-
+    if (target.data('url') != '') {
+        $("#GalleryModal1 .event-url").removeClass('d-none');
+        $("#GalleryModal1 .event-img").addClass('d-none');
+        $("#GalleryModal1 .event-url").attr('src', target.data('url'));
+    } else {
+        $("#GalleryModal1 .event-img").removeClass('d-none');
+        $("#GalleryModal1 .event-url").addClass('d-none');
+        $("#GalleryModal1 .event-img").attr('src', target.data('img'));
+    }
     $("#GalleryModal1 .event-img").attr('src', target.data('img'));
     $("#GalleryModal1 .event-title").text(target.data('title'));
     $("#GalleryModal1 .event-description").text(target.data('description'));
@@ -17,7 +25,7 @@ const step = 6;
 const year_form = $('#select_anno');
 const cat_form = $('#select_category');
 
-filterSelection({a:year_form.val(), c:cat_form.val()}, '', 1, step);
+filterSelection({a: year_form.val(), c: cat_form.val()}, '', 1, step);
 
 year_form.change(function () {
     console.log($(this).val());
