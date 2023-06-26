@@ -23,6 +23,10 @@
     font-style: normal;
 }
 
+#primary-menu ul li .mega-menu-content, #primary-menu ul ul:not(.mega-menu-column) {
+    background-color: #ffffff80;
+}
+
 .feature-box.fbox-plain.fbox-small .fbox-icon i {
     font-size: 38px;
 }
@@ -1665,7 +1669,7 @@ blockquote {
 }
 
 #primary-menu ul.sf-js-enabled .sub-menu ul li a {
-    color: #666 !important;
+    color: #303030 !important;
 }
 
 /* Tab - Cadena de suministro */
