@@ -100,7 +100,7 @@ def ambiental_info(request):
 def materialidad(request):
     eventos_amb = EventosView.get_event_amb_es_data()
     context = {
-        'title': _("Estrategia de Sostenibilidad"),
+        'title': _("Estrategia de Sustentabilidad"),
         'page': 'materialidad',
         'eventos': eventos_amb,
         'imagen': staticfiles_storage.url('images/headers/plani-materialidad.png'),
