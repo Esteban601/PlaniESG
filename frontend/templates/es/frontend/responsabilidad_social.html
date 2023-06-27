@@ -162,9 +162,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12">
+                <div class="col-12" id="wprt-counter-index">
                     <article id="distribucion_personal">
-                        <div class="row d-flex flex-row justify-content-between">
+                        <div class="row d-flex flex-row justify-content-between wprt-counter">
                             <div class="col-md-7">
                                 <h4 class="globo_rosa m-3">Distribución de personal por tipo de puesto</h4>
                                 <div class="d-flex flex-row justify-content-center align-content-center ">
@@ -189,7 +189,12 @@
                                              src="{% static 'images/iconillos_1.png' %}">
                                     </div>
                                     <div class="mt-5 pt-5 d-flex align-items-center">
-                                        <h2 class="text-rosa text-bold">=119</h2>
+                                        <h2 class="text-rosa text-bold">
+                                            =
+                                        </h2>
+                                        <h2 class="text-rosa feature-card-desc number text-bold" data-speed="1500"
+                                            data-to="119"
+                                            data-decimals="0"></h2>
                                     </div>
                                 </div>
                                 <div class="mt-0 d-flex flex-row justify-content-center align-content-center ">
@@ -211,7 +216,12 @@
                                              src="{% static 'images/iconillos_2.png' %}">
                                     </div>
                                     <div class="mt-3 d-flex align-items-center">
-                                        <h2 class="text-rosa text-bold">=132</h2>
+                                        <h2 class="text-rosa text-bold">
+                                            =
+                                        </h2>
+                                        <h2 class="text-rosa feature-card-desc number text-bold" data-speed="1500"
+                                            data-to="132"
+                                            data-decimals="0"></h2>
                                     </div>
                                 </div>
                             </div>
@@ -225,7 +235,12 @@
                                                  src="{% static 'images/iconillos_3.png' %}">
                                         </div>
                                         <div class="mt-3 d-flex align-items-center">
-                                            <h2 class="text-rosa text-bold">=11</h2>
+                                            <h2 class="text-rosa text-bold">
+                                                =
+                                            </h2>
+                                            <h2 class="text-rosa feature-card-desc number text-bold" data-speed="1500"
+                                                data-to="11"
+                                                data-decimals="0"></h2>
                                         </div>
                                     </div>
                                 </div>
@@ -238,8 +253,12 @@
                                                  src="{% static 'images/iconillos_3.png' %}">
                                         </div>
                                         <div class="mt-3 d-flex align-items-center">
-                                            <h2 class="text-rosa text-bold">=11</h2>
-                                        </div>
+                                            <h2 class="text-rosa text-bold">
+                                                =
+                                            </h2>
+                                            <h2 class="text-rosa feature-card-desc number text-bold" data-speed="1500"
+                                                data-to="11"
+                                                data-decimals="0"></h2></div>
                                     </div>
                                 </div>
                             </div>
@@ -248,9 +267,9 @@
 
                 </div>
                 <div style="text-align:center;">
-                    <img src="{% static 'images/distribucion_personal.png' %}"
-                         style="display:block; width:100%; height: 550px;"
-                         alt="">
+                    {#                    <img src="{% static 'images/distribucion_personal.png' %}"#}
+                    {#                         style="display:block; width:100%; height: 550px;"#}
+                    {#                         alt="">#}
 
                     <h1 class="text-center tc-blue mt-5 mb-5">Actividades Relevantes 2022</h1>
                     <div style="text-align:center;">
@@ -295,14 +314,28 @@
 {% endblock %}
 
 {% block otherscripts %}
-    <script src="{% static 'javascripts/amcharts/amcharts.js' %}"></script>
-    <script src="{% static 'javascripts/amcharts/serial.js' %}"></script>
-    <script src="{% static 'javascripts/amcharts/pie.js' %}"></script>
-    <script src="{% static 'javascripts/amcharts/contenido/responsabilidad-social.js' %}"></script>
+    {#    <script src="{% static 'javascripts/amcharts/amcharts.js' %}"></script>#}
+    {#    <script src="{% static 'javascripts/amcharts/serial.js' %}"></script>#}
+    {#    <script src="{% static 'javascripts/amcharts/pie.js' %}"></script>#}
+    {#    <script src="{% static 'javascripts/amcharts/contenido/responsabilidad-social.js' %}"></script>#}
     <script src="{% static 'javascripts/owl.carousel.min.js' %}"></script>
     <script src="{% static 'javascripts/js/jquery.twbsPagination.min.js' %}"></script>
     <script src="{% static 'javascripts/carousel.eventos.js' %}"></script>
+
+    <script src="{% static 'javascripts/jquery.waypoints.min.js' %}"></script>
+    <script src="{% static 'javascripts/countTo.js' %}"></script>
+
     <script>
+        function isScrolledIntoView(el) {
+            if (el != null) {
+                var elemTop = el.getBoundingClientRect().top;
+                var elemBottom = el.getBoundingClientRect().bottom;
+
+                var isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
+                return isVisible;
+            }
+        }
+
         $(function () {
 
             $('.owl-carousel').owlCarousel({
@@ -316,4 +349,34 @@
             });
         })
     </script>
+    <script>
+        $(window).scroll(function () {
+            if (isScrolledIntoView(document.getElementById('distribucion_personal'))) {
+                $('#distribucion_personal').find('.number').each(function () {
+                    var to = parseFloat($(this).data('to')),
+                        speed = parseInt($(this).data('speed')),
+                        decimals = parseInt($(this).data('decimals'));
+
+                    $(this).countTo({
+                        to: to,
+                        speen: speed,
+                        decimals: decimals,
+                        formatter: function (value, options) {
+                            return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+                            ;
+                        },
+                        onComplete: function (value) {
+                            if (value === 1.9)
+                                return this.innerHTML += '%';
+                        }
+
+                    });
+                });
+
+                // Unbind scroll event
+                $(window).off('scroll');
+            }
+        });
+    </script>
+
 {% endblock %}
