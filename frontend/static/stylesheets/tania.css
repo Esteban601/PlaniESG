@@ -24,7 +24,7 @@
 }
 
 #primary-menu ul li .mega-menu-content, #primary-menu ul ul:not(.mega-menu-column) {
-    background-color: #ffffff80;
+    background-color: #525252;
 }
 
 .feature-box.fbox-plain.fbox-small .fbox-icon i {
@@ -1669,6 +1669,11 @@ blockquote {
 }
 
 #primary-menu ul.sf-js-enabled .sub-menu ul li a {
+    /*color: #303030 !important;*/
+    color: #ffffff !important;
+}
+
+#primary-menu ul.sf-js-enabled .sub-menu ul li a:hover {
     color: #303030 !important;
 }
 
