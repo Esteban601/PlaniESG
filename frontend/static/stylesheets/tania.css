@@ -23,6 +23,10 @@
     font-style: normal;
 }
 
+.bg-danger {
+    background-color: #D3101E !important;
+}
+
 #primary-menu ul li .mega-menu-content, #primary-menu ul ul:not(.mega-menu-column) {
     background-color: 727272;
 }
