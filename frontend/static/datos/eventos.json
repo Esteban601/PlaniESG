@@ -546,6 +546,118 @@
       "img": "images/eventos_soc/campamento_verano.jpg"
     },
     {
+      "title": "Centros de Acopio Incendios Forestales en Sierra de Arteaga",
+      "date": "2021-05-17",
+      "description": "Se crearon centros de acopio en las plazas comerciales de Nuevo León y Coahuila (Plaza Bella Anáhuac, La Nogalera, Plaza Real Saltillo, Urban Village Garza Sada, El Paseo Santa Catarina, Mall Plaza Lincoln, Plaza Bella Huinalá y Plaza Bella Ramos Arizpe). Para apoyar con los incendios forestales recientes en la sierra de Arteaga Coahuila y de Santiago Nuevo León.",
+      "url": "https://www.youtube.com/embed/1amRLbbwt2s",
+      "category": "Sociales",
+      "img": "images/eventos_soc/centroacopio.png"
+    },
+    {
+      "title": "Carrera Planigrupo-Santa Catarina",
+      "date": "2019-12-13",
+      "description": "El primero de diciembre del 2019, se llevó a cabo la carrera Planigrupo-Santa Catarina en conjunto con el gobierno de Santa Catarina, NL. Que como inscripción pedía traer un juguete nuevo. Hoy 13 de diciembre del 2019 se hizo la entrega de los juguetes a niños de zonas vulnerables, quienes gracias a sus aportaciones podrán vivir una muy feliz navidad.",
+      "url": "https://www.youtube.com/embed/Ovt-dgMPOQ8",
+      "category": "Sociales",
+      "img": "images/eventos_soc/carrera_santa.png"
+    },
+    {
+      "title": "Separación de residuos y reciclaje",
+      "date": "2019-10-02",
+      "description": "Se realiza la separación de residuos orgánicos, vidrio, cartón y plástico. Para ayudar al medio ambiente. Durante el año 2018 y lo que va del 2019.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/sep_residuos.png"
+    },
+    {
+      "title": "Instalación de centro de acopio",
+      "date": "2019-10-02",
+      "description": "En el mes de marzo 2018, se instala un centro de acopio, que pertenece al municipio de Cuautitlán Izcalli, en el cual se realizan recolecciones mensuales de cartón, pet, vidrio, tetrapack y artículos electrónicos para ayudar al medio ambiente. Se recolecta desde el año 2018 y lo que va del año 2019.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/i_centros.png"
+    },
+    {
+      "title": "Cambio de luminarias",
+      "date": "2019-10-02",
+      "description": "Se instalo tecnología led en el exterior e interior de la plaza. Se cambiaron 181 luminarias.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/lumi.png"
+    },
+    {
+      "title": "Apoyo a damnificados",
+      "date": "2019-10-02",
+      "description": "Después del sismo del 2016 y las inundaciones en Nayarit en el 2018. Se instaló un centro de acopio para recolectar víveres a los damnificados de forma permanente.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/damificados.png"
+    },
+    {
+      "title": "Cambio de luminarias",
+      "date": "2019-10-01",
+      "description": "Se realizo el cambio de luminarias en etapas iniciando desde el año 2016 para reducir el consumo energético y en el 2017 se siguieron cambiando luminarias en el exterior e interior de la plaza.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/cambio_lumi.png"
+    },
+    {
+      "title": "Reciclaje y separación de residuos",
+      "date": "2019-10-01",
+      "description": "Se implementa la recolección de residuos y reciclaje desde el 2015.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/reciclaje_separacion.png"
+    },
+    {
+      "title": "Cambio de luminarias",
+      "date": "2019-10-01",
+      "description": "Desde el año 2015 al 2019, se están cambian luminarias del estacionamiento, áreas comunes en ambas plantas y la iluminación general del centro comercial. Para el ahorro de energía y ayudar al medio ambiente.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/lumi_cambio.png"
+    },
+    {
+      "title": "Apoyo al UNICEF",
+      "date": "2019-10-01",
+      "description": "Se proporciona espacios de manera altruista para el apoyo de la causa de UNICEFF a favor de la niñez. 6 de marzo del 2018.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/unicef.png"
+    },
+    {
+      "title": "Centro de acopio",
+      "date": "2019-10-01",
+      "description": "Se creo un centro de acopio para los damnificados de Oaxaca. 11 de octubre 2017.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/centro_acopio2.png"
+    },
+    {
+      "title": "Centro de acopio",
+      "date": "2019-10-01",
+      "description": "Se creó un centro de acopio para damnificados por el terremoto del 2017 y se recaudaron distintos víveres.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/centro_acopio4.png"
+    },
+    {
+      "title": "Separación de basura y ley que prohibe uso de popotes y bolsas de plastico",
+      "date": "2019-10-01",
+      "description": "Se implementó la ley que prohíbe el uso de popotes y bolsas de plástico. Abril 2019. Se implementó el programa de separación de residuos orgánicos e inorgánicos ente los locatarios.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/separacion_basura.png"
+    },
+    {
+      "title": "Instalación de solatubes y mingitorios de gravedad",
+      "date": "2019-10-01",
+      "description": "Se instalaron solatubes para el aprovechamiento de luz natural y disminución de energía eléctrica. Se tienen mingitorios de gravedad para el ahorro de agua.",
+      "url": "",
+      "category": "Sociales",
+      "img": "images/eventos_soc/solatubes.png"
+    },
+    {
       "title": "Festejo del día del niño",
       "date": "2019-10-01",
       "description": "Se realizo una visita a comedor infantil el buen pastor, para celebrar el día del niño donde se convivió con ellos y se les entregaron obsequios.",
@@ -1135,6 +1247,14 @@
       "img": "images/eventos_soc/donativo_instituto_estatal_mujeres.png"
     },
     {
+      "title": "Punto Naranja Santa Catarina",
+      "date": "2023-06-05",
+      "description": "Se inauguró un nuevo #PuntoNaranja para apoyar, atender y acompañar a las mujeres que se sienten inseguras.",
+      "url": "",
+      "category": "Corporativas",
+      "img": "images/eventos_soc/punto_naranja2.png"
+    },
+    {
       "title": "Encendido de arbolitos 2022",
       "date": "2022-06-01",
       "description": "Se realizo el tradicional encendido de arbolitos navideños 2022 en nuestros centros comerciales.",
@@ -1149,6 +1269,14 @@
       "url": "https://www.youtube.com/embed/cYdS3rNrf7k",
       "category": "Corporativas",
       "img": "images/eventos/Banco-de-tapitas-enero-julio-2022.webp"
+    },
+    {
+      "title": "Alianza Fundación Lilo",
+      "date": "2022-08-01",
+      "description": "Nos unimos con Fundación Lilo para el programa de “MANOS AL CORAZÓN”. Brindando apoyo con gastos hospitalarios y dispositivos. Juntos sanamos pequeños corazones y salvamos grandes vidas.",
+      "url": "",
+      "category": "Corporativas",
+      "img": "images/eventos_soc/fundacion_lilo3.png"
     },
     {
       "title": "Corazones Rosa en Colaboración con Grupo AIEn",
@@ -1205,6 +1333,14 @@
       "url": "https://www.youtube.com/embed/L1JuNh6SVFI",
       "category": "Corporativas",
       "img": "images/eventos_soc/recoleccion_tapitas_niños.png"
+    },
+    {
+      "title": "Banco de Tapitas Enero-Julio 2022",
+      "date": "2022-08-19",
+      "description": "se realizó la donación que alcanza los 3,722 kilos de tapitas. Con esta cantidad se pueden comprar poco más de 115 dosis de metrotexato ó 40 dosis de purinethol; quimioterapias esenciales en los tratamientos de los pacientes.",
+      "url": "",
+      "category": "Corporativas",
+      "img": "images/eventos_soc/tapitas3.png"
     },
     {
       "title": "Donativo de Caretas al municipio de Zapopan, Jalisco",
